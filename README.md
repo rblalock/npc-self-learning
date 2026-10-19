@@ -2,6 +2,8 @@
 
 [Play the public demo, explore the evidence, and download 0.3.0](https://npc-self-learning.vercel.app).
 
+**Blog post:** [Experiment: NPCs that self-learn and adjust tactics](https://www.rickblalock.dev/scratch-notes/testing-whether-game-enemies-learn/) — how the learner works, what the experiments measured, and recordings from the simulation.
+
 Experimental release 0.3.0: a portable Rust library for enemies that learn which **authored, legal tactics** work, plus a playable browser arena that makes the learning visible.
 
 The game owns perception, movement, combat and rewards. The library owns bounded preference updates, deterministic choice, and memory. It never changes health, damage, movement speed, cooldowns or available abilities.
