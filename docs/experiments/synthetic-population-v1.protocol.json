@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "synthetic-population-v1",
+  "status": "Specified before reserved performance measurement; local prospective screen, not public preregistration. Geometry/schema validation is permitted before freezing; held-out performance may not tune this version.",
+  "question": "Does diverse synthetic training improve later adaptation relative to narrow demonstration training, using the unchanged single-context, independent-role learner?",
+  "seeds": [
+    3001, 3011, 3019, 3023, 3037, 3041, 3049, 3061, 3067, 3079, 3083, 3089
+  ],
+  "training_rounds": 48,
+  "train_families": ["circle", "rush", "cover", "weave"],
+  "train_maps": ["pillars", "crossings"],
+  "test_families": ["bait-switch", "reactive"],
+  "test_maps": ["staggered-lanes", "offset-islands"],
+  "training_arms": {
+    "narrow": "48 existing clockwise-controller encounters on the original map.",
+    "diverse": "48 generated encounters, exactly 12 per training player family, 24 per training map family. All controller parameters and map/spawn perturbations derive from independent named seed streams."
+  },
+  "phase_rounds": 12,
+  "phases": ["repeat", "switch", "return"],
+  "history": "Same generated world and synthetic player identity within each history. Twelve encounters with direction +1, twelve with -1, twelve with +1. Reaction delay, aim error, noise schedule and other parameters stay constant. Memory persists across encounters. Each case starts from its arm's training checkpoint; online/frozen branches restore the exact same snapshot.",
+  "communication": "direct",
+  "late_rounds": 4,
+  "calibration_seed": 42,
+  "calibration_encounters": 128,
+  "fixed_baseline": "All eight fixed profiles evaluated on 16 calibration cases from training families/maps only (two separate calibration seeds). Maximize mean enemy damage; tie by lexical profile id. Persist selection before any reserved combat. Fixed actions do not learn or age.",
+  "expected_encounters": 9920,
+  "primary_endpoint": "Diverse online minus narrow online enemy damage in the last four switch-phase encounters, equal-weighted over the four reserved case families within each of twelve replicate seeds.",
+  "gates": {
+    "minimum_gain": 3,
+    "maximum_case_loss": 6,
+    "decision": "Require primary mean gain >=3 HP and paired 95% lower bound >0; require diverse online-minus-frozen mean >=3 HP and lower bound >0; no reserved case primary mean worse than -6 HP. Passing permits a follow-up, not production promotion."
+  },
+  "uncertainty": {
+    "resamples": 5000,
+    "seed": 260019,
+    "interval": 0.95,
+    "scope": "Paired percentile bootstrap over twelve independent replicate seeds. Each seed controls policy, map perturbations and player parameters using separate streams; cases and rounds are averaged within seed. Intervals describe this generator and four fixed family combinations, not humans or arbitrary games."
+  },
+  "secondary_endpoints": [
+    "Repeat and return phase late damage",
+    "Online-minus-frozen adaptation within each training arm",
+    "Damage relative to training-selected fixed tactics",
+    "Player clear/death rates and duration",
+    "Per-case and per-seed results, including all failures",
+    "Physical movement, frame steps, input fingerprints, policy decisions, feedback and checkpoints"
+  ],
+  "invariants": [
+    "Original immutable simulator and Rust/Wasm learner; unchanged weapons, health, speed limits and reward rule.",
+    "Synthetic players receive only self state, visible enemies and their displayed attack telegraphs, nearby visible hostile bullets, and public geometry. They never receive enemy tactic IDs, learned probabilities or hidden positions.",
+    "Counter-based bot randomness is indexed by named stream and decision tick, so diverging branches cannot shift each other's exogenous noise draws.",
+    "Only invalid geometry is rejected; rejection attempts/reasons are recorded. Valid defeats and bad outcomes are retained.",
+    "Reserved families appear in no training or fixed-policy selection encounter. Once examined, this suite is a regression suite; tuning requires fresh reserved families for a new confirmatory claim.",
+    "Frozen score/sample/probability cells remain identical. Every online/frozen pair begins with identical actual combat.",
+    "Record complete manifests, all outcome traces, source/protocol hashes, immutable result files, reproducible replays and independent policy verification."
+  ],
+  "budget": "Equal training encounters, with actual simulation steps, elapsed time and process CPU reported. Training arms can terminate at different times, so this is not a fixed-compute efficiency claim. Adaptive curriculum selection and its budget are deferred.",
+  "limits": [
+    "This screen changes the whole training distribution, so it cannot separate map diversity from behavioral diversity.",
+    "The learner still has one arena context and three independent role choices. Diverse experience may produce conflicting preferences; synthetic data cannot supply missing representation.",
+    "Player histories model a repeat/switch/return schedule; bots do not themselves learn or inspect enemy memory.",
+    "Bots are controllable synthetic opponents, not calibrated models of human play. Damage, clear/death rates and movement are not evidence of fun or perceived fairness.",
+    "The two reserved controller families and two map families are a limited prospective screen. Parameter variation is not open-ended generalization.",
+    "Scouts, courier learning, adaptive curricula, joint-action policies and engine adapters are outside this version.",
+    "All secondary comparisons are exploratory and unadjusted. No candidate, threshold or generator is changed after looking at reserved outcomes."
+  ],
+  "demonstration": {
+    "seed": 3001,
+    "case": "bait-switch/staggered-lanes",
+    "round": 24,
+    "selection": "Preselected before results. Export all five conditions for this exact encounter; not a selected success."
+  }
+}

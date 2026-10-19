@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "version": "research-program-v1",
+  "status": "Specified locally before any measured program outcomes. Six protocols and their shared source are frozen together before the first run; no results from one study may tune another. Not public preregistration.",
+  "primary_uncertainty": {
+    "resamples": 12000,
+    "seed": 260021,
+    "interval": 0.9916666666666667
+  },
+  "secondary_uncertainty": {
+    "resamples": 5000,
+    "seed": 260022,
+    "interval": 0.95
+  },
+  "uncertainty_scope": "Paired percentile bootstrap of 16 seed means, averaging cases and roles within seed. Primary intervals use nominal Bonferroni 99.167% coverage for six predeclared primary comparisons; bootstrap coverage is approximate. All secondary intervals are 95%, exploratory and unadjusted. Neither authored cases nor rounds are independent map-population draws.",
+  "fresh_cases": [
+    "zigzag-advance/long-spines",
+    "zigzag-advance/courtyard",
+    "cover-peek/long-spines",
+    "cover-peek/courtyard"
+  ],
+  "fresh_split": "Two new behavior rules crossed with two new map templates, parameterized by separate seed streams. Shared across these six simultaneously locked protocols; reuse does not constitute six independently invented generators. After examination these become regression fixtures.",
+  "primary_rounds": 4,
+  "minimum_gain": 3,
+  "maximum_case_loss": 6,
+  "invariants": [
+    "Archived Rust/Wasm core and Arena.update physical simulation. No weapon, speed, HP, visibility or cooldown changes.",
+    "Single-enemy cases retain only the specified live enemy. Inactive array slots preserve bullet IDs and contribute no targeting, collisions, damage, observation or feedback.",
+    "Synthetic players receive delayed self state, visible enemies and telegraphs, nearby visible projectiles and public map geometry only. No tactic IDs, policy cells, hidden positions or scripted phase labels.",
+    "Terrain context derives only from public wall area: more than 5.5% is dense, otherwise sparse. No player family or direction is supplied to the learner.",
+    "Frozen counterparts fork from the exact online boundary, including RNG. Full combats, inputs, choices, observations and reward commits retained.",
+    "All valid worlds and outcomes retained; geometry rejection reasons recorded.",
+    "No threshold, seed count, generator, reward, training schedule or candidate changes after measurement.",
+    "No algorithm installed in the game on the basis of these screens alone."
+  ],
+  "budget": "Equal declared encounter histories within each comparison, with actual simulation steps, decision counts, elapsed time and CPU recorded. This is not an equal-CPU or equal-step claim. Replays and unit-test fights are not additional scored evidence.",
+  "limits": [
+    "Authored tactics and small fixed family sets; no arbitrary-game or opponent-population generalization.",
+    "Tactic choices occur once per encounter. This tests between-encounter adaptation, not within-fight tactical replanning.",
+    "Only specified host representations/rewards change; the core API is reused without modification.",
+    "Negative and insensitive fixtures are retained. A failed screen is not evidence that an entire research direction cannot work."
+  ],
+  "kind": "situational",
+  "id": "situational-memory-v1",
+  "seeds": [
+    12001,
+    12011,
+    12021,
+    12031,
+    12041,
+    12051,
+    12061,
+    12071,
+    12081,
+    12091,
+    12101,
+    12111,
+    12121,
+    12131,
+    12141,
+    12151
+  ],
+  "expected_encounters": 9216,
+  "question": "Does public terrain context improve an isolated ranger compared with one pooled memory?",
+  "procedure": "Pooled, terrain-conditioned and shuffled-context controls; same 48 diverse training fights. Both training and reserved maps contain sparse/dense geometry. Four reserved histories: 12 repeat then 12 switch online/frozen. Shuffled labels use independent deterministic noise, matching cell capacity without meaningful terrain conditioning.",
+  "primary_key": "terrain-minus-pooled",
+  "primary_endpoint": "Terrain-conditioned online minus pooled online damage in the last four reserved switch fights.",
+  "gate": "Primary mean >=3 HP and nominal multiplicity-adjusted lower bound >0; no fresh case mean primary difference below -6 HP. Passing only nominates a follow-up. Additional gate: terrain must beat the shuffled-context control by >=3 HP with secondary 95% lower bound >0.",
+  "demonstration": {
+    "seed": 12001,
+    "case": "zigzag-advance/long-spines",
+    "selection": "First seed and first fresh case selected before outcomes; retain unfavorable or equal comparisons."
+  }
+}

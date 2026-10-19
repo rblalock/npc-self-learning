@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-19T01:43:23.160178+00:00",
+  "method": "Independent Python arithmetic over raw paired damage rows; no JavaScript analysis imports.",
+  "groups": {
+    "solo-vanguard": {
+      "seeds": 15,
+      "primaryMean": 8.25
+    },
+    "solo-flanker": {
+      "seeds": 16,
+      "primaryMean": 11.390625
+    },
+    "solo-ranger": {
+      "seeds": 16,
+      "primaryMean": 6.2109375
+    },
+    "squad": {
+      "seeds": 16,
+      "primaryMean": 3.2890625
+    },
+    "context-flanker": {
+      "seeds": 16,
+      "primaryMean": 3.234375
+    },
+    "context-ranger": {
+      "seeds": 15,
+      "primaryMean": 4.0
+    }
+  },
+  "matched": true
+}

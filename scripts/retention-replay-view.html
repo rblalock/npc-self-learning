@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tactical Air · recorded experiment</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f1ecd9;
+        --ink: #2e382d;
+        --muted: #62684f;
+        --line: #c4c5aa;
+        --blue: #245d78;
+        --red: #a24132;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font:
+          16px/1.5 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 1040px;
+        margin: auto;
+        padding: 24px;
+      }
+      h1 {
+        font-size: 26px;
+        line-height: 1.1;
+        margin: 0 0 10px;
+      }
+      p {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+      .controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 20px 0 12px;
+      }
+      label {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      button,
+      select {
+        font: inherit;
+        min-height: 44px;
+        padding: 6px 12px;
+        color: var(--ink);
+        background: transparent;
+        border: 1px solid var(--muted);
+        border-radius: 3px;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:focus-visible,
+      select:focus-visible,
+      input:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px;
+      }
+      canvas {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: #e6dfc5;
+        border: 1px solid var(--line);
+      }
+      .scrub {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin: 12px 0;
+      }
+      input {
+        flex: 1;
+        min-width: 0;
+        accent-color: var(--blue);
+      }
+      output {
+        font-variant-numeric: tabular-nums;
+        min-width: 5em;
+      }
+      .detail {
+        min-height: 28px;
+        margin: 8px 0;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .note {
+        font-size: 14px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+      }
+      th,
+      td {
+        padding: 8px 0;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+      }
+      td:last-child,
+      th:last-child {
+        text-align: right;
+      }
+      th {
+        font-weight: 600;
+      }
+      summary {
+        cursor: pointer;
+        min-height: 44px;
+        padding-top: 10px;
+      }
+      .key {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 14px;
+      }
+      .player {
+        color: var(--blue);
+      }
+      .enemy {
+        color: var(--red);
+      }
+      @media (max-width: 600px) {
+        main {
+          padding: 16px;
+        }
+        .columns {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        h1 {
+          font-size: 23px;
+        }
+        label {
+          flex-wrap: wrap;
+        }
+        select {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Does keeping scores help?</h1>
+      <p id="identity"></p>
+      <div class="controls">
+        <button id="play" type="button">Play replay</button
+        ><label
+          >Enemy
+          <select id="condition">
+            <option value="original-online">Original · learning</option>
+            <option value="original-frozen">Original · frozen at switch</option>
+            <option value="no-decay-online">No decay · learning</option>
+            <option value="no-decay-frozen">No decay · frozen at switch</option>
+          </select></label
+        ><label
+          >Speed
+          <select id="speed">
+            <option value="1">1×</option>
+            <option value="4">4×</option>
+          </select></label
+        >
+      </div>
+      <canvas
+        id="map"
+        width="920"
+        height="600"
+        aria-label="Recorded combat: blue circle is the synthetic player; red V, F and R counters are the three enemy roles. Cover matches collision geometry."
+      ></canvas>
+      <div class="scrub">
+        <input
+          id="time"
+          aria-label="Replay time"
+          type="range"
+          min="0"
+          max="1000"
+          step="1"
+          value="0"
+        /><output id="clock">0.0 s</output>
+      </div>
+      <div class="key">
+        <span class="player">● Synthetic player</span
+        ><span class="enemy">V Vanguard · F Flanker · R Ranger</span
+        ><span>Lines show visible attack telegraphs</span>
+      </div>
+      <p class="detail" id="outcome"></p>
+      <p class="note" id="aggregate"></p>
+      <div class="columns">
+        <section>
+          <h2 style="font-size: 18px">This encounter</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Condition</th>
+                <th>Enemy damage</th>
+              </tr>
+            </thead>
+            <tbody id="comparison"></tbody>
+          </table>
+        </section>
+        <section>
+          <h2 style="font-size: 18px">What was learned</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Chosen tactic</th>
+                <th>Probability before → after</th>
+              </tr>
+            </thead>
+            <tbody id="learning"></tbody>
+          </table>
+        </section>
+      </div>
+      <details>
+        <summary>Evidence and limitations</summary>
+        <p class="note" id="selection"></p>
+        <p class="note">
+          Actual recorded simulation states, sampled at 10 frames per second.
+          The simulation ran at 60 steps per second. This example is separate
+          from aggregate results and does not measure human enjoyment. Frozen
+          means the enemy uses its learned preferences without updating them.
+        </p>
+        <p class="note" id="provenance" style="overflow-wrap: anywhere"></p>
+      </details>
+    </main>
+    <script>
+      const data = __PAYLOAD__;
+      const $ = (id) => document.getElementById(id),
+        canvas = $("map"),
+        ctx = canvas.getContext("2d");
+      let playing = false,
+        t = 0,
+        last = 0;
+      const names = {
+        "original-online":"Original · learning", "original-frozen":"Original · frozen",
+        "no-decay-online":"No decay · learning", "no-decay-frozen":"No decay · frozen"
+      };
+      const tactics = {
+        rush: "Close distance",
+        hold: "Hold lane",
+        flank_left: "Flank left",
+        flank_right: "Flank right",
+        aim: "Aim at position",
+        lead: "Lead movement",
+      };
+      $("identity").textContent =
+        `${data.case} · seed ${data.seed} · encounter ${data.round} · ${data.scenario.phase} phase`;
+      $("selection").textContent = data.selection;
+      $("aggregate").textContent = data.aggregate;
+
+      $("provenance").textContent =
+        `Source result SHA-256: ${data.resultsSha256}. All ${data.combatReplays} reconstruction encounters matched their stored records exactly.`;
+      for (const [key, r] of Object.entries(data.recordings)) {
+        const tr = document.createElement("tr");
+        for (const value of [names[key], `${r.row.damage} HP`]) {
+          const td = document.createElement("td");
+          td.textContent = value;
+          tr.append(td);
+        }
+        $("comparison").append(tr);
+      }
+      function recording() {
+        return data.recordings[$("condition").value];
+      }
+      function draw() {
+        const r = recording(),
+          f = r.frames.findLast((f) => f.time <= t) ?? r.frames[0];
+        ctx.clearRect(0, 0, 920, 600);
+        ctx.fillStyle = "#e6dfc5";
+        ctx.fillRect(0, 0, 920, 600);
+        ctx.strokeStyle = "#c0bea0";
+        ctx.lineWidth = 1;
+        for (let x = 20; x < 920; x += 40) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, 600);
+          ctx.stroke();
+        }
+        for (let y = 20; y < 600; y += 40) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(920, y);
+          ctx.stroke();
+        }
+        for (const w of data.scenario.world.walls) {
+          ctx.fillStyle = "#acae87";
+          ctx.fillRect(w.x, w.y, w.w, w.h);
+          ctx.strokeStyle = "#505a40";
+          ctx.strokeRect(w.x, w.y, w.w, w.h);
+        }
+        for (const e of f.enemies) {
+          if (e.hp <= 0) continue;
+          if (e.windup > 0) {
+            ctx.strokeStyle = "#a24132";
+            ctx.setLineDash(e.windup <= 0.22 ? [] : [6, 8]);
+            ctx.beginPath();
+            ctx.moveTo(e.x, e.y);
+            ctx.lineTo(e.target.x, e.target.y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+          }
+          ctx.fillStyle = "#f1ecd9";
+          ctx.strokeStyle = "#a24132";
+          ctx.lineWidth = 2;
+          ctx.fillRect(e.x - 17, e.y - 17, 34, 34);
+          ctx.strokeRect(e.x - 17, e.y - 17, 34, 34);
+          ctx.fillStyle = "#a24132";
+          ctx.font = "bold 20px system-ui";
+          ctx.textAlign = "center";
+          ctx.fillText(e.role[0].toUpperCase(), e.x, e.y + 7);
+          ctx.fillRect(e.x - 17, e.y + 23, (34 * e.hp) / 72, 4);
+        }
+        for (const b of f.bullets) {
+          ctx.fillStyle = b.enemy === null ? "#245d78" : "#a24132";
+          ctx.beginPath();
+          ctx.arc(b.x, b.y, 4, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.fillStyle = "#245d78";
+        ctx.beginPath();
+        ctx.arc(f.player.x, f.player.y, 15, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillRect(
+          f.player.x - 20,
+          f.player.y + 23,
+          (40 * f.player.hp) / 100,
+          4,
+        );
+        $("clock").textContent = `${t.toFixed(1)} s`;
+        $("time").value = (t / r.row.duration) * 1000;
+        $("outcome").textContent =
+          `Player health: ${f.player.hp} HP${t >= r.row.duration ? " · " + r.row.result + " · " + r.row.damage + " HP enemy damage" : ""}`;
+      }
+      function choose() {
+        playing = false;
+        $("play").textContent = "Play replay";
+        t = 0;
+        const r = recording();
+        $("time").max = 1000;
+        $("learning").replaceChildren();
+        for (const recap of r.row.recap) {
+          const tr = document.createElement("tr");
+          for (const value of [
+            tactics[recap.tactic],
+            $("condition").value === "fixed"
+              ? "100% → 100% (fixed)"
+              : `${(recap.before * 100).toFixed(1)}% → ${(recap.after * 100).toFixed(1)}%`,
+          ]) {
+            const td = document.createElement("td");
+            td.textContent = value;
+            tr.append(td);
+          }
+          $("learning").append(tr);
+        }
+        draw();
+      }
+      $("condition").addEventListener("change", choose);
+      $("time").addEventListener("input", () => {
+        t = (Number($("time").value) / 1000) * recording().row.duration;
+        draw();
+      });
+      $("play").addEventListener("click", () => {
+        if (t >= recording().row.duration) t = 0;
+        playing = !playing;
+        last = performance.now();
+        $("play").textContent = playing ? "Pause" : "Play replay";
+      });
+      function tick(now) {
+        if (playing) {
+          t = Math.min(
+            recording().row.duration,
+            t + ((now - last) / 1000) * Number($("speed").value),
+          );
+          draw();
+          if (t >= recording().row.duration) {
+            playing = false;
+            $("play").textContent = "Play replay";
+          }
+        }
+        last = now;
+        requestAnimationFrame(tick);
+      }
+      choose();
+      requestAnimationFrame(tick);
+      console.log(
+        JSON.stringify({
+          conditions: Object.keys(data.recordings).length,
+          frames: Object.values(data.recordings).map((r) => r.frames.length),
+          overflow: document.documentElement.scrollWidth > innerWidth,
+        }),
+      );
+    </script>
+  </body>
+</html>

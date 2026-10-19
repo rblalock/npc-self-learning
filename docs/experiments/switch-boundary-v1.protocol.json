@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "switch-boundary-v1",
+  "status": "Specified locally before new frozen-branch measurement; not a public preregistration. Prior online outcomes are already known.",
+  "question": "How much do updates after the strategy switch contribute, compared with freezing the identical policy at that boundary?",
+  "parent": "docs/experiments/synthetic-population-v1.results.json",
+  "parentSha256": "41a49e92847c22c1ba696e40cf71075247da5f33175eb80ca07edd5fbb319a3e",
+  "seeds": [
+    3001,
+    3011,
+    3019,
+    3023,
+    3037,
+    3041,
+    3049,
+    3061,
+    3067,
+    3079,
+    3083,
+    3089
+  ],
+  "arms": [
+    "narrow",
+    "diverse"
+  ],
+  "boundary_round": 12,
+  "evaluation_rounds": 12,
+  "late_rounds": 4,
+  "primary_arm": "diverse",
+  "uncertainty": {
+    "resamples": 5000,
+    "seed": 260019,
+    "interval": 0.95,
+    "scope": "Paired percentile bootstrap over twelve independent replicate seeds. Each seed controls policy, map perturbations and player parameters using separate streams; cases and rounds are averaged within seed. Intervals describe this generator and four fixed family combinations, not humans or arbitrary games."
+  },
+  "primary": "Online minus boundary-frozen enemy damage in switch rounds 9\u201312, equal-weighting the four known cases within each of 12 seeds.",
+  "criterion": {
+    "minimum_gain": 3,
+    "lower_bound": 0,
+    "interpretation": "A useful local post-switch effect requires mean >=3 HP and 95% lower bound >0. This diagnostic does not select or promote a new learner."
+  },
+  "expected_new_encounters": 1152,
+  "expected_reused_online_encounters": 1152,
+  "expected_reconstruction_replays": 2304,
+  "procedure": "Restore each archived pretraining snapshot, replay all 12 repeat encounters exactly, save checkpoint, and fork online/frozen. Replay the 12 online switch encounters exactly against the archive; count these as reused evidence. Score 12 new frozen encounters. Independently verify choice/feedback/commit traces and replay every combat.",
+  "limits": [
+    "Known cases and known online outcomes; prospective frozen control, not fresh held-out validation.",
+    "Intervals resample seeds, not rounds or authored family identities.",
+    "Difference estimates the contribution of allowing updates after this boundary, including effects on later sampled tactics and physical encounters.",
+    "Enemy damage is a capability measure, not fun or fairness.",
+    "Primary diverse arm; narrow/per-case comparisons exploratory and unadjusted."
+  ],
+  "demonstration": {
+    "seed": 3001,
+    "case": "bait-switch/staggered-lanes",
+    "arm": "diverse",
+    "round": 12,
+    "selection": "Chosen before new frozen outcomes; retain even if inconclusive."
+  }
+}

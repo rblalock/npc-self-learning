@@ -1,0 +1,557 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "source": "docs/experiments/adaptation-v1.results.json.gz",
+      "destination": "docs/experiments/adaptation-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "dfd7a61883df0a22d775341a554a21bff0c974ba8e4272c4f1b71a78618b9101",
+      "bytes": 15748928,
+      "storedSha256": "91b350adbf4ee6fb27a2470abac416b7453fcddf8883c74bbe91bf9dcff40403"
+    },
+    {
+      "source": "docs/experiments/additive-credit-v1.results.json.gz",
+      "destination": "docs/experiments/additive-credit-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "ec5053feff3f54bd450a160261491834222599da9beafc151b96bb936a46b2a7",
+      "bytes": 15994421,
+      "storedSha256": "5b1fe0dc1df3cf8db64b1749e30c0e4cebb3621b98055759e1451353e024a182"
+    },
+    {
+      "source": "docs/experiments/change-detection-development-v1.json.gz",
+      "destination": "docs/experiments/change-detection-development-v1.json",
+      "encoding": "gzip",
+      "sha256": "f108ca168bc42669f3b19bf7eae8343bf90661597c7f383cf1da62184d527cc5",
+      "bytes": 59080903,
+      "storedSha256": "3d81646e7d615e5652aac5f0b2288480e2e798d7a67feac938de38a6aae5b462"
+    },
+    {
+      "source": "docs/experiments/change-detection-v1-view.json.gz",
+      "destination": "docs/experiments/change-detection-v1-view.json",
+      "encoding": "gzip",
+      "sha256": "956a631d9e40b7e6f2326484aa74679d0241a2029c8447618649cbe0296ad673",
+      "bytes": 9747701,
+      "storedSha256": "b0f59b07d76e5245160d3f8e57a03b4221588389ec6cde9ce0bf49ba6a987d99"
+    },
+    {
+      "source": "docs/experiments/change-detection-v1.audit.json.gz",
+      "destination": "docs/experiments/change-detection-v1.audit.json",
+      "encoding": "gzip",
+      "sha256": "d5c3c699afabf23e6dc1ae460bb371e52cc1789b47f8896c0316f01cb19d2111",
+      "bytes": 20927825,
+      "storedSha256": "b7f49a1876cf86e02871d9fb816a3385c2db64312ec910b21ba46a654e897910"
+    },
+    {
+      "source": "docs/experiments/change-detection-v1.results.json.gz",
+      "destination": "docs/experiments/change-detection-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "4d72b2476e40e3399935ca4644742ca2d18ebef56d6d38096c99b83912e20049",
+      "bytes": 258293292,
+      "storedSha256": "fec59b347557a4bfbb6bda6fd862b3c90caea51d7ae1d385404b8585ab15c2ec"
+    },
+    {
+      "source": "docs/experiments/change-detection-v1.summary.json.gz",
+      "destination": "docs/experiments/change-detection-v1.summary.json",
+      "encoding": "gzip",
+      "sha256": "8afe11940719d2a9006bd333eecde9a54785d596d71b434f19c8eb088f112f80",
+      "bytes": 30096656,
+      "storedSha256": "d9422b6b3af371eb47b568fbbd64aecc237ad9b12fbed02e1fc6986e5c63fd39"
+    },
+    {
+      "source": "docs/experiments/conservative-development-v1-view.json.gz",
+      "destination": "docs/experiments/conservative-development-v1-view.json",
+      "encoding": "gzip",
+      "sha256": "f4862b6862753e17d6f6a318e4465a5e1a5ebaeba37d95ead6d80daefe00fcd0",
+      "bytes": 5179955,
+      "storedSha256": "ffad3b4472d35aca26f705a1bbc3b936b12ebad629dfa1db3bee9df808b3e138"
+    },
+    {
+      "source": "docs/experiments/conservative-development-v1.results.json.gz",
+      "destination": "docs/experiments/conservative-development-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "ab352a9733cee3352d0108b381f37f97e8873e4921d50ed8f493ff40b4914de9",
+      "bytes": 148966745,
+      "storedSha256": "0889e2f8fe4dd39d0515688c4784a35d14a40ff73fc0fcce83c86e9b67245888"
+    },
+    {
+      "source": "docs/experiments/conservative-development-v1.summary.json.gz",
+      "destination": "docs/experiments/conservative-development-v1.summary.json",
+      "encoding": "gzip",
+      "sha256": "54353c4df2f816d5b7d8d37ef0852fa6d041f95cbf31e936570d7b27d3348d97",
+      "bytes": 2732466,
+      "storedSha256": "841f0a320ccdc51340597df35cd522fa588c103956afb3a994a8e30e63e3df08"
+    },
+    {
+      "source": "docs/experiments/curriculum-budget-v1.results.json.gz",
+      "destination": "docs/experiments/curriculum-budget-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "648c1420958ca9fdbe704c6212e76e6e5e6798d85320afb74f3166199fe66a72",
+      "bytes": 19976539,
+      "storedSha256": "e899e319ea744f38ba839a7f4837e5fb3c5bcc9a618975e7f55661f9ba15d995"
+    },
+    {
+      "source": "docs/experiments/deception-stress-v1.results.json.gz",
+      "destination": "docs/experiments/deception-stress-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "e4e7b4f35efcb401f60795036530acc309ba9f32fb62888f111adb40ff4042c5",
+      "bytes": 20407708,
+      "storedSha256": "0a2985ef517646b7052c1fb8bbe190cef6de55d464ad44a60dc877531b4d336c"
+    },
+    {
+      "source": "docs/experiments/individual-adaptation-v1.results.json.gz",
+      "destination": "docs/experiments/individual-adaptation-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "ccc2f3935b50384d9b6cb89262ff6d25ab14491ca4fcac5afd1e5f0d82e66883",
+      "bytes": 44290224,
+      "storedSha256": "2365f2bfb83a7f94af75718621dcc98b134e7a0684ecb230536d499dc8f8da58"
+    },
+    {
+      "source": "docs/experiments/learning-opportunity-audit-v1.results.json.gz",
+      "destination": "docs/experiments/learning-opportunity-audit-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "109f3f357c8adb28b34bdd903a0b012ca52d8944cb43c2c9bf9d8c607aa4206a",
+      "bytes": 16307903,
+      "storedSha256": "c4dce603a45b8a2a91c6d6eeaa777642d17855cd3a5077776a4e1b341355f185"
+    },
+    {
+      "source": "docs/experiments/opportunity-development-v2.json.gz",
+      "destination": "docs/experiments/opportunity-development-v2.json",
+      "encoding": "gzip",
+      "sha256": "145163f12ce5b2fbc8a08b3e4f92db9fbb78e365282c0e108201092d0f21384b",
+      "bytes": 19240456,
+      "storedSha256": "5f52a43efce975288126f49b43166893f90e6cd66f333560e002f352ef033e88"
+    },
+    {
+      "source": "docs/experiments/opportunity-validation-v2-view-2.json.gz",
+      "destination": "docs/experiments/opportunity-validation-v2-view-2.json",
+      "encoding": "gzip",
+      "sha256": "1aff5ad9eea8b0d92c8a8ce11512c1419f6c6a00475c0b1cb0086d94af330392",
+      "bytes": 3577056,
+      "storedSha256": "25f589d93238a052557de4c28e7e785eae49fdd04274ffc35960dbce50039faa"
+    },
+    {
+      "source": "docs/experiments/opportunity-validation-v2-view.json.gz",
+      "destination": "docs/experiments/opportunity-validation-v2-view.json",
+      "encoding": "gzip",
+      "sha256": "1aff5ad9eea8b0d92c8a8ce11512c1419f6c6a00475c0b1cb0086d94af330392",
+      "bytes": 3577056,
+      "storedSha256": "25f589d93238a052557de4c28e7e785eae49fdd04274ffc35960dbce50039faa"
+    },
+    {
+      "source": "docs/experiments/opportunity-validation-v2.audit.json.gz",
+      "destination": "docs/experiments/opportunity-validation-v2.audit.json",
+      "encoding": "gzip",
+      "sha256": "ddbfe1c3955fc862721027e66926be96fd4799346f16cef9483f3f5b479510f9",
+      "bytes": 77331186,
+      "storedSha256": "ff3d85a412ebe44be80267ec740c9de1b6b7abd494c28cdc5dbd94a690721efa"
+    },
+    {
+      "source": "docs/experiments/opportunity-validation-v2.results.json.gz",
+      "destination": "docs/experiments/opportunity-validation-v2.results.json",
+      "encoding": "gzip",
+      "sha256": "f74e366e003d30897608b4f6a1aac5932f109777652fb2bbf728e71df9a400de",
+      "bytes": 65822190,
+      "storedSha256": "9de12122e4e26fb6afacb58169695d1a2e5f955e86e894e36b5efbb757d03cd7"
+    },
+    {
+      "source": "docs/experiments/research-program-v1-view-2.json.gz",
+      "destination": "docs/experiments/research-program-v1-view-2.json",
+      "encoding": "gzip",
+      "sha256": "6e2b503a3cecac5bf127b5f5efa994ece7aa2854625b3e853bbe5fbbbc9c6da0",
+      "bytes": 1574764,
+      "storedSha256": "12725866153f6aa8e8e154f64e41e5db5bd10eb544b7352ef31d245ff595990c"
+    },
+    {
+      "source": "docs/experiments/research-program-v1-view.json.gz",
+      "destination": "docs/experiments/research-program-v1-view.json",
+      "encoding": "gzip",
+      "sha256": "6e2b503a3cecac5bf127b5f5efa994ece7aa2854625b3e853bbe5fbbbc9c6da0",
+      "bytes": 1574764,
+      "storedSha256": "12725866153f6aa8e8e154f64e41e5db5bd10eb544b7352ef31d245ff595990c"
+    },
+    {
+      "source": "docs/experiments/retention-v1.results.json.gz",
+      "destination": "docs/experiments/retention-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "23e4e55f9ff8dd0320d215956c5f1ded9d2cde49f8f922739585afea85b3d7c6",
+      "bytes": 54624910,
+      "storedSha256": "2c9cc920439577d0afda25c5de1a1672765a074b1294f71f8241071f2b8983fb"
+    },
+    {
+      "source": "docs/experiments/return-memory-v1.results.json.gz",
+      "destination": "docs/experiments/return-memory-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "040efa7023043aacb44fa9a19da70225655abbe4b6de7e1e68266d32b6245c15",
+      "bytes": 20229951,
+      "storedSha256": "a8651bf36b197c5468a4f8db4ffcdd943f34a631775091d61708fb38ca61a74a"
+    },
+    {
+      "source": "docs/experiments/reward-attribution-v1.results.json.gz",
+      "destination": "docs/experiments/reward-attribution-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "a5260640989757d8a9783735f4ef8d47bf6aaa0f176d8e935d6568dfeb5e8c6a",
+      "bytes": 15972341,
+      "storedSha256": "fed7f50e2a5ca4998046e4f9c22e66fc910b1362950e83d331ea9683e8ae8872"
+    },
+    {
+      "source": "docs/experiments/scenario-transfer-v1.results.json.gz",
+      "destination": "docs/experiments/scenario-transfer-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "a71f7552728bb14b6af10ff07c0b09e501b10f41a21144f23438d94f66ad48c2",
+      "bytes": 33697816,
+      "storedSha256": "993e45906d0dbe542a9eb88f6e8f2e5eb4d15965239895e8ea394110c3f56888"
+    },
+    {
+      "source": "docs/experiments/situational-memory-v1.results.json.gz",
+      "destination": "docs/experiments/situational-memory-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "b350971f439b5d6c6e6b1295e127b0741beb4313d4875d151cdcff2a373de172",
+      "bytes": 21920228,
+      "storedSha256": "72756456827dde6878a0f18c3a40f5270c7d4db91f3aa190bb90f0d326cd778a"
+    },
+    {
+      "source": "docs/experiments/switch-boundary-v1.results.json.gz",
+      "destination": "docs/experiments/switch-boundary-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "bae4874ef3b5c312d88f5b4da3fc445836c3759b2cd3d592afa2ed46e76c04c7",
+      "bytes": 6978559,
+      "storedSha256": "26a1f6b82bd36fb1260295bd943dce45b38fe0e692d0bbecd67fd50291ddf309"
+    },
+    {
+      "source": "docs/experiments/synthetic-population-v1.results.json.gz",
+      "destination": "docs/experiments/synthetic-population-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "41a49e92847c22c1ba696e40cf71075247da5f33175eb80ca07edd5fbb319a3e",
+      "bytes": 30939319,
+      "storedSha256": "c42a2608bac63c7dda2adbc60ad79bfa84faedb6dadeac088c23983fb48a628d"
+    },
+    {
+      "source": "docs/experiments/team-coordination-v1.results.json.gz",
+      "destination": "docs/experiments/team-coordination-v1.results.json",
+      "encoding": "gzip",
+      "sha256": "a11d9b8da6bb86b58a7bafb4c2e1429315789c2cf870b5b2ad0fd5dca71553dd",
+      "bytes": 59762790,
+      "storedSha256": "e28b921671d832bde6f033e17c2f782f9078c465347ca0b306457178f87950cc"
+    },
+    {
+      "source": "publication/inputs/arena/art/relay-field.webp",
+      "destination": "apps/arena/dist/art/relay-field.webp",
+      "encoding": "identity",
+      "sha256": "c3652b814906095bf331f03c1932f887b2706c1f32cbc4ef0d82fcce7d605661",
+      "bytes": 531486,
+      "storedSha256": "c3652b814906095bf331f03c1932f887b2706c1f32cbc4ef0d82fcce7d605661"
+    },
+    {
+      "source": "publication/inputs/arena/art/relay-field.webp.json",
+      "destination": "apps/arena/dist/art/relay-field.webp.json",
+      "encoding": "identity",
+      "sha256": "67cbedc7a3905cc68ba9e02d2b4a5c2a4d5abc47bf87b9c422aaea349f502b77",
+      "bytes": 1492,
+      "storedSha256": "67cbedc7a3905cc68ba9e02d2b4a5c2a4d5abc47bf87b9c422aaea349f502b77"
+    },
+    {
+      "source": "publication/inputs/arena/assets/arena-kQxARVuG.js",
+      "destination": "apps/arena/dist/assets/arena-kQxARVuG.js",
+      "encoding": "identity",
+      "sha256": "6fb1acebb42db520fd62dac1efa39aecc74d642127066fefc281d4ded5d7ef22",
+      "bytes": 27395,
+      "storedSha256": "6fb1acebb42db520fd62dac1efa39aecc74d642127066fefc281d4ded5d7ef22"
+    },
+    {
+      "source": "publication/inputs/arena/assets/policy-C8FUG7QJ.js",
+      "destination": "apps/arena/dist/assets/policy-C8FUG7QJ.js",
+      "encoding": "identity",
+      "sha256": "18056479f61b4be5ababf7ba29834e3b35a9c1b061a96d7a0fbe3af293ebfaa9",
+      "bytes": 19143,
+      "storedSha256": "18056479f61b4be5ababf7ba29834e3b35a9c1b061a96d7a0fbe3af293ebfaa9"
+    },
+    {
+      "source": "publication/inputs/arena/assets/policy-CSTQe5ov.css",
+      "destination": "apps/arena/dist/assets/policy-CSTQe5ov.css",
+      "encoding": "identity",
+      "sha256": "765ef7faef8778df6723ef8d3016cbf5be9ba87b8ab23e0c15a8d9be65df00ad",
+      "bytes": 20235,
+      "storedSha256": "765ef7faef8778df6723ef8d3016cbf5be9ba87b8ab23e0c15a8d9be65df00ad"
+    },
+    {
+      "source": "publication/inputs/arena/assets/study-BA9KFYb3.css",
+      "destination": "apps/arena/dist/assets/study-BA9KFYb3.css",
+      "encoding": "identity",
+      "sha256": "412c9f53fbd78945ff672ece4e4155936223d4d64858e7c19a813dae52bf0b83",
+      "bytes": 2379,
+      "storedSha256": "412c9f53fbd78945ff672ece4e4155936223d4d64858e7c19a813dae52bf0b83"
+    },
+    {
+      "source": "publication/inputs/arena/assets/study-BRONrkYz.js",
+      "destination": "apps/arena/dist/assets/study-BRONrkYz.js",
+      "encoding": "identity",
+      "sha256": "dd412fd5d3aea47d3f243128507ec8545575f97847d366508a88deeaa9c1c194",
+      "bytes": 19412,
+      "storedSha256": "dd412fd5d3aea47d3f243128507ec8545575f97847d366508a88deeaa9c1c194"
+    },
+    {
+      "source": "publication/inputs/arena/build-manifest.json",
+      "destination": "apps/arena/dist/build-manifest.json",
+      "encoding": "identity",
+      "sha256": "bcf13aec29d50d198309eb40f901c13c80ff9846d3012059a2ac750912928839",
+      "bytes": 1907,
+      "storedSha256": "bcf13aec29d50d198309eb40f901c13c80ff9846d3012059a2ac750912928839"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/Barlow-LICENSE.txt",
+      "destination": "apps/arena/dist/fonts/Barlow-LICENSE.txt",
+      "encoding": "identity",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "bytes": 4377,
+      "storedSha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/Kalam-LICENSE.txt",
+      "destination": "apps/arena/dist/fonts/Kalam-LICENSE.txt",
+      "encoding": "identity",
+      "sha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f",
+      "bytes": 4373,
+      "storedSha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/SourceSans-LICENSE.txt",
+      "destination": "apps/arena/dist/fonts/SourceSans-LICENSE.txt",
+      "encoding": "identity",
+      "sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "bytes": 4579,
+      "storedSha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/barlow-condensed-700.ttf",
+      "destination": "apps/arena/dist/fonts/barlow-condensed-700.ttf",
+      "encoding": "identity",
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "bytes": 87120,
+      "storedSha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/kalam-400.ttf",
+      "destination": "apps/arena/dist/fonts/kalam-400.ttf",
+      "encoding": "identity",
+      "sha256": "f20e9de66ca054e1d1376b3c811d2240b1b5ef831474bda9fbbaf28d67e67902",
+      "bytes": 426488,
+      "storedSha256": "f20e9de66ca054e1d1376b3c811d2240b1b5ef831474bda9fbbaf28d67e67902"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/source-sans-3-400.ttf",
+      "destination": "apps/arena/dist/fonts/source-sans-3-400.ttf",
+      "encoding": "identity",
+      "sha256": "20ab9752bd19a373dba627393b6c142e6cf8fc2f219119a8e0cb1442ef679ec5",
+      "bytes": 234708,
+      "storedSha256": "20ab9752bd19a373dba627393b6c142e6cf8fc2f219119a8e0cb1442ef679ec5"
+    },
+    {
+      "source": "publication/inputs/arena/fonts/source-sans-3-600.ttf",
+      "destination": "apps/arena/dist/fonts/source-sans-3-600.ttf",
+      "encoding": "identity",
+      "sha256": "950e66c48e5e60c9407421d0fa601047176f17e0d22a598bbd084dde45a98be2",
+      "bytes": 234680,
+      "storedSha256": "950e66c48e5e60c9407421d0fa601047176f17e0d22a598bbd084dde45a98be2"
+    },
+    {
+      "source": "publication/inputs/arena/index.html",
+      "destination": "apps/arena/dist/index.html",
+      "encoding": "identity",
+      "sha256": "d5db453bebc7e79640e868763dda060f2e7b99560d345c0ed14e9d209e084350",
+      "bytes": 501,
+      "storedSha256": "d5db453bebc7e79640e868763dda060f2e7b99560d345c0ed14e9d209e084350"
+    },
+    {
+      "source": "publication/inputs/arena/study.html",
+      "destination": "apps/arena/dist/study.html",
+      "encoding": "identity",
+      "sha256": "3f7f1e222f118e83ef8aaff244a0cfc851191f941e13dc6670104b65f8ac6a7c",
+      "bytes": 566,
+      "storedSha256": "3f7f1e222f118e83ef8aaff244a0cfc851191f941e13dc6670104b65f8ac6a7c"
+    },
+    {
+      "source": "publication/inputs/arena/wasm/tactical_air.d.ts",
+      "destination": "apps/arena/dist/wasm/tactical_air.d.ts",
+      "encoding": "identity",
+      "sha256": "b6d06279f2fcbca496118482ab73bb22956e32f3b9ce1f0e1f70169172719db0",
+      "bytes": 2063,
+      "storedSha256": "b6d06279f2fcbca496118482ab73bb22956e32f3b9ce1f0e1f70169172719db0"
+    },
+    {
+      "source": "publication/inputs/arena/wasm/tactical_air.js",
+      "destination": "apps/arena/dist/wasm/tactical_air.js",
+      "encoding": "identity",
+      "sha256": "d56bd1b5597d7bc5eb8834bd029eb4cad5f4a7f0db4e9bea8ce6bc75aa32c56e",
+      "bytes": 8599,
+      "storedSha256": "d56bd1b5597d7bc5eb8834bd029eb4cad5f4a7f0db4e9bea8ce6bc75aa32c56e"
+    },
+    {
+      "source": "publication/inputs/arena/wasm/tactical_air_bg.wasm",
+      "destination": "apps/arena/dist/wasm/tactical_air_bg.wasm",
+      "encoding": "identity",
+      "sha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92",
+      "bytes": 340591,
+      "storedSha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92"
+    },
+    {
+      "source": "publication/inputs/arena/wasm/tactical_air_bg.wasm.d.ts",
+      "destination": "apps/arena/dist/wasm/tactical_air_bg.wasm.d.ts",
+      "encoding": "identity",
+      "sha256": "a848cc498ede2729495ca0706811095f02e32215fae5942f32839a5fa8bd7ece",
+      "bytes": 719,
+      "storedSha256": "a848cc498ede2729495ca0706811095f02e32215fae5942f32839a5fa8bd7ece"
+    },
+    {
+      "source": "publication/inputs/releases/SHA256SUMS",
+      "destination": "target/releases/SHA256SUMS",
+      "encoding": "identity",
+      "sha256": "d55b788e6634e97232b0e3a9d07a0fee2441ea57f65e0e163b87c52385b3b518",
+      "bytes": 400,
+      "storedSha256": "d55b788e6634e97232b0e3a9d07a0fee2441ea57f65e0e163b87c52385b3b518"
+    },
+    {
+      "source": "publication/inputs/releases/release.json",
+      "destination": "target/releases/release.json",
+      "encoding": "identity",
+      "sha256": "92190841d6137d3d3cce18a2a730afb7ff9cf4941005f5273e45a2ebdb5196d2",
+      "bytes": 947,
+      "storedSha256": "92190841d6137d3d3cce18a2a730afb7ff9cf4941005f5273e45a2ebdb5196d2"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-browser-0.3.0.tar.gz",
+      "destination": "target/releases/tactical-air-browser-0.3.0.tar.gz",
+      "encoding": "identity",
+      "sha256": "9606849f54296e67852479285b8dc226f426c73fcc4790f471a71aad383bb244",
+      "bytes": 120597,
+      "storedSha256": "9606849f54296e67852479285b8dc226f426c73fcc4790f471a71aad383bb244"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-browser-0.3.0.tgz",
+      "destination": "target/releases/tactical-air-browser-0.3.0.tgz",
+      "encoding": "identity",
+      "sha256": "d79d8a263ff676100c7aed384f97ce8402813e95c62c8e94c5e1407b99cd359b",
+      "bytes": 117362,
+      "storedSha256": "d79d8a263ff676100c7aed384f97ce8402813e95c62c8e94c5e1407b99cd359b"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz",
+      "destination": "target/releases/tactical-air-change-detection-lab-v1.tar.gz",
+      "encoding": "identity",
+      "sha256": "1fec013f0b4154cfa4ef0ad92b81e59f1d1026a22d2cf8c837d09287c09b11f7",
+      "bytes": 20392100,
+      "storedSha256": "1fec013f0b4154cfa4ef0ad92b81e59f1d1026a22d2cf8c837d09287c09b11f7"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz",
+      "destination": "target/releases/tactical-air-conservative-lab-v1.tar.gz",
+      "encoding": "identity",
+      "sha256": "8db3e7d521cac4c7dd797682c22690b71f6b7e4e33d21e8f3506f5ce07c0ae0d",
+      "bytes": 21356795,
+      "storedSha256": "8db3e7d521cac4c7dd797682c22690b71f6b7e4e33d21e8f3506f5ce07c0ae0d"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-macos-arm64-0.3.0.tar.gz",
+      "destination": "target/releases/tactical-air-macos-arm64-0.3.0.tar.gz",
+      "encoding": "identity",
+      "sha256": "f148b438ed4e013f47bfc1e3b32d0e4deaaeb93faed533fedf551979c4bbdb1a",
+      "bytes": 7134492,
+      "storedSha256": "f148b438ed4e013f47bfc1e3b32d0e4deaaeb93faed533fedf551979c4bbdb1a"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz",
+      "destination": "target/releases/tactical-air-opportunity-lab-v2.tar.gz",
+      "encoding": "identity",
+      "sha256": "fe78c2ff42e5a78d7dd73c87a959e67d899d5b26ceed401bf8b97e3699fafdc6",
+      "bytes": 9649694,
+      "storedSha256": "fe78c2ff42e5a78d7dd73c87a959e67d899d5b26ceed401bf8b97e3699fafdc6"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz",
+      "destination": "target/releases/tactical-air-research-lab-v1-r2.tar.gz",
+      "encoding": "identity",
+      "sha256": "59dc5a98375a5a82cf37f35e6b37787aee082761bc44888f8d5f26a78cafbdf3",
+      "bytes": 14525684,
+      "storedSha256": "59dc5a98375a5a82cf37f35e6b37787aee082761bc44888f8d5f26a78cafbdf3"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz",
+      "destination": "target/releases/tactical-air-research-lab-v1.tar.gz",
+      "encoding": "identity",
+      "sha256": "a353c37755cd78965e121ed3fc2fdc6fbc42d51d6f21d0acb5d2d8e4da2a17d0",
+      "bytes": 14525697,
+      "storedSha256": "a353c37755cd78965e121ed3fc2fdc6fbc42d51d6f21d0acb5d2d8e4da2a17d0"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz",
+      "destination": "target/releases/tactical-air-retention-lab-v1.tar.gz",
+      "encoding": "identity",
+      "sha256": "53e8c1076f9600aff23807e414d70060765677ad84ba1e7669265f0c2db31487",
+      "bytes": 8735175,
+      "storedSha256": "53e8c1076f9600aff23807e414d70060765677ad84ba1e7669265f0c2db31487"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz",
+      "destination": "target/releases/tactical-air-source-0.3.0.tar.gz",
+      "encoding": "identity",
+      "sha256": "e1005fee44a1ee25a4bcacc1d8ce1f0c16779165b1d843b5b146b8fa36df4fee",
+      "bytes": 17900836,
+      "storedSha256": "e1005fee44a1ee25a4bcacc1d8ce1f0c16779165b1d843b5b146b8fa36df4fee"
+    },
+    {
+      "source": "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz",
+      "destination": "target/releases/tactical-air-synthetic-lab-v1.tar.gz",
+      "encoding": "identity",
+      "sha256": "cebe4cab307de5cf98116bfa678dc714d65b397232d0fa3191268b9b72fe4aef",
+      "bytes": 4341147,
+      "storedSha256": "cebe4cab307de5cf98116bfa678dc714d65b397232d0fa3191268b9b72fe4aef"
+    },
+    {
+      "source": "publication/inputs/sdk/index.d.ts",
+      "destination": "packages/browser/dist/index.d.ts",
+      "encoding": "identity",
+      "sha256": "2e49d52a3df77ef68d9ddd68d6b58406068fa9d1e3fe93b84c26873ad02f53d0",
+      "bytes": 2100,
+      "storedSha256": "2e49d52a3df77ef68d9ddd68d6b58406068fa9d1e3fe93b84c26873ad02f53d0"
+    },
+    {
+      "source": "publication/inputs/sdk/index.js",
+      "destination": "packages/browser/dist/index.js",
+      "encoding": "identity",
+      "sha256": "1ddc48c60f3375d94005c9831be13112689ad62bb4af42524c142ac6db5d122d",
+      "bytes": 1713,
+      "storedSha256": "1ddc48c60f3375d94005c9831be13112689ad62bb4af42524c142ac6db5d122d"
+    },
+    {
+      "source": "publication/inputs/wasm/tactical_air.d.ts",
+      "destination": "apps/arena/public/wasm/tactical_air.d.ts",
+      "encoding": "identity",
+      "sha256": "b6d06279f2fcbca496118482ab73bb22956e32f3b9ce1f0e1f70169172719db0",
+      "bytes": 2063,
+      "storedSha256": "b6d06279f2fcbca496118482ab73bb22956e32f3b9ce1f0e1f70169172719db0"
+    },
+    {
+      "source": "publication/inputs/wasm/tactical_air.js",
+      "destination": "apps/arena/public/wasm/tactical_air.js",
+      "encoding": "identity",
+      "sha256": "d56bd1b5597d7bc5eb8834bd029eb4cad5f4a7f0db4e9bea8ce6bc75aa32c56e",
+      "bytes": 8599,
+      "storedSha256": "d56bd1b5597d7bc5eb8834bd029eb4cad5f4a7f0db4e9bea8ce6bc75aa32c56e"
+    },
+    {
+      "source": "publication/inputs/wasm/tactical_air_bg.wasm",
+      "destination": "apps/arena/public/wasm/tactical_air_bg.wasm",
+      "encoding": "identity",
+      "sha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92",
+      "bytes": 340591,
+      "storedSha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92"
+    },
+    {
+      "source": "publication/inputs/wasm/tactical_air_bg.wasm.d.ts",
+      "destination": "apps/arena/public/wasm/tactical_air_bg.wasm.d.ts",
+      "encoding": "identity",
+      "sha256": "a848cc498ede2729495ca0706811095f02e32215fae5942f32839a5fa8bd7ece",
+      "bytes": 719,
+      "storedSha256": "a848cc498ede2729495ca0706811095f02e32215fae5942f32839a5fa8bd7ece"
+    }
+  ]
+}

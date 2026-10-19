@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "change-detection-v1",
+  "status": "Prospective local protocol; sources and protocol hashed before fresh admission. Development uses previously examined action tables. Not public preregistration.",
+  "question": "Can feedback-only change detection and selective forgetting improve individual adaptation without damaging stable performance?",
+  "seeds": [
+    31001,
+    31042,
+    31083,
+    31124,
+    31165,
+    31206,
+    31247,
+    31288,
+    31329,
+    31370,
+    31411,
+    31452,
+    31493,
+    31534,
+    31575,
+    31616
+  ],
+  "development_seeds": [
+    22001,
+    22038,
+    22075,
+    22112
+  ],
+  "groups": [
+    "solo-vanguard",
+    "solo-flanker",
+    "solo-ranger"
+  ],
+  "candidates_per_seed": 32,
+  "training_rounds": 32,
+  "test_rounds": 64,
+  "detector": {
+    "window": 4,
+    "threshold": 0.2,
+    "confirmations": 2
+  },
+  "minimum_qualified_seeds": 12,
+  "minimum_gain": 1,
+  "stable_harm_margin": 0.5,
+  "maximum_false_alarms_per_100": 1,
+  "primary_uncertainty": {
+    "resamples": 24000,
+    "seed": 260031,
+    "interval": 0.9958333333333333
+  },
+  "secondary_uncertainty": {
+    "resamples": 5000,
+    "seed": 260032,
+    "interval": 0.95
+  },
+  "admission": "Unchanged opportunity-v2 admission: enumerate all 32 candidates and both legal tactics in A and B; disjoint optima, >=12 HP and >=0.15 reward separation both directions, all feedback observed. Select first qualified index per role/seed before learning. Keep every rejection; no replacement seed.",
+  "schedules": "Shared 32-encounter warmup from stationary 90% A / 10% B. All arms fork identical memory, counters and RNG. Each test history is 64 encounters: abrupt changes to 90% B; gradual ramps B probability from 10% to 90% over first 32, then stays; recurring is 90% B for 32 then 90% A for 32; stable remains 90% A for all 64. Bernoulli draws keyed by seed, role, history and round and shared by arms. Drift means changing encounter mixture, not continuously morphing movement within a fight.",
+  "arms": "Retained online; exact warmup-frozen; detector resetting both action cells in detected role/context; detector resetting only detected action cell; signaled reset of all solo cells before an offline expected-damage optimum changes. Ties keep the previous optimal action. Signaled timing uses the true mixture and full action tables and is a privileged reference, not an achievable ceiling.",
+  "detector_rule": "After commit, compare four older with four newer observed rewards for that action. Two consecutive same-direction differences with magnitude >=0.2 trigger. Observation gaps do not fill buffers. Keep newer four after alarm, reset streak; maximum eight rewards and two scalars per configured action. Warmup fills buffers but does not arm interventions. Reset scores and sample counts to zero only; preserve all other snapshot fields. Changes affect only subsequent decisions. No strategy labels, schedule, future reward, or oracle enter this detector.",
+  "primary": "Six role-by-detector comparisons: mean damage difference against retained online, equally averaging all 64 rounds in each of the three changing histories within each seed. Advancement requires >=12 qualified seeds, >=1 HP mean gain, adjusted lower CI >0, adjusted stable-history lower CI >-0.5 HP, and <=1 observed false alarm per 100 stable fights. Twelve bootstrap intervals (six gains and six noninferiority checks) use nominal 99.5833% coverage, Bonferroni 0.05/12. This is an approximate small-sample engineering screen. Stable alarm cap is a descriptive gate, not a population rate confidence bound. All other comparisons exploratory. No production promotion.",
+  "detection": "An event starts at test round 1 for abrupt/gradual, and at 1 and 33 for recurrence. First autonomous alarm in each event window is an operational detection; count all missed windows and all later alarms. Delay counts completed encounters, earliest 1. Misses right-censored at window length and encoded length+1 only for restricted-check summaries. An alarm in a window does not prove it was caused by the distribution change. Every stable-history alarm is false relative to the stationary distribution, including B outliers. Record all alarms, not just first.",
+  "recovery": {
+    "threshold": 0.35,
+    "consecutive": 3,
+    "definition": "At each offline expected-damage-optimum crossover, measure first ending round of three consecutive pre-choice distributions with expected regret <=35% of current distribution best-worst gap. Expected regret integrates both true A/B mixture and actual action probabilities. Ties have zero regret. Report initially displaced separately, right-censor at next crossover/end; encode horizon+1 for restricted checks, never discard misses. Secondary measure; criterion can already hold before learning."
+  },
+  "regret": "Realized regret uses best legal action in the realized A/B state minus actual damage. Distribution expected regret instead integrates both state mixture and action distribution; it compares with the best action before the latent state is known. These oracles are different and used offline only. Mean damage differences against identical schedules equal differences in realized regret.",
+  "scope": "Fresh parameter/world seeds for familiar authored controllers; deliberately action-sensitive pairs. Stochastic ordering of two deterministic conditional worlds creates stationary outcome noise. This is not human behavior, arbitrary maps, new behavior families, team coordination, or continuous within-fight adaptation. Eight reward slots per action is a heuristic engineering detector, not a calibrated statistical change-point test. Formal trials execute actual archived Rust/Wasm choices and archived combat physics; development may reuse validated outcome tables and is labeled separately.",
+  "demonstration": {
+    "seed": 31001,
+    "selection": "First reserved seed, first qualifying index per role; show absence if none. All arms and histories available. Initial displayed test round 8, irrespective of result."
+  },
+  "development_policy": "One declared detector rule, no parameter sweep. Development on first qualified previously examined cases in four listed seeds. Preserve all cached-policy outcomes and sources; do not count cached rewards as new physical encounters. Fix correctness defects before freezing. Reserved outcomes do not authorize retuning this version."
+}

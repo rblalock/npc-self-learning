@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "verifiedAt": "2026-10-18T20:48:34.509Z",
+  "version": "0.3.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "artifacts": [
+    {
+      "name": "tactical-air-browser-0.3.0.tar.gz",
+      "bytes": 120597,
+      "sha256": "9606849f54296e67852479285b8dc226f426c73fcc4790f471a71aad383bb244"
+    },
+    {
+      "name": "tactical-air-source-0.3.0.tar.gz",
+      "bytes": 17900836,
+      "sha256": "e1005fee44a1ee25a4bcacc1d8ce1f0c16779165b1d843b5b146b8fa36df4fee"
+    },
+    {
+      "name": "tactical-air-browser-0.3.0.tgz",
+      "bytes": 117362,
+      "sha256": "d79d8a263ff676100c7aed384f97ce8402813e95c62c8e94c5e1407b99cd359b"
+    },
+    {
+      "name": "tactical-air-macos-arm64-0.3.0.tar.gz",
+      "bytes": 7134492,
+      "sha256": "f148b438ed4e013f47bfc1e3b32d0e4deaaeb93faed533fedf551979c4bbdb1a"
+    }
+  ],
+  "checks": [
+    {
+      "name": "clean Rust host with save/replay",
+      "passed": true
+    },
+    {
+      "name": "clean npm dependency install",
+      "passed": true
+    },
+    {
+      "name": "production build from extracted source",
+      "passed": true
+    },
+    {
+      "name": "actual arena and study tests from extracted source",
+      "passed": true
+    },
+    {
+      "name": "install downloadable npm tarball",
+      "passed": true
+    },
+    {
+      "name": "independent installed npm consumer through real Wasm",
+      "passed": true
+    },
+    {
+      "name": "compile caller against extracted native release",
+      "passed": true
+    },
+    {
+      "name": "execute extracted native release",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Uses locally installed toolchains and dependency caches; not a fresh OS image.",
+    "Browser visual/interaction QA is recorded separately."
+  ]
+}

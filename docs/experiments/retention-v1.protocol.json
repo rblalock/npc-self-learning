@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "retention-v1",
+  "status": "Locally specified before candidate performance measurement. Known regression fixtures disclosed; fresh families reserved until one locked run. Not public preregistration.",
+  "question": "Does removing automatic score decay improve adaptation without losing reversal/return performance?",
+  "motivation": "The exact switch control finds +2.04 HP [0.33,3.83] after diverse pretraining, below the practical 3 HP threshold. A diagnostic identified harmful probability shifts but did not establish decay as their cause.",
+  "variants": [
+    "original",
+    "no-decay"
+  ],
+  "change": "Only POLICY_CONFIG.decay differs: 0.025 versus 0. All rewards, learning rate, exploration, temperature, update cap, representation, seeds and combat abilities are unchanged. Sampled actions still update at learning_rate=0.22; no-decay is not permanent memory.",
+  "legacy_seeds": [
+    7001,
+    7011,
+    7021,
+    7031,
+    7041,
+    7051,
+    7061,
+    7071,
+    7081,
+    7091,
+    7101,
+    7111
+  ],
+  "synthetic_seeds": [
+    6001,
+    6011,
+    6021,
+    6031,
+    6041,
+    6051,
+    6061,
+    6071,
+    6081,
+    6091,
+    6101,
+    6111
+  ],
+  "legacy_training_rounds": 24,
+  "legacy_switch_rounds": 24,
+  "legacy_late_rounds": 8,
+  "training_rounds": 48,
+  "phase_rounds": 12,
+  "late_rounds": 4,
+  "known_cases": [
+    "reverse",
+    "feint",
+    "cover",
+    "bait-switch/staggered-lanes",
+    "bait-switch/offset-islands",
+    "reactive/staggered-lanes",
+    "reactive/offset-islands"
+  ],
+  "fresh_cases": [
+    "burst-patrol/split-gates",
+    "burst-patrol/shelves",
+    "threat-retreat/split-gates",
+    "threat-retreat/shelves"
+  ],
+  "fresh_behaviors": {
+    "burst-patrol": "Navigate a four-point perimeter, stop for the last 35% of each leg interval. Direction switch reverses waypoint order.",
+    "threat-retreat": "Approach visible enemies until close; retreat when visible windups or nearby bullets signal danger, with signed lateral motion. Direction switch reverses lateral motion."
+  },
+  "sensory_constraints": "Same delayed restricted observations, aiming noise, decision cadence and ability bounds as synthetic v1. Public geometry only; no tactic, policy, hidden positions or enemy RNG. Controllers are hand-authored and do not learn.",
+  "branching": "Train each variant separately. For legacy cases fork online/frozen immediately after training. For synthetic cases train diverse for 48, repeat for 12, then fork online/frozen at the exact switch. Continue the online branch, then fork again at the exact return. Each within-variant pair restores the identical snapshot including RNG. Never restore across configurations.",
+  "primary_endpoint": "No-decay online minus original online damage, last four switch rounds, equal average of four fresh cases per seed. Compare algorithms under equal encounter histories; their actual sampled actions and observations may differ.",
+  "gates": {
+    "minimum_gain": 3,
+    "maximum_case_loss": 3,
+    "required": [
+      "Fresh primary gain >=3 HP and paired 95% lower bound >0",
+      "Fresh no-decay switch online-minus-boundary-frozen >=3 HP and lower bound >0",
+      "Known legacy feint candidate-minus-original >=3 HP and lower bound >0",
+      "Known legacy feint candidate learning benefit mean >=0",
+      "No synthetic switch or return case, nor legacy reversal/cover, loses more than 3 HP mean versus original"
+    ],
+    "decision": "All gates must pass for a further validation candidate; passing does not install a production change. Otherwise retain original. No sweep, retuning, extra seeds or early stopping based on outcomes."
+  },
+  "uncertainty": {
+    "resamples": 5000,
+    "seed": 260020,
+    "interval": 0.95,
+    "scope": "Paired percentile bootstrap over 12 seeds per suite; aggregate cases and rounds within seed. These are fixed authored families, not independent draws from all games. Secondary comparisons unadjusted."
+  },
+  "expected_encounters": 16704,
+  "budget": {
+    "legacy": 4032,
+    "synthetic": 12672,
+    "interpretation": "Equal encounter histories per variant; record actual simulation steps and process CPU. No fixed-compute efficiency claim."
+  },
+  "secondary": [
+    "Per-case damage, player clear/death rates and duration",
+    "Switch and return online-minus-boundary-frozen effects",
+    "Four-round adaptation curves",
+    "All choices, rewards, checkpoints, input fingerprints and geometry rejection records"
+  ],
+  "limits": [
+    "Neither decay nor lack of decay repairs missing joint-role credit or adds route memory.",
+    "Fresh behaviors/maps form a small prospective screen and become known regression fixtures after this run.",
+    "Direction changes are scripted, bots do not model or learn the enemy, and no human enjoyment is measured.",
+    "Reward, representation and runtime remain unchanged. No fixed-policy superiority claim is tested here.",
+    "Original and candidate are separately trained: the primary effect covers the complete configured learning history, not just post-switch decay.",
+    "Geometry validity and unit tests may run before the source freeze using non-evaluation seeds; no reserved combat may guide implementation."
+  ],
+  "demonstration": {
+    "suite": "synthetic",
+    "seed": 6001,
+    "case": "burst-patrol/split-gates",
+    "phase": "switch",
+    "round": 12,
+    "selection": "Preselected before any measured candidate outcomes; show all four original/no-decay online/frozen conditions even if uneventful."
+  }
+}

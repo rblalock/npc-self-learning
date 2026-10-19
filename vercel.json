@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run prepare:publication && npm run build:microsite",
+  "outputDirectory": "apps/microsite/dist",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [{"key": "X-Content-Type-Options", "value": "nosniff"}]
+    }
+  ]
+}

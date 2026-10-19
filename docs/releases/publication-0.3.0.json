@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "release": "0.3.0",
+  "url": "https://tactical-air.rblalock723191.chatgpt.site",
+  "access": "public",
+  "projectId": "appgprj_6ad52929943881918062cb39db692298",
+  "versionId": "appgprj_6ad52929943881918062cb39db692298~appgver_b7a412dc94548191a7bf376cba80769b",
+  "versionNumber": 1,
+  "deploymentId": "appgdep_6ad531848b348191a261863b5ab042a9",
+  "status": "succeeded",
+  "sourceCommit": "5531e33d868e2fac64280cc60e43da0c0d773269",
+  "publishedAt": "2026-10-18T20:52:36.939288+00:00",
+  "archiveHash": "sha256:5b84e8c901c18293f2345b8fd85b280cdd3b2c6579ef04598cc3e7972f11c609"
+}

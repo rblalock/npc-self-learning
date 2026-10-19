@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "id": "additive-credit-v1",
+  "specified_at": "2026-10-18T20:18:41.750336+00:00",
+  "status": "Specified before implementing and measuring this candidate. Local development experiment using familiar fixtures and seeds, not public preregistration or held-out validation.",
+  "hypothesis": "Adding a teammate damage bonus without scaling down personal damage credit improves adaptation to feints without harming reversal.",
+  "reference": {
+    "path": "docs/experiments/adaptation-v1.results.json",
+    "sha256": "dfd7a61883df0a22d775341a554a21bff0c974ba8e4272c4f1b71a78618b9101",
+    "reuse": "Reuse all original online/frozen/uniform/fixed traces only after every original source identity passes verification and a complete fresh replay of the first seed exactly matches its recorded trial. Reused encounters are not counted as newly executed.",
+    "replay_seed": 1009
+  },
+  "reward": {
+    "id": "individual-plus-teammates",
+    "team_weight": 0.5,
+    "team_size": 3,
+    "damage_scale": 32,
+    "cost": 0.22,
+    "defeat_cost": 0.18,
+    "formula": "clamp(own_damage / 32 + 0.5 * observed_other_damage / 96 - 0.22 - (own_defeated ? 0.18 : 0), -1, 1)",
+    "team_evidence": "Sum damage from other roles with a legitimate sighting. Own observation gate unchanged. Original personal damage scale, cost, defeat penalty and clamp retained. No player style enters the reward.",
+    "choice": "One additive candidate; same teammate increment as rejected blend, full personal credit retained; no weight sweep."
+  },
+  "seeds": [
+    1009,
+    1013,
+    1019,
+    1021,
+    1031,
+    1033,
+    1039,
+    1049,
+    1051,
+    1061,
+    1063,
+    1069,
+    1087,
+    1091,
+    1093,
+    1097,
+    1103,
+    1109,
+    1117,
+    1123,
+    1129,
+    1151,
+    1153,
+    1163,
+    1171,
+    1181,
+    1187,
+    1193,
+    1201,
+    1213,
+    1217,
+    1223
+  ],
+  "policy_config": {
+    "roles": [
+      {
+        "id": "vanguard",
+        "actions": [
+          "rush",
+          "hold"
+        ]
+      },
+      {
+        "id": "flanker",
+        "actions": [
+          "flank_left",
+          "flank_right"
+        ]
+      },
+      {
+        "id": "ranger",
+        "actions": [
+          "aim",
+          "lead"
+        ]
+      }
+    ],
+    "contexts": [
+      "arena"
+    ],
+    "learning_rate": 0.22,
+    "exploration": 0.16,
+    "temperature": 0.3,
+    "decay": 0.025,
+    "max_update": 0.16
+  },
+  "training_style": "orbit",
+  "training_rounds": 24,
+  "post_switch_rounds": 24,
+  "switches": [
+    "reverse",
+    "feint",
+    "cover"
+  ],
+  "communication": "direct",
+  "windows": {
+    "late_training": [
+      17,
+      24
+    ],
+    "early_switch": [
+      1,
+      4
+    ],
+    "late_switch": [
+      17,
+      24
+    ],
+    "curve_block_size": 4
+  },
+  "uncertainty": {
+    "method": "Paired percentile bootstrap of per-seed mean differences; never resample individual rounds as independent units.",
+    "resamples": 5000,
+    "seed": 260018,
+    "interval": 0.95,
+    "scope": "Intervals describe tactic-sampling variation for these fixed controllers and this one map. They exclude map, player and population variation. Secondary intervals are exploratory and unadjusted for multiple comparisons."
+  },
+  "branching": "Train the candidate from fresh memory for each matched seed. For each movement switch, branch candidate online and frozen from its own exact trained snapshot including RNG. Original and candidate training histories may differ; this measures each rule throughout training and adaptation, not a reward-only intervention on a shared old checkpoint.",
+  "gates": {
+    "feint_vs_original": {
+      "minimum_mean_gain": 3,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "feint_continued_learning": {
+      "minimum_mean_gain": 3,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "reverse_vs_original": {
+      "minimum_mean_gain": -3,
+      "minimum_lower_bound": -3,
+      "strict_lower": false
+    },
+    "reverse_continued_learning": {
+      "minimum_mean_gain": 6,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "cover_damage": {
+      "maximum_absolute_difference": 1
+    },
+    "decision": "Advance only if all five gates pass in late rounds 17-24. Feint gains must be useful and exceed seed noise; reversal tolerates at most 3 HP loss at the interval lower bound. Keep cover as the original negative control. A failed conjunction means do not promote this candidate to the game. No thresholds or candidate weights change after results."
+  },
+  "secondary_metrics": [
+    "Four-round damage curves and early/late windows",
+    "Damage against fixed and uniform baselines",
+    "Player clear/death rates and duration",
+    "Per-role tactic probability changes",
+    "Accepted rewards, own and observed-team damage, defeat state for every feedback"
+  ],
+  "invariants": [
+    "Original v1 evidence and hashed sources remain unchanged",
+    "Only host reward attribution changes; no simulator, stats, weapons, tactics, learner config, controller or observation change",
+    "No player style label is supplied to reward computation or policy",
+    "Candidate feedback and displayed recorded rewards must agree",
+    "Frozen memories are exact; first combat matches within each online/frozen pair",
+    "All seeds, rounds and failures retained; never overwrite evidence"
+  ],
+  "limits": [
+    "Only tactic sampling is seeded; one map and known scripted controllers",
+    "Fixed baseline was selected on orbit/reverse/cover, not fresh held-out scenarios",
+    "Rewards describe effectiveness, not fun; human experience is unmeasured",
+    "Team credit is not a causal contribution estimator; it may dilute individual credit",
+    "Intervals describe policy-seed variation, not people, maps or worlds; secondary analyses exploratory",
+    "A favorable result permits a next playtest decision, not a broad public effectiveness claim"
+  ],
+  "archive": {
+    "id": "baseline-v1",
+    "archive": "docs/experiments/baseline-v1.source.tar.gz",
+    "sha256": "1d2a0b92c30c166394e143c2514004734f494e0263978aaeb57d7ce115cea346",
+    "files": 69,
+    "purpose": "Immutable source, generated Wasm/simulator, and raw evidence for adaptation-v1 and reward-attribution-v1 before the app advances."
+  }
+}

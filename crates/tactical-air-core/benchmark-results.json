@@ -1,0 +1,1706 @@
+{
+  "config_example": {
+    "contexts": [
+      "context_a",
+      "context_b"
+    ],
+    "decay": 0.025,
+    "exploration": 0.16,
+    "learning_rate": 0.22,
+    "max_update": 0.16,
+    "roles": [
+      {
+        "actions": [
+          "choice_a",
+          "choice_b"
+        ],
+        "id": "agent"
+      }
+    ],
+    "seed": 1,
+    "temperature": 0.3
+  },
+  "encounters_per_policy": 600,
+  "environment": "Two alternating contexts; preferred action succeeds with probability 0.8, other action 0.2. Reward is +1/-1. Counterplay reverses rewards at encounter 300. Learners receive only the observed reward.",
+  "kind": "controlled-contextual-bandit-experiment",
+  "scenarios": [
+    {
+      "scenario": "stationary",
+      "windows": [
+        {
+          "adaptive_success_rate": 0.7137499999999999,
+          "baseline_success_rate": 0.49140625,
+          "between_seed_difference_sd": 0.03832783345638411,
+          "end_exclusive": 600,
+          "paired_difference": 0.22234375,
+          "per_seed": [
+            {
+              "adaptive": 0.73,
+              "baseline": 0.46,
+              "seed": 1
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.52,
+              "seed": 2
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 3
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.46,
+              "seed": 4
+            },
+            {
+              "adaptive": 0.65,
+              "baseline": 0.47,
+              "seed": 5
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.51,
+              "seed": 6
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.38,
+              "seed": 7
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.47,
+              "seed": 8
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.51,
+              "seed": 9
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.54,
+              "seed": 10
+            },
+            {
+              "adaptive": 0.81,
+              "baseline": 0.63,
+              "seed": 11
+            },
+            {
+              "adaptive": 0.65,
+              "baseline": 0.45,
+              "seed": 12
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.5,
+              "seed": 13
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.52,
+              "seed": 14
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.45,
+              "seed": 15
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.51,
+              "seed": 16
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.45,
+              "seed": 17
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.48,
+              "seed": 18
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.46,
+              "seed": 19
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.55,
+              "seed": 20
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.47,
+              "seed": 21
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.55,
+              "seed": 22
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.43,
+              "seed": 23
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 24
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.47,
+              "seed": 25
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.52,
+              "seed": 26
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.47,
+              "seed": 27
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.5,
+              "seed": 28
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.48,
+              "seed": 29
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.5,
+              "seed": 30
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.53,
+              "seed": 31
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.55,
+              "seed": 32
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.58,
+              "seed": 33
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.52,
+              "seed": 34
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.47,
+              "seed": 35
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.57,
+              "seed": 36
+            },
+            {
+              "adaptive": 0.79,
+              "baseline": 0.52,
+              "seed": 37
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.44,
+              "seed": 38
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.44,
+              "seed": 39
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.48,
+              "seed": 40
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.43,
+              "seed": 41
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.49,
+              "seed": 42
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.58,
+              "seed": 43
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.49,
+              "seed": 44
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.42,
+              "seed": 45
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.47,
+              "seed": 46
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.43,
+              "seed": 47
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.46,
+              "seed": 48
+            },
+            {
+              "adaptive": 0.64,
+              "baseline": 0.49,
+              "seed": 49
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.44,
+              "seed": 50
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.5,
+              "seed": 51
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.52,
+              "seed": 52
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.53,
+              "seed": 53
+            },
+            {
+              "adaptive": 0.8,
+              "baseline": 0.59,
+              "seed": 54
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.55,
+              "seed": 55
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.45,
+              "seed": 56
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.52,
+              "seed": 57
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.47,
+              "seed": 58
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.42,
+              "seed": 59
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.59,
+              "seed": 60
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.4,
+              "seed": 61
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.42,
+              "seed": 62
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.47,
+              "seed": 63
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 64
+            }
+          ],
+          "seeds_with_negative_difference": 0,
+          "start_inclusive": 500,
+          "window": "settled"
+        }
+      ]
+    },
+    {
+      "scenario": "reversed",
+      "windows": [
+        {
+          "adaptive_success_rate": 0.7120312500000001,
+          "baseline_success_rate": 0.49015625000000007,
+          "between_seed_difference_sd": 0.044574709891425694,
+          "end_exclusive": 600,
+          "paired_difference": 0.22187499999999996,
+          "per_seed": [
+            {
+              "adaptive": 0.73,
+              "baseline": 0.53,
+              "seed": 1
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 2
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.48,
+              "seed": 3
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.45,
+              "seed": 4
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.48,
+              "seed": 5
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.48,
+              "seed": 6
+            },
+            {
+              "adaptive": 0.63,
+              "baseline": 0.48,
+              "seed": 7
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.49,
+              "seed": 8
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.49,
+              "seed": 9
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.51,
+              "seed": 10
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.41,
+              "seed": 11
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.41,
+              "seed": 12
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.45,
+              "seed": 13
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.48,
+              "seed": 14
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.56,
+              "seed": 15
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.45,
+              "seed": 16
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.48,
+              "seed": 17
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.51,
+              "seed": 18
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.56,
+              "seed": 19
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.47,
+              "seed": 20
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.36,
+              "seed": 21
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.47,
+              "seed": 22
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 23
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 24
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.49,
+              "seed": 25
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.51,
+              "seed": 26
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.43,
+              "seed": 27
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 28
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.48,
+              "seed": 29
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.56,
+              "seed": 30
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.47,
+              "seed": 31
+            },
+            {
+              "adaptive": 0.82,
+              "baseline": 0.56,
+              "seed": 32
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.46,
+              "seed": 33
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.46,
+              "seed": 34
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.56,
+              "seed": 35
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.44,
+              "seed": 36
+            },
+            {
+              "adaptive": 0.79,
+              "baseline": 0.5,
+              "seed": 37
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.48,
+              "seed": 38
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.46,
+              "seed": 39
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.45,
+              "seed": 40
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.53,
+              "seed": 41
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.5,
+              "seed": 42
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.52,
+              "seed": 43
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.5,
+              "seed": 44
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.53,
+              "seed": 45
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.53,
+              "seed": 46
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.57,
+              "seed": 47
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 48
+            },
+            {
+              "adaptive": 0.63,
+              "baseline": 0.43,
+              "seed": 49
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.48,
+              "seed": 50
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.54,
+              "seed": 51
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.45,
+              "seed": 52
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.49,
+              "seed": 53
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.49,
+              "seed": 54
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.46,
+              "seed": 55
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 56
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.45,
+              "seed": 57
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.5,
+              "seed": 58
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.53,
+              "seed": 59
+            },
+            {
+              "adaptive": 0.64,
+              "baseline": 0.43,
+              "seed": 60
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.57,
+              "seed": 61
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.56,
+              "seed": 62
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.53,
+              "seed": 63
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.45,
+              "seed": 64
+            }
+          ],
+          "seeds_with_negative_difference": 0,
+          "start_inclusive": 500,
+          "window": "settled"
+        }
+      ]
+    },
+    {
+      "scenario": "counterplay_switch",
+      "windows": [
+        {
+          "adaptive_success_rate": 0.7273437500000002,
+          "baseline_success_rate": 0.50515625,
+          "between_seed_difference_sd": 0.04225653889476847,
+          "end_exclusive": 300,
+          "paired_difference": 0.22218749999999998,
+          "per_seed": [
+            {
+              "adaptive": 0.74,
+              "baseline": 0.55,
+              "seed": 1
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.53,
+              "seed": 2
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.51,
+              "seed": 3
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.49,
+              "seed": 4
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.48,
+              "seed": 5
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.48,
+              "seed": 6
+            },
+            {
+              "adaptive": 0.82,
+              "baseline": 0.61,
+              "seed": 7
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.44,
+              "seed": 8
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.55,
+              "seed": 9
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.53,
+              "seed": 10
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.57,
+              "seed": 11
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.48,
+              "seed": 12
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.53,
+              "seed": 13
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.52,
+              "seed": 14
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.47,
+              "seed": 15
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 16
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.49,
+              "seed": 17
+            },
+            {
+              "adaptive": 0.79,
+              "baseline": 0.58,
+              "seed": 18
+            },
+            {
+              "adaptive": 0.63,
+              "baseline": 0.41,
+              "seed": 19
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.47,
+              "seed": 20
+            },
+            {
+              "adaptive": 0.8,
+              "baseline": 0.53,
+              "seed": 21
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.53,
+              "seed": 22
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.56,
+              "seed": 23
+            },
+            {
+              "adaptive": 0.62,
+              "baseline": 0.49,
+              "seed": 24
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.43,
+              "seed": 25
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.5,
+              "seed": 26
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.52,
+              "seed": 27
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.44,
+              "seed": 28
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.52,
+              "seed": 29
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.49,
+              "seed": 30
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.56,
+              "seed": 31
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.42,
+              "seed": 32
+            },
+            {
+              "adaptive": 0.65,
+              "baseline": 0.51,
+              "seed": 33
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.47,
+              "seed": 34
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.56,
+              "seed": 35
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.51,
+              "seed": 36
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.47,
+              "seed": 37
+            },
+            {
+              "adaptive": 0.78,
+              "baseline": 0.55,
+              "seed": 38
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.51,
+              "seed": 39
+            },
+            {
+              "adaptive": 0.62,
+              "baseline": 0.45,
+              "seed": 40
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.53,
+              "seed": 41
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 42
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.44,
+              "seed": 43
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.4,
+              "seed": 44
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.52,
+              "seed": 45
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.55,
+              "seed": 46
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.49,
+              "seed": 47
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.47,
+              "seed": 48
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.47,
+              "seed": 49
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.54,
+              "seed": 50
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.54,
+              "seed": 51
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.52,
+              "seed": 52
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.55,
+              "seed": 53
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.52,
+              "seed": 54
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.44,
+              "seed": 55
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.53,
+              "seed": 56
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.54,
+              "seed": 57
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.54,
+              "seed": 58
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.54,
+              "seed": 59
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.48,
+              "seed": 60
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.48,
+              "seed": 61
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 62
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.47,
+              "seed": 63
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.55,
+              "seed": 64
+            }
+          ],
+          "seeds_with_negative_difference": 0,
+          "start_inclusive": 200,
+          "window": "before_switch"
+        },
+        {
+          "adaptive_success_rate": 0.4718749999999998,
+          "baseline_success_rate": 0.4973958333333333,
+          "between_seed_difference_sd": 0.0726767595291739,
+          "end_exclusive": 330,
+          "paired_difference": -0.02552083333333334,
+          "per_seed": [
+            {
+              "adaptive": 0.6,
+              "baseline": 0.6333333333333333,
+              "seed": 1
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.5666666666666667,
+              "seed": 2
+            },
+            {
+              "adaptive": 0.3333333333333333,
+              "baseline": 0.43333333333333335,
+              "seed": 3
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.5333333333333333,
+              "seed": 4
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.6333333333333333,
+              "seed": 5
+            },
+            {
+              "adaptive": 0.6333333333333333,
+              "baseline": 0.5666666666666667,
+              "seed": 6
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.5,
+              "seed": 7
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.6,
+              "seed": 8
+            },
+            {
+              "adaptive": 0.7666666666666667,
+              "baseline": 0.7,
+              "seed": 9
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.5333333333333333,
+              "seed": 10
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.5666666666666667,
+              "seed": 11
+            },
+            {
+              "adaptive": 0.3333333333333333,
+              "baseline": 0.43333333333333335,
+              "seed": 12
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.3333333333333333,
+              "seed": 13
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.5,
+              "seed": 14
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.4,
+              "seed": 15
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.6333333333333333,
+              "seed": 16
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.5,
+              "seed": 17
+            },
+            {
+              "adaptive": 0.36666666666666664,
+              "baseline": 0.5,
+              "seed": 18
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.5333333333333333,
+              "seed": 19
+            },
+            {
+              "adaptive": 0.36666666666666664,
+              "baseline": 0.43333333333333335,
+              "seed": 20
+            },
+            {
+              "adaptive": 0.36666666666666664,
+              "baseline": 0.3333333333333333,
+              "seed": 21
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.5666666666666667,
+              "seed": 22
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.4666666666666667,
+              "seed": 23
+            },
+            {
+              "adaptive": 0.6333333333333333,
+              "baseline": 0.5666666666666667,
+              "seed": 24
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.36666666666666664,
+              "seed": 25
+            },
+            {
+              "adaptive": 0.3333333333333333,
+              "baseline": 0.3,
+              "seed": 26
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.6333333333333333,
+              "seed": 27
+            },
+            {
+              "adaptive": 0.2,
+              "baseline": 0.23333333333333334,
+              "seed": 28
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.3,
+              "seed": 29
+            },
+            {
+              "adaptive": 0.6333333333333333,
+              "baseline": 0.5666666666666667,
+              "seed": 30
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.5333333333333333,
+              "seed": 31
+            },
+            {
+              "adaptive": 0.5666666666666667,
+              "baseline": 0.6,
+              "seed": 32
+            },
+            {
+              "adaptive": 0.5666666666666667,
+              "baseline": 0.5,
+              "seed": 33
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.5,
+              "seed": 34
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.4666666666666667,
+              "seed": 35
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.5,
+              "seed": 36
+            },
+            {
+              "adaptive": 0.5333333333333333,
+              "baseline": 0.5333333333333333,
+              "seed": 37
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.5666666666666667,
+              "seed": 38
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.5,
+              "seed": 39
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.4666666666666667,
+              "seed": 40
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.5666666666666667,
+              "seed": 41
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.4,
+              "seed": 42
+            },
+            {
+              "adaptive": 0.6333333333333333,
+              "baseline": 0.7,
+              "seed": 43
+            },
+            {
+              "adaptive": 0.3,
+              "baseline": 0.3,
+              "seed": 44
+            },
+            {
+              "adaptive": 0.36666666666666664,
+              "baseline": 0.26666666666666666,
+              "seed": 45
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.5333333333333333,
+              "seed": 46
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.5,
+              "seed": 47
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.4666666666666667,
+              "seed": 48
+            },
+            {
+              "adaptive": 0.3333333333333333,
+              "baseline": 0.4666666666666667,
+              "seed": 49
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.4666666666666667,
+              "seed": 50
+            },
+            {
+              "adaptive": 0.3,
+              "baseline": 0.3,
+              "seed": 51
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.7,
+              "seed": 52
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.5333333333333333,
+              "seed": 53
+            },
+            {
+              "adaptive": 0.5666666666666667,
+              "baseline": 0.5333333333333333,
+              "seed": 54
+            },
+            {
+              "adaptive": 0.3333333333333333,
+              "baseline": 0.5,
+              "seed": 55
+            },
+            {
+              "adaptive": 0.5666666666666667,
+              "baseline": 0.6,
+              "seed": 56
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.4666666666666667,
+              "seed": 57
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.5333333333333333,
+              "seed": 58
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.43333333333333335,
+              "seed": 59
+            },
+            {
+              "adaptive": 0.4,
+              "baseline": 0.43333333333333335,
+              "seed": 60
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.5,
+              "seed": 61
+            },
+            {
+              "adaptive": 0.4666666666666667,
+              "baseline": 0.5666666666666667,
+              "seed": 62
+            },
+            {
+              "adaptive": 0.5,
+              "baseline": 0.6,
+              "seed": 63
+            },
+            {
+              "adaptive": 0.43333333333333335,
+              "baseline": 0.43333333333333335,
+              "seed": 64
+            }
+          ],
+          "seeds_with_negative_difference": 37,
+          "start_inclusive": 300,
+          "window": "immediately_after_switch"
+        },
+        {
+          "adaptive_success_rate": 0.7118750000000001,
+          "baseline_success_rate": 0.49015625000000007,
+          "between_seed_difference_sd": 0.04484734911031223,
+          "end_exclusive": 600,
+          "paired_difference": 0.22171874999999994,
+          "per_seed": [
+            {
+              "adaptive": 0.73,
+              "baseline": 0.53,
+              "seed": 1
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 2
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.48,
+              "seed": 3
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.45,
+              "seed": 4
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.48,
+              "seed": 5
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.48,
+              "seed": 6
+            },
+            {
+              "adaptive": 0.62,
+              "baseline": 0.48,
+              "seed": 7
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.49,
+              "seed": 8
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.49,
+              "seed": 9
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.51,
+              "seed": 10
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.41,
+              "seed": 11
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.41,
+              "seed": 12
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.45,
+              "seed": 13
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.48,
+              "seed": 14
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.56,
+              "seed": 15
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.45,
+              "seed": 16
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.48,
+              "seed": 17
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.51,
+              "seed": 18
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.56,
+              "seed": 19
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.47,
+              "seed": 20
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.36,
+              "seed": 21
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.47,
+              "seed": 22
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 23
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 24
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.49,
+              "seed": 25
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.51,
+              "seed": 26
+            },
+            {
+              "adaptive": 0.7,
+              "baseline": 0.43,
+              "seed": 27
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.51,
+              "seed": 28
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.48,
+              "seed": 29
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.56,
+              "seed": 30
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.47,
+              "seed": 31
+            },
+            {
+              "adaptive": 0.82,
+              "baseline": 0.56,
+              "seed": 32
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.46,
+              "seed": 33
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.46,
+              "seed": 34
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.56,
+              "seed": 35
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.44,
+              "seed": 36
+            },
+            {
+              "adaptive": 0.79,
+              "baseline": 0.5,
+              "seed": 37
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.48,
+              "seed": 38
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.46,
+              "seed": 39
+            },
+            {
+              "adaptive": 0.66,
+              "baseline": 0.45,
+              "seed": 40
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.53,
+              "seed": 41
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.5,
+              "seed": 42
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.52,
+              "seed": 43
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.5,
+              "seed": 44
+            },
+            {
+              "adaptive": 0.72,
+              "baseline": 0.53,
+              "seed": 45
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.53,
+              "seed": 46
+            },
+            {
+              "adaptive": 0.74,
+              "baseline": 0.57,
+              "seed": 47
+            },
+            {
+              "adaptive": 0.67,
+              "baseline": 0.51,
+              "seed": 48
+            },
+            {
+              "adaptive": 0.63,
+              "baseline": 0.43,
+              "seed": 49
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.48,
+              "seed": 50
+            },
+            {
+              "adaptive": 0.76,
+              "baseline": 0.54,
+              "seed": 51
+            },
+            {
+              "adaptive": 0.6,
+              "baseline": 0.45,
+              "seed": 52
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.49,
+              "seed": 53
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.49,
+              "seed": 54
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.46,
+              "seed": 55
+            },
+            {
+              "adaptive": 0.73,
+              "baseline": 0.49,
+              "seed": 56
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.45,
+              "seed": 57
+            },
+            {
+              "adaptive": 0.77,
+              "baseline": 0.5,
+              "seed": 58
+            },
+            {
+              "adaptive": 0.71,
+              "baseline": 0.53,
+              "seed": 59
+            },
+            {
+              "adaptive": 0.64,
+              "baseline": 0.43,
+              "seed": 60
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.57,
+              "seed": 61
+            },
+            {
+              "adaptive": 0.75,
+              "baseline": 0.56,
+              "seed": 62
+            },
+            {
+              "adaptive": 0.69,
+              "baseline": 0.53,
+              "seed": 63
+            },
+            {
+              "adaptive": 0.68,
+              "baseline": 0.45,
+              "seed": 64
+            }
+          ],
+          "seeds_with_negative_difference": 0,
+          "start_inclusive": 500,
+          "window": "settled_after_switch"
+        }
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "Paired synthetic stochastic rewards validate learning and counterplay response. This does not measure real combat, game enjoyment, performance, statistical confidence or multiplayer security.",
+  "seed_count": 64
+}

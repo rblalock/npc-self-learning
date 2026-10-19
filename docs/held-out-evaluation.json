@@ -1,0 +1,704 @@
+{
+  "schema": 1,
+  "protocol": {
+    "seeds": [
+      3,
+      17,
+      42,
+      101,
+      2026
+    ],
+    "trainingStyle": "orbit",
+    "trainingRounds": 24,
+    "testRoundsPerConditionStyle": 5,
+    "styles": [
+      "orbit",
+      "cover",
+      "weave",
+      "feint"
+    ],
+    "trainingEncounters": 120,
+    "evaluationEncounters": 200,
+    "learningDuringEvaluation": false,
+    "pairedRng": "Each condition and style starts from the same per-seed trained snapshot, including RNG state.",
+    "note": "Exploratory scripted-controller evaluation. Cover, weave and feint are excluded from training. No human playtest or generalization guarantee.",
+    "simSha256": "fc7c458301ff2592f80fb4830616fc1f73924b355fa3d5180c0e6f810afe1cdf",
+    "wasmSha256": "3ad3f2a18b624d56e620fc3f32ea7cfbef382ce188e158b12cefffd38c2d8970"
+  },
+  "summary": [
+    {
+      "style": "orbit",
+      "usedInTraining": true,
+      "uniformDamage": 42.720000000000006,
+      "learnedDamage": 71.52000000000001,
+      "pairedDifferences": [
+        {
+          "seed": 3,
+          "damage": 38.400000000000006
+        },
+        {
+          "seed": 17,
+          "damage": 16.799999999999997
+        },
+        {
+          "seed": 42,
+          "damage": 12
+        },
+        {
+          "seed": 101,
+          "damage": 47.99999999999999
+        },
+        {
+          "seed": 2026,
+          "damage": 28.799999999999997
+        }
+      ]
+    },
+    {
+      "style": "cover",
+      "usedInTraining": false,
+      "uniformDamage": 72,
+      "learnedDamage": 72,
+      "pairedDifferences": [
+        {
+          "seed": 3,
+          "damage": 0
+        },
+        {
+          "seed": 17,
+          "damage": 0
+        },
+        {
+          "seed": 42,
+          "damage": 0
+        },
+        {
+          "seed": 101,
+          "damage": 0
+        },
+        {
+          "seed": 2026,
+          "damage": 0
+        }
+      ]
+    },
+    {
+      "style": "weave",
+      "usedInTraining": false,
+      "uniformDamage": 60.48,
+      "learnedDamage": 76.8,
+      "pairedDifferences": [
+        {
+          "seed": 3,
+          "damage": 24
+        },
+        {
+          "seed": 17,
+          "damage": 7.200000000000003
+        },
+        {
+          "seed": 42,
+          "damage": 7.200000000000003
+        },
+        {
+          "seed": 101,
+          "damage": 23.999999999999993
+        },
+        {
+          "seed": 2026,
+          "damage": 19.200000000000003
+        }
+      ]
+    },
+    {
+      "style": "feint",
+      "usedInTraining": false,
+      "uniformDamage": 31.68,
+      "learnedDamage": 39.36,
+      "pairedDifferences": [
+        {
+          "seed": 3,
+          "damage": 14.400000000000002
+        },
+        {
+          "seed": 17,
+          "damage": 4.800000000000001
+        },
+        {
+          "seed": 42,
+          "damage": 2.3999999999999986
+        },
+        {
+          "seed": 101,
+          "damage": 9.599999999999998
+        },
+        {
+          "seed": 2026,
+          "damage": 7.199999999999996
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "seed": 3,
+      "style": "orbit",
+      "condition": "uniform",
+      "damage": [
+        24,
+        12,
+        72,
+        36,
+        0
+      ],
+      "meanDamage": 28.8,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "orbit",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        84,
+        84,
+        84,
+        0
+      ],
+      "meanDamage": 67.2,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "cover",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "cover",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "weave",
+      "condition": "uniform",
+      "damage": [
+        48,
+        48,
+        72,
+        48,
+        48
+      ],
+      "meanDamage": 52.8,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "weave",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        84,
+        84,
+        84,
+        48
+      ],
+      "meanDamage": 76.8,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "feint",
+      "condition": "uniform",
+      "damage": [
+        24,
+        24,
+        36,
+        36,
+        24
+      ],
+      "meanDamage": 28.8,
+      "clears": 5
+    },
+    {
+      "seed": 3,
+      "style": "feint",
+      "condition": "learned-held-fixed",
+      "damage": [
+        48,
+        48,
+        48,
+        48,
+        24
+      ],
+      "meanDamage": 43.2,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "orbit",
+      "condition": "uniform",
+      "damage": [
+        0,
+        0,
+        36,
+        84,
+        60
+      ],
+      "meanDamage": 36,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "orbit",
+      "condition": "learned-held-fixed",
+      "damage": [
+        0,
+        84,
+        36,
+        84,
+        60
+      ],
+      "meanDamage": 52.8,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "cover",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "cover",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "weave",
+      "condition": "uniform",
+      "damage": [
+        48,
+        48,
+        48,
+        84,
+        72
+      ],
+      "meanDamage": 60,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "weave",
+      "condition": "learned-held-fixed",
+      "damage": [
+        48,
+        84,
+        48,
+        84,
+        72
+      ],
+      "meanDamage": 67.2,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "feint",
+      "condition": "uniform",
+      "damage": [
+        24,
+        24,
+        36,
+        36,
+        36
+      ],
+      "meanDamage": 31.2,
+      "clears": 5
+    },
+    {
+      "seed": 17,
+      "style": "feint",
+      "condition": "learned-held-fixed",
+      "damage": [
+        24,
+        36,
+        36,
+        48,
+        36
+      ],
+      "meanDamage": 36,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "orbit",
+      "condition": "uniform",
+      "damage": [
+        72,
+        84,
+        36,
+        24,
+        84
+      ],
+      "meanDamage": 60,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "orbit",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        84,
+        36,
+        84,
+        84
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "cover",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "cover",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "weave",
+      "condition": "uniform",
+      "damage": [
+        72,
+        84,
+        48,
+        48,
+        84
+      ],
+      "meanDamage": 67.2,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "weave",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        84,
+        48,
+        84,
+        84
+      ],
+      "meanDamage": 74.4,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "feint",
+      "condition": "uniform",
+      "damage": [
+        36,
+        36,
+        36,
+        24,
+        36
+      ],
+      "meanDamage": 33.6,
+      "clears": 5
+    },
+    {
+      "seed": 42,
+      "style": "feint",
+      "condition": "learned-held-fixed",
+      "damage": [
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "meanDamage": 36,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "orbit",
+      "condition": "uniform",
+      "damage": [
+        60,
+        12,
+        60,
+        0,
+        36
+      ],
+      "meanDamage": 33.6,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "orbit",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        72,
+        84,
+        84,
+        84
+      ],
+      "meanDamage": 81.6,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "cover",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "cover",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "weave",
+      "condition": "uniform",
+      "damage": [
+        72,
+        48,
+        72,
+        48,
+        48
+      ],
+      "meanDamage": 57.6,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "weave",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        72,
+        84,
+        84,
+        84
+      ],
+      "meanDamage": 81.6,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "feint",
+      "condition": "uniform",
+      "damage": [
+        36,
+        24,
+        36,
+        24,
+        36
+      ],
+      "meanDamage": 31.2,
+      "clears": 5
+    },
+    {
+      "seed": 101,
+      "style": "feint",
+      "condition": "learned-held-fixed",
+      "damage": [
+        36,
+        36,
+        36,
+        48,
+        48
+      ],
+      "meanDamage": 40.8,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "orbit",
+      "condition": "uniform",
+      "damage": [
+        60,
+        72,
+        36,
+        24,
+        84
+      ],
+      "meanDamage": 55.2,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "orbit",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        84,
+        84,
+        84,
+        84
+      ],
+      "meanDamage": 84,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "cover",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "cover",
+      "condition": "learned-held-fixed",
+      "damage": [
+        72,
+        72,
+        72,
+        72,
+        72
+      ],
+      "meanDamage": 72,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "weave",
+      "condition": "uniform",
+      "damage": [
+        72,
+        72,
+        48,
+        48,
+        84
+      ],
+      "meanDamage": 64.8,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "weave",
+      "condition": "learned-held-fixed",
+      "damage": [
+        84,
+        84,
+        84,
+        84,
+        84
+      ],
+      "meanDamage": 84,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "feint",
+      "condition": "uniform",
+      "damage": [
+        36,
+        36,
+        36,
+        24,
+        36
+      ],
+      "meanDamage": 33.6,
+      "clears": 5
+    },
+    {
+      "seed": 2026,
+      "style": "feint",
+      "condition": "learned-held-fixed",
+      "damage": [
+        36,
+        48,
+        48,
+        36,
+        36
+      ],
+      "meanDamage": 40.8,
+      "clears": 5
+    }
+  ]
+}

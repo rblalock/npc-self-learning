@@ -1,0 +1,5465 @@
+{
+  "groups": {
+    "bait-switch/staggered-lanes": {
+      "repeat": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 31.25,
+            "playerClearRate": 0.9375,
+            "playerDeathRate": 0,
+            "duration": 17.157986111111263
+          },
+          "narrow-frozen": {
+            "damage": 28.25,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 17.009027777777945
+          },
+          "diverse-online": {
+            "damage": 28.5,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 17.413888888889026
+          },
+          "diverse-frozen": {
+            "damage": 26.5,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 17.426041666666826
+          },
+          "fixed": {
+            "damage": 32,
+            "playerClearRate": 1,
+            "playerDeathRate": 0,
+            "duration": 16.712500000000205
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -2.75,
+          "interval": [
+            -5,
+            -0.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 36,
+              "right": 42,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 27,
+              "difference": -6
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 36,
+              "right": 42,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 21,
+              "difference": -9
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 48,
+              "right": 45,
+              "difference": 3
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 63,
+              "difference": -9
+            },
+            {
+              "seed": 3089,
+              "left": 72,
+              "right": 72,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 2,
+          "interval": [
+            -0.5,
+            4.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 36,
+              "right": 33,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 3,
+              "difference": 9
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 48,
+              "right": 48,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 3089,
+              "left": 72,
+              "right": 66,
+              "difference": 6
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 3,
+          "interval": [
+            -0.25,
+            6.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            },
+            {
+              "seed": 3011,
+              "left": 27,
+              "right": 33,
+              "difference": -6
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 21,
+              "right": 9,
+              "difference": 12
+            },
+            {
+              "seed": 3061,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 45,
+              "right": 39,
+              "difference": 6
+            },
+            {
+              "seed": 3083,
+              "left": 63,
+              "right": 60,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 72,
+              "right": 66,
+              "difference": 6
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -3.5,
+          "interval": [
+            -8.5,
+            1.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 36,
+              "right": 48,
+              "difference": -12
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3023,
+              "left": 12,
+              "right": 24,
+              "difference": -12
+            },
+            {
+              "seed": 3037,
+              "left": 36,
+              "right": 48,
+              "difference": -12
+            },
+            {
+              "seed": 3041,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 0,
+              "difference": 12
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 48,
+              "right": 36,
+              "difference": 12
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 72,
+              "difference": -18
+            },
+            {
+              "seed": 3089,
+              "left": 72,
+              "right": 72,
+              "difference": 0
+            }
+          ]
+        }
+      },
+      "switch": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 35.666666666666664,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0.041666666666666664,
+            "duration": 17.27951388888909
+          },
+          "narrow-frozen": {
+            "damage": 29.75,
+            "playerClearRate": 0.7916666666666666,
+            "playerDeathRate": 0,
+            "duration": 18.414583333333464
+          },
+          "diverse-online": {
+            "damage": 37.333333333333336,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0.020833333333333332,
+            "duration": 17.47118055555574
+          },
+          "diverse-frozen": {
+            "damage": 29,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 16.714583333333522
+          },
+          "fixed": {
+            "damage": 27,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 15.930555555555747
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 1.6666666666666667,
+          "interval": [
+            -1.25,
+            6.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 61,
+              "right": 68,
+              "difference": -7
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 6,
+              "right": 3,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 45,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 60,
+              "right": 36,
+              "difference": 24
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 8.333333333333334,
+          "interval": [
+            3.75,
+            13.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 45,
+              "difference": -6
+            },
+            {
+              "seed": 3037,
+              "left": 61,
+              "right": 45,
+              "difference": 16
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 42,
+              "difference": 9
+            },
+            {
+              "seed": 3049,
+              "left": 6,
+              "right": 3,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 39,
+              "difference": 6
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 9,
+              "difference": 27
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 12,
+              "difference": 18
+            },
+            {
+              "seed": 3083,
+              "left": 60,
+              "right": 48,
+              "difference": 12
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 5.916666666666667,
+          "interval": [
+            1.75,
+            11.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 27,
+              "difference": 12
+            },
+            {
+              "seed": 3037,
+              "left": 68,
+              "right": 36,
+              "difference": 32
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 48,
+              "difference": 3
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 6,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 42,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 30,
+              "difference": 6
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 36,
+              "right": 30,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 33,
+              "difference": 9
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 10.333333333333334,
+          "interval": [
+            3.0833333333333335,
+            17.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 0,
+              "difference": 18
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 48,
+              "difference": -9
+            },
+            {
+              "seed": 3037,
+              "left": 61,
+              "right": 36,
+              "difference": 25
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 36,
+              "difference": 15
+            },
+            {
+              "seed": 3049,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 0,
+              "difference": 36
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 12,
+              "difference": 18
+            },
+            {
+              "seed": 3083,
+              "left": 60,
+              "right": 48,
+              "difference": 12
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 48,
+              "difference": -6
+            }
+          ]
+        }
+      },
+      "return": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 26.5,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 16.713888888889066
+          },
+          "narrow-frozen": {
+            "damage": 27.25,
+            "playerClearRate": 0.875,
+            "playerDeathRate": 0,
+            "duration": 17.1131944444446
+          },
+          "diverse-online": {
+            "damage": 26.5,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 16.9065972222224
+          },
+          "diverse-frozen": {
+            "damage": 24.75,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 16.799305555555726
+          },
+          "fixed": {
+            "damage": 32,
+            "playerClearRate": 1,
+            "playerDeathRate": 0,
+            "duration": 16.712500000000205
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 45,
+              "right": 45,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 1.75,
+          "interval": [
+            -1,
+            4.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 27,
+              "difference": 9
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 6,
+              "difference": -3
+            },
+            {
+              "seed": 3023,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 6,
+              "difference": 9
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 45,
+              "right": 45,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 57,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 60,
+              "right": 51,
+              "difference": 9
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": -0.75,
+          "interval": [
+            -5.25,
+            3.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 39,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 0,
+              "difference": 3
+            },
+            {
+              "seed": 3023,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 36,
+              "difference": -18
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 15,
+              "difference": 12
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 21,
+              "difference": -6
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 3089,
+              "left": 60,
+              "right": 54,
+              "difference": 6
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -5.5,
+          "interval": [
+            -13.25,
+            2
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 48,
+              "difference": -24
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3023,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 48,
+              "difference": -30
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 0,
+              "difference": 15
+            },
+            {
+              "seed": 3067,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 3083,
+              "left": 54,
+              "right": 72,
+              "difference": -18
+            },
+            {
+              "seed": 3089,
+              "left": 60,
+              "right": 72,
+              "difference": -12
+            }
+          ]
+        }
+      }
+    },
+    "bait-switch/offset-islands": {
+      "repeat": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 27.75,
+            "playerClearRate": 0.9375,
+            "playerDeathRate": 0,
+            "duration": 17.487500000000182
+          },
+          "narrow-frozen": {
+            "damage": 26.5,
+            "playerClearRate": 0.9791666666666666,
+            "playerDeathRate": 0,
+            "duration": 17.43368055555574
+          },
+          "diverse-online": {
+            "damage": 29.25,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 17.623611111111284
+          },
+          "diverse-frozen": {
+            "damage": 23.75,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 16.92708333333353
+          },
+          "fixed": {
+            "damage": 26,
+            "playerClearRate": 1,
+            "playerDeathRate": 0,
+            "duration": 16.16388888888911
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 1.5,
+          "interval": [
+            -0.5,
+            4
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 33,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 30,
+              "difference": 12
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 6,
+              "difference": 3
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 45,
+              "right": 45,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 5.5,
+          "interval": [
+            1.5,
+            10.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 36,
+              "difference": 6
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 18,
+              "difference": 24
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 45,
+              "right": 42,
+              "difference": 3
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 1.25,
+          "interval": [
+            -2.75,
+            5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 51,
+              "difference": -9
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 39,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 21,
+              "difference": 9
+            },
+            {
+              "seed": 3049,
+              "left": 30,
+              "right": 33,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 18,
+              "right": 6,
+              "difference": 12
+            },
+            {
+              "seed": 3067,
+              "left": 6,
+              "right": 0,
+              "difference": 6
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 18,
+              "difference": -9
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3089,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 3.25,
+          "interval": [
+            -3.5,
+            10.506249999999909
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 48,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            },
+            {
+              "seed": 3019,
+              "left": 39,
+              "right": 48,
+              "difference": -9
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 12,
+              "difference": 30
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 36,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 0,
+              "difference": 24
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 24,
+              "difference": -15
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 0,
+              "difference": 9
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            }
+          ]
+        }
+      },
+      "switch": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 25.75,
+            "playerClearRate": 0.9375,
+            "playerDeathRate": 0,
+            "duration": 17.74861111111126
+          },
+          "narrow-frozen": {
+            "damage": 21.75,
+            "playerClearRate": 0.8333333333333334,
+            "playerDeathRate": 0,
+            "duration": 17.976041666666774
+          },
+          "diverse-online": {
+            "damage": 25.5,
+            "playerClearRate": 0.9375,
+            "playerDeathRate": 0,
+            "duration": 17.654861111111263
+          },
+          "diverse-frozen": {
+            "damage": 21.75,
+            "playerClearRate": 0.9375,
+            "playerDeathRate": 0,
+            "duration": 17.321527777777888
+          },
+          "fixed": {
+            "damage": 24,
+            "playerClearRate": 1,
+            "playerDeathRate": 0,
+            "duration": 17.933333333333454
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -0.25,
+          "interval": [
+            -0.75,
+            0
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 3.75,
+          "interval": [
+            -0.25,
+            8.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 30,
+              "difference": 6
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 18,
+              "difference": 24
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 3,
+              "difference": 9
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 9,
+              "difference": 3
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 30,
+              "difference": 9
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 4,
+          "interval": [
+            -1,
+            10.006249999999909
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 30,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 33,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 36,
+              "difference": -9
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 6,
+              "difference": 15
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 12,
+              "difference": 30
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 6,
+              "difference": 6
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 21,
+              "difference": -6
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 45,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 36,
+              "difference": 3
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 1.5,
+          "interval": [
+            -6,
+            8.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 12,
+              "difference": 15
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 48,
+              "difference": -12
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 0,
+              "difference": 21
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 48,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 48,
+              "difference": -24
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 0,
+              "difference": 12
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 12,
+              "difference": 3
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 36,
+              "difference": 15
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 48,
+              "difference": -9
+            }
+          ]
+        }
+      },
+      "return": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 28.5,
+            "playerClearRate": 0.9791666666666666,
+            "playerDeathRate": 0,
+            "duration": 17.520833333333517
+          },
+          "narrow-frozen": {
+            "damage": 24.25,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 17.3784722222224
+          },
+          "diverse-online": {
+            "damage": 29,
+            "playerClearRate": 0.9583333333333334,
+            "playerDeathRate": 0,
+            "duration": 17.802777777777948
+          },
+          "diverse-frozen": {
+            "damage": 24.5,
+            "playerClearRate": 0.8958333333333334,
+            "playerDeathRate": 0,
+            "duration": 17.26944444444462
+          },
+          "fixed": {
+            "damage": 26,
+            "playerClearRate": 1,
+            "playerDeathRate": 0,
+            "duration": 16.16388888888911
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 0.5,
+          "interval": [
+            0,
+            1.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 48,
+              "right": 42,
+              "difference": 6
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 45,
+              "right": 45,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 4.5,
+          "interval": [
+            0,
+            8.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 48,
+              "right": 30,
+              "difference": 18
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 45,
+              "right": 42,
+              "difference": 3
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 15,
+              "difference": 15
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 33,
+              "difference": 9
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 15,
+              "right": 9,
+              "difference": 6
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 24,
+              "difference": -12
+            },
+            {
+              "seed": 3089,
+              "left": 36,
+              "right": 30,
+              "difference": 6
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 4.25,
+          "interval": [
+            0.5,
+            8
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 42,
+              "right": 48,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 33,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 30,
+              "difference": 12
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 9,
+              "difference": 15
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 6,
+              "difference": 9
+            },
+            {
+              "seed": 3079,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 36,
+              "right": 27,
+              "difference": 9
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 3,
+          "interval": [
+            -1.75,
+            8.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 48,
+              "right": 48,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            },
+            {
+              "seed": 3019,
+              "left": 45,
+              "right": 48,
+              "difference": -3
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3037,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 36,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 0,
+              "difference": 24
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3079,
+              "left": 15,
+              "right": 0,
+              "difference": 15
+            },
+            {
+              "seed": 3083,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            }
+          ]
+        }
+      }
+    },
+    "reactive/staggered-lanes": {
+      "repeat": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 20.75,
+            "playerClearRate": 0.7708333333333334,
+            "playerDeathRate": 0,
+            "duration": 19.477083333333404
+          },
+          "narrow-frozen": {
+            "damage": 23.5,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 19.036458333333446
+          },
+          "diverse-online": {
+            "damage": 23.5,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 18.86145833333344
+          },
+          "diverse-frozen": {
+            "damage": 19,
+            "playerClearRate": 0.875,
+            "playerDeathRate": 0,
+            "duration": 18.973611111111214
+          },
+          "fixed": {
+            "damage": 24,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 18.943055555555663
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 2.75,
+          "interval": [
+            0,
+            6.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3041,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 48,
+              "right": 42,
+              "difference": 6
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3079,
+              "left": 36,
+              "right": 18,
+              "difference": 18
+            },
+            {
+              "seed": 3083,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 4.5,
+          "interval": [
+            -1,
+            11.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 12,
+              "right": 6,
+              "difference": 6
+            },
+            {
+              "seed": 3011,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 30,
+              "difference": -9
+            },
+            {
+              "seed": 3041,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 48,
+              "right": 39,
+              "difference": 9
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3079,
+              "left": 36,
+              "right": 0,
+              "difference": 36
+            },
+            {
+              "seed": 3083,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": -2.75,
+          "interval": [
+            -4.75,
+            -0.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 27,
+              "difference": -6
+            },
+            {
+              "seed": 3037,
+              "left": 24,
+              "right": 30,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 42,
+              "right": 45,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3079,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3083,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -0.5,
+          "interval": [
+            -12.5,
+            11
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 12,
+              "right": 0,
+              "difference": 12
+            },
+            {
+              "seed": 3011,
+              "left": 9,
+              "right": 24,
+              "difference": -15
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 12,
+              "difference": 3
+            },
+            {
+              "seed": 3023,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 60,
+              "difference": -39
+            },
+            {
+              "seed": 3041,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 48,
+              "right": 12,
+              "difference": 36
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 12,
+              "difference": 15
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 36,
+              "right": 72,
+              "difference": -36
+            },
+            {
+              "seed": 3083,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 12,
+              "difference": 15
+            }
+          ]
+        }
+      },
+      "switch": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 22.75,
+            "playerClearRate": 0.6458333333333334,
+            "playerDeathRate": 0,
+            "duration": 21.263888888888935
+          },
+          "narrow-frozen": {
+            "damage": 22.75,
+            "playerClearRate": 0.8125,
+            "playerDeathRate": 0,
+            "duration": 19.80868055555567
+          },
+          "diverse-online": {
+            "damage": 23.75,
+            "playerClearRate": 0.625,
+            "playerDeathRate": 0,
+            "duration": 21.681597222222248
+          },
+          "diverse-frozen": {
+            "damage": 21.75,
+            "playerClearRate": 0.5833333333333334,
+            "playerDeathRate": 0,
+            "duration": 21.944791666666674
+          },
+          "fixed": {
+            "damage": 25,
+            "playerClearRate": 0.5833333333333334,
+            "playerDeathRate": 0,
+            "duration": 22.540277777777785
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 1,
+          "interval": [
+            0,
+            3
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 30,
+              "difference": 12
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 2,
+          "interval": [
+            -0.25,
+            5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 21,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 6,
+              "difference": 6
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 27,
+              "difference": 15
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 0,
+          "interval": [
+            -2,
+            2
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 39,
+              "difference": -6
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 6,
+              "difference": 6
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 9,
+              "difference": -3
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -1.25,
+          "interval": [
+            -10.5,
+            7
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 48,
+              "difference": -24
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 12,
+              "difference": 18
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 0,
+              "difference": 12
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 0,
+              "difference": 24
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 72,
+              "difference": -30
+            }
+          ]
+        }
+      },
+      "return": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 25,
+            "playerClearRate": 0.8333333333333334,
+            "playerDeathRate": 0,
+            "duration": 18.645833333333464
+          },
+          "narrow-frozen": {
+            "damage": 22.5,
+            "playerClearRate": 0.8125,
+            "playerDeathRate": 0,
+            "duration": 19.18368055555567
+          },
+          "diverse-online": {
+            "damage": 24.25,
+            "playerClearRate": 0.8125,
+            "playerDeathRate": 0,
+            "duration": 18.79305555555568
+          },
+          "diverse-frozen": {
+            "damage": 18.75,
+            "playerClearRate": 0.8333333333333334,
+            "playerDeathRate": 0,
+            "duration": 19.32222222222231
+          },
+          "fixed": {
+            "damage": 24,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 18.943055555555663
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -0.75,
+          "interval": [
+            -2,
+            0
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 6,
+              "difference": -3
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 15,
+              "difference": -6
+            },
+            {
+              "seed": 3079,
+              "left": 72,
+              "right": 72,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 5.5,
+          "interval": [
+            -1,
+            14.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 15,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 51,
+              "right": 39,
+              "difference": 12
+            },
+            {
+              "seed": 3061,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3079,
+              "left": 72,
+              "right": 21,
+              "difference": 51
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 27,
+              "difference": -12
+            },
+            {
+              "seed": 3089,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 2.5,
+          "interval": [
+            -3,
+            12
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 30,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 27,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3079,
+              "left": 72,
+              "right": 21,
+              "difference": 51
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 12,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 0.25,
+          "interval": [
+            -10.75,
+            11.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24,
+              "right": 0,
+              "difference": 24
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 24,
+              "difference": -12
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 12,
+              "difference": 18
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 60,
+              "difference": -39
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3049,
+              "left": 51,
+              "right": 12,
+              "difference": 39
+            },
+            {
+              "seed": 3061,
+              "left": 21,
+              "right": 12,
+              "difference": 9
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 24,
+              "difference": -15
+            },
+            {
+              "seed": 3079,
+              "left": 72,
+              "right": 72,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3089,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            }
+          ]
+        }
+      }
+    },
+    "reactive/offset-islands": {
+      "repeat": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 16.75,
+            "playerClearRate": 0.7291666666666666,
+            "playerDeathRate": 0,
+            "duration": 21.417013888888913
+          },
+          "narrow-frozen": {
+            "damage": 18,
+            "playerClearRate": 0.7083333333333334,
+            "playerDeathRate": 0,
+            "duration": 21.319097222222236
+          },
+          "diverse-online": {
+            "damage": 13.5,
+            "playerClearRate": 0.7291666666666666,
+            "playerDeathRate": 0,
+            "duration": 21.700694444444462
+          },
+          "diverse-frozen": {
+            "damage": 12,
+            "playerClearRate": 0.7916666666666666,
+            "playerDeathRate": 0,
+            "duration": 21.227430555555607
+          },
+          "fixed": {
+            "damage": 20,
+            "playerClearRate": 0.6666666666666666,
+            "playerDeathRate": 0,
+            "duration": 23.06666666666663
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -3.25,
+          "interval": [
+            -5.75,
+            -1
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 21,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 15,
+              "difference": -6
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 9,
+              "right": 21,
+              "difference": -12
+            },
+            {
+              "seed": 3089,
+              "left": 15,
+              "right": 21,
+              "difference": -6
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 1.5,
+          "interval": [
+            -1,
+            4.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 3,
+              "right": 6,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 6,
+              "difference": 12
+            },
+            {
+              "seed": 3037,
+              "left": 9,
+              "right": 3,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 27,
+              "right": 30,
+              "difference": -3
+            },
+            {
+              "seed": 3049,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 30,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 0,
+              "difference": 9
+            },
+            {
+              "seed": 3083,
+              "left": 9,
+              "right": 6,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": -1.25,
+          "interval": [
+            -4,
+            1.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 12,
+              "right": 18,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 9,
+              "difference": -6
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 27,
+              "difference": -6
+            },
+            {
+              "seed": 3037,
+              "left": 9,
+              "right": 6,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 15,
+              "difference": 9
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3083,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -6.5,
+          "interval": [
+            -15.25,
+            2.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3011,
+              "left": 12,
+              "right": 36,
+              "difference": -24
+            },
+            {
+              "seed": 3019,
+              "left": 3,
+              "right": 24,
+              "difference": -21
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 0,
+              "difference": 18
+            },
+            {
+              "seed": 3037,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3041,
+              "left": 27,
+              "right": 60,
+              "difference": -33
+            },
+            {
+              "seed": 3049,
+              "left": 21,
+              "right": 0,
+              "difference": 21
+            },
+            {
+              "seed": 3061,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3079,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3083,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 15,
+              "right": 36,
+              "difference": -21
+            }
+          ]
+        }
+      },
+      "switch": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 19.25,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 19.681944444444557
+          },
+          "narrow-frozen": {
+            "damage": 14.75,
+            "playerClearRate": 0.8125,
+            "playerDeathRate": 0,
+            "duration": 19.878125000000082
+          },
+          "diverse-online": {
+            "damage": 18.25,
+            "playerClearRate": 0.875,
+            "playerDeathRate": 0,
+            "duration": 19.625347222222338
+          },
+          "diverse-frozen": {
+            "damage": 17.5,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 20.16909722222232
+          },
+          "fixed": {
+            "damage": 21,
+            "playerClearRate": 0.9166666666666666,
+            "playerDeathRate": 0,
+            "duration": 19.63750000000014
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -1,
+          "interval": [
+            -2.75,
+            0
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 6,
+              "right": 15,
+              "difference": -9
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 0.75,
+          "interval": [
+            -2.25,
+            4
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 21,
+              "difference": 9
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 39,
+              "difference": 3
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 9,
+              "difference": 12
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 3,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 6,
+              "right": 15,
+              "difference": -9
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 4.5,
+          "interval": [
+            0,
+            9.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 0,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 0,
+              "difference": 21
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 21,
+              "difference": -6
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 33,
+              "difference": -9
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 3,
+              "difference": 3
+            },
+            {
+              "seed": 3089,
+              "left": 15,
+              "right": 3,
+              "difference": 12
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -2.75,
+          "interval": [
+            -10.5,
+            4.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 0,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 48,
+              "difference": -27
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 36,
+              "difference": -24
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 24,
+              "difference": -18
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 0,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 6,
+              "right": 0,
+              "difference": 6
+            }
+          ]
+        }
+      },
+      "return": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 15.75,
+            "playerClearRate": 0.7291666666666666,
+            "playerDeathRate": 0,
+            "duration": 21.689930555555552
+          },
+          "narrow-frozen": {
+            "damage": 18.25,
+            "playerClearRate": 0.75,
+            "playerDeathRate": 0,
+            "duration": 21.256944444444457
+          },
+          "diverse-online": {
+            "damage": 15.75,
+            "playerClearRate": 0.7291666666666666,
+            "playerDeathRate": 0,
+            "duration": 21.689930555555552
+          },
+          "diverse-frozen": {
+            "damage": 10.75,
+            "playerClearRate": 0.7708333333333334,
+            "playerDeathRate": 0,
+            "duration": 21.245138888888906
+          },
+          "fixed": {
+            "damage": 20,
+            "playerClearRate": 0.6666666666666666,
+            "playerDeathRate": 0,
+            "duration": 23.06666666666663
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 5,
+          "interval": [
+            1.75,
+            8.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 9,
+              "right": 0,
+              "difference": 9
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 6,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 18,
+              "right": 3,
+              "difference": 15
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 6,
+              "difference": 9
+            },
+            {
+              "seed": 3079,
+              "left": 3,
+              "right": 3,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": -2.5,
+          "interval": [
+            -6.25,
+            1.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 0,
+              "difference": 12
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3037,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 33,
+              "right": 48,
+              "difference": -15
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 9,
+              "difference": -6
+            },
+            {
+              "seed": 3061,
+              "left": 18,
+              "right": 15,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 21,
+              "difference": -6
+            },
+            {
+              "seed": 3079,
+              "left": 3,
+              "right": 9,
+              "difference": -6
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -4.25,
+          "interval": [
+            -10.75,
+            2.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 9,
+              "right": 12,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 36,
+              "difference": -15
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 24,
+              "difference": -12
+            },
+            {
+              "seed": 3023,
+              "left": 18,
+              "right": 0,
+              "difference": 18
+            },
+            {
+              "seed": 3037,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 33,
+              "right": 60,
+              "difference": -27
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 0,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 18,
+              "right": 24,
+              "difference": -6
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 12,
+              "difference": 3
+            },
+            {
+              "seed": 3079,
+              "left": 3,
+              "right": 12,
+              "difference": -9
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 12,
+              "difference": 12
+            },
+            {
+              "seed": 3089,
+              "left": 27,
+              "right": 36,
+              "difference": -9
+            }
+          ]
+        }
+      }
+    },
+    "aggregate": {
+      "repeat": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 24.125,
+            "playerClearRate": 0.84375,
+            "playerDeathRate": 0,
+            "duration": 18.88489583333345
+          },
+          "narrow-frozen": {
+            "damage": 24.0625,
+            "playerClearRate": 0.8645833333333334,
+            "playerDeathRate": 0,
+            "duration": 18.699565972222356
+          },
+          "diverse-online": {
+            "damage": 23.6875,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 18.899913194444554
+          },
+          "diverse-frozen": {
+            "damage": 20.3125,
+            "playerClearRate": 0.8958333333333334,
+            "playerDeathRate": 0,
+            "duration": 18.638541666666786
+          },
+          "fixed": {
+            "damage": 25.5,
+            "playerClearRate": 0.8958333333333334,
+            "playerDeathRate": 0,
+            "duration": 18.721527777777897
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -0.4375,
+          "interval": [
+            -2.125,
+            1.1875
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 23.25,
+              "right": 27.75,
+              "difference": -4.5
+            },
+            {
+              "seed": 3011,
+              "left": 18,
+              "right": 21,
+              "difference": -3
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 19.5,
+              "right": 20.25,
+              "difference": -0.75
+            },
+            {
+              "seed": 3037,
+              "left": 27,
+              "right": 29.25,
+              "difference": -2.25
+            },
+            {
+              "seed": 3041,
+              "left": 27.75,
+              "right": 24.75,
+              "difference": 3
+            },
+            {
+              "seed": 3049,
+              "left": 31.5,
+              "right": 29.25,
+              "difference": 2.25
+            },
+            {
+              "seed": 3061,
+              "left": 22.5,
+              "right": 22.5,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 10.5,
+              "right": 9.75,
+              "difference": 0.75
+            },
+            {
+              "seed": 3079,
+              "left": 25.5,
+              "right": 20.25,
+              "difference": 5.25
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 29.25,
+              "difference": -5.25
+            },
+            {
+              "seed": 3089,
+              "left": 39.75,
+              "right": 40.5,
+              "difference": -0.75
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 3.375,
+          "interval": [
+            1.6875,
+            5.25
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 23.25,
+              "right": 21,
+              "difference": 2.25
+            },
+            {
+              "seed": 3011,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 19.5,
+              "right": 15,
+              "difference": 4.5
+            },
+            {
+              "seed": 3037,
+              "left": 27,
+              "right": 22.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 3041,
+              "left": 27.75,
+              "right": 24,
+              "difference": 3.75
+            },
+            {
+              "seed": 3049,
+              "left": 31.5,
+              "right": 26.25,
+              "difference": 5.25
+            },
+            {
+              "seed": 3061,
+              "left": 22.5,
+              "right": 18,
+              "difference": 4.5
+            },
+            {
+              "seed": 3067,
+              "left": 10.5,
+              "right": 8.25,
+              "difference": 2.25
+            },
+            {
+              "seed": 3079,
+              "left": 25.5,
+              "right": 14.25,
+              "difference": 11.25
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 25.5,
+              "difference": -1.5
+            },
+            {
+              "seed": 3089,
+              "left": 39.75,
+              "right": 36,
+              "difference": 3.75
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 0.0625,
+          "interval": [
+            -1.4375,
+            1.6875
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27.75,
+              "right": 27.75,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 21,
+              "right": 25.5,
+              "difference": -4.5
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 17.25,
+              "difference": -2.25
+            },
+            {
+              "seed": 3023,
+              "left": 20.25,
+              "right": 21.75,
+              "difference": -1.5
+            },
+            {
+              "seed": 3037,
+              "left": 29.25,
+              "right": 29.25,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 24.75,
+              "right": 24,
+              "difference": 0.75
+            },
+            {
+              "seed": 3049,
+              "left": 29.25,
+              "right": 25.5,
+              "difference": 3.75
+            },
+            {
+              "seed": 3061,
+              "left": 22.5,
+              "right": 19.5,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 9.75,
+              "right": 7.5,
+              "difference": 2.25
+            },
+            {
+              "seed": 3079,
+              "left": 20.25,
+              "right": 23.25,
+              "difference": -3
+            },
+            {
+              "seed": 3083,
+              "left": 29.25,
+              "right": 31.5,
+              "difference": -2.25
+            },
+            {
+              "seed": 3089,
+              "left": 40.5,
+              "right": 36,
+              "difference": 4.5
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -1.8125,
+          "interval": [
+            -5.939062499999993,
+            2.9375
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 23.25,
+              "right": 27,
+              "difference": -3.75
+            },
+            {
+              "seed": 3011,
+              "left": 18,
+              "right": 30,
+              "difference": -12
+            },
+            {
+              "seed": 3019,
+              "left": 15,
+              "right": 24,
+              "difference": -9
+            },
+            {
+              "seed": 3023,
+              "left": 19.5,
+              "right": 15,
+              "difference": 4.5
+            },
+            {
+              "seed": 3037,
+              "left": 27,
+              "right": 33,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 27.75,
+              "right": 36,
+              "difference": -8.25
+            },
+            {
+              "seed": 3049,
+              "left": 31.5,
+              "right": 18,
+              "difference": 13.5
+            },
+            {
+              "seed": 3061,
+              "left": 22.5,
+              "right": 9,
+              "difference": 13.5
+            },
+            {
+              "seed": 3067,
+              "left": 10.5,
+              "right": 15,
+              "difference": -4.5
+            },
+            {
+              "seed": 3079,
+              "left": 25.5,
+              "right": 30,
+              "difference": -4.5
+            },
+            {
+              "seed": 3083,
+              "left": 24,
+              "right": 30,
+              "difference": -6
+            },
+            {
+              "seed": 3089,
+              "left": 39.75,
+              "right": 39,
+              "difference": 0.75
+            }
+          ]
+        }
+      },
+      "switch": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 25.854166666666668,
+            "playerClearRate": 0.8229166666666666,
+            "playerDeathRate": 0.010416666666666666,
+            "duration": 18.993489583333453
+          },
+          "narrow-frozen": {
+            "damage": 22.25,
+            "playerClearRate": 0.8125,
+            "playerDeathRate": 0,
+            "duration": 19.019357638888998
+          },
+          "diverse-online": {
+            "damage": 26.208333333333332,
+            "playerClearRate": 0.8229166666666666,
+            "playerDeathRate": 0.005208333333333333,
+            "duration": 19.108246527777894
+          },
+          "diverse-frozen": {
+            "damage": 22.5,
+            "playerClearRate": 0.8229166666666666,
+            "playerDeathRate": 0,
+            "duration": 19.0375000000001
+          },
+          "fixed": {
+            "damage": 24.25,
+            "playerClearRate": 0.8541666666666666,
+            "playerDeathRate": 0,
+            "duration": 19.010416666666774
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": 0.3541666666666667,
+          "interval": [
+            -0.4166666666666667,
+            1.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 26.25,
+              "difference": 0
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 30.75,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 39.25,
+              "right": 41,
+              "difference": -1.75
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 13.5,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 23.25,
+              "right": 24,
+              "difference": -0.75
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 24.75,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 13.5,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 33,
+              "right": 27,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 32.25,
+              "right": 31.5,
+              "difference": 0.75
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 3.7083333333333335,
+          "interval": [
+            2.1458333333333335,
+            5.625
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 24,
+              "difference": 2.25
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 27,
+              "difference": 3.75
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 10.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30.75,
+              "difference": -0.75
+            },
+            {
+              "seed": 3037,
+              "left": 39.25,
+              "right": 34.5,
+              "difference": 4.75
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 10.5,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 23.25,
+              "right": 21,
+              "difference": 2.25
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 18,
+              "difference": 6.75
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 9.75,
+              "difference": 3.75
+            },
+            {
+              "seed": 3083,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 3089,
+              "left": 32.25,
+              "right": 28.5,
+              "difference": 3.75
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 3.6041666666666665,
+          "interval": [
+            0.8125,
+            7.145833333333333
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 25.5,
+              "difference": 0.75
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 27.75,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 11.25,
+              "difference": 0.75
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 41,
+              "right": 24,
+              "difference": 17
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 22.5,
+              "difference": 13.5
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 12,
+              "difference": 1.5
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 27,
+              "difference": -2.25
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 14.25,
+              "difference": -0.75
+            },
+            {
+              "seed": 3083,
+              "left": 27,
+              "right": 23.25,
+              "difference": 3.75
+            },
+            {
+              "seed": 3089,
+              "left": 31.5,
+              "right": 25.5,
+              "difference": 6
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": 1.9583333333333333,
+          "interval": [
+            -1.625,
+            5.5625
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 21,
+              "difference": 5.25
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 30,
+              "difference": 0.75
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 33,
+              "difference": -3
+            },
+            {
+              "seed": 3037,
+              "left": 39.25,
+              "right": 24,
+              "difference": 15.25
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 18,
+              "difference": -4.5
+            },
+            {
+              "seed": 3061,
+              "left": 23.25,
+              "right": 18,
+              "difference": 5.25
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 15,
+              "difference": 9.75
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 15,
+              "difference": -1.5
+            },
+            {
+              "seed": 3083,
+              "left": 33,
+              "right": 27,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 32.25,
+              "right": 42,
+              "difference": -9.75
+            }
+          ]
+        }
+      },
+      "return": {
+        "metrics": {
+          "narrow-online": {
+            "damage": 23.9375,
+            "playerClearRate": 0.875,
+            "playerDeathRate": 0,
+            "duration": 18.642621527777905
+          },
+          "narrow-frozen": {
+            "damage": 23.0625,
+            "playerClearRate": 0.8489583333333334,
+            "playerDeathRate": 0,
+            "duration": 18.733072916666796
+          },
+          "diverse-online": {
+            "damage": 23.875,
+            "playerClearRate": 0.8645833333333334,
+            "playerDeathRate": 0,
+            "duration": 18.7980902777779
+          },
+          "diverse-frozen": {
+            "damage": 19.6875,
+            "playerClearRate": 0.8645833333333334,
+            "playerDeathRate": 0,
+            "duration": 18.659027777777883
+          },
+          "fixed": {
+            "damage": 25.5,
+            "playerClearRate": 0.8958333333333334,
+            "playerDeathRate": 0,
+            "duration": 18.721527777777897
+          }
+        },
+        "diverseMinusNarrow": {
+          "meanDifference": -0.0625,
+          "interval": [
+            -0.4375,
+            0.3125
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 24.75,
+              "difference": 1.5
+            },
+            {
+              "seed": 3011,
+              "left": 24.75,
+              "right": 24.75,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 15.75,
+              "right": 16.5,
+              "difference": -0.75
+            },
+            {
+              "seed": 3023,
+              "left": 23.25,
+              "right": 23.25,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 15.75,
+              "right": 15.75,
+              "difference": 0
+            },
+            {
+              "seed": 3041,
+              "left": 29.25,
+              "right": 29.25,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 19.5,
+              "right": 19.5,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 9.75,
+              "right": 11.25,
+              "difference": -1.5
+            },
+            {
+              "seed": 3079,
+              "left": 33.75,
+              "right": 33.75,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 26.25,
+              "right": 26.25,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 33.75,
+              "right": 33.75,
+              "difference": 0
+            }
+          ]
+        },
+        "diverseLearning": {
+          "meanDifference": 4.1875,
+          "interval": [
+            1.75,
+            6.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 19.5,
+              "difference": 6.75
+            },
+            {
+              "seed": 3011,
+              "left": 24.75,
+              "right": 22.5,
+              "difference": 2.25
+            },
+            {
+              "seed": 3019,
+              "left": 15.75,
+              "right": 14.25,
+              "difference": 1.5
+            },
+            {
+              "seed": 3023,
+              "left": 23.25,
+              "right": 18,
+              "difference": 5.25
+            },
+            {
+              "seed": 3037,
+              "left": 15.75,
+              "right": 16.5,
+              "difference": -0.75
+            },
+            {
+              "seed": 3041,
+              "left": 29.25,
+              "right": 23.25,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 3061,
+              "left": 19.5,
+              "right": 12,
+              "difference": 7.5
+            },
+            {
+              "seed": 3067,
+              "left": 9.75,
+              "right": 8.25,
+              "difference": 1.5
+            },
+            {
+              "seed": 3079,
+              "left": 33.75,
+              "right": 19.5,
+              "difference": 14.25
+            },
+            {
+              "seed": 3083,
+              "left": 26.25,
+              "right": 30,
+              "difference": -3.75
+            },
+            {
+              "seed": 3089,
+              "left": 33.75,
+              "right": 28.5,
+              "difference": 5.25
+            }
+          ]
+        },
+        "narrowLearning": {
+          "meanDifference": 0.875,
+          "interval": [
+            -1.5625,
+            3.6875
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 24.75,
+              "right": 28.5,
+              "difference": -3.75
+            },
+            {
+              "seed": 3011,
+              "left": 24.75,
+              "right": 27,
+              "difference": -2.25
+            },
+            {
+              "seed": 3019,
+              "left": 16.5,
+              "right": 12,
+              "difference": 4.5
+            },
+            {
+              "seed": 3023,
+              "left": 23.25,
+              "right": 24,
+              "difference": -0.75
+            },
+            {
+              "seed": 3037,
+              "left": 15.75,
+              "right": 21,
+              "difference": -5.25
+            },
+            {
+              "seed": 3041,
+              "left": 29.25,
+              "right": 32.25,
+              "difference": -3
+            },
+            {
+              "seed": 3049,
+              "left": 28.5,
+              "right": 27.75,
+              "difference": 0.75
+            },
+            {
+              "seed": 3061,
+              "left": 19.5,
+              "right": 16.5,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 11.25,
+              "right": 11.25,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 33.75,
+              "right": 21,
+              "difference": 12.75
+            },
+            {
+              "seed": 3083,
+              "left": 26.25,
+              "right": 27,
+              "difference": -0.75
+            },
+            {
+              "seed": 3089,
+              "left": 33.75,
+              "right": 28.5,
+              "difference": 5.25
+            }
+          ]
+        },
+        "diverseMinusFixed": {
+          "meanDifference": -1.625,
+          "interval": [
+            -6.125,
+            2.9375
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 27,
+              "difference": -0.75
+            },
+            {
+              "seed": 3011,
+              "left": 24.75,
+              "right": 30,
+              "difference": -5.25
+            },
+            {
+              "seed": 3019,
+              "left": 15.75,
+              "right": 24,
+              "difference": -8.25
+            },
+            {
+              "seed": 3023,
+              "left": 23.25,
+              "right": 15,
+              "difference": 8.25
+            },
+            {
+              "seed": 3037,
+              "left": 15.75,
+              "right": 33,
+              "difference": -17.25
+            },
+            {
+              "seed": 3041,
+              "left": 29.25,
+              "right": 36,
+              "difference": -6.75
+            },
+            {
+              "seed": 3049,
+              "left": 28.5,
+              "right": 18,
+              "difference": 10.5
+            },
+            {
+              "seed": 3061,
+              "left": 19.5,
+              "right": 9,
+              "difference": 10.5
+            },
+            {
+              "seed": 3067,
+              "left": 9.75,
+              "right": 15,
+              "difference": -5.25
+            },
+            {
+              "seed": 3079,
+              "left": 33.75,
+              "right": 30,
+              "difference": 3.75
+            },
+            {
+              "seed": 3083,
+              "left": 26.25,
+              "right": 30,
+              "difference": -3.75
+            },
+            {
+              "seed": 3089,
+              "left": 33.75,
+              "right": 39,
+              "difference": -5.25
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gates": {
+    "diverse_training_gain": false,
+    "continued_learning_gain": true,
+    "no_large_case_regression": true
+  },
+  "counts": {
+    "training": 1152,
+    "evaluation": 8640,
+    "calibration": 128,
+    "total": 9920
+  },
+  "steps": {
+    "training": {
+      "narrow": 658827,
+      "diverse": 581635
+    },
+    "evaluation": 9766212
+  },
+  "disposition": "do-not-promote",
+  "budgetInterpretation": "Matched training encounters; simulation steps and CPU cost are reported, not assumed equal. This is not a fixed-compute curriculum comparison.",
+  "protocolSha256": "38118e4ae19b9c75be5c079f7ecca8b4a8905b1d9c37aea04d929cc9b7cd7166"
+}

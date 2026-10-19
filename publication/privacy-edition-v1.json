@@ -1,0 +1,1749 @@
+{
+  "schema": 1,
+  "edition": "privacy-v1",
+  "date": "2026-10-19",
+  "scope": "Public distribution with account paths and archive owners removed. Recorded numeric values and Wasm instructions are unchanged.",
+  "artifacts": [
+    {
+      "originalSha256": "c162a5c2853fdc131fd0e8f33189889f11f0ca2c2ed736d82d096f51d912812b",
+      "sha256": "131f3bd42b976716b46da4cd9636d97d74d6804c2ae99c81196e12651af6f296",
+      "bytes": 1996,
+      "kind": "leaf",
+      "paths": [
+        ".gitignore"
+      ]
+    },
+    {
+      "originalSha256": "f252c95d1819f9353452a5cb001e30f97aef0c9fc1ab892f2374c3ac9f5daed2",
+      "sha256": "8d9bf4b2e27e97ccebf2fc672af61587cb3beddad79897de72854b288f3970b9",
+      "bytes": 19604,
+      "kind": "leaf",
+      "paths": [
+        "DESIGN.md",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!DESIGN.md"
+      ]
+    },
+    {
+      "originalSha256": "b937912960d5596a88b5f21dcb189b66a82d1a992a16895a0f14341d9463cea3",
+      "sha256": "bd0551a63d50844c186701b04d0770e0918f32cdccf2959c33a25fb887e76f70",
+      "bytes": 1896,
+      "kind": "leaf",
+      "paths": [
+        "PRODUCT.md",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!PRODUCT.md"
+      ]
+    },
+    {
+      "originalSha256": "081d2200efdb0d9ce6981e3eba80a3ea905b694bdb14531d2b8a5fb72006d621",
+      "sha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92",
+      "bytes": 340591,
+      "kind": "leaf",
+      "paths": [
+        "packages/browser/wasm/tactical_air_bg.wasm",
+        "publication/inputs/arena/wasm/tactical_air_bg.wasm",
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tar.gz!gzip!tactical-air-browser-0.3.0/wasm/tactical_air_bg.wasm",
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tgz!gzip!package/wasm/tactical_air_bg.wasm",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!apps/arena/dist/wasm/tactical_air_bg.wasm",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!apps/arena/public/wasm/tactical_air_bg.wasm",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!packages/browser/wasm/tactical_air_bg.wasm",
+        "publication/inputs/wasm/tactical_air_bg.wasm"
+      ],
+      "wasmCodeSha256": "9d9932e9f82249ab71598ced3d499f4f8264f5985719c959e4ec33edb848e254"
+    },
+    {
+      "originalSha256": "a328f12ea0af230cdd66d17d47a9d9cdb2196477fa362fe544acbb8128b35d92",
+      "sha256": "bcf13aec29d50d198309eb40f901c13c80ff9846d3012059a2ac750912928839",
+      "bytes": 1907,
+      "kind": "leaf",
+      "paths": [
+        "apps/arena/public/build-manifest.json",
+        "publication/inputs/arena/build-manifest.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!apps/arena/dist/build-manifest.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!apps/arena/public/build-manifest.json"
+      ]
+    },
+    {
+      "originalSha256": "b819a8b2e5521c6d43d5adffff24a8c504e835ca3e783f7ac88d1049618f8e97",
+      "sha256": "a15842757361c4bdd1fe1224469d647c5a95bec9bb1a43119c9518ad378c7a26",
+      "bytes": 693,
+      "kind": "leaf",
+      "paths": [
+        "apps/microsite/README.md"
+      ]
+    },
+    {
+      "originalSha256": "d036dd30e29d61adf0bd850f176f9349e674e123f8389882a3d6b1c7874ff6a3",
+      "sha256": "3ad3f2a18b624d56e620fc3f32ea7cfbef382ce188e158b12cefffd38c2d8970",
+      "bytes": 340591,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz!gzip!apps/arena/public/wasm/tactical_air_bg.wasm"
+      ],
+      "wasmCodeSha256": "2ab08e4d2548320c3a56067b0017a2a7682f0272a4fbf860e3784bce61b59df6"
+    },
+    {
+      "originalSha256": "87b67a27e2fc7576a0dfb88da3e5fb0155e2f4fe8c2c2585c73753daec3c6adf",
+      "sha256": "dfd7a61883df0a22d775341a554a21bff0c974ba8e4272c4f1b71a78618b9101",
+      "bytes": 15748928,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/adaptation-v1.results.json.gz!gzip",
+        "docs/experiments/baseline-v1.source.tar.gz!gzip!docs/experiments/adaptation-v1.results.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/adaptation-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "f28dd0eca5f7a4f78f5943fec3fd1a2080cfd105bd39f3426195f3b8d6309679",
+      "sha256": "91b350adbf4ee6fb27a2470abac416b7453fcddf8883c74bbe91bf9dcff40403",
+      "bytes": 794652,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/adaptation-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "ea5ee3b57e8e70b8c331d307196663b9c5274d314dd31078e1be53db3f9b8e86",
+      "sha256": "731b0434ac3ce011a30a78867d6e31818de4f15c4828ac4e9b2481783441fd4c",
+      "bytes": 6069,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz!gzip!docs/experiments/reward-attribution-v1.protocol.json",
+        "docs/experiments/reward-attribution-v1.protocol.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/reward-attribution-v1.protocol.json"
+      ]
+    },
+    {
+      "originalSha256": "0fc420a834e683e6d010c58dc6031f0b70d322c13693e145b48ea7c7b5d21583",
+      "sha256": "a5260640989757d8a9783735f4ef8d47bf6aaa0f176d8e935d6568dfeb5e8c6a",
+      "bytes": 15972341,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz!gzip!docs/experiments/reward-attribution-v1.results.json",
+        "docs/experiments/reward-attribution-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/reward-attribution-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "56773af59d64e3ae349ad4d889771d997a9d2b261781f53e169141d50bd50672",
+      "sha256": "b1a33548434b4c873981f39a7726d4e0fbd4c35b508dc2d1ba28b5dec016a223",
+      "bytes": 533869,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz!gzip!docs/experiments/reward-attribution-v1.summary.json",
+        "docs/experiments/reward-attribution-v1.summary.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/reward-attribution-v1.summary.json"
+      ]
+    },
+    {
+      "originalSha256": "8efc0a920ede7e4ddefb32d3251518baf2173689aec40c3bb042839c65262f26",
+      "sha256": "f75c78d2a89a2e828037408dae152a8e349a196c99ebcc6f37b30b5c6288b7ca",
+      "bytes": 33454080,
+      "kind": "tar",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "d596fb33d9d64e1dbb21a734a1f9f36904e0d05a31649df68011e8760f54ba18",
+      "sha256": "1d2a0b92c30c166394e143c2514004734f494e0263978aaeb57d7ce115cea346",
+      "bytes": 1878153,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/baseline-v1.source.tar.gz",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "f7234d52ae2bcfdacb42d9d7dd1dd711db30bcafd00bd48c748a4e204ee4a5c3",
+      "sha256": "88c5e511e7fcb4f83e37b2803fe404ef944095574db547001cd5e094f598002d",
+      "bytes": 6293,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/additive-credit-v1.protocol.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/additive-credit-v1.protocol.json"
+      ]
+    },
+    {
+      "originalSha256": "c8463f35037ce0d82e1977c7b8326369949ee75135cb92d4669c1bf47475399c",
+      "sha256": "5a4ef82e9aab015c816d055831bd1b8112b42814d07468dcde82a755599b8d4a",
+      "bytes": 326,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/baseline-v1.source.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/baseline-v1.source.json"
+      ]
+    },
+    {
+      "originalSha256": "98843080ff1778be73fcac81112e18c670460ae8eba85444050b5f51be493e44",
+      "sha256": "ec5053feff3f54bd450a160261491834222599da9beafc151b96bb936a46b2a7",
+      "bytes": 15994421,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/additive-credit-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/additive-credit-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "0030fac9c093543dac195df0cd46c0960d5af95374f996c1958798efafd5df1d",
+      "sha256": "5b1fe0dc1df3cf8db64b1749e30c0e4cebb3621b98055759e1451353e024a182",
+      "bytes": 829131,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/additive-credit-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "3bb651bb1b553c82347307686d7150c260deecce566f826cfdcddbbb14307642",
+      "sha256": "51b0f43cf92354e67f9eaa709dba134868c07c0d772289c000b84a146aae3bff",
+      "bytes": 533451,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/additive-credit-v1.summary.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/additive-credit-v1.summary.json"
+      ]
+    },
+    {
+      "originalSha256": "29bd3a5d5c212977e0c761b46dcf3e8e36c849abb7b5a7d650c502b77e711ded",
+      "sha256": "ddbfe1c3955fc862721027e66926be96fd4799346f16cef9483f3f5b479510f9",
+      "bytes": 77331186,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.audit.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2.audit.json"
+      ]
+    },
+    {
+      "originalSha256": "9945129991fa5c0c473ed5ba53d915bf1d62cb8eaeebd8e63281dfdc97d5c4f0",
+      "sha256": "f108ca168bc42669f3b19bf7eae8343bf90661597c7f383cf1da62184d527cc5",
+      "bytes": 59080903,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-development-v1.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-development-v1.json"
+      ]
+    },
+    {
+      "originalSha256": "fe06567d16d2f5830ac6f1500facc079407887b3495ba41e7b948c6883111402",
+      "sha256": "3d81646e7d615e5652aac5f0b2288480e2e798d7a67feac938de38a6aae5b462",
+      "bytes": 2352621,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/change-detection-development-v1.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "40dfe1f30fe9911fa16e2639a34767f5d2af548f52712c2f499ffecae9afb815",
+      "sha256": "45b6df2c49d5e9f6a2c913dda4bb0111469eeae9691014a8f27a49c2efa545f3",
+      "bytes": 153,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-development-v1.verification.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-development-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "43be1ff87f599f969aa999e9c9f851cacf3ddd6dc3d4a54f1839281ea670e18a",
+      "sha256": "d5c3c699afabf23e6dc1ae460bb371e52cc1789b47f8896c0316f01cb19d2111",
+      "bytes": 20927825,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1.audit.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.audit.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.audit.json"
+      ]
+    },
+    {
+      "originalSha256": "3b089f776c67a9118e19b78ea4da65babc6a0c5615c45a4f5b1cfa10831dd72f",
+      "sha256": "4d72b2476e40e3399935ca4644742ca2d18ebef56d6d38096c99b83912e20049",
+      "bytes": 258293292,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "aa9e838e1a52363778cc7ee9ff759c688fffb09be90bbddff5d5e95f5227158f",
+      "sha256": "f081d701450810ba461c34b7df8afc86f2332f437ebdd6e6a4895f7d89026343",
+      "bytes": 9763666,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1-view.html",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1-view.html"
+      ]
+    },
+    {
+      "originalSha256": "d8392fc91d4d20be04b0f7768e9edd5e7d8c7b3afa278b1b1e874f90254a77d3",
+      "sha256": "956a631d9e40b7e6f2326484aa74679d0241a2029c8447618649cbe0296ad673",
+      "bytes": 9747701,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1-view.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1-view.json"
+      ]
+    },
+    {
+      "originalSha256": "be72c3d0235691b970e10da47eae9e377ebc7b10370b7326b4c7b064deebf87d",
+      "sha256": "b0f59b07d76e5245160d3f8e57a03b4221588389ec6cde9ce0bf49ba6a987d99",
+      "bytes": 1533775,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/change-detection-v1-view.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "1d2eaf8f572384255efe61eeac2c6ad321a91c6294a71f62be7d4daed7c77733",
+      "sha256": "0e938b453ccad23d8d2fd5f78d26cdd7a5199b78f1000678ede34f7c6d6a0d8d",
+      "bytes": 511,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1-view.view.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "f42df219722a9fab2794b3c4bcdc185d1586196acfaa87f484485b550a0c5748",
+      "sha256": "b7f49a1876cf86e02871d9fb816a3385c2db64312ec910b21ba46a654e897910",
+      "bytes": 838154,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/change-detection-v1.audit.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "bade639d7e405618933f5b7b6f54fe07793137d68497ddae9d6c19c0fb5975ee",
+      "sha256": "fec59b347557a4bfbb6bda6fd862b3c90caea51d7ae1d385404b8585ab15c2ec",
+      "bytes": 10239574,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/change-detection-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "cc81bfed1546ab417a82d03fe12b085e17bf5f7a3aa265bab84189a1b068bb45",
+      "sha256": "4386708abb2c7282d5f72da88307b516a34c78aa54285df03363313a00bdcbd3",
+      "bytes": 6026,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1.started.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "0066b1b8cabfacb86f0991e3d478e83fa570e1fefc423816d353b0114c351000",
+      "sha256": "063a3a02d3f210765e157b53f19f164f2b03e42c30ff2ad578d40529913c70a3",
+      "bytes": 293,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/change-detection-v1.verification.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.verification.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/change-detection-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "701e088c3716661da0fcb88048542abcfad3a332846c2dc8fcd47e5126320cd8",
+      "sha256": "ab352a9733cee3352d0108b381f37f97e8873e4921d50ed8f493ff40b4914de9",
+      "bytes": 148966745,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "553dfac28189d23dd85f16f74cd377d83576e612e2827e3cc0c91846eac4ad40",
+      "sha256": "dc1efae2676615c3700a7c4b2bd1316bce0830da1f6a64bd874052236826cebd",
+      "bytes": 5192889,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1-view.html",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1-view.html"
+      ]
+    },
+    {
+      "originalSha256": "9d9fab7f16cef3be1b5c362e5e19132afb830d84bf8ed71649a96321099f180b",
+      "sha256": "f4862b6862753e17d6f6a318e4465a5e1a5ebaeba37d95ead6d80daefe00fcd0",
+      "bytes": 5179955,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1-view.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1-view.json"
+      ]
+    },
+    {
+      "originalSha256": "416f40702b12ead0cb44c38e23d88365366f5925fc0b3689efc60de58558ca75",
+      "sha256": "ffad3b4472d35aca26f705a1bbc3b936b12ebad629dfa1db3bee9df808b3e138",
+      "bytes": 656287,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/conservative-development-v1-view.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "893cf1219fcb09437f99325f7ad52a15c295edce833338a204889946c5a7e898",
+      "sha256": "e536f974925e1eb8795f82b6d2204a9570a5ddb24d5b7d4a43818da34812e93b",
+      "bytes": 483,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1-view.view.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "9bd56fadd9d3b054818cba2fca06218e172fa7c96bb02391bf8392d04fd8bc4f",
+      "sha256": "0889e2f8fe4dd39d0515688c4784a35d14a40ff73fc0fcce83c86e9b67245888",
+      "bytes": 17058958,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/conservative-development-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "43f6bfcc44d854f03564299ecf40032d798852224c8f77d9a0385e70e8afafd1",
+      "sha256": "0b120cae2cc0c6249a91ce8da8662d59a63fba38025c07336f7f5ae976fdafc6",
+      "bytes": 7486,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1.started.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "2b133484f05e3e823cfc4727f4e46a765cb4dbe9ee2c18d2625e0422473a1f1c",
+      "sha256": "a8c89d1d73141983ea4ae0a5a04d910a2194538a8ba8dadcd3a14be5d521d4d2",
+      "bytes": 218,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/conservative-development-v1.verification.json",
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./docs/experiments/conservative-development-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "ef200431eaf51cc026d0ecf1af86b7dc64d67fe635aade0b147bd8024c35848e",
+      "sha256": "648c1420958ca9fdbe704c6212e76e6e5e6798d85320afb74f3166199fe66a72",
+      "bytes": 19976539,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/curriculum-budget-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "ba2cadc42e94a4b59ef6320db7ca54b9e8fc34ad83112a49e8410d0c295346f2",
+      "sha256": "e899e319ea744f38ba839a7f4837e5fb3c5bcc9a618975e7f55661f9ba15d995",
+      "bytes": 1479266,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/curriculum-budget-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "8e3e2511933910708ba86d4f84999c327667cd671dffc61c51565935df4a2c16",
+      "sha256": "c51ff3f41f610574de715c2ac7b60d79479e38e17e12ddce555a41e6347f9d1f",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/curriculum-budget-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "66c44a257dcc6e52d7ae930ffd1760704ecb7a3f6886eec85b980ff3c385df3c",
+      "sha256": "59aa2fb91f0c03e5c0be3152af8927b43e07427350a0a4f7732a9f08b8f2225a",
+      "bytes": 283,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/curriculum-budget-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/curriculum-budget-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "fc8030ab70afaf980577cebd198af1abc7a0f44653b6a7b65dbbf18f6d80065c",
+      "sha256": "e4e7b4f35efcb401f60795036530acc309ba9f32fb62888f111adb40ff4042c5",
+      "bytes": 20407708,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/deception-stress-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/deception-stress-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/deception-stress-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "7dc3738cfa44d6ea4fb5e03832cdeadc4a87d9aaeb2eb3b97124d5687a185022",
+      "sha256": "0a2985ef517646b7052c1fb8bbe190cef6de55d464ad44a60dc877531b4d336c",
+      "bytes": 921018,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/deception-stress-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "23ca697b91682adf643239ea6bae554e8531e09ce734e1274d86ee9bdbaa3c10",
+      "sha256": "4f4c2e6abe92555277be8cc93ca231b7de357ebad6d513b3bb6210891f91c9f9",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/deception-stress-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/deception-stress-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/deception-stress-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "4db94f46fc3672dbedfb35926cf1e8e555696cf915564d050317c01654ce6bd3",
+      "sha256": "788a7cf51ae5363bc2efba526983c18c0c51b78015140103f595e06a21d24c68",
+      "bytes": 282,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/deception-stress-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/deception-stress-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/deception-stress-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "859e9c5a39b5a856f4be87805e34bd1f9639f9dac320bc9b0640ad50a1e31c39",
+      "sha256": "0a7dfb0486ecd9b716b596457cd144026c32ebec2651df394b61af5c0dd59da1",
+      "bytes": 8607,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/scenario-transfer-v1.protocol.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/scenario-transfer-v1.protocol.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/scenario-transfer-v1.protocol.json"
+      ]
+    },
+    {
+      "originalSha256": "a9a51d62165f208fec55ddc4d986e7b83c16a2784189e456c817ac4fcedd8dc2",
+      "sha256": "39a1d8b975cd2d95d086f54950ceac8f070a7661938111a346f7e87a31e57f66",
+      "bytes": 336166,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/feint-interactions-v1.results.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/feint-interactions-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "43648590beaf1f0a32cc3c9c54261b67a2e9c7fd01113155d59b61f7d62ce9f3",
+      "sha256": "c5b32425558c5310b0e30be8047f5eab6812f4956a01f8c1a10eab52dad9a01a",
+      "bytes": 3110,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/feint-interactions-v1.started.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/feint-interactions-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "ba5f06f785f141df5633b95fb2a839573b8d3e56a7b9bef70474d642a4798144",
+      "sha256": "97624e873c151413b24647a4c9b73bdf1577e3f451480b68a05bb02a2cb009d4",
+      "bytes": 148,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/feint-interactions-v1.verification.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/feint-interactions-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "2b27c8eeccb5e34ad6b6520b67f7015bba90f612ab4a78879f24149fee2a058e",
+      "sha256": "ccc2f3935b50384d9b6cb89262ff6d25ab14491ca4fcac5afd1e5f0d82e66883",
+      "bytes": 44290224,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/individual-adaptation-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "dacec71a5a5c06cb548a4271e0fd58e3230fa8a3361e09c7752b531ed6dd9f6a",
+      "sha256": "2365f2bfb83a7f94af75718621dcc98b134e7a0684ecb230536d499dc8f8da58",
+      "bytes": 1955350,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/individual-adaptation-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "f0e579ce3baa43a9446dda8d6d7ce1b19edc97cba0a65694c8023b9b00e3eae1",
+      "sha256": "2cedae0b1d36ccc4ebdfe0da85cd3d8237007a4e43d97cf63e93292ae6631f17",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/individual-adaptation-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "41e2cacfac644002f1c8df87cb87991cf8c2203ee2b07dab294e9917b4c684ac",
+      "sha256": "e5a3f8e25ee551b4a8e95f4e56336e410d59531bb137a2ca86ac52e817639eba",
+      "bytes": 284,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/individual-adaptation-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/individual-adaptation-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "b1cf3099c02795c2f5a7d07a6a0b2dcf01e35d58451f53444a924ae7421b9160",
+      "sha256": "a11d9b8da6bb86b58a7bafb4c2e1429315789c2cf870b5b2ad0fd5dca71553dd",
+      "bytes": 59762790,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/team-coordination-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/team-coordination-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/team-coordination-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "7f242a2481c689417774fb5db2d079ca76b52e5bd0e67bdfa95c571a78a10675",
+      "sha256": "b350971f439b5d6c6e6b1295e127b0741beb4313d4875d151cdcff2a373de172",
+      "bytes": 21920228,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/situational-memory-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/situational-memory-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/situational-memory-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "43bda8f3d52fd4009da7f1a7cc0f8224dfa72c97e7064b1704be0815a16cd430",
+      "sha256": "040efa7023043aacb44fa9a19da70225655abbe4b6de7e1e68266d32b6245c15",
+      "bytes": 20229951,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/return-memory-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/return-memory-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/return-memory-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "f3e3a9233bd90b748029bbacbf3ae248dbb0c1c5db0078f239164a50b1e475e7",
+      "sha256": "109f3f357c8adb28b34bdd903a0b012ca52d8944cb43c2c9bf9d8c607aa4206a",
+      "bytes": 16307903,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/learning-opportunity-audit-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.results.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "14d7db747cf3197553d498e03a748f0afdea92d57f6ced6cfc3b702b0ab70019",
+      "sha256": "c4dce603a45b8a2a91c6d6eeaa777642d17855cd3a5077776a4e1b341355f185",
+      "bytes": 521075,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/learning-opportunity-audit-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "ce2dedfe5008e2218ec16308df977f8b0f008c13ccbdade0970137036f69337c",
+      "sha256": "4e51dfc0495c27dbc17de7d6b2056b4c936895b23664b6903ae4a28cb279c22e",
+      "bytes": 5671,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/learning-opportunity-audit-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "aa8958335ce5e6a2a091955227aca052599c153f5d1f48fdeb9dcb5875d87c31",
+      "sha256": "e28d9a7a24054d22f0b937f09ad377ce5f337334687439d5267944205c6aac3b",
+      "bytes": 225,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/learning-opportunity-audit-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/learning-opportunity-audit-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "0656bfc62183799c8971b250ca0e6bf9936ee60dee9256fa14f28a57ca43d069",
+      "sha256": "f74e366e003d30897608b4f6a1aac5932f109777652fb2bbf728e71df9a400de",
+      "bytes": 65822190,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2.results.json"
+      ]
+    },
+    {
+      "originalSha256": "ce621b8554fb4d3aa83453456ad79366aaced94cd149970639fede7384883a83",
+      "sha256": "00dba3c2169a6b0bd7b7dddc94582dd0d6a4c1c41cf6ca595385da809fd9ac34",
+      "bytes": 3592753,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view-2.html",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2-view-2.html"
+      ]
+    },
+    {
+      "originalSha256": "0831b3ea54b5d71a5c3004bf90ec54dae8d7f874507bca36046a74f80531a378",
+      "sha256": "1aff5ad9eea8b0d92c8a8ce11512c1419f6c6a00475c0b1cb0086d94af330392",
+      "bytes": 3577056,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view-2.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2-view-2.json"
+      ]
+    },
+    {
+      "originalSha256": "1d1e63b9b99ae19d506bd53f2d8143ed4ba15853c2118dbd30b280707970f17b",
+      "sha256": "25f589d93238a052557de4c28e7e785eae49fdd04274ffc35960dbce50039faa",
+      "bytes": 567288,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view-2.json.gz",
+        "docs/experiments/opportunity-validation-v2-view.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "67683536a19c9dfbe0c9e745eb892096367725f88983710f69d1b067b295461a",
+      "sha256": "d9e109c9f985205b71d73439b37bd9a7538b320fc86eabfc391f68dc4e0ee038",
+      "bytes": 501,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view-2.view.json",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2-view-2.view.json"
+      ]
+    },
+    {
+      "originalSha256": "543f908231d006b47ebe46e4c71a742cbfe56801a347bc9c5d23232c6e40d6ba",
+      "sha256": "498c5e87b86e6da02988e8c08148cb62a6b50a57e279b1960bfcee458b961eb3",
+      "bytes": 3592617,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view.html"
+      ]
+    },
+    {
+      "originalSha256": "ae4f32f6cfac36d5b53fc761f62ac72b5cc874a3424c16db66b520614b372ca4",
+      "sha256": "0fce655e2d7bbac8b0b3c15235cacc8d21092085dbe115488b3c6d0fc08c64db",
+      "bytes": 501,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "ed97b2da4b4ecfa078084e161cdf6759778c36068d27b9286d46ed52c9514338",
+      "sha256": "ff3d85a412ebe44be80267ec740c9de1b6b7abd494c28cdc5dbd94a690721efa",
+      "bytes": 2495984,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.audit.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "97891bfe0cf65208ec05ab0d99a4c2efd0e8a80084d0a6bebcb68c15cc7d8faf",
+      "sha256": "9de12122e4e26fb6afacb58169695d1a2e5f955e86e894e36b5efbb757d03cd7",
+      "bytes": 3416810,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "ca22c81ec5e2721f90976a0c5e8738773e75a586867a167726346ee6b11773c4",
+      "sha256": "802ba6ccd01e0b8a0d7ae5b2ed8332b252f68df1281d8cbf937f6246f8a874f7",
+      "bytes": 5566,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.started.json",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2.started.json"
+      ]
+    },
+    {
+      "originalSha256": "e3de60ffced01e7a56d1b2ad31a5a6a5954e2960a73043b4334bf950544681bb",
+      "sha256": "d490d3068d9b404993cd670a4f6917af6211f930fb4112682b27e623ec339263",
+      "bytes": 294,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/opportunity-validation-v2.verification.json",
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/experiments/opportunity-validation-v2.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "7795f79a66fb42d68d791ff3e2c56c0f132dd94cbe27c6cf36d764b312354d16",
+      "sha256": "2270b2bc6ec34f8f860344abcdc2327f6616e52ccac3f96dc0277b8785e59045",
+      "bytes": 1588041,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1-view-2.html",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.html",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.html"
+      ]
+    },
+    {
+      "originalSha256": "d8e73128088166d636f219b7124f739e6a7f72a9cfc92de6a4f49dda7fe93537",
+      "sha256": "6e2b503a3cecac5bf127b5f5efa994ece7aa2854625b3e853bbe5fbbbc9c6da0",
+      "bytes": 1574764,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1-view-2.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.json"
+      ]
+    },
+    {
+      "originalSha256": "de7e92bd5c7d2b780ac3093c9bdba76ac1029e2787e5d4b0e07908ea6584da0b",
+      "sha256": "12725866153f6aa8e8e154f64e41e5db5bd10eb544b7352ef31d245ff595990c",
+      "bytes": 185510,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/research-program-v1-view-2.json.gz",
+        "docs/experiments/research-program-v1-view.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "6405f37ca9e5b29e19906e26c776a78f26e98087064b16a60e634bc671492b03",
+      "sha256": "c7e508981900d6d89379a5ff17d7bfd13a4c8c78c0cd334cf444425b854a06ff",
+      "bytes": 947,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1-view-2.view.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.view.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/research-program-v1-view-2.view.json"
+      ]
+    },
+    {
+      "originalSha256": "dda88b1db9da31d5bd9f916b2f835bc77a8d75b4bb7461b56f02c222fd62f65a",
+      "sha256": "f59bae2595d04fec0e6e677fbe7ed5c598fbcf1d3a858f3e500278e0aceec1e4",
+      "bytes": 1587210,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1-view.html"
+      ]
+    },
+    {
+      "originalSha256": "6b6abb6d780c019dc803f803b930a6d5741dc58258c8fb2218644384913c404a",
+      "sha256": "b7f05de36da03f4417197aa21bccda0588191f39a153dc5f6001bc112b0d446a",
+      "bytes": 947,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "57b688c7889c8cc02105edb6969de92236c900f9209775964ea46304ae61132f",
+      "sha256": "c65b0d0d1098c69f2fba60aee50c8f30be25214bf927338a1885014875feaf91",
+      "bytes": 4713,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/research-program-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/research-program-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/research-program-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "70568f9bde19c42ffd7c350cdc6727d6b538b8175a7d31524fa6bc2d8879a60d",
+      "sha256": "23e4e55f9ff8dd0320d215956c5f1ded9d2cde49f8f922739585afea85b3d7c6",
+      "bytes": 54624910,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "8e1f07bc82cb4bb8d9fe7c060331f6327e006fffb9a42d387b9677242acd3fc8",
+      "sha256": "8c4c728503ceaa02789e5b07fb5211a63d27eb6b02b612fde7a9cfe30b303bf2",
+      "bytes": 650204,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1-view.html",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1-view.html"
+      ]
+    },
+    {
+      "originalSha256": "2bf03318069db6d764d541d5f245e2c4a68d58f7c53963df35aa0710295e7d91",
+      "sha256": "7128b404e133b8e06b92cfe9e24eb3ed001439d04032c118ef72f8fec2d3d499",
+      "bytes": 638036,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1-view.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1-view.json"
+      ]
+    },
+    {
+      "originalSha256": "e9a5d2cb2c07d4e9d95311c4d88ef3fa957104baccec58e357bbb0fdd8735a03",
+      "sha256": "9cfbb5f785d1a68eaf0477bfd8417639e14abe03e382905877a8320130a3c3b7",
+      "bytes": 481,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1-view.view.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "e788e8506f9d538959ef39aa718cfecbe6492d652c2a4b4396b3a598529fcabb",
+      "sha256": "2c9cc920439577d0afda25c5de1a1672765a074b1294f71f8241071f2b8983fb",
+      "bytes": 3756681,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/retention-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "1162c3101f3da41337f31f7ea133500bcb91ced196ad06f8fc2d1e9e4c95a4de",
+      "sha256": "789f52c74205a46d3b23037c04ff70acac120fe220e025f0e899dbb6719deaf4",
+      "bytes": 1195,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1.runtime-identity.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1.runtime-identity.json"
+      ]
+    },
+    {
+      "originalSha256": "7052753c964e6d8b44fe30df9fdd8294efc9ced8e57b13277390d0202372fbd7",
+      "sha256": "1c407477f3860bb700e5844085639cdeb21907cfef9b3ba272bd31fe3490e29b",
+      "bytes": 4028,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1.started.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "000b33c39e4fd209e0766595c90e9f94f4ee1299fa87b0e111d1d6f8b575133c",
+      "sha256": "50697ed5658e73a198e408fcc11eac91582ca18c04eaf401a1bae009630f9bcf",
+      "bytes": 281,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/retention-v1.verification.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/retention-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "fc88233fb816ae662aa14cd063b64664a9f7075f5f231ff72a15ad1b13438984",
+      "sha256": "a8651bf36b197c5468a4f8db4ffcdd943f34a631775091d61708fb38ca61a74a",
+      "bytes": 934261,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/return-memory-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "7678398596cc2312c3194ad4e8f619f87ece3ce13f4025f052fb29e0d83398e2",
+      "sha256": "1a411b6bfa63581bf06a12b05c208f7b0a682297de37b447cd214d98522b238d",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/return-memory-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/return-memory-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/return-memory-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "3e40245593b301bfa3594bdbf2dc91d9276a3344cd05f3633b73f8d91ea53009",
+      "sha256": "49fe90f72e0d21ec336ed7539b7c7651077eb6d0f01fba8cc2911d96b3ac2b21",
+      "bytes": 282,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/return-memory-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/return-memory-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/return-memory-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "502572e637a5149a6aba907ea054204bb87debe90423e44dec0bc0de315a1dad",
+      "sha256": "fed7f50e2a5ca4998046e4f9c22e66fc910b1362950e83d331ea9683e8ae8872",
+      "bytes": 835648,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/reward-attribution-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "c60adf63035d7d85c56c4c6313b87ecb5a8366b287a2d5323a91ed2238d540e4",
+      "sha256": "a71f7552728bb14b6af10ff07c0b09e501b10f41a21144f23438d94f66ad48c2",
+      "bytes": 33697816,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/scenario-transfer-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/scenario-transfer-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "71b1e107211e97ce51489c695339d797e12abd52cd5e2073cb379427252043ec",
+      "sha256": "993e45906d0dbe542a9eb88f6e8f2e5eb4d15965239895e8ea394110c3f56888",
+      "bytes": 1786331,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/scenario-transfer-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "4b11516c2675d2e319924015e447f6c5f4eae43e75c224704c85e671cdc9ba13",
+      "sha256": "878b09c6ce17bb24d0b8b3a214c0fbe87bd3510090c97ab263a1675759361a41",
+      "bytes": 115014,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/scenario-transfer-v1.summary.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/experiments/scenario-transfer-v1.summary.json"
+      ]
+    },
+    {
+      "originalSha256": "309c9ecac4766fc8943d6235693211d769bc54b42186f17f895fc39b926adc02",
+      "sha256": "72756456827dde6878a0f18c3a40f5270c7d4db91f3aa190bb90f0d326cd778a",
+      "bytes": 1567059,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/situational-memory-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "0410b5913aadd8ffbdfd4aa45dff5d77afa05d931b08c0b177d515a5ee754f4d",
+      "sha256": "c1e9b10f10ad16dfe256e617b691a1ace162751b11e68171db304eff465e9e47",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/situational-memory-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/situational-memory-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/situational-memory-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "b947951eed835885f0eed2e912a84e2bbfdc862d1ef096790aad61b53406b667",
+      "sha256": "d4c739ef3a8441d628b30aa421a63af6cde6320f3c6131330979eecdf3d6b9e3",
+      "bytes": 282,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/situational-memory-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/situational-memory-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/situational-memory-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "f0e54976f3d9e4fc598fd375f01c4d9442933a283f18fa544fb808ad3ba39516",
+      "sha256": "41a49e92847c22c1ba696e40cf71075247da5f33175eb80ca07edd5fbb319a3e",
+      "bytes": 30939319,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.results.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "24b064b3a71b77363bf9a811979a4f231849436ebbc2b5d1be4e57da9a307012",
+      "sha256": "60d4914c096327a8314264d955a407f7196866bc55e6749e2a8a5731527a5503",
+      "bytes": 2733,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/switch-boundary-v1.protocol.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/switch-boundary-v1.protocol.json"
+      ]
+    },
+    {
+      "originalSha256": "36d18c6b283da6cf166233b93e79b832ab4ffa4bbaa8677714f9f587e6ff1c9e",
+      "sha256": "bae4874ef3b5c312d88f5b4da3fc445836c3759b2cd3d592afa2ed46e76c04c7",
+      "bytes": 6978559,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/switch-boundary-v1.results.json.gz!gzip",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/switch-boundary-v1.results.json"
+      ]
+    },
+    {
+      "originalSha256": "0a25d3c853778ed8c65f66711b0ab5a5a57f3f03ba1b651412458a59c92f6a5c",
+      "sha256": "26a1f6b82bd36fb1260295bd943dce45b38fe0e692d0bbecd67fd50291ddf309",
+      "bytes": 478746,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/switch-boundary-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "1fed2a1d8ef57554539a111edece3c8b0e1a3c7d640a8a7498c20559f921b4ca",
+      "sha256": "065f09da2a6dcc0c30e24b70fe999505edd9433e5bff2a0f6c643191f1246a6a",
+      "bytes": 3223,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/switch-boundary-v1.started.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/switch-boundary-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "8b346849596566c6ff83f5fe9cea1e1864a50189680bf356730e517d77ae0cef",
+      "sha256": "08f63a3ea8dada40baa3565eb5fae8cceeb2768e3b34a73c44af4ff5c9bee919",
+      "bytes": 225,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/switch-boundary-v1.verification.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/switch-boundary-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "851d9af72943e9822f31c5f0f197296d542e79a1a42d050f71e1b7fcd994aa15",
+      "sha256": "08e4c168817b4b75506a8d6f6ae7d136e3387fd966c5ffb136f25927048499d3",
+      "bytes": 851589,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1-replay.html",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-replay.html",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-replay.html"
+      ]
+    },
+    {
+      "originalSha256": "c5b1a9f062c37f5f42f3d9aebe35aecb1ccf1c5283e56a1a66283d319001b14d",
+      "sha256": "e33e8ab7706f7ae7cd5ee6cbe6b78126d0a09d6400921a0512d82e481a3cff62",
+      "bytes": 839538,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1-replay.json",
+        "docs/experiments/synthetic-population-v1-view.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-replay.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-replay.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.json"
+      ]
+    },
+    {
+      "originalSha256": "a448da516372261d6ebdd3d51045ed7a04ef0068261ad82650c8fe4713cf36bc",
+      "sha256": "330e05b62260d8031953d43ddc82447e74f45dfdbb94ce77fac4dc9436b5130e",
+      "bytes": 851730,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1-view.html",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.html",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.html"
+      ]
+    },
+    {
+      "originalSha256": "1780d919667f84418b90418639527720227c13d504f1f0b2b0cfb64575db9612",
+      "sha256": "7248d4edbcdb8c81b6f30d1158f08efcc8098f0abdc8159af71434b8dbac1bd5",
+      "bytes": 351,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1-view.view.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.view.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1-view.view.json"
+      ]
+    },
+    {
+      "originalSha256": "e88fbe2dc706e739493aeea82feca70476cf0b745b370c129623ca13b4ba3322",
+      "sha256": "c42a2608bac63c7dda2adbc60ad79bfa84faedb6dadeac088c23983fb48a628d",
+      "bytes": 1854646,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/synthetic-population-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "87e48657fba3d9c376a2fbb06dc0295939241a04c0101338d3c113f66a42af0a",
+      "sha256": "7141da7c1fcfdc4f82e4aee9db881fe4b072435315ab718cd9b3981b1197bd53",
+      "bytes": 2850,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1.started.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.started.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "7d13289f0df8484aa2f7a4b9d6118e7982af032d007a7bea690eb08288500492",
+      "sha256": "bb68533b8b67ca19ff516cf10d73c3e3098fdeca1dafc4a2a3fb00ae6a9ce064",
+      "bytes": 245,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/synthetic-population-v1.verification-full.json",
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.verification-full.json",
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./docs/experiments/synthetic-population-v1.verification-full.json"
+      ]
+    },
+    {
+      "originalSha256": "8cc5994281c480bd583e344e8d792ae08d0b3abf908faacc5278950c24f4f770",
+      "sha256": "e28b921671d832bde6f033e17c2f782f9078c465347ca0b306457178f87950cc",
+      "bytes": 4735493,
+      "kind": "gzip",
+      "paths": [
+        "docs/experiments/team-coordination-v1.results.json.gz"
+      ]
+    },
+    {
+      "originalSha256": "3875c0d6b2184d98100abab2a764d439652c1ccf4e5124e06d933a173f6ff82b",
+      "sha256": "f264378e0498c75ecca283a1834f50f895a92bfdf46f323f7af61ad7f0e38eb6",
+      "bytes": 4664,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/team-coordination-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/team-coordination-v1.started.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/team-coordination-v1.started.json"
+      ]
+    },
+    {
+      "originalSha256": "514ac7d35984fef6fc4a1d6a44c6d8ca0b4c9e0b9183c000cd5e169a54222c26",
+      "sha256": "760df0fbf07a956720ccf47fed9dd37a143e62fca64a45435964889abdd3579f",
+      "bytes": 284,
+      "kind": "leaf",
+      "paths": [
+        "docs/experiments/team-coordination-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/experiments/team-coordination-v1.verification.json",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/experiments/team-coordination-v1.verification.json"
+      ]
+    },
+    {
+      "originalSha256": "2a4e080b6a8f91e1a6883fd2996564f5a08f6dee26940732582e82f7cadd0ee0",
+      "sha256": "91911d90041e52be51ac64123cf9473b1f8a4259f1b782f965ef1a39a60e2162",
+      "bytes": 11862,
+      "kind": "leaf",
+      "paths": [
+        "docs/held-out-evaluation.json",
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/held-out-evaluation.json"
+      ]
+    },
+    {
+      "originalSha256": "5d6da1e32dcfb27b6f8c3ae6a1b9cb969aea0b62e8fba7d873500e7d5ea53707",
+      "sha256": "fbc3906007ecefc996a54e9a8922b8c0d2f4800135b163ccc9b16b7033d61562",
+      "bytes": 1158,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/change-detection-v1.primary-arithmetic.json",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/releases/change-detection-v1.primary-arithmetic.json"
+      ]
+    },
+    {
+      "originalSha256": "dface4362ee0a0dd33e860293489b6ced18924c01aea37951a503f08f5499c71",
+      "sha256": "fc83e1979d232e5b8efec1e2ebdcfa19eefe4459861fc92de6827770b13726bd",
+      "bytes": 3041,
+      "kind": "leaf",
+      "paths": [
+        "docs/verification-change-detection-v1.md",
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./docs/verification-change-detection-v1.md"
+      ]
+    },
+    {
+      "originalSha256": "6d12db90d06f6bfe9d1b5b8bdbfdbdd777a226da680cb83ba271abfc20285b49",
+      "sha256": "d7f31172532b932fb2cc374acc632d8a33a5300d483a67d5bf7715f1d3c3c427",
+      "bytes": 7776,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "4f101b04437964f8d414fb134cb3350d650103bb70955d995db5db77f1abdfc7",
+      "sha256": "3e412dc8e8b95202fff6223398a3f593b231df49a323492993109279e41f7a60",
+      "bytes": 390144000,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "956dfb8318f077b0e619b956673a569137d01561585817e3bb9649e8842da00c",
+      "sha256": "1fec013f0b4154cfa4ef0ad92b81e59f1d1026a22d2cf8c837d09287c09b11f7",
+      "bytes": 20392100,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-change-detection-lab-v1.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "7a15a4dd76d5bdc53865ce6faaf5cfc839d4b7dcff8fb5a70240cba6a194a319",
+      "sha256": "94d62fb300f874962c515a0deeb464c02d96ec62b8ede2994f596a724bf7829c",
+      "bytes": 7992,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "3788a1408189283052e9336335a98e5771aaf5024f0103eafa5ec41c596270f4",
+      "sha256": "a29b15abfc2c17414630b296ddd901c2dce3cc721dae605b52d7e99ab98618c2",
+      "bytes": 185251840,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "f48b0e7e88b19efdf6db4d9ffad5e3b91b5aee19bb36b567fa188e0241444a4a",
+      "sha256": "8db3e7d521cac4c7dd797682c22690b71f6b7e4e33d21e8f3506f5ce07c0ae0d",
+      "bytes": 21356795,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-conservative-lab-v1.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "0dd56a82a58e3434244d544481978b5edfb7abc7aa14101abd92efb59bda2e83",
+      "sha256": "0969ab9b4db844e256f319216197a9ef4dd6556ee3d69578de5f3b07ee39143f",
+      "bytes": 9002,
+      "kind": "leaf",
+      "paths": [
+        "docs/publication/evidence-ledger.md"
+      ]
+    },
+    {
+      "originalSha256": "984504beca9765c5a4d047aea710e25dc824c17c10c9058aa887ccf237b3d4ec",
+      "sha256": "59123f69ec119e0ed07995ce375b521997c165db8ced040eb58c8952602e0dc6",
+      "bytes": 260,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/change-detection-v1.package.json"
+      ]
+    },
+    {
+      "originalSha256": "3905eaacc32f4c354b58828e48b3d74a4ee571d7909edf5a873b11b4a97ef712",
+      "sha256": "59ccdece81a22e581b0e4265b5179fd297972d10188cf81a2689601996609117",
+      "bytes": 599,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/change-detection-v1.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "a7bf71e194a123bb9cdbf4efb3bd55fa35440ab9877642d6d111cb3c9401e7fd",
+      "sha256": "23bd799f19cdb1802f192977f2ddb8e8170421eb8ca7bfa54b3d0197c88e84e6",
+      "bytes": 251,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/conservative-development-v1.package.json"
+      ]
+    },
+    {
+      "originalSha256": "0687e8ba87c1a2baf903db13ce039339b0bcedeb1745f3119cce4f0a612ba27d",
+      "sha256": "e2d49e68040bd2c7c9e62e84fd7492676a5f07647198a8007d2c87a72d8fc1d3",
+      "bytes": 724,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/conservative-development-v1.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "f1a0782f0a9665e2f9ec0a6e2405e655f6c0b4b0289d26c565a0e0cbf7891d1c",
+      "sha256": "572cdc71c97d7dfe835948bdc580ce50b823e563f497713313bbbc6daca3f059",
+      "bytes": 3945,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./docs/verification-opportunity-v2.md"
+      ]
+    },
+    {
+      "originalSha256": "10a8ea959c39fb79327032e07f001e6e42a48765d28436cbe39950f9ab409db8",
+      "sha256": "3f165a5130f3a72c07c80880e574e9c05014555bd084a2661bcecfdbee27cebd",
+      "bytes": 6919,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "50467aa9c370481ac1b69598316380e9405f2b499686fd4c75b4c43894be9195",
+      "sha256": "425298e6d79c2c2b46a4060cda703960d83ddcc2486c5167cee6ed6704596da2",
+      "bytes": 172236800,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "d08be9b287279aa4e0a4de8e8208decc6f230d6ac29080b5c9f1935486202139",
+      "sha256": "fe78c2ff42e5a78d7dd73c87a959e67d899d5b26ceed401bf8b97e3699fafdc6",
+      "bytes": 9649694,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-opportunity-lab-v2.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "46c6c54ff3908e1e96587a1ecc61fc997fd9ab76b2235477d4b184ea42363b51",
+      "sha256": "bf67eed9cab33d1072865dc8643bd71aae18e4b00b711c2a3ac78885d3c19576",
+      "bytes": 245,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/opportunity-lab-v2.package.json"
+      ]
+    },
+    {
+      "originalSha256": "47c279914b288559fcab5391934e3532204acb74acf10d038f2fc70fd3f28787",
+      "sha256": "2dac713a21d3587fd12159cfe40ceea996fa92db873a2bfa8f1542b10923f8fa",
+      "bytes": 443,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/opportunity-lab-v2.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "ee14304769b4e365095c7df574a5d8a527a57faa8c356590799447642781717f",
+      "sha256": "9bd144c6503e2daf6dcf9ba51159c4007ad15cea4258961ce6e95f7b3e650177",
+      "bytes": 378880,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "b852f058f8a6454f491e00097d2a6a9e145e6adb6a4fbb6613c1d061771978c7",
+      "sha256": "9606849f54296e67852479285b8dc226f426c73fcc4790f471a71aad383bb244",
+      "bytes": 120597,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "8599d1d79225544de1c3be058c34422d615708590539f600b0d3b9db56c4afb1",
+      "sha256": "c3efe562f4694518b633d12c8a413d2c3139da9fa8db7e538759a71881f9cbf0",
+      "bytes": 13346,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip!docs/verification-0.2.md"
+      ]
+    },
+    {
+      "originalSha256": "82f5973bb468c16e558b994b930ee96d336f7b3dfa0b8ddb141b59f2b104c06f",
+      "sha256": "413e750937d039cfd1bad9e1c9dd2a680a7010ccc39ff33bfbb25e30954901b4",
+      "bytes": 99266560,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "c577865d08c7b770efe3b4ef205933789ec1ce906d3974407c70d19894baf4f1",
+      "sha256": "e1005fee44a1ee25a4bcacc1d8ce1f0c16779165b1d843b5b146b8fa36df4fee",
+      "bytes": 17900836,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-source-0.3.0.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "2248bc218656e47d4ed4ecabf02909ad8ec70cd05cc89b8ed5fcc5a3ab056777",
+      "sha256": "fa28eadde8a685ef707605285c2d0b0c56da06accd4afa3b2c6196e8d1c5b5c9",
+      "bytes": 368640,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tgz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "7c9f094af96b43beb11ec341f8cc5a8a4f71cb90a6a021613f854fe4e4255a18",
+      "sha256": "d79d8a263ff676100c7aed384f97ce8402813e95c62c8e94c5e1407b99cd359b",
+      "bytes": 117362,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-browser-0.3.0.tgz"
+      ]
+    },
+    {
+      "originalSha256": "a664890082b97105a2cf19a097eb857c7b9dac5fdacd7abd3f55f216a2551ce7",
+      "sha256": "6590603acb374777956ecdf647985c860fdc9983a1e5f45af5f241dcc59cee3a",
+      "bytes": 741744,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-macos-arm64-0.3.0.tar.gz!gzip!tactical-air-macos-arm64-0.3.0/libtactical_air_ffi.dylib"
+      ]
+    },
+    {
+      "originalSha256": "889396c776f3fb4ee10251f01d1457a5f63f1caac63fe03cc9f2374c2bdd5a89",
+      "sha256": "9f0bc3e8aeb4a84974dae0a9086e29573f88153e4db93233eb9ebad8d9e57358",
+      "bytes": 19480928,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-macos-arm64-0.3.0.tar.gz!gzip!tactical-air-macos-arm64-0.3.0/libtactical_air_ffi.a"
+      ]
+    },
+    {
+      "originalSha256": "fb47f4288b533f2f04182f5c47a4776ba6895420c387a81095e15d3b0cfc4289",
+      "sha256": "1f79159f224a05b9054024a0d39a243eb6242c4b6ba74d58335e133962aad35a",
+      "bytes": 20244480,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-macos-arm64-0.3.0.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "77e015da801bab71564dbfe1cca45f36b0ec812f98fbbc3ffc87b3d5510633ea",
+      "sha256": "f148b438ed4e013f47bfc1e3b32d0e4deaaeb93faed533fedf551979c4bbdb1a",
+      "bytes": 7134492,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-macos-arm64-0.3.0.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "ba94e723e4abb2a32cb2d21ae404af7fed07f1d710b51005a77e365b2a4769c0",
+      "sha256": "806b4966449ca5b9427b0c00b3ebf47ab0ad804b1bd38b196f9e081489208fd2",
+      "bytes": 1069,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/public-download-verification-0.3.0.json"
+      ]
+    },
+    {
+      "originalSha256": "c5b8fdf19db99aac81d6893a5bcdf3d37e77e3d94c84a857d9738a3eac4faf61",
+      "sha256": "92190841d6137d3d3cce18a2a730afb7ff9cf4941005f5273e45a2ebdb5196d2",
+      "bytes": 947,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/release-0.3.0.json",
+        "publication/inputs/releases/release.json"
+      ]
+    },
+    {
+      "originalSha256": "42a567bf664866ade9ef0a293d5e6037bb688b2bc917dc7e0e770ab514107b85",
+      "sha256": "888b22595cfdf34d72732ba9613b54235575f4ca2d44e9e24d5ebb6508ac5659",
+      "bytes": 4153,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./docs/verification-research-program-v1.md",
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./docs/verification-research-program-v1.md"
+      ]
+    },
+    {
+      "originalSha256": "31b3961b716aa28f9daa01f25bc1f598ca71db559efe7259df86338b444cc974",
+      "sha256": "fc46464970b18a88a7edd1ea0b4d99da8db17f7229a9866ac860b3197143be16",
+      "bytes": 9300,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "c8d3dacc2cd01ee0f9d2626766e9ad28c7b52e0c98278626c91fac3460de8c8b",
+      "sha256": "e26644ce3c0cefedbb8f7284adb36bc7902b369d62e0c4e1f27c4a6aeafb47ca",
+      "bytes": 211292160,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "ad2a3876afb469a03e0b1e3eca526c9f0fe6a3e9cbad758ba33ddfd2e63423b3",
+      "sha256": "59dc5a98375a5a82cf37f35e6b37787aee082761bc44888f8d5f26a78cafbdf3",
+      "bytes": 14525684,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1-r2.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "dc92ffcffc75ccaf53ccbf0444b449da918044bda28223ab16ef678c878fb4f9",
+      "sha256": "786853d4774f8aec77584bf0f531199e0ae727d9f9e40f1eb9d2f5f576a0271a",
+      "bytes": 266,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/research-lab-v1-r2.package.json"
+      ]
+    },
+    {
+      "originalSha256": "1663d4a2744ea67fec32e9c5f16723d66f66a152658cf8fe492bc4bd8801bc0f",
+      "sha256": "2b25282ee92089e16a63467f75c1e3f403e70626d54cd7fe3f9006cb18bc2506",
+      "bytes": 941,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/research-lab-v1-r2.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "53d656d2934b08ce1f3495c77e561fb6d177cad281172b9f28afc4b159d9192a",
+      "sha256": "c624bf24fbff7f2bf8fce964982ed84d4064359c3fca3d9c68d2cfacf62494d8",
+      "bytes": 9300,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "ff7a1e7f223af1b51ecc265dfcb46fc7ee56dcbdfab063d1440912255453f9e2",
+      "sha256": "c622f59ea5eb501cee6578b8e379e57bd5217862bc313cd32bcf3da897105773",
+      "bytes": 211292160,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "fa95026cc17be4bcbcf36aa8423b81836acbd4bd7309b89c2ea45e4192007eca",
+      "sha256": "a353c37755cd78965e121ed3fc2fdc6fbc42d51d6f21d0acb5d2d8e4da2a17d0",
+      "bytes": 14525697,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-research-lab-v1.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "c017cbbaed102bd5af9c7c6560ca7df2476781b325c2c86a5ac42721a5079641",
+      "sha256": "732560b1c0a3fcaf4ac8822a83c23a2c0077b1cb2de49d473ea2b9d19a2deea3",
+      "bytes": 263,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/research-lab-v1.package.json"
+      ]
+    },
+    {
+      "originalSha256": "a5294544399f0e1d59a63f164201bb7c2d8d5e779f2c893c28cae680cadc6f9f",
+      "sha256": "104f9767dfd1f06594f0b7fe632f8028cca9cc2238c53756146f13ba491bc208",
+      "bytes": 7348,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "234c21873dc80513ed5a2bb70ba578a6ccf195d3b48e5eb2eeee09a8cf70426a",
+      "sha256": "5705482effd6f0a59210738c594ea3aad1c5f30c34673f5bb55fa192ef27aa1d",
+      "bytes": 100044800,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "d63fa8ef1acbae99f9b7191e5764387fd7294da4084365fcd6420f39f10c0a81",
+      "sha256": "53e8c1076f9600aff23807e414d70060765677ad84ba1e7669265f0c2db31487",
+      "bytes": 8735175,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-retention-lab-v1.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "588cfa446063efdb405445be3aa930ea6bdd57f259ddbc2b03f59c76d8dc4b40",
+      "sha256": "febd898116cbbdf672ca0034eb6ce0ef53fcbce1e6a939757c504314fbcdd040",
+      "bytes": 234,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/retention-lab-v1.package.json"
+      ]
+    },
+    {
+      "originalSha256": "0f912d2ef734cf5bbcbb01c0d4f70ec4b95c15ff4bbde4250c84315d4a815d15",
+      "sha256": "b524495f3c0ba6066bf70d6e0d27a99d528e92c6d1b41c23aab236bd085eebc2",
+      "bytes": 583,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/retention-lab-v1.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "8418880b94582bcba832895bbfcbf0c12e73a071d8c98616a7063981673ff517",
+      "sha256": "ae239a2b5778a7db32c32c16f064e8ea58bfa8f4221c46afd0944638fecb50c7",
+      "bytes": 4943,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip!./SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "171127e33be2aea574a15b2e7c508eb7a1f4333129fc67f588ad3e36b2855a4d",
+      "sha256": "37d0d8f4cbc8321598faf0de55a54e5cfefe2d169674dbd0e311ca44e3ab39eb",
+      "bytes": 37335040,
+      "kind": "tar",
+      "paths": [
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz!gzip"
+      ]
+    },
+    {
+      "originalSha256": "746b894e4d38dcfec56010a4dc016ae6d5b10b53ffca1c7a298fee4437d3f4d2",
+      "sha256": "cebe4cab307de5cf98116bfa678dc714d65b397232d0fa3191268b9b72fe4aef",
+      "bytes": 4341147,
+      "kind": "gzip",
+      "paths": [
+        "publication/inputs/releases/tactical-air-synthetic-lab-v1.tar.gz"
+      ]
+    },
+    {
+      "originalSha256": "c7f90b622daab644e7a69369a52e6903e56eb042e969bea37e2c716564cfa91a",
+      "sha256": "7d754ab88d0c20b50ebb1432fc10ffb7a811d01c29d22e979a6b966dbe065bc8",
+      "bytes": 198,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/synthetic-lab-v1.package.json"
+      ]
+    },
+    {
+      "originalSha256": "85c68089dadb87904045001178fcdf60f07427385beb03658ebd271759cfbbce",
+      "sha256": "1afe545f901a17a618343aa6606ed2e6043e2c26d5b804091c765ad95b634198",
+      "bytes": 1330,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/synthetic-lab-v1.validation.json"
+      ]
+    },
+    {
+      "originalSha256": "6d8a4f730018cf2b8604fac11389bc058305ebaa109ae2366144aa88b07c15e7",
+      "sha256": "fe674051f48c4f56f3df6687b6b470475d0e90cbabe5728348b94c7c6d0efc9f",
+      "bytes": 1741,
+      "kind": "leaf",
+      "paths": [
+        "docs/releases/validation-0.3.0.json"
+      ]
+    },
+    {
+      "originalSha256": "481353da22667719909a554375b7f520adb71f1cc582939038f02b2e07dab40c",
+      "sha256": "f3447b8510da8499c2a9e773403592cf44364068a538faa07bc7bb66855683aa",
+      "bytes": 11851,
+      "kind": "leaf",
+      "paths": [
+        "docs/verification-0.2.md"
+      ]
+    },
+    {
+      "originalSha256": "f777ca5c5ba5ab548161360ac15d7f7c9b776280249363f54ea8bc0126285bcd",
+      "sha256": "e74cce11b27e8f08e278276dc26acc3fc538f6a6691dae8c08b7cabadc986f29",
+      "bytes": 3954,
+      "kind": "leaf",
+      "paths": [
+        "docs/verification-opportunity-v2.md"
+      ]
+    },
+    {
+      "originalSha256": "0d3bee6f3c0345a1cc9c223ac69ad86223bd6f0b0cb881258d028aa2c8f11288",
+      "sha256": "75ed016d6631143e9addc89a60334d4d3c04d8a419705fc34de6e3eab6755fcf",
+      "bytes": 4097,
+      "kind": "leaf",
+      "paths": [
+        "docs/verification-research-program-v1.md"
+      ]
+    },
+    {
+      "originalSha256": "4f4db4e3415f4ddf8e7918c2f10182a355e208e94dce59136d3c0fcd5a6312ae",
+      "sha256": "bfdb7136c11a04340695f6b265078463c38ba8b5123773d45d6e8c315bd3bb68",
+      "bytes": 1368,
+      "kind": "leaf",
+      "paths": [
+        "publication/README.md"
+      ]
+    },
+    {
+      "originalSha256": "f135f33e8c5c5dd5f5265b19ceab6bfaf1c3700a6392a0b2cb08bdb763fa7a86",
+      "sha256": "d55b788e6634e97232b0e3a9d07a0fee2441ea57f65e0e163b87c52385b3b518",
+      "bytes": 400,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs/releases/SHA256SUMS"
+      ]
+    },
+    {
+      "originalSha256": "379b03bb872496acb82eb1a843106d136e36adbf1ad3306a1cd80fcb198b0b6d",
+      "sha256": "c8089c9302e4b19772114c2e065cdf41c131e691cdc5bd3c472c1ad71b6f9da4",
+      "bytes": 26250,
+      "kind": "leaf",
+      "paths": [
+        "publication/inputs.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4746 @@
+{
+  "primary": {
+    "meanDifference": -1.125,
+    "interval": [
+      -2.4219401041666693,
+      0.21875
+    ],
+    "seedCount": 16,
+    "pairs": [
+      {
+        "seed": 15001,
+        "left": 27.5,
+        "right": 30.25,
+        "difference": -2.75
+      },
+      {
+        "seed": 15011,
+        "left": 18.5,
+        "right": 20,
+        "difference": -1.5
+      },
+      {
+        "seed": 15021,
+        "left": 33,
+        "right": 33.25,
+        "difference": -0.25
+      },
+      {
+        "seed": 15031,
+        "left": 36,
+        "right": 40.75,
+        "difference": -4.75
+      },
+      {
+        "seed": 15041,
+        "left": 29,
+        "right": 30.75,
+        "difference": -1.75
+      },
+      {
+        "seed": 15051,
+        "left": 28.25,
+        "right": 32,
+        "difference": -3.75
+      },
+      {
+        "seed": 15061,
+        "left": 23.25,
+        "right": 24.5,
+        "difference": -1.25
+      },
+      {
+        "seed": 15071,
+        "left": 35.25,
+        "right": 32.5,
+        "difference": 2.75
+      },
+      {
+        "seed": 15081,
+        "left": 38.75,
+        "right": 39.5,
+        "difference": -0.75
+      },
+      {
+        "seed": 15091,
+        "left": 29.75,
+        "right": 28.25,
+        "difference": 1.5
+      },
+      {
+        "seed": 15101,
+        "left": 34.25,
+        "right": 35.25,
+        "difference": -1
+      },
+      {
+        "seed": 15111,
+        "left": 23.75,
+        "right": 24.75,
+        "difference": -1
+      },
+      {
+        "seed": 15121,
+        "left": 25.25,
+        "right": 26,
+        "difference": -0.75
+      },
+      {
+        "seed": 15131,
+        "left": 31.75,
+        "right": 31.75,
+        "difference": 0
+      },
+      {
+        "seed": 15141,
+        "left": 27,
+        "right": 25.5,
+        "difference": 1.5
+      },
+      {
+        "seed": 15151,
+        "left": 46.75,
+        "right": 51,
+        "difference": -4.25
+      }
+    ]
+  },
+  "groups": {
+    "fresh": {
+      "adaptive-minus-uniform48": {
+        "effect": {
+          "meanDifference": -1.125,
+          "interval": [
+            -2.4219401041666693,
+            0.21875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 27.5,
+              "right": 30.25,
+              "difference": -2.75
+            },
+            {
+              "seed": 15011,
+              "left": 18.5,
+              "right": 20,
+              "difference": -1.5
+            },
+            {
+              "seed": 15021,
+              "left": 33,
+              "right": 33.25,
+              "difference": -0.25
+            },
+            {
+              "seed": 15031,
+              "left": 36,
+              "right": 40.75,
+              "difference": -4.75
+            },
+            {
+              "seed": 15041,
+              "left": 29,
+              "right": 30.75,
+              "difference": -1.75
+            },
+            {
+              "seed": 15051,
+              "left": 28.25,
+              "right": 32,
+              "difference": -3.75
+            },
+            {
+              "seed": 15061,
+              "left": 23.25,
+              "right": 24.5,
+              "difference": -1.25
+            },
+            {
+              "seed": 15071,
+              "left": 35.25,
+              "right": 32.5,
+              "difference": 2.75
+            },
+            {
+              "seed": 15081,
+              "left": 38.75,
+              "right": 39.5,
+              "difference": -0.75
+            },
+            {
+              "seed": 15091,
+              "left": 29.75,
+              "right": 28.25,
+              "difference": 1.5
+            },
+            {
+              "seed": 15101,
+              "left": 34.25,
+              "right": 35.25,
+              "difference": -1
+            },
+            {
+              "seed": 15111,
+              "left": 23.75,
+              "right": 24.75,
+              "difference": -1
+            },
+            {
+              "seed": 15121,
+              "left": 25.25,
+              "right": 26,
+              "difference": -0.75
+            },
+            {
+              "seed": 15131,
+              "left": 31.75,
+              "right": 31.75,
+              "difference": 0
+            },
+            {
+              "seed": 15141,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 15151,
+              "left": 46.75,
+              "right": 51,
+              "difference": -4.25
+            }
+          ]
+        },
+        "left": {
+          "damage": 30.5,
+          "playerClearRate": 0.96875,
+          "playerDeathRate": 0,
+          "duration": 16.02617187500022
+        },
+        "right": {
+          "damage": 31.625,
+          "playerClearRate": 0.953125,
+          "playerDeathRate": 0,
+          "duration": 16.176236979166887
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 31.03125,
+            "right": 32.578125,
+            "effect": {
+              "meanDifference": -1.546875,
+              "interval": [
+                -3.375,
+                0.140625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 30,
+                  "right": 33,
+                  "difference": -3
+                },
+                {
+                  "seed": 15011,
+                  "left": 19.5,
+                  "right": 18,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15021,
+                  "left": 21,
+                  "right": 30,
+                  "difference": -9
+                },
+                {
+                  "seed": 15031,
+                  "left": 40.5,
+                  "right": 41.25,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 27.75,
+                  "right": 36.75,
+                  "difference": -9
+                },
+                {
+                  "seed": 15061,
+                  "left": 21,
+                  "right": 27,
+                  "difference": -6
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 35.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 28.5,
+                  "right": 28.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15091,
+                  "left": 27.75,
+                  "right": 29.25,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15101,
+                  "left": 44.25,
+                  "right": 41.25,
+                  "difference": 3
+                },
+                {
+                  "seed": 15111,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 30.75,
+                  "right": 28.5,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15131,
+                  "left": 27,
+                  "right": 29.25,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 24.75,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15151,
+                  "left": 62.25,
+                  "right": 64.5,
+                  "difference": -2.25
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 30.5625,
+            "right": 32.859375,
+            "effect": {
+              "meanDifference": -2.296875,
+              "interval": [
+                -5.484375,
+                0.32929687499998295
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27.75,
+                  "right": 29.25,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15011,
+                  "left": 19.5,
+                  "right": 21.75,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15021,
+                  "left": 35.25,
+                  "right": 32.25,
+                  "difference": 3
+                },
+                {
+                  "seed": 15031,
+                  "left": 37.5,
+                  "right": 44.25,
+                  "difference": -6.75
+                },
+                {
+                  "seed": 15041,
+                  "left": 26.25,
+                  "right": 36.75,
+                  "difference": -10.5
+                },
+                {
+                  "seed": 15051,
+                  "left": 30.75,
+                  "right": 31.5,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15061,
+                  "left": 27,
+                  "right": 24.75,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 34.5,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15081,
+                  "left": 39.75,
+                  "right": 42.75,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 29.25,
+                  "right": 22.5,
+                  "difference": 6.75
+                },
+                {
+                  "seed": 15101,
+                  "left": 32.25,
+                  "right": 36.75,
+                  "difference": -4.5
+                },
+                {
+                  "seed": 15111,
+                  "left": 26.25,
+                  "right": 29.25,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 31.5,
+                  "right": 33,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15141,
+                  "left": 28.5,
+                  "right": 24.75,
+                  "difference": 3.75
+                },
+                {
+                  "seed": 15151,
+                  "left": 35.25,
+                  "right": 54.75,
+                  "difference": -19.5
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 29.90625,
+            "right": 29.4375,
+            "effect": {
+              "meanDifference": 0.46875,
+              "interval": [
+                -1.59375,
+                2.671875
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24.75,
+                  "right": 28.5,
+                  "difference": -3.75
+                },
+                {
+                  "seed": 15011,
+                  "left": 16.5,
+                  "right": 20.25,
+                  "difference": -3.75
+                },
+                {
+                  "seed": 15021,
+                  "left": 42.75,
+                  "right": 37.5,
+                  "difference": 5.25
+                },
+                {
+                  "seed": 15031,
+                  "left": 30,
+                  "right": 36.75,
+                  "difference": -6.75
+                },
+                {
+                  "seed": 15041,
+                  "left": 30.75,
+                  "right": 25.5,
+                  "difference": 5.25
+                },
+                {
+                  "seed": 15051,
+                  "left": 26.25,
+                  "right": 27.75,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15061,
+                  "left": 21.75,
+                  "right": 21.75,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 27.75,
+                  "difference": 7.5
+                },
+                {
+                  "seed": 15081,
+                  "left": 48,
+                  "right": 47.25,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15091,
+                  "left": 32.25,
+                  "right": 33,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15101,
+                  "left": 26.25,
+                  "right": 27.75,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15111,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 18,
+                  "right": 22.5,
+                  "difference": -4.5
+                },
+                {
+                  "seed": 15131,
+                  "left": 36.75,
+                  "right": 33,
+                  "difference": 3.75
+                },
+                {
+                  "seed": 15141,
+                  "left": 25.5,
+                  "right": 27,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15151,
+                  "left": 42.75,
+                  "right": 33.75,
+                  "difference": 9
+                }
+              ]
+            }
+          }
+        ],
+        "primary": true
+      },
+      "adaptive-minus-uniform24": {
+        "effect": {
+          "meanDifference": 0.328125,
+          "interval": [
+            -0.421875,
+            1.234375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 27.5,
+              "right": 29.5,
+              "difference": -2
+            },
+            {
+              "seed": 15011,
+              "left": 18.5,
+              "right": 19.75,
+              "difference": -1.25
+            },
+            {
+              "seed": 15021,
+              "left": 33,
+              "right": 32.25,
+              "difference": 0.75
+            },
+            {
+              "seed": 15031,
+              "left": 36,
+              "right": 36.25,
+              "difference": -0.25
+            },
+            {
+              "seed": 15041,
+              "left": 29,
+              "right": 28.25,
+              "difference": 0.75
+            },
+            {
+              "seed": 15051,
+              "left": 28.25,
+              "right": 29,
+              "difference": -0.75
+            },
+            {
+              "seed": 15061,
+              "left": 23.25,
+              "right": 23.5,
+              "difference": -0.25
+            },
+            {
+              "seed": 15071,
+              "left": 35.25,
+              "right": 35.75,
+              "difference": -0.5
+            },
+            {
+              "seed": 15081,
+              "left": 38.75,
+              "right": 33.25,
+              "difference": 5.5
+            },
+            {
+              "seed": 15091,
+              "left": 29.75,
+              "right": 29.5,
+              "difference": 0.25
+            },
+            {
+              "seed": 15101,
+              "left": 34.25,
+              "right": 31.5,
+              "difference": 2.75
+            },
+            {
+              "seed": 15111,
+              "left": 23.75,
+              "right": 24,
+              "difference": -0.25
+            },
+            {
+              "seed": 15121,
+              "left": 25.25,
+              "right": 26.5,
+              "difference": -1.25
+            },
+            {
+              "seed": 15131,
+              "left": 31.75,
+              "right": 31.75,
+              "difference": 0
+            },
+            {
+              "seed": 15141,
+              "left": 27,
+              "right": 26,
+              "difference": 1
+            },
+            {
+              "seed": 15151,
+              "left": 46.75,
+              "right": 46,
+              "difference": 0.75
+            }
+          ]
+        },
+        "left": {
+          "damage": 30.5,
+          "playerClearRate": 0.96875,
+          "playerDeathRate": 0,
+          "duration": 16.02617187500022
+        },
+        "right": {
+          "damage": 30.171875,
+          "playerClearRate": 0.9661458333333334,
+          "playerDeathRate": 0,
+          "duration": 16.005208333333545
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 31.03125,
+            "right": 31.171875,
+            "effect": {
+              "meanDifference": -0.140625,
+              "interval": [
+                -1.40625,
+                1.359375
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 30,
+                  "right": 35.25,
+                  "difference": -5.25
+                },
+                {
+                  "seed": 15011,
+                  "left": 19.5,
+                  "right": 19.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 21,
+                  "right": 24,
+                  "difference": -3
+                },
+                {
+                  "seed": 15031,
+                  "left": 40.5,
+                  "right": 40.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 27.75,
+                  "right": 30,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15061,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 37.5,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15081,
+                  "left": 28.5,
+                  "right": 27,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15091,
+                  "left": 27.75,
+                  "right": 27.75,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 44.25,
+                  "right": 36,
+                  "difference": 8.25
+                },
+                {
+                  "seed": 15111,
+                  "left": 24,
+                  "right": 25.5,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15121,
+                  "left": 30.75,
+                  "right": 30.75,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 27,
+                  "right": 28.5,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 25.5,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15151,
+                  "left": 62.25,
+                  "right": 60,
+                  "difference": 2.25
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 30.5625,
+            "right": 30.046875,
+            "effect": {
+              "meanDifference": 0.515625,
+              "interval": [
+                -0.09375,
+                1.125
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27.75,
+                  "right": 26.25,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15011,
+                  "left": 19.5,
+                  "right": 21,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15021,
+                  "left": 35.25,
+                  "right": 32.25,
+                  "difference": 3
+                },
+                {
+                  "seed": 15031,
+                  "left": 37.5,
+                  "right": 37.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 26.25,
+                  "right": 24,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15051,
+                  "left": 30.75,
+                  "right": 31.5,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15061,
+                  "left": 27,
+                  "right": 26.25,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 35.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 39.75,
+                  "right": 37.5,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15091,
+                  "left": 29.25,
+                  "right": 29.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 32.25,
+                  "right": 32.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 26.25,
+                  "right": 26.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 27.75,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15131,
+                  "left": 31.5,
+                  "right": 31.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 28.5,
+                  "right": 27,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15151,
+                  "left": 35.25,
+                  "right": 35.25,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 29.90625,
+            "right": 29.296875,
+            "effect": {
+              "meanDifference": 0.609375,
+              "interval": [
+                -0.75,
+                2.484375
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24.75,
+                  "right": 27,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15011,
+                  "left": 16.5,
+                  "right": 18.75,
+                  "difference": -2.25
+                },
+                {
+                  "seed": 15021,
+                  "left": 42.75,
+                  "right": 40.5,
+                  "difference": 2.25
+                },
+                {
+                  "seed": 15031,
+                  "left": 30,
+                  "right": 30.75,
+                  "difference": -0.75
+                },
+                {
+                  "seed": 15041,
+                  "left": 30.75,
+                  "right": 30.75,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 26.25,
+                  "right": 25.5,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15061,
+                  "left": 21.75,
+                  "right": 23.25,
+                  "difference": -1.5
+                },
+                {
+                  "seed": 15071,
+                  "left": 35.25,
+                  "right": 34.5,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15081,
+                  "left": 48,
+                  "right": 35.25,
+                  "difference": 12.75
+                },
+                {
+                  "seed": 15091,
+                  "left": 32.25,
+                  "right": 31.5,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15101,
+                  "left": 26.25,
+                  "right": 26.25,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 21,
+                  "right": 20.25,
+                  "difference": 0.75
+                },
+                {
+                  "seed": 15121,
+                  "left": 18,
+                  "right": 21,
+                  "difference": -3
+                },
+                {
+                  "seed": 15131,
+                  "left": 36.75,
+                  "right": 35.25,
+                  "difference": 1.5
+                },
+                {
+                  "seed": 15141,
+                  "left": 25.5,
+                  "right": 25.5,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 42.75,
+                  "right": 42.75,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      }
+    },
+    "zigzag-advance/long-spines": {
+      "adaptive-minus-uniform48": {
+        "effect": {
+          "meanDifference": 1.0625,
+          "interval": [
+            -2.0625,
+            4.375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 17,
+              "right": 19,
+              "difference": -2
+            },
+            {
+              "seed": 15011,
+              "left": 9,
+              "right": 11,
+              "difference": -2
+            },
+            {
+              "seed": 15021,
+              "left": 29,
+              "right": 29,
+              "difference": 0
+            },
+            {
+              "seed": 15031,
+              "left": 54,
+              "right": 46,
+              "difference": 8
+            },
+            {
+              "seed": 15041,
+              "left": 27,
+              "right": 25,
+              "difference": 2
+            },
+            {
+              "seed": 15051,
+              "left": 17,
+              "right": 22,
+              "difference": -5
+            },
+            {
+              "seed": 15061,
+              "left": 30,
+              "right": 28,
+              "difference": 2
+            },
+            {
+              "seed": 15071,
+              "left": 41,
+              "right": 22,
+              "difference": 19
+            },
+            {
+              "seed": 15081,
+              "left": 40,
+              "right": 38,
+              "difference": 2
+            },
+            {
+              "seed": 15091,
+              "left": 44,
+              "right": 42,
+              "difference": 2
+            },
+            {
+              "seed": 15101,
+              "left": 33,
+              "right": 39,
+              "difference": -6
+            },
+            {
+              "seed": 15111,
+              "left": 9,
+              "right": 6,
+              "difference": 3
+            },
+            {
+              "seed": 15121,
+              "left": 20,
+              "right": 14,
+              "difference": 6
+            },
+            {
+              "seed": 15131,
+              "left": 27,
+              "right": 29,
+              "difference": -2
+            },
+            {
+              "seed": 15141,
+              "left": 20,
+              "right": 19,
+              "difference": 1
+            },
+            {
+              "seed": 15151,
+              "left": 44,
+              "right": 55,
+              "difference": -11
+            }
+          ]
+        },
+        "left": {
+          "damage": 28.8125,
+          "playerClearRate": 0.9895833333333334,
+          "playerDeathRate": 0,
+          "duration": 13.68793402777797
+        },
+        "right": {
+          "damage": 27.75,
+          "playerClearRate": 0.9947916666666666,
+          "playerDeathRate": 0,
+          "duration": 13.639843750000194
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 21,
+            "right": 23.625,
+            "effect": {
+              "meanDifference": -2.625,
+              "interval": [
+                -6.75,
+                1.6875
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 6,
+                  "right": 15,
+                  "difference": -9
+                },
+                {
+                  "seed": 15011,
+                  "left": 0,
+                  "right": 12,
+                  "difference": -12
+                },
+                {
+                  "seed": 15021,
+                  "left": 12,
+                  "right": 27,
+                  "difference": -15
+                },
+                {
+                  "seed": 15031,
+                  "left": 60,
+                  "right": 54,
+                  "difference": 6
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 18,
+                  "difference": 12
+                },
+                {
+                  "seed": 15051,
+                  "left": 9,
+                  "right": 21,
+                  "difference": -12
+                },
+                {
+                  "seed": 15061,
+                  "left": 6,
+                  "right": 12,
+                  "difference": -6
+                },
+                {
+                  "seed": 15071,
+                  "left": 27,
+                  "right": 24,
+                  "difference": 3
+                },
+                {
+                  "seed": 15081,
+                  "left": 30,
+                  "right": 33,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 24,
+                  "right": 33,
+                  "difference": -9
+                },
+                {
+                  "seed": 15101,
+                  "left": 30,
+                  "right": 33,
+                  "difference": -3
+                },
+                {
+                  "seed": 15111,
+                  "left": 6,
+                  "right": 3,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 12,
+                  "difference": 15
+                },
+                {
+                  "seed": 15131,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 6,
+                  "right": 6,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 51,
+                  "right": 63,
+                  "difference": -12
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 29.625,
+            "right": 28.3125,
+            "effect": {
+              "meanDifference": 1.3125,
+              "interval": [
+                -6.5625,
+                7.5
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 18,
+                  "right": 12,
+                  "difference": 6
+                },
+                {
+                  "seed": 15011,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 18,
+                  "difference": 12
+                },
+                {
+                  "seed": 15031,
+                  "left": 54,
+                  "right": 42,
+                  "difference": 12
+                },
+                {
+                  "seed": 15041,
+                  "left": 24,
+                  "right": 33,
+                  "difference": -9
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 36,
+                  "right": 24,
+                  "difference": 12
+                },
+                {
+                  "seed": 15071,
+                  "left": 48,
+                  "right": 27,
+                  "difference": 21
+                },
+                {
+                  "seed": 15081,
+                  "left": 48,
+                  "right": 33,
+                  "difference": 15
+                },
+                {
+                  "seed": 15091,
+                  "left": 48,
+                  "right": 39,
+                  "difference": 9
+                },
+                {
+                  "seed": 15101,
+                  "left": 33,
+                  "right": 42,
+                  "difference": -9
+                },
+                {
+                  "seed": 15111,
+                  "left": 12,
+                  "right": 6,
+                  "difference": 6
+                },
+                {
+                  "seed": 15121,
+                  "left": 15,
+                  "right": 15,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15141,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 24,
+                  "right": 66,
+                  "difference": -42
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 35.8125,
+            "right": 31.3125,
+            "effect": {
+              "meanDifference": 4.5,
+              "interval": [
+                0.5625,
+                9.75
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27,
+                  "right": 30,
+                  "difference": -3
+                },
+                {
+                  "seed": 15011,
+                  "left": 18,
+                  "right": 12,
+                  "difference": 6
+                },
+                {
+                  "seed": 15021,
+                  "left": 45,
+                  "right": 42,
+                  "difference": 3
+                },
+                {
+                  "seed": 15031,
+                  "left": 48,
+                  "right": 42,
+                  "difference": 6
+                },
+                {
+                  "seed": 15041,
+                  "left": 27,
+                  "right": 24,
+                  "difference": 3
+                },
+                {
+                  "seed": 15051,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 48,
+                  "right": 15,
+                  "difference": 33
+                },
+                {
+                  "seed": 15081,
+                  "left": 42,
+                  "right": 48,
+                  "difference": -6
+                },
+                {
+                  "seed": 15091,
+                  "left": 60,
+                  "right": 54,
+                  "difference": 6
+                },
+                {
+                  "seed": 15101,
+                  "left": 36,
+                  "right": 42,
+                  "difference": -6
+                },
+                {
+                  "seed": 15111,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 18,
+                  "right": 15,
+                  "difference": 3
+                },
+                {
+                  "seed": 15131,
+                  "left": 42,
+                  "right": 39,
+                  "difference": 3
+                },
+                {
+                  "seed": 15141,
+                  "left": 30,
+                  "right": 27,
+                  "difference": 3
+                },
+                {
+                  "seed": 15151,
+                  "left": 57,
+                  "right": 36,
+                  "difference": 21
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      },
+      "adaptive-minus-uniform24": {
+        "effect": {
+          "meanDifference": 0.4375,
+          "interval": [
+            -0.9375,
+            1.625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 17,
+              "right": 17,
+              "difference": 0
+            },
+            {
+              "seed": 15011,
+              "left": 9,
+              "right": 14,
+              "difference": -5
+            },
+            {
+              "seed": 15021,
+              "left": 29,
+              "right": 27,
+              "difference": 2
+            },
+            {
+              "seed": 15031,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 15041,
+              "left": 27,
+              "right": 28,
+              "difference": -1
+            },
+            {
+              "seed": 15051,
+              "left": 17,
+              "right": 17,
+              "difference": 0
+            },
+            {
+              "seed": 15061,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 15071,
+              "left": 41,
+              "right": 46,
+              "difference": -5
+            },
+            {
+              "seed": 15081,
+              "left": 40,
+              "right": 38,
+              "difference": 2
+            },
+            {
+              "seed": 15091,
+              "left": 44,
+              "right": 41,
+              "difference": 3
+            },
+            {
+              "seed": 15101,
+              "left": 33,
+              "right": 29,
+              "difference": 4
+            },
+            {
+              "seed": 15111,
+              "left": 9,
+              "right": 9,
+              "difference": 0
+            },
+            {
+              "seed": 15121,
+              "left": 20,
+              "right": 21,
+              "difference": -1
+            },
+            {
+              "seed": 15131,
+              "left": 27,
+              "right": 25,
+              "difference": 2
+            },
+            {
+              "seed": 15141,
+              "left": 20,
+              "right": 18,
+              "difference": 2
+            },
+            {
+              "seed": 15151,
+              "left": 44,
+              "right": 40,
+              "difference": 4
+            }
+          ]
+        },
+        "left": {
+          "damage": 28.8125,
+          "playerClearRate": 0.9895833333333334,
+          "playerDeathRate": 0,
+          "duration": 13.68793402777797
+        },
+        "right": {
+          "damage": 28.375,
+          "playerClearRate": 0.9895833333333334,
+          "playerDeathRate": 0,
+          "duration": 13.808854166666874
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 21,
+            "right": 20.25,
+            "effect": {
+              "meanDifference": 0.75,
+              "interval": [
+                -1.6875,
+                3.5625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 6,
+                  "right": 9,
+                  "difference": -3
+                },
+                {
+                  "seed": 15011,
+                  "left": 0,
+                  "right": 6,
+                  "difference": -6
+                },
+                {
+                  "seed": 15021,
+                  "left": 12,
+                  "right": 18,
+                  "difference": -6
+                },
+                {
+                  "seed": 15031,
+                  "left": 60,
+                  "right": 60,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 9,
+                  "right": 12,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 6,
+                  "right": 6,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 27,
+                  "right": 30,
+                  "difference": -3
+                },
+                {
+                  "seed": 15081,
+                  "left": 30,
+                  "right": 24,
+                  "difference": 6
+                },
+                {
+                  "seed": 15091,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 30,
+                  "right": 18,
+                  "difference": 12
+                },
+                {
+                  "seed": 15111,
+                  "left": 6,
+                  "right": 6,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 6,
+                  "right": 3,
+                  "difference": 3
+                },
+                {
+                  "seed": 15151,
+                  "left": 51,
+                  "right": 39,
+                  "difference": 12
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 29.625,
+            "right": 29.25,
+            "effect": {
+              "meanDifference": 0.375,
+              "interval": [
+                -1.3125,
+                2.0625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 18,
+                  "right": 9,
+                  "difference": 9
+                },
+                {
+                  "seed": 15011,
+                  "left": 9,
+                  "right": 15,
+                  "difference": -6
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 27,
+                  "difference": 3
+                },
+                {
+                  "seed": 15031,
+                  "left": 54,
+                  "right": 54,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 36,
+                  "right": 33,
+                  "difference": 3
+                },
+                {
+                  "seed": 15071,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 48,
+                  "right": 45,
+                  "difference": 3
+                },
+                {
+                  "seed": 15091,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 33,
+                  "right": 33,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 15,
+                  "right": 21,
+                  "difference": -6
+                },
+                {
+                  "seed": 15131,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15151,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 35.8125,
+            "right": 35.625,
+            "effect": {
+              "meanDifference": 0.1875,
+              "interval": [
+                -2.4375,
+                2.625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27,
+                  "right": 33,
+                  "difference": -6
+                },
+                {
+                  "seed": 15011,
+                  "left": 18,
+                  "right": 21,
+                  "difference": -3
+                },
+                {
+                  "seed": 15021,
+                  "left": 45,
+                  "right": 36,
+                  "difference": 9
+                },
+                {
+                  "seed": 15031,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 18,
+                  "right": 15,
+                  "difference": 3
+                },
+                {
+                  "seed": 15061,
+                  "left": 48,
+                  "right": 51,
+                  "difference": -3
+                },
+                {
+                  "seed": 15071,
+                  "left": 48,
+                  "right": 60,
+                  "difference": -12
+                },
+                {
+                  "seed": 15081,
+                  "left": 42,
+                  "right": 45,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 60,
+                  "right": 51,
+                  "difference": 9
+                },
+                {
+                  "seed": 15101,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 18,
+                  "right": 15,
+                  "difference": 3
+                },
+                {
+                  "seed": 15131,
+                  "left": 42,
+                  "right": 36,
+                  "difference": 6
+                },
+                {
+                  "seed": 15141,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 57,
+                  "right": 57,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      }
+    },
+    "zigzag-advance/courtyard": {
+      "adaptive-minus-uniform48": {
+        "effect": {
+          "meanDifference": -0.8125,
+          "interval": [
+            -3.0625,
+            1.4375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 25,
+              "right": 20,
+              "difference": 5
+            },
+            {
+              "seed": 15011,
+              "left": 2,
+              "right": 9,
+              "difference": -7
+            },
+            {
+              "seed": 15021,
+              "left": 29,
+              "right": 29,
+              "difference": 0
+            },
+            {
+              "seed": 15031,
+              "left": 24,
+              "right": 25,
+              "difference": -1
+            },
+            {
+              "seed": 15041,
+              "left": 26,
+              "right": 25,
+              "difference": 1
+            },
+            {
+              "seed": 15051,
+              "left": 10,
+              "right": 16,
+              "difference": -6
+            },
+            {
+              "seed": 15061,
+              "left": 18,
+              "right": 19,
+              "difference": -1
+            },
+            {
+              "seed": 15071,
+              "left": 18,
+              "right": 16,
+              "difference": 2
+            },
+            {
+              "seed": 15081,
+              "left": 14,
+              "right": 22,
+              "difference": -8
+            },
+            {
+              "seed": 15091,
+              "left": 18,
+              "right": 20,
+              "difference": -2
+            },
+            {
+              "seed": 15101,
+              "left": 34,
+              "right": 27,
+              "difference": 7
+            },
+            {
+              "seed": 15111,
+              "left": 31,
+              "right": 31,
+              "difference": 0
+            },
+            {
+              "seed": 15121,
+              "left": 21,
+              "right": 25,
+              "difference": -4
+            },
+            {
+              "seed": 15131,
+              "left": 21,
+              "right": 19,
+              "difference": 2
+            },
+            {
+              "seed": 15141,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 15151,
+              "left": 34,
+              "right": 41,
+              "difference": -7
+            }
+          ]
+        },
+        "left": {
+          "damage": 21.8125,
+          "playerClearRate": 0.9739583333333334,
+          "playerDeathRate": 0,
+          "duration": 16.081250000000235
+        },
+        "right": {
+          "damage": 22.625,
+          "playerClearRate": 0.96875,
+          "playerDeathRate": 0,
+          "duration": 16.232118055555777
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 22.5,
+            "right": 22.125,
+            "effect": {
+              "meanDifference": 0.375,
+              "interval": [
+                -4.125,
+                5.25
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15011,
+                  "left": 3,
+                  "right": 3,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 39,
+                  "difference": -9
+                },
+                {
+                  "seed": 15031,
+                  "left": 36,
+                  "right": 18,
+                  "difference": 18
+                },
+                {
+                  "seed": 15041,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 6,
+                  "right": 12,
+                  "difference": -6
+                },
+                {
+                  "seed": 15061,
+                  "left": 18,
+                  "right": 24,
+                  "difference": -6
+                },
+                {
+                  "seed": 15071,
+                  "left": 12,
+                  "right": 18,
+                  "difference": -6
+                },
+                {
+                  "seed": 15081,
+                  "left": 3,
+                  "right": 21,
+                  "difference": -18
+                },
+                {
+                  "seed": 15091,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 54,
+                  "right": 33,
+                  "difference": 21
+                },
+                {
+                  "seed": 15111,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 12,
+                  "difference": 12
+                },
+                {
+                  "seed": 15131,
+                  "left": 9,
+                  "right": 18,
+                  "difference": -9
+                },
+                {
+                  "seed": 15141,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15151,
+                  "left": 66,
+                  "right": 66,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 20.8125,
+            "right": 23.0625,
+            "effect": {
+              "meanDifference": -2.25,
+              "interval": [
+                -6.75,
+                1.6875
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27,
+                  "right": 15,
+                  "difference": 12
+                },
+                {
+                  "seed": 15011,
+                  "left": 0,
+                  "right": 9,
+                  "difference": -9
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 39,
+                  "difference": -9
+                },
+                {
+                  "seed": 15031,
+                  "left": 24,
+                  "right": 30,
+                  "difference": -6
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 21,
+                  "right": 24,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 15,
+                  "right": 9,
+                  "difference": 6
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 30,
+                  "difference": -6
+                },
+                {
+                  "seed": 15111,
+                  "left": 36,
+                  "right": 42,
+                  "difference": -6
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 33,
+                  "difference": -9
+                },
+                {
+                  "seed": 15131,
+                  "left": 21,
+                  "right": 12,
+                  "difference": 9
+                },
+                {
+                  "seed": 15141,
+                  "left": 21,
+                  "right": 12,
+                  "difference": 9
+                },
+                {
+                  "seed": 15151,
+                  "left": 12,
+                  "right": 36,
+                  "difference": -24
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 22.125,
+            "right": 22.6875,
+            "effect": {
+              "meanDifference": -0.5625,
+              "interval": [
+                -5.25,
+                4.3125
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15011,
+                  "left": 3,
+                  "right": 15,
+                  "difference": -12
+                },
+                {
+                  "seed": 15021,
+                  "left": 27,
+                  "right": 9,
+                  "difference": 18
+                },
+                {
+                  "seed": 15031,
+                  "left": 12,
+                  "right": 27,
+                  "difference": -15
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 27,
+                  "difference": 3
+                },
+                {
+                  "seed": 15051,
+                  "left": 15,
+                  "right": 27,
+                  "difference": -12
+                },
+                {
+                  "seed": 15061,
+                  "left": 15,
+                  "right": 12,
+                  "difference": 3
+                },
+                {
+                  "seed": 15071,
+                  "left": 24,
+                  "right": 12,
+                  "difference": 12
+                },
+                {
+                  "seed": 15081,
+                  "left": 18,
+                  "right": 21,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 18,
+                  "right": 30,
+                  "difference": -12
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 18,
+                  "difference": 6
+                },
+                {
+                  "seed": 15111,
+                  "left": 33,
+                  "right": 30,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 15,
+                  "right": 30,
+                  "difference": -15
+                },
+                {
+                  "seed": 15131,
+                  "left": 33,
+                  "right": 27,
+                  "difference": 6
+                },
+                {
+                  "seed": 15141,
+                  "left": 39,
+                  "right": 33,
+                  "difference": 6
+                },
+                {
+                  "seed": 15151,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      },
+      "adaptive-minus-uniform24": {
+        "effect": {
+          "meanDifference": 0.3125,
+          "interval": [
+            -0.6875,
+            1.375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 25,
+              "right": 22,
+              "difference": 3
+            },
+            {
+              "seed": 15011,
+              "left": 2,
+              "right": 1,
+              "difference": 1
+            },
+            {
+              "seed": 15021,
+              "left": 29,
+              "right": 31,
+              "difference": -2
+            },
+            {
+              "seed": 15031,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 15041,
+              "left": 26,
+              "right": 24,
+              "difference": 2
+            },
+            {
+              "seed": 15051,
+              "left": 10,
+              "right": 13,
+              "difference": -3
+            },
+            {
+              "seed": 15061,
+              "left": 18,
+              "right": 16,
+              "difference": 2
+            },
+            {
+              "seed": 15071,
+              "left": 18,
+              "right": 16,
+              "difference": 2
+            },
+            {
+              "seed": 15081,
+              "left": 14,
+              "right": 14,
+              "difference": 0
+            },
+            {
+              "seed": 15091,
+              "left": 18,
+              "right": 18,
+              "difference": 0
+            },
+            {
+              "seed": 15101,
+              "left": 34,
+              "right": 30,
+              "difference": 4
+            },
+            {
+              "seed": 15111,
+              "left": 31,
+              "right": 30,
+              "difference": 1
+            },
+            {
+              "seed": 15121,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 15131,
+              "left": 21,
+              "right": 19,
+              "difference": 2
+            },
+            {
+              "seed": 15141,
+              "left": 24,
+              "right": 25,
+              "difference": -1
+            },
+            {
+              "seed": 15151,
+              "left": 34,
+              "right": 34,
+              "difference": 0
+            }
+          ]
+        },
+        "left": {
+          "damage": 21.8125,
+          "playerClearRate": 0.9739583333333334,
+          "playerDeathRate": 0,
+          "duration": 16.081250000000235
+        },
+        "right": {
+          "damage": 21.5,
+          "playerClearRate": 0.9791666666666666,
+          "playerDeathRate": 0,
+          "duration": 15.881336805555803
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 22.5,
+            "right": 21.5625,
+            "effect": {
+              "meanDifference": 0.9375,
+              "interval": [
+                -1.125,
+                3.75
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15011,
+                  "left": 3,
+                  "right": 0,
+                  "difference": 3
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 6,
+                  "right": 12,
+                  "difference": -6
+                },
+                {
+                  "seed": 15061,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 12,
+                  "right": 15,
+                  "difference": -3
+                },
+                {
+                  "seed": 15081,
+                  "left": 3,
+                  "right": 6,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 54,
+                  "right": 36,
+                  "difference": 18
+                },
+                {
+                  "seed": 15111,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 9,
+                  "right": 6,
+                  "difference": 3
+                },
+                {
+                  "seed": 15141,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 66,
+                  "right": 66,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 20.8125,
+            "right": 21,
+            "effect": {
+              "meanDifference": -0.1875,
+              "interval": [
+                -1.6875,
+                1.5
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15011,
+                  "left": 0,
+                  "right": 0,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 36,
+                  "difference": -6
+                },
+                {
+                  "seed": 15031,
+                  "left": 24,
+                  "right": 30,
+                  "difference": -6
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 24,
+                  "difference": 6
+                },
+                {
+                  "seed": 15051,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 21,
+                  "right": 18,
+                  "difference": 3
+                },
+                {
+                  "seed": 15071,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 21,
+                  "right": 15,
+                  "difference": 6
+                },
+                {
+                  "seed": 15091,
+                  "left": 15,
+                  "right": 15,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15131,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 21,
+                  "right": 24,
+                  "difference": -3
+                },
+                {
+                  "seed": 15151,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 22.125,
+            "right": 21.9375,
+            "effect": {
+              "meanDifference": 0.1875,
+              "interval": [
+                -1.6875,
+                2.25
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 24,
+                  "right": 18,
+                  "difference": 6
+                },
+                {
+                  "seed": 15011,
+                  "left": 3,
+                  "right": 3,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 12,
+                  "right": 15,
+                  "difference": -3
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 15,
+                  "right": 18,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 15,
+                  "right": 12,
+                  "difference": 3
+                },
+                {
+                  "seed": 15071,
+                  "left": 24,
+                  "right": 15,
+                  "difference": 9
+                },
+                {
+                  "seed": 15081,
+                  "left": 18,
+                  "right": 21,
+                  "difference": -3
+                },
+                {
+                  "seed": 15091,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 30,
+                  "difference": -6
+                },
+                {
+                  "seed": 15111,
+                  "left": 33,
+                  "right": 30,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 15,
+                  "right": 21,
+                  "difference": -6
+                },
+                {
+                  "seed": 15131,
+                  "left": 33,
+                  "right": 30,
+                  "difference": 3
+                },
+                {
+                  "seed": 15141,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      }
+    },
+    "cover-peek/long-spines": {
+      "adaptive-minus-uniform48": {
+        "effect": {
+          "meanDifference": -3.1875,
+          "interval": [
+            -7.1875,
+            0.25
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 42,
+              "right": 46,
+              "difference": -4
+            },
+            {
+              "seed": 15011,
+              "left": 32,
+              "right": 27,
+              "difference": 5
+            },
+            {
+              "seed": 15021,
+              "left": 42,
+              "right": 40,
+              "difference": 2
+            },
+            {
+              "seed": 15031,
+              "left": 42,
+              "right": 66,
+              "difference": -24
+            },
+            {
+              "seed": 15041,
+              "left": 33,
+              "right": 34,
+              "difference": -1
+            },
+            {
+              "seed": 15051,
+              "left": 50,
+              "right": 54,
+              "difference": -4
+            },
+            {
+              "seed": 15061,
+              "left": 25,
+              "right": 24,
+              "difference": 1
+            },
+            {
+              "seed": 15071,
+              "left": 42,
+              "right": 50,
+              "difference": -8
+            },
+            {
+              "seed": 15081,
+              "left": 59,
+              "right": 58,
+              "difference": 1
+            },
+            {
+              "seed": 15091,
+              "left": 21,
+              "right": 13,
+              "difference": 8
+            },
+            {
+              "seed": 15101,
+              "left": 36,
+              "right": 40,
+              "difference": -4
+            },
+            {
+              "seed": 15111,
+              "left": 26,
+              "right": 26,
+              "difference": 0
+            },
+            {
+              "seed": 15121,
+              "left": 20,
+              "right": 36,
+              "difference": -16
+            },
+            {
+              "seed": 15131,
+              "left": 58,
+              "right": 53,
+              "difference": 5
+            },
+            {
+              "seed": 15141,
+              "left": 19,
+              "right": 25,
+              "difference": -6
+            },
+            {
+              "seed": 15151,
+              "left": 56,
+              "right": 62,
+              "difference": -6
+            }
+          ]
+        },
+        "left": {
+          "damage": 37.6875,
+          "playerClearRate": 0.9322916666666666,
+          "playerDeathRate": 0,
+          "duration": 17.4822048611113
+        },
+        "right": {
+          "damage": 40.875,
+          "playerClearRate": 0.890625,
+          "playerDeathRate": 0,
+          "duration": 17.931857638889046
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 48.75,
+            "right": 51.1875,
+            "effect": {
+              "meanDifference": -2.4375,
+              "interval": [
+                -10.3125,
+                4.504687499999932
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 78,
+                  "right": 75,
+                  "difference": 3
+                },
+                {
+                  "seed": 15011,
+                  "left": 45,
+                  "right": 27,
+                  "difference": 18
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 36,
+                  "difference": -6
+                },
+                {
+                  "seed": 15031,
+                  "left": 54,
+                  "right": 84,
+                  "difference": -30
+                },
+                {
+                  "seed": 15041,
+                  "left": 45,
+                  "right": 51,
+                  "difference": -6
+                },
+                {
+                  "seed": 15051,
+                  "left": 72,
+                  "right": 87,
+                  "difference": -15
+                },
+                {
+                  "seed": 15061,
+                  "left": 36,
+                  "right": 24,
+                  "difference": 12
+                },
+                {
+                  "seed": 15071,
+                  "left": 66,
+                  "right": 63,
+                  "difference": 3
+                },
+                {
+                  "seed": 15081,
+                  "left": 57,
+                  "right": 45,
+                  "difference": 12
+                },
+                {
+                  "seed": 15091,
+                  "left": 36,
+                  "right": 15,
+                  "difference": 21
+                },
+                {
+                  "seed": 15101,
+                  "left": 45,
+                  "right": 45,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 39,
+                  "right": 42,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 66,
+                  "difference": -42
+                },
+                {
+                  "seed": 15131,
+                  "left": 54,
+                  "right": 57,
+                  "difference": -3
+                },
+                {
+                  "seed": 15141,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15151,
+                  "left": 75,
+                  "right": 75,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 36.9375,
+            "right": 44.8125,
+            "effect": {
+              "meanDifference": -7.875,
+              "interval": [
+                -13.6875,
+                -2.625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 36,
+                  "right": 51,
+                  "difference": -15
+                },
+                {
+                  "seed": 15011,
+                  "left": 33,
+                  "right": 36,
+                  "difference": -3
+                },
+                {
+                  "seed": 15021,
+                  "left": 45,
+                  "right": 48,
+                  "difference": -3
+                },
+                {
+                  "seed": 15031,
+                  "left": 45,
+                  "right": 78,
+                  "difference": -33
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 36,
+                  "difference": -6
+                },
+                {
+                  "seed": 15051,
+                  "left": 54,
+                  "right": 54,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 24,
+                  "right": 30,
+                  "difference": -6
+                },
+                {
+                  "seed": 15071,
+                  "left": 33,
+                  "right": 51,
+                  "difference": -18
+                },
+                {
+                  "seed": 15081,
+                  "left": 51,
+                  "right": 69,
+                  "difference": -18
+                },
+                {
+                  "seed": 15091,
+                  "left": 18,
+                  "right": 12,
+                  "difference": 6
+                },
+                {
+                  "seed": 15101,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 33,
+                  "difference": -9
+                },
+                {
+                  "seed": 15131,
+                  "left": 63,
+                  "right": 60,
+                  "difference": 3
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 21,
+                  "difference": 6
+                },
+                {
+                  "seed": 15151,
+                  "left": 42,
+                  "right": 72,
+                  "difference": -30
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 27.375,
+            "right": 26.625,
+            "effect": {
+              "meanDifference": 0.75,
+              "interval": [
+                -4.125,
+                5.625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15011,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 51,
+                  "right": 36,
+                  "difference": 15
+                },
+                {
+                  "seed": 15031,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15041,
+                  "left": 24,
+                  "right": 15,
+                  "difference": 9
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15061,
+                  "left": 15,
+                  "right": 18,
+                  "difference": -3
+                },
+                {
+                  "seed": 15071,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15081,
+                  "left": 69,
+                  "right": 60,
+                  "difference": 9
+                },
+                {
+                  "seed": 15091,
+                  "left": 9,
+                  "right": 12,
+                  "difference": -3
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 36,
+                  "difference": -12
+                },
+                {
+                  "seed": 15111,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15131,
+                  "left": 57,
+                  "right": 42,
+                  "difference": 15
+                },
+                {
+                  "seed": 15141,
+                  "left": 6,
+                  "right": 27,
+                  "difference": -21
+                },
+                {
+                  "seed": 15151,
+                  "left": 51,
+                  "right": 39,
+                  "difference": 12
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      },
+      "adaptive-minus-uniform24": {
+        "effect": {
+          "meanDifference": 1.25,
+          "interval": [
+            -0.375,
+            3.25
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 42,
+              "right": 46,
+              "difference": -4
+            },
+            {
+              "seed": 15011,
+              "left": 32,
+              "right": 31,
+              "difference": 1
+            },
+            {
+              "seed": 15021,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 15031,
+              "left": 42,
+              "right": 38,
+              "difference": 4
+            },
+            {
+              "seed": 15041,
+              "left": 33,
+              "right": 31,
+              "difference": 2
+            },
+            {
+              "seed": 15051,
+              "left": 50,
+              "right": 49,
+              "difference": 1
+            },
+            {
+              "seed": 15061,
+              "left": 25,
+              "right": 27,
+              "difference": -2
+            },
+            {
+              "seed": 15071,
+              "left": 42,
+              "right": 43,
+              "difference": -1
+            },
+            {
+              "seed": 15081,
+              "left": 59,
+              "right": 46,
+              "difference": 13
+            },
+            {
+              "seed": 15091,
+              "left": 21,
+              "right": 22,
+              "difference": -1
+            },
+            {
+              "seed": 15101,
+              "left": 36,
+              "right": 34,
+              "difference": 2
+            },
+            {
+              "seed": 15111,
+              "left": 26,
+              "right": 26,
+              "difference": 0
+            },
+            {
+              "seed": 15121,
+              "left": 20,
+              "right": 17,
+              "difference": 3
+            },
+            {
+              "seed": 15131,
+              "left": 58,
+              "right": 60,
+              "difference": -2
+            },
+            {
+              "seed": 15141,
+              "left": 19,
+              "right": 15,
+              "difference": 4
+            },
+            {
+              "seed": 15151,
+              "left": 56,
+              "right": 56,
+              "difference": 0
+            }
+          ]
+        },
+        "left": {
+          "damage": 37.6875,
+          "playerClearRate": 0.9322916666666666,
+          "playerDeathRate": 0,
+          "duration": 17.4822048611113
+        },
+        "right": {
+          "damage": 36.4375,
+          "playerClearRate": 0.9166666666666666,
+          "playerDeathRate": 0,
+          "duration": 17.630468750000176
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 48.75,
+            "right": 48.75,
+            "effect": {
+              "meanDifference": 0,
+              "interval": [
+                -1.3125,
+                1.3125
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 78,
+                  "right": 78,
+                  "difference": 0
+                },
+                {
+                  "seed": 15011,
+                  "left": 45,
+                  "right": 42,
+                  "difference": 3
+                },
+                {
+                  "seed": 15021,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 54,
+                  "right": 54,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 45,
+                  "right": 45,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 72,
+                  "right": 69,
+                  "difference": 3
+                },
+                {
+                  "seed": 15061,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 66,
+                  "right": 69,
+                  "difference": -3
+                },
+                {
+                  "seed": 15081,
+                  "left": 57,
+                  "right": 57,
+                  "difference": 0
+                },
+                {
+                  "seed": 15091,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 45,
+                  "right": 39,
+                  "difference": 6
+                },
+                {
+                  "seed": 15111,
+                  "left": 39,
+                  "right": 42,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 54,
+                  "right": 60,
+                  "difference": -6
+                },
+                {
+                  "seed": 15141,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 75,
+                  "right": 75,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 36.9375,
+            "right": 36,
+            "effect": {
+              "meanDifference": 0.9375,
+              "interval": [
+                -1.5,
+                3.375
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 36,
+                  "right": 48,
+                  "difference": -12
+                },
+                {
+                  "seed": 15011,
+                  "left": 33,
+                  "right": 36,
+                  "difference": -3
+                },
+                {
+                  "seed": 15021,
+                  "left": 45,
+                  "right": 45,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 45,
+                  "right": 39,
+                  "difference": 6
+                },
+                {
+                  "seed": 15041,
+                  "left": 30,
+                  "right": 24,
+                  "difference": 6
+                },
+                {
+                  "seed": 15051,
+                  "left": 54,
+                  "right": 54,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 33,
+                  "right": 33,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 51,
+                  "right": 51,
+                  "difference": 0
+                },
+                {
+                  "seed": 15091,
+                  "left": 18,
+                  "right": 18,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 24,
+                  "right": 18,
+                  "difference": 6
+                },
+                {
+                  "seed": 15131,
+                  "left": 63,
+                  "right": 63,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 15,
+                  "difference": 12
+                },
+                {
+                  "seed": 15151,
+                  "left": 42,
+                  "right": 42,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 27.375,
+            "right": 24.5625,
+            "effect": {
+              "meanDifference": 2.8125,
+              "interval": [
+                -0.5625,
+                8.0625
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15011,
+                  "left": 18,
+                  "right": 15,
+                  "difference": 3
+                },
+                {
+                  "seed": 15021,
+                  "left": 51,
+                  "right": 51,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 27,
+                  "right": 21,
+                  "difference": 6
+                },
+                {
+                  "seed": 15041,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 15,
+                  "right": 21,
+                  "difference": -6
+                },
+                {
+                  "seed": 15071,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 69,
+                  "right": 30,
+                  "difference": 39
+                },
+                {
+                  "seed": 15091,
+                  "left": 9,
+                  "right": 12,
+                  "difference": -3
+                },
+                {
+                  "seed": 15101,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15121,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15131,
+                  "left": 57,
+                  "right": 57,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 6,
+                  "right": 6,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 51,
+                  "right": 51,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      }
+    },
+    "cover-peek/courtyard": {
+      "adaptive-minus-uniform48": {
+        "effect": {
+          "meanDifference": -1.5625,
+          "interval": [
+            -4.1875,
+            1.25
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 26,
+              "right": 36,
+              "difference": -10
+            },
+            {
+              "seed": 15011,
+              "left": 31,
+              "right": 33,
+              "difference": -2
+            },
+            {
+              "seed": 15021,
+              "left": 32,
+              "right": 35,
+              "difference": -3
+            },
+            {
+              "seed": 15031,
+              "left": 24,
+              "right": 26,
+              "difference": -2
+            },
+            {
+              "seed": 15041,
+              "left": 30,
+              "right": 39,
+              "difference": -9
+            },
+            {
+              "seed": 15051,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 15061,
+              "left": 20,
+              "right": 27,
+              "difference": -7
+            },
+            {
+              "seed": 15071,
+              "left": 40,
+              "right": 42,
+              "difference": -2
+            },
+            {
+              "seed": 15081,
+              "left": 42,
+              "right": 40,
+              "difference": 2
+            },
+            {
+              "seed": 15091,
+              "left": 36,
+              "right": 38,
+              "difference": -2
+            },
+            {
+              "seed": 15101,
+              "left": 34,
+              "right": 35,
+              "difference": -1
+            },
+            {
+              "seed": 15111,
+              "left": 29,
+              "right": 36,
+              "difference": -7
+            },
+            {
+              "seed": 15121,
+              "left": 40,
+              "right": 29,
+              "difference": 11
+            },
+            {
+              "seed": 15131,
+              "left": 21,
+              "right": 26,
+              "difference": -5
+            },
+            {
+              "seed": 15141,
+              "left": 45,
+              "right": 40,
+              "difference": 5
+            },
+            {
+              "seed": 15151,
+              "left": 53,
+              "right": 46,
+              "difference": 7
+            }
+          ]
+        },
+        "left": {
+          "damage": 33.6875,
+          "playerClearRate": 0.9791666666666666,
+          "playerDeathRate": 0,
+          "duration": 16.85329861111134
+        },
+        "right": {
+          "damage": 35.25,
+          "playerClearRate": 0.9583333333333334,
+          "playerDeathRate": 0,
+          "duration": 16.901128472222453
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 31.875,
+            "right": 33.375,
+            "effect": {
+              "meanDifference": -1.5,
+              "interval": [
+                -6.5625,
+                3.9375
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 12,
+                  "right": 21,
+                  "difference": -9
+                },
+                {
+                  "seed": 15011,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 12,
+                  "right": 18,
+                  "difference": -6
+                },
+                {
+                  "seed": 15031,
+                  "left": 12,
+                  "right": 9,
+                  "difference": 3
+                },
+                {
+                  "seed": 15041,
+                  "left": 27,
+                  "right": 33,
+                  "difference": -6
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 24,
+                  "right": 48,
+                  "difference": -24
+                },
+                {
+                  "seed": 15071,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 24,
+                  "right": 15,
+                  "difference": 9
+                },
+                {
+                  "seed": 15091,
+                  "left": 30,
+                  "right": 48,
+                  "difference": -18
+                },
+                {
+                  "seed": 15101,
+                  "left": 48,
+                  "right": 54,
+                  "difference": -6
+                },
+                {
+                  "seed": 15111,
+                  "left": 27,
+                  "right": 30,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 48,
+                  "right": 24,
+                  "difference": 24
+                },
+                {
+                  "seed": 15131,
+                  "left": 33,
+                  "right": 30,
+                  "difference": 3
+                },
+                {
+                  "seed": 15141,
+                  "left": 66,
+                  "right": 57,
+                  "difference": 9
+                },
+                {
+                  "seed": 15151,
+                  "left": 57,
+                  "right": 54,
+                  "difference": 3
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 34.875,
+            "right": 35.25,
+            "effect": {
+              "meanDifference": -0.375,
+              "interval": [
+                -5.81718749999998,
+                4.875
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 30,
+                  "right": 39,
+                  "difference": -9
+                },
+                {
+                  "seed": 15011,
+                  "left": 36,
+                  "right": 33,
+                  "difference": 3
+                },
+                {
+                  "seed": 15021,
+                  "left": 36,
+                  "right": 24,
+                  "difference": 12
+                },
+                {
+                  "seed": 15031,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 21,
+                  "right": 48,
+                  "difference": -27
+                },
+                {
+                  "seed": 15051,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15061,
+                  "left": 27,
+                  "right": 24,
+                  "difference": 3
+                },
+                {
+                  "seed": 15071,
+                  "left": 42,
+                  "right": 42,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 39,
+                  "right": 45,
+                  "difference": -6
+                },
+                {
+                  "seed": 15091,
+                  "left": 36,
+                  "right": 30,
+                  "difference": 6
+                },
+                {
+                  "seed": 15101,
+                  "left": 33,
+                  "right": 36,
+                  "difference": -3
+                },
+                {
+                  "seed": 15111,
+                  "left": 30,
+                  "right": 42,
+                  "difference": -12
+                },
+                {
+                  "seed": 15121,
+                  "left": 45,
+                  "right": 27,
+                  "difference": 18
+                },
+                {
+                  "seed": 15131,
+                  "left": 15,
+                  "right": 24,
+                  "difference": -9
+                },
+                {
+                  "seed": 15141,
+                  "left": 42,
+                  "right": 42,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 63,
+                  "right": 45,
+                  "difference": 18
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 34.3125,
+            "right": 37.125,
+            "effect": {
+              "meanDifference": -2.8125,
+              "interval": [
+                -6.1875,
+                0.5671874999999318
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 36,
+                  "right": 48,
+                  "difference": -12
+                },
+                {
+                  "seed": 15011,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15021,
+                  "left": 48,
+                  "right": 63,
+                  "difference": -15
+                },
+                {
+                  "seed": 15031,
+                  "left": 33,
+                  "right": 42,
+                  "difference": -9
+                },
+                {
+                  "seed": 15041,
+                  "left": 42,
+                  "right": 36,
+                  "difference": 6
+                },
+                {
+                  "seed": 15051,
+                  "left": 48,
+                  "right": 45,
+                  "difference": 3
+                },
+                {
+                  "seed": 15061,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 42,
+                  "right": 48,
+                  "difference": -6
+                },
+                {
+                  "seed": 15081,
+                  "left": 63,
+                  "right": 60,
+                  "difference": 3
+                },
+                {
+                  "seed": 15091,
+                  "left": 42,
+                  "right": 36,
+                  "difference": 6
+                },
+                {
+                  "seed": 15101,
+                  "left": 21,
+                  "right": 15,
+                  "difference": 6
+                },
+                {
+                  "seed": 15111,
+                  "left": 30,
+                  "right": 36,
+                  "difference": -6
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15131,
+                  "left": 15,
+                  "right": 24,
+                  "difference": -9
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 21,
+                  "difference": 6
+                },
+                {
+                  "seed": 15151,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      },
+      "adaptive-minus-uniform24": {
+        "effect": {
+          "meanDifference": -0.6875,
+          "interval": [
+            -2.0625,
+            0.8125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 15001,
+              "left": 26,
+              "right": 33,
+              "difference": -7
+            },
+            {
+              "seed": 15011,
+              "left": 31,
+              "right": 33,
+              "difference": -2
+            },
+            {
+              "seed": 15021,
+              "left": 32,
+              "right": 29,
+              "difference": 3
+            },
+            {
+              "seed": 15031,
+              "left": 24,
+              "right": 26,
+              "difference": -2
+            },
+            {
+              "seed": 15041,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 15051,
+              "left": 36,
+              "right": 37,
+              "difference": -1
+            },
+            {
+              "seed": 15061,
+              "left": 20,
+              "right": 21,
+              "difference": -1
+            },
+            {
+              "seed": 15071,
+              "left": 40,
+              "right": 38,
+              "difference": 2
+            },
+            {
+              "seed": 15081,
+              "left": 42,
+              "right": 35,
+              "difference": 7
+            },
+            {
+              "seed": 15091,
+              "left": 36,
+              "right": 37,
+              "difference": -1
+            },
+            {
+              "seed": 15101,
+              "left": 34,
+              "right": 33,
+              "difference": 1
+            },
+            {
+              "seed": 15111,
+              "left": 29,
+              "right": 31,
+              "difference": -2
+            },
+            {
+              "seed": 15121,
+              "left": 40,
+              "right": 44,
+              "difference": -4
+            },
+            {
+              "seed": 15131,
+              "left": 21,
+              "right": 23,
+              "difference": -2
+            },
+            {
+              "seed": 15141,
+              "left": 45,
+              "right": 46,
+              "difference": -1
+            },
+            {
+              "seed": 15151,
+              "left": 53,
+              "right": 54,
+              "difference": -1
+            }
+          ]
+        },
+        "left": {
+          "damage": 33.6875,
+          "playerClearRate": 0.9791666666666666,
+          "playerDeathRate": 0,
+          "duration": 16.85329861111134
+        },
+        "right": {
+          "damage": 34.375,
+          "playerClearRate": 0.9791666666666666,
+          "playerDeathRate": 0,
+          "duration": 16.700173611111335
+        },
+        "curves": [
+          {
+            "from": 1,
+            "to": 4,
+            "left": 31.875,
+            "right": 34.125,
+            "effect": {
+              "meanDifference": -2.25,
+              "interval": [
+                -5.25,
+                -0.1875
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 12,
+                  "right": 33,
+                  "difference": -21
+                },
+                {
+                  "seed": 15011,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15021,
+                  "left": 12,
+                  "right": 18,
+                  "difference": -6
+                },
+                {
+                  "seed": 15031,
+                  "left": 12,
+                  "right": 12,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 24,
+                  "right": 27,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 24,
+                  "right": 24,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 24,
+                  "right": 21,
+                  "difference": 3
+                },
+                {
+                  "seed": 15091,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 48,
+                  "right": 51,
+                  "difference": -3
+                },
+                {
+                  "seed": 15111,
+                  "left": 27,
+                  "right": 30,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 33,
+                  "right": 36,
+                  "difference": -3
+                },
+                {
+                  "seed": 15141,
+                  "left": 66,
+                  "right": 63,
+                  "difference": 3
+                },
+                {
+                  "seed": 15151,
+                  "left": 57,
+                  "right": 60,
+                  "difference": -3
+                }
+              ]
+            }
+          },
+          {
+            "from": 5,
+            "to": 8,
+            "left": 34.875,
+            "right": 33.9375,
+            "effect": {
+              "meanDifference": 0.9375,
+              "interval": [
+                -1.125,
+                3.375
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 30,
+                  "right": 21,
+                  "difference": 9
+                },
+                {
+                  "seed": 15011,
+                  "left": 36,
+                  "right": 33,
+                  "difference": 3
+                },
+                {
+                  "seed": 15021,
+                  "left": 36,
+                  "right": 21,
+                  "difference": 15
+                },
+                {
+                  "seed": 15031,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15041,
+                  "left": 21,
+                  "right": 21,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 36,
+                  "right": 39,
+                  "difference": -3
+                },
+                {
+                  "seed": 15061,
+                  "left": 27,
+                  "right": 30,
+                  "difference": -3
+                },
+                {
+                  "seed": 15071,
+                  "left": 42,
+                  "right": 42,
+                  "difference": 0
+                },
+                {
+                  "seed": 15081,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                },
+                {
+                  "seed": 15091,
+                  "left": 36,
+                  "right": 36,
+                  "difference": 0
+                },
+                {
+                  "seed": 15101,
+                  "left": 33,
+                  "right": 33,
+                  "difference": 0
+                },
+                {
+                  "seed": 15111,
+                  "left": 30,
+                  "right": 30,
+                  "difference": 0
+                },
+                {
+                  "seed": 15121,
+                  "left": 45,
+                  "right": 45,
+                  "difference": 0
+                },
+                {
+                  "seed": 15131,
+                  "left": 15,
+                  "right": 15,
+                  "difference": 0
+                },
+                {
+                  "seed": 15141,
+                  "left": 42,
+                  "right": 48,
+                  "difference": -6
+                },
+                {
+                  "seed": 15151,
+                  "left": 63,
+                  "right": 63,
+                  "difference": 0
+                }
+              ]
+            }
+          },
+          {
+            "from": 9,
+            "to": 12,
+            "left": 34.3125,
+            "right": 35.0625,
+            "effect": {
+              "meanDifference": -0.75,
+              "interval": [
+                -3.9375,
+                2.8125
+              ],
+              "seedCount": 16,
+              "pairs": [
+                {
+                  "seed": 15001,
+                  "left": 36,
+                  "right": 45,
+                  "difference": -9
+                },
+                {
+                  "seed": 15011,
+                  "left": 27,
+                  "right": 36,
+                  "difference": -9
+                },
+                {
+                  "seed": 15021,
+                  "left": 48,
+                  "right": 48,
+                  "difference": 0
+                },
+                {
+                  "seed": 15031,
+                  "left": 33,
+                  "right": 39,
+                  "difference": -6
+                },
+                {
+                  "seed": 15041,
+                  "left": 42,
+                  "right": 42,
+                  "difference": 0
+                },
+                {
+                  "seed": 15051,
+                  "left": 48,
+                  "right": 45,
+                  "difference": 3
+                },
+                {
+                  "seed": 15061,
+                  "left": 9,
+                  "right": 9,
+                  "difference": 0
+                },
+                {
+                  "seed": 15071,
+                  "left": 42,
+                  "right": 36,
+                  "difference": 6
+                },
+                {
+                  "seed": 15081,
+                  "left": 63,
+                  "right": 45,
+                  "difference": 18
+                },
+                {
+                  "seed": 15091,
+                  "left": 42,
+                  "right": 45,
+                  "difference": -3
+                },
+                {
+                  "seed": 15101,
+                  "left": 21,
+                  "right": 15,
+                  "difference": 6
+                },
+                {
+                  "seed": 15111,
+                  "left": 30,
+                  "right": 33,
+                  "difference": -3
+                },
+                {
+                  "seed": 15121,
+                  "left": 27,
+                  "right": 39,
+                  "difference": -12
+                },
+                {
+                  "seed": 15131,
+                  "left": 15,
+                  "right": 18,
+                  "difference": -3
+                },
+                {
+                  "seed": 15141,
+                  "left": 27,
+                  "right": 27,
+                  "difference": 0
+                },
+                {
+                  "seed": 15151,
+                  "left": 39,
+                  "right": 39,
+                  "difference": 0
+                }
+              ]
+            }
+          }
+        ],
+        "primary": false
+      }
+    }
+  },
+  "gates": {
+    "meaningful_primary": false,
+    "adjusted_interval_positive": false,
+    "no_large_fresh_case_regression": true,
+    "not_worse_at_matched_update_count": true
+  },
+  "budget": {
+    "encounters": 4608,
+    "decisions": 13824,
+    "steps": 4625518,
+    "byArm": {
+      "uniform48": {
+        "encounters": 1536,
+        "steps": 1526214,
+        "decisions": 4608
+      },
+      "uniform24": {
+        "encounters": 1536,
+        "steps": 1521962,
+        "decisions": 4608
+      },
+      "adaptive24": {
+        "encounters": 1536,
+        "steps": 1577342,
+        "decisions": 4608
+      }
+    },
+    "byPhase": {
+      "training": 1152,
+      "test-forward": 1152,
+      "test-reverse": 1152,
+      "probe": 768,
+      "selected-training": 384
+    }
+  },
+  "disposition": "not-supported-by-this-screen"
+}

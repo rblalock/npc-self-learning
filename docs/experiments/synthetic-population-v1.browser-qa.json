@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-18T21:34:25.668Z",
+  "rendererVersion": 2,
+  "conditions": [
+    {
+      "condition": "diverse-frozen",
+      "terminalFrameReached": true,
+      "outcome": "Player health: 76 HP · cleared · 24 HP enemy damage",
+      "learning": "Close distance\t77.0% → 77.0%\nFlank right\t65.1% → 65.1%\nLead movement\t50.7% → 50.7%",
+      "overflow": false
+    },
+    {
+      "condition": "narrow-online",
+      "terminalFrameReached": true,
+      "outcome": "Player health: 76 HP · survived · 24 HP enemy damage",
+      "learning": "Close distance\t47.0% → 45.3%\nFlank left\t75.6% → 75.5%\nLead movement\t57.9% → 54.7%",
+      "overflow": false
+    },
+    {
+      "condition": "narrow-frozen",
+      "terminalFrameReached": true,
+      "outcome": "Player health: 76 HP · survived · 24 HP enemy damage",
+      "learning": "Close distance\t68.8% → 68.8%\nFlank left\t80.8% → 80.8%\nLead movement\t90.2% → 90.2%",
+      "overflow": false
+    },
+    {
+      "condition": "fixed",
+      "terminalFrameReached": true,
+      "outcome": "Player health: 76 HP · cleared · 24 HP enemy damage",
+      "learning": "Close distance\t100% → 100% (fixed)\nFlank right\t100% → 100% (fixed)\nLead movement\t100% → 100% (fixed)",
+      "overflow": false
+    },
+    {
+      "condition": "diverse-online",
+      "terminalFrameReached": true,
+      "outcome": "Player health: 76 HP · survived · 24 HP enemy damage",
+      "learning": "Close distance\t47.4% → 45.7%\nFlank left\t74.9% → 74.8%\nLead movement\t54.5% → 51.5%",
+      "overflow": false
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "overflow": false,
+    "controls": true
+  },
+  "playback": {
+    "advanced": {
+      "time": 1.6376000003814701,
+      "playing": true,
+      "button": "Pause"
+    },
+    "paused": {
+      "time": 2.0376000003814703,
+      "unchanged": true,
+      "playing": false
+    }
+  },
+  "diagnostics": {
+    "consoleEntries": [
+      {
+        "level": "log",
+        "text": "{\"conditions\":5,\"frames\":[262,262,262,170,170],\"overflow\":false}",
+        "timestamp": "2026-10-18T21:27:05.883Z"
+      },
+      {
+        "level": "log",
+        "text": "{\"conditions\":5,\"frames\":[262,262,262,170,170],\"overflow\":false}",
+        "timestamp": "2026-10-18T21:32:55.366Z"
+      }
+    ],
+    "networkEntries": [
+      {
+        "url": "http://127.0.0.1:5176/synthetic-population-v1-replay.html",
+        "method": "GET",
+        "status": 200,
+        "failed": false,
+        "timestamp": "2026-10-18T21:27:05.858Z"
+      },
+      {
+        "url": "http://127.0.0.1:5176/synthetic-population-v1-view.html",
+        "method": "GET",
+        "status": 200,
+        "failed": false,
+        "timestamp": "2026-10-18T21:32:55.346Z"
+      }
+    ]
+  }
+}

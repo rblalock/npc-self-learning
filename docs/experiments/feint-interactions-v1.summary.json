@@ -1,0 +1,4836 @@
+{
+  "actualEncounters": 96,
+  "pairs": [
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 48,
+      "ownDamageChange": 48,
+      "rewardChange": 1.4,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 60,
+      "ownDamageChange": 60,
+      "rewardChange": 1.4,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 60,
+      "ownDamageChange": 60,
+      "rewardChange": 1.4,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 60,
+      "ownDamageChange": 60,
+      "rewardChange": 1.4,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": -36,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": -36,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -36,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -36,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.37500000000000006,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.37500000000000006,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -24,
+      "ownDamageChange": -24,
+      "rewardChange": -0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.7500000000000001,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.025,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.7500000000000001,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.7500000000000001,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 36,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.125,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.125,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.125,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.125,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 48,
+      "ownDamageChange": 48,
+      "rewardChange": 1.4,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 36,
+      "ownDamageChange": 36,
+      "rewardChange": 1.125,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 24,
+      "ownDamageChange": 24,
+      "rewardChange": 0.75,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "orbit",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "reverse",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": -12,
+      "rewardChange": -0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/aim",
+      "to": "hold/flank_left/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_left/lead",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_right/aim",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "flanker",
+      "from": "hold/flank_left/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 0,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "ranger",
+      "from": "rush/flank_right/aim",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_left/aim",
+      "to": "hold/flank_left/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    },
+    {
+      "world": "central-obstacles",
+      "style": "feint",
+      "role": "ranger",
+      "from": "hold/flank_right/aim",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 12,
+      "rewardChange": 0.375,
+      "bothObserved": true
+    }
+  ],
+  "creditBlindPairs": [
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "original",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "south-entry",
+      "style": "orbit",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "reverse",
+      "role": "vanguard",
+      "from": "rush/flank_right/lead",
+      "to": "hold/flank_right/lead",
+      "teamDamageChange": -12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/aim",
+      "to": "rush/flank_right/aim",
+      "teamDamageChange": 12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    },
+    {
+      "world": "wide-crossings",
+      "style": "feint",
+      "role": "flanker",
+      "from": "rush/flank_left/lead",
+      "to": "rush/flank_right/lead",
+      "teamDamageChange": 12,
+      "ownDamageChange": 0,
+      "rewardChange": 0,
+      "bothObserved": true
+    }
+  ],
+  "opposedCreditPairs": [],
+  "originalFeintExpectedChange": -5.064626625852884,
+  "roleContributions": {
+    "vanguard": -0.17239030774801495,
+    "flanker": -2.183168945085374,
+    "ranger": -2.709067373019495
+  },
+  "decompositions": [
+    {
+      "seed": 1009,
+      "change": -5.412035253269035,
+      "contribution": {
+        "vanguard": -0.49244972667687775,
+        "flanker": -2.2030061986199496,
+        "ranger": -2.716579327972207
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.89691608279504,
+          "change": -5.386385057359753,
+          "contribution": {
+            "vanguard": -0.7176573262392149,
+            "flanker": -2.052279297938606,
+            "ranger": -2.6164484331819318
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.717812711200146,
+          "change": -5.5654884289546445,
+          "contribution": {
+            "vanguard": -0.761740812906409,
+            "flanker": -2.082064696931662,
+            "ranger": -2.7216829191165735
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 36.128102462703204,
+          "change": -5.155198677451587,
+          "contribution": {
+            "vanguard": -0.44431572076923354,
+            "flanker": -2.179761676825217,
+            "ranger": -2.5311212798571363
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.8530195867047,
+          "change": -5.430281553450094,
+          "contribution": {
+            "vanguard": -0.6395894877097099,
+            "flanker": -2.167007163245362,
+            "ranger": -2.6236849024950217
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.96574036104325,
+          "change": -5.317560779111538,
+          "contribution": {
+            "vanguard": -0.35924016487343735,
+            "flanker": -2.2525451107434087,
+            "ranger": -2.705775503494692
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.70398236562834,
+          "change": -5.579318774526449,
+          "contribution": {
+            "vanguard": -0.5741904295373885,
+            "flanker": -2.2256546007992277,
+            "ranger": -2.7794737441898327
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.81893526295863,
+          "change": -5.464365877196158,
+          "contribution": {
+            "vanguard": -0.31479055433167835,
+            "flanker": -2.3031312243687863,
+            "ranger": -2.8464440984956942
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.28330114015479,
+          "expectedOnline": 35.88561826205274,
+          "change": -5.397682878102053,
+          "contribution": {
+            "vanguard": -0.12807331704795052,
+            "flanker": -2.36160581810733,
+            "ranger": -2.908003742946773
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1013,
+      "change": -4.696350864262398,
+      "contribution": {
+        "vanguard": 0.48989664224191454,
+        "flanker": -2.2636762007890243,
+        "ranger": -2.9225713057152882
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.9821239046816,
+          "change": -4.279805386148411,
+          "contribution": {
+            "vanguard": 0.6710620930474226,
+            "flanker": -2.169093228520313,
+            "ranger": -2.7817742506755208
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.88013884795742,
+          "change": -4.3817904428725925,
+          "contribution": {
+            "vanguard": 0.6887749158555051,
+            "flanker": -2.1988587711128695,
+            "ranger": -2.871706587615228
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.68558044851494,
+          "change": -4.57634884231507,
+          "contribution": {
+            "vanguard": 0.5744649552702501,
+            "flanker": -2.2000899443818027,
+            "ranger": -2.950723853203518
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.44301945261074,
+          "change": -4.81890983821927,
+          "contribution": {
+            "vanguard": 0.4739673635044426,
+            "flanker": -2.271832671747134,
+            "ranger": -3.0210445299765776
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.38535281441698,
+          "change": -4.876576476413028,
+          "contribution": {
+            "vanguard": 0.5044302951343316,
+            "flanker": -2.2965766911542596,
+            "ranger": -3.0844300803931004
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.64061746360062,
+          "change": -4.621311827229391,
+          "contribution": {
+            "vanguard": 0.5255022463833174,
+            "flanker": -2.317394876120436,
+            "ranger": -2.8294191974922724
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.25124287652327,
+          "change": -5.01068641430674,
+          "contribution": {
+            "vanguard": 0.1917319203555567,
+            "flanker": -2.310655460176993,
+            "ranger": -2.8917628744853032
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.26192929083001,
+          "expectedOnline": 36.25655160423533,
+          "change": -5.005377686594684,
+          "contribution": {
+            "vanguard": 0.2892393483844901,
+            "flanker": -2.344907963098387,
+            "ranger": -2.949709071880787
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1019,
+      "change": -5.71600304257764,
+      "contribution": {
+        "vanguard": -0.5949473422599936,
+        "flanker": -2.1195559296505206,
+        "ranger": -3.0014997706671256
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.71210239953107,
+          "change": -5.585310275180994,
+          "contribution": {
+            "vanguard": -0.77178867762296,
+            "flanker": -1.9873959238209609,
+            "ranger": -2.826125673737073
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.486531066437976,
+          "change": -5.810881608274087,
+          "contribution": {
+            "vanguard": -0.9123024137874202,
+            "flanker": -1.980225550872512,
+            "ranger": -2.918353643614155
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.302901891960424,
+          "change": -5.9945107827516395,
+          "contribution": {
+            "vanguard": -1.0215261247015672,
+            "flanker": -1.9741371924356463,
+            "ranger": -2.9988474656144257
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.47356010805566,
+          "change": -5.823852566656406,
+          "contribution": {
+            "vanguard": -0.6609294527009197,
+            "flanker": -2.0929142122873152,
+            "ranger": -3.0700089016681704
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.57789622818015,
+          "change": -5.719516446531912,
+          "contribution": {
+            "vanguard": -0.4020917283614871,
+            "flanker": -2.1836789406130173,
+            "ranger": -3.133745777557408
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.63665765613554,
+          "change": -5.660755018576523,
+          "contribution": {
+            "vanguard": -0.21639230365306972,
+            "flanker": -2.2528035253987717,
+            "ranger": -3.191559189524682
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.86361135485383,
+          "change": -5.433801319858233,
+          "contribution": {
+            "vanguard": -0.25892011078072724,
+            "flanker": -2.2674366552298535,
+            "ranger": -2.907444553847653
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.297412674712064,
+          "expectedOnline": 35.59801635192074,
+          "change": -5.699396322791323,
+          "contribution": {
+            "vanguard": -0.5156279264717973,
+            "flanker": -2.2178554365460883,
+            "ranger": -2.965912959773437
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1021,
+      "change": -4.498013993739414,
+      "contribution": {
+        "vanguard": -0.12244417526571905,
+        "flanker": -2.067158720087483,
+        "ranger": -2.3084110983862116
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.680132208867846,
+          "change": -4.259441451274462,
+          "contribution": {
+            "vanguard": -0.09759429917600689,
+            "flanker": -1.9851440101274966,
+            "ranger": -2.176703141970959
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.65500140300941,
+          "change": -4.284572257132901,
+          "contribution": {
+            "vanguard": 0.09189572656327745,
+            "flanker": -2.061523688227065,
+            "ranger": -2.3149442954691133
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.31233052017642,
+          "change": -4.627243139965891,
+          "contribution": {
+            "vanguard": -0.16344226141686966,
+            "flanker": -2.029421554325979,
+            "ranger": -2.434379324223042
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.35380567178511,
+          "change": -4.585767988357198,
+          "contribution": {
+            "vanguard": -0.21298586093444882,
+            "flanker": -2.0490804184563096,
+            "ranger": -2.323701708966439
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.5788254429303,
+          "change": -4.360748217212006,
+          "contribution": {
+            "vanguard": -0.0021478091788284344,
+            "flanker": -2.1166170216903297,
+            "ranger": -2.2419833863428473
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.27097087945482,
+          "change": -4.668602780687486,
+          "contribution": {
+            "vanguard": -0.24700875834937835,
+            "flanker": -2.0764602726185055,
+            "ranger": -2.345133749719602
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.308121940445965,
+          "change": -4.631451719696344,
+          "contribution": {
+            "vanguard": -0.2858719268780412,
+            "flanker": -2.076237833211504,
+            "ranger": -2.2693419596067983
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 40.93957366014231,
+          "expectedOnline": 36.373289264553286,
+          "change": -4.566284395589022,
+          "contribution": {
+            "vanguard": -0.062398212755456456,
+            "flanker": -2.1427849620426747,
+            "ranger": -2.361101220790892
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1031,
+      "change": -4.9319492242199265,
+      "contribution": {
+        "vanguard": -0.26506616768037405,
+        "flanker": -2.1124266835277647,
+        "ranger": -2.5544563730117877
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.20509202755939,
+          "change": -4.809030094886879,
+          "contribution": {
+            "vanguard": -0.058864370794159036,
+            "flanker": -2.0775518627335656,
+            "ranger": -2.6726138613591544
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.030357875977366,
+          "change": -4.983764246468901,
+          "contribution": {
+            "vanguard": -0.12287627331637907,
+            "flanker": -2.093368460131938,
+            "ranger": -2.7675195130205843
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.15555972983271,
+          "change": -4.858562392613557,
+          "contribution": {
+            "vanguard": -0.1759252123464871,
+            "flanker": -2.104314051974415,
+            "ranger": -2.5783231282926544
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.11342120046256,
+          "change": -4.900700921983706,
+          "contribution": {
+            "vanguard": -0.38387339227118034,
+            "flanker": -2.0775067103081923,
+            "ranger": -2.439320819404333
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 35.8858727798305,
+          "change": -5.128249342615767,
+          "contribution": {
+            "vanguard": -0.5474397649097564,
+            "flanker": -2.0555081096172385,
+            "ranger": -2.5253014680887724
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.21149339302306,
+          "change": -4.802628729423205,
+          "contribution": {
+            "vanguard": -0.23758030480288167,
+            "flanker": -2.1573474819713945,
+            "ranger": -2.407700942648929
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 35.97026400677657,
+          "change": -5.0438581156697,
+          "contribution": {
+            "vanguard": -0.4347667879428414,
+            "flanker": -2.122708215162053,
+            "ranger": -2.4863831125648055
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.01412212244627,
+          "expectedOnline": 36.08532217234857,
+          "change": -4.928799950097698,
+          "contribution": {
+            "vanguard": -0.1592032350593075,
+            "flanker": -2.2111085763233214,
+            "ranger": -2.5584881387150693
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1033,
+      "change": -5.2856597746405365,
+      "contribution": {
+        "vanguard": -0.024334145101043404,
+        "flanker": -2.2641498897878374,
+        "ranger": -2.997175739751656
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 35.53604392536974,
+          "change": -5.797402448784915,
+          "contribution": {
+            "vanguard": -0.3606453191820502,
+            "flanker": -2.0915432723273626,
+            "ranger": -3.345213857275502
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 35.9964171307131,
+          "change": -5.337029243441556,
+          "contribution": {
+            "vanguard": -0.14938730798087008,
+            "flanker": -2.1755679735023072,
+            "ranger": -3.012073961958379
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.3244616538207,
+          "change": -5.008984720333956,
+          "contribution": {
+            "vanguard": 0.0006921252653538563,
+            "flanker": -2.240019553214266,
+            "ranger": -2.7696572923850438
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.306894067059304,
+          "change": -5.026552307095351,
+          "contribution": {
+            "vanguard": 0.10788306797310081,
+            "flanker": -2.289699854837982,
+            "ranger": -2.8447355202304694
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.15783431466612,
+          "change": -5.175612059488536,
+          "contribution": {
+            "vanguard": 0.034145562219290326,
+            "flanker": -2.297118261371594,
+            "ranger": -2.9126393603362324
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.02921980641955,
+          "change": -5.304226567735107,
+          "contribution": {
+            "vanguard": -0.02872227956837629,
+            "flanker": -2.3007189349285424,
+            "ranger": -2.9747853532381883
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.02451890262296,
+          "change": -5.308927471531696,
+          "contribution": {
+            "vanguard": 0.06627573285653673,
+            "flanker": -2.3429164067352835,
+            "ranger": -3.0322867976529495
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.333446374154654,
+          "expectedOnline": 36.00690299544148,
+          "change": -5.3265433787131755,
+          "contribution": {
+            "vanguard": 0.13508525760866757,
+            "flanker": -2.3756148613853627,
+            "ranger": -3.0860137749364807
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1039,
+      "change": -4.553121624674994,
+      "contribution": {
+        "vanguard": -0.023634559766941027,
+        "flanker": -1.9636201758052536,
+        "ranger": -2.5658668891027996
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.48834277727043,
+          "change": -4.366771398245142,
+          "contribution": {
+            "vanguard": 0.10052766730775886,
+            "flanker": -1.908523825930953,
+            "ranger": -2.558775239621948
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.22919148881714,
+          "change": -4.625922686698431,
+          "contribution": {
+            "vanguard": -0.07281624037572125,
+            "flanker": -1.8902077934279922,
+            "ranger": -2.6628986528947167
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.27638869657501,
+          "change": -4.578725478940562,
+          "contribution": {
+            "vanguard": -0.2130153496355227,
+            "flanker": -1.8749337162317161,
+            "ranger": -2.4907764130733234
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.36122888511166,
+          "change": -4.493885290403917,
+          "contribution": {
+            "vanguard": 0.07697422433591446,
+            "flanker": -1.9882606290065206,
+            "ranger": -2.5825988857333106
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.35284947182223,
+          "change": -4.502264703693342,
+          "contribution": {
+            "vanguard": -0.10076520622470753,
+            "flanker": -1.9604858850221627,
+            "ranger": -2.4410136124464716
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.16039763231301,
+          "change": -4.694716543202567,
+          "contribution": {
+            "vanguard": -0.23025824105957562,
+            "flanker": -1.9405401195201917,
+            "ranger": -2.5239181826227997
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.25217508447611,
+          "change": -4.602939091039467,
+          "contribution": {
+            "vanguard": 0.03278558286042118,
+            "flanker": -2.0366788799511673,
+            "ranger": -2.599045793948721
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 40.855114175515574,
+          "expectedOnline": 36.295366370339046,
+          "change": -4.559747805176528,
+          "contribution": {
+            "vanguard": 0.21749108465590442,
+            "flanker": -2.1093305573513277,
+            "ranger": -2.667908332481105
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1049,
+      "change": -4.733761268826321,
+      "contribution": {
+        "vanguard": -0.1443368508039525,
+        "flanker": -2.234158289656471,
+        "ranger": -2.3552661283658973
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.809467450918,
+          "change": -4.509871731872103,
+          "contribution": {
+            "vanguard": 0.10617862381075227,
+            "flanker": -2.190792246425712,
+            "ranger": -2.425258109257143
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.80129380389572,
+          "change": -4.518045378894385,
+          "contribution": {
+            "vanguard": -0.030300133355812164,
+            "flanker": -2.197522168140843,
+            "ranger": -2.29022307739773
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.46627538222296,
+          "change": -4.853063800567142,
+          "contribution": {
+            "vanguard": -0.2613280388863627,
+            "flanker": -2.1811301150174183,
+            "ranger": -2.410605646663361
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.410101018452735,
+          "change": -4.909238164337367,
+          "contribution": {
+            "vanguard": -0.4488657548201651,
+            "flanker": -2.1649089087955744,
+            "ranger": -2.2954635007216275
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.67115353689115,
+          "change": -4.648185645898955,
+          "contribution": {
+            "vanguard": -0.1937393865088429,
+            "flanker": -2.243927551762565,
+            "ranger": -2.2105187076275477
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.687895322439836,
+          "change": -4.631443860350267,
+          "contribution": {
+            "vanguard": -0.014017381000763624,
+            "flanker": -2.3031182061672815,
+            "ranger": -2.3143082731822213
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.49946837931571,
+          "change": -4.8198708034743944,
+          "contribution": {
+            "vanguard": -0.11471566481236906,
+            "flanker": -2.2986713838596273,
+            "ranger": -2.406483754802398
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.3193391827901,
+          "expectedOnline": 36.33896841757415,
+          "change": -4.980370765215952,
+          "contribution": {
+            "vanguard": -0.19790707085805673,
+            "flanker": -2.2931957370827463,
+            "ranger": -2.489267957275149
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1051,
+      "change": -4.686972109074945,
+      "contribution": {
+        "vanguard": -0.15768801090383575,
+        "flanker": -2.158613231820656,
+        "ranger": -2.3706708663504537
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.3579052163216,
+          "change": -4.795322650741859,
+          "contribution": {
+            "vanguard": -0.14033129125878693,
+            "flanker": -2.056762659050805,
+            "ranger": -2.5982287004322666
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.26247983682394,
+          "change": -4.890748030239514,
+          "contribution": {
+            "vanguard": -0.3770502751007546,
+            "flanker": -2.0549506583370465,
+            "ranger": -2.458747096801713
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.52717131784318,
+          "change": -4.62605654922028,
+          "contribution": {
+            "vanguard": -0.13983775051606293,
+            "flanker": -2.130350116099185,
+            "ranger": -2.355868682605032
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.537689172704724,
+          "change": -4.615538694358733,
+          "contribution": {
+            "vanguard": -0.18154888161878208,
+            "flanker": -2.154414451213698,
+            "ranger": -2.2795753615262533
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.54410689659119,
+          "change": -4.609120970472269,
+          "contribution": {
+            "vanguard": -0.2179678222365453,
+            "flanker": -2.1683982772834014,
+            "ranger": -2.222754870952322
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.57610679277955,
+          "change": -4.577121074283909,
+          "contribution": {
+            "vanguard": -0.03448273013048938,
+            "flanker": -2.2253987260376222,
+            "ranger": -2.317239618115797
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.44867630968896,
+          "change": -4.704551557374494,
+          "contribution": {
+            "vanguard": -0.069286331374857,
+            "flanker": -2.2328729030650463,
+            "ranger": -2.402392322934591
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.15322786706346,
+          "expectedOnline": 36.47591052115495,
+          "change": -4.677317345908506,
+          "contribution": {
+            "vanguard": -0.1009990049944077,
+            "flanker": -2.245758063478442,
+            "ranger": -2.3305602774356564
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1061,
+      "change": -4.718940841378082,
+      "contribution": {
+        "vanguard": -0.07430143880235256,
+        "flanker": -2.168202476596523,
+        "ranger": -2.4764369259792067
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 37.24693514418735,
+          "change": -4.005343621680083,
+          "contribution": {
+            "vanguard": 0.2312036433530563,
+            "flanker": -2.1438677057746838,
+            "ranger": -2.0926795592584555
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.99191661217848,
+          "change": -4.260362153688952,
+          "contribution": {
+            "vanguard": 0.12110217664523167,
+            "flanker": -2.1484936776037906,
+            "ranger": -2.2329706527303927
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.77533775423051,
+          "change": -4.476941011636917,
+          "contribution": {
+            "vanguard": 0.029069736884293224,
+            "flanker": -2.151906108366051,
+            "ranger": -2.3541046401551595
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.58995520857369,
+          "change": -4.662323557293739,
+          "contribution": {
+            "vanguard": -0.04815501700680968,
+            "flanker": -2.1546430511605372,
+            "ranger": -2.459525489126392
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.23428668118878,
+          "change": -5.017992084678653,
+          "contribution": {
+            "vanguard": -0.3221567862155771,
+            "flanker": -2.1436221465708036,
+            "ranger": -2.5522131518922726
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.279048363609256,
+          "change": -4.973230402258174,
+          "contribution": {
+            "vanguard": -0.14376344329011914,
+            "flanker": -2.1948141148939193,
+            "ranger": -2.634652844074136
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.14356490185815,
+          "change": -5.108713864009282,
+          "contribution": {
+            "vanguard": -0.20499724786933274,
+            "flanker": -2.1948483741827722,
+            "ranger": -2.7088682419571772
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.25227876586743,
+          "expectedOnline": 36.00565873008858,
+          "change": -5.246620035778854,
+          "contribution": {
+            "vanguard": -0.256714572919563,
+            "flanker": -2.213424634219624,
+            "ranger": -2.7764808286396665
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1063,
+      "change": -5.1899543869801805,
+      "contribution": {
+        "vanguard": -0.07888711740153584,
+        "flanker": -2.062873916218049,
+        "ranger": -3.048193353360596
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 36.092681085122486,
+          "change": -4.703397168265774,
+          "contribution": {
+            "vanguard": 0.17045699055600613,
+            "flanker": -2.023065008918961,
+            "ranger": -2.8507891499028184
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.794279938921854,
+          "change": -5.001798314466406,
+          "contribution": {
+            "vanguard": -0.05873218152033862,
+            "flanker": -2.0097878774068905,
+            "ranger": -2.933278255539176
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.552366969675866,
+          "change": -5.243711283712393,
+          "contribution": {
+            "vanguard": -0.24021904406349512,
+            "flanker": -1.996936843669212,
+            "ranger": -3.006555395979686
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.4198122161223,
+          "change": -5.376266037265957,
+          "contribution": {
+            "vanguard": -0.2874593817120553,
+            "flanker": -2.0163243331159153,
+            "ranger": -3.0724823224379856
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.56642584423071,
+          "change": -5.229652409157552,
+          "contribution": {
+            "vanguard": 0.004764892002556327,
+            "flanker": -2.101888463288786,
+            "ranger": -3.1325288378713223
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.46191419354759,
+          "change": -5.334164059840667,
+          "contribution": {
+            "vanguard": -0.03831939697663837,
+            "flanker": -2.107997758507859,
+            "ranger": -3.18784690435617
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.362538560810655,
+          "change": -5.433539692577604,
+          "contribution": {
+            "vanguard": -0.07497102472875738,
+            "flanker": -2.1192338037718734,
+            "ranger": -3.239334864076973
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 40.79607825338826,
+          "expectedOnline": 35.59897212283317,
+          "change": -5.197106130555092,
+          "contribution": {
+            "vanguard": -0.10661779276956433,
+            "flanker": -2.1277572410648937,
+            "ranger": -2.962731096720634
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1069,
+      "change": -5.217203265083475,
+      "contribution": {
+        "vanguard": -0.3084461239402527,
+        "flanker": -2.093111799978101,
+        "ranger": -2.815645341165121
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 36.04935238271684,
+          "change": -5.003358044991089,
+          "contribution": {
+            "vanguard": -0.3703448043641089,
+            "flanker": -1.9957528441393713,
+            "ranger": -2.6372603964876085
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.74806787653173,
+          "change": -5.304642551176201,
+          "contribution": {
+            "vanguard": -0.5801463410767091,
+            "flanker": -1.9810362991093982,
+            "ranger": -2.7434599109900937
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.83238920790269,
+          "change": -5.220321219805236,
+          "contribution": {
+            "vanguard": -0.32051427540090666,
+            "flanker": -2.0645370615706256,
+            "ranger": -2.8352698828337033
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.874855941531386,
+          "change": -5.1778544861765425,
+          "contribution": {
+            "vanguard": -0.13395060266043401,
+            "flanker": -2.128306873459437,
+            "ranger": -2.915597010056672
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.75111746091255,
+          "change": -5.301592966795376,
+          "contribution": {
+            "vanguard": -0.1737326895911515,
+            "flanker": -2.141076636056013,
+            "ranger": -2.986783641148211
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 36.09666488518682,
+          "change": -4.95604554252111,
+          "contribution": {
+            "vanguard": -0.03210233354239023,
+            "flanker": -2.1877215257597946,
+            "ranger": -2.7362216832189254
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.79163513801532,
+          "change": -5.261075289692606,
+          "contribution": {
+            "vanguard": -0.3145567483868419,
+            "flanker": -2.142377097701356,
+            "ranger": -2.804141443604408
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.05271042770793,
+          "expectedOnline": 35.53997440819829,
+          "change": -5.512736019509639,
+          "contribution": {
+            "vanguard": -0.5422211964994794,
+            "flanker": -2.104086062028813,
+            "ranger": -2.8664287609813464
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1087,
+      "change": -4.909139999847586,
+      "contribution": {
+        "vanguard": 0.10061807039094821,
+        "flanker": -2.3082168271950403,
+        "ranger": -2.7015412430434935
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 35.9739314226761,
+          "change": -5.3607905496613455,
+          "contribution": {
+            "vanguard": 0.011068522697902003,
+            "flanker": -2.1991305069522213,
+            "ranger": -3.172728565407026
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.33548593583309,
+          "change": -4.999236036504357,
+          "contribution": {
+            "vanguard": 0.11148087727826805,
+            "flanker": -2.249694379067165,
+            "ranger": -2.8610225347154596
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.2870890315128,
+          "change": -5.0476329408246485,
+          "contribution": {
+            "vanguard": 0.18372804707730478,
+            "flanker": -2.2897197268328617,
+            "ranger": -2.941641261069092
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.54782629927081,
+          "change": -4.786895673066638,
+          "contribution": {
+            "vanguard": 0.23576463569904982,
+            "flanker": -2.321745321613689,
+            "ranger": -2.7009149871519993
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.73557149528264,
+          "change": -4.599150477054806,
+          "contribution": {
+            "vanguard": 0.27315045117589065,
+            "flanker": -2.34768188660453,
+            "ranger": -2.5246190416261665
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.56141438380049,
+          "change": -4.773307588536959,
+          "contribution": {
+            "vanguard": -0.057667164262215444,
+            "flanker": -2.3210391344867807,
+            "ranger": -2.3946012897879627
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.55558178607,
+          "change": -4.779140186267448,
+          "contribution": {
+            "vanguard": 0.05306332766148713,
+            "flanker": -2.3595444083032575,
+            "ranger": -2.4726591056256773
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.33472197233745,
+          "expectedOnline": 36.40775542547296,
+          "change": -4.9269665468644845,
+          "contribution": {
+            "vanguard": -0.00564413420010131,
+            "flanker": -2.3771792536998193,
+            "ranger": -2.5441431589645633
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1091,
+      "change": -5.328288807306782,
+      "contribution": {
+        "vanguard": -0.37514068311150917,
+        "flanker": -2.245946764864668,
+        "ranger": -2.707201359330605
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 35.999673346116566,
+          "change": -5.426531585541703,
+          "contribution": {
+            "vanguard": -0.4284127242416898,
+            "flanker": -2.1234011900806755,
+            "ranger": -2.8747176712193374
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 36.02683088371567,
+          "change": -5.399374047942601,
+          "contribution": {
+            "vanguard": -0.6170940217966189,
+            "flanker": -2.1333973335507124,
+            "ranger": -2.6488826925952695
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 36.38178715594197,
+          "change": -5.044417775716298,
+          "contribution": {
+            "vanguard": -0.3425372969175034,
+            "flanker": -2.2179131542526713,
+            "ranger": -2.4839673245461227
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 36.193863327684554,
+          "change": -5.232341603973715,
+          "contribution": {
+            "vanguard": -0.4171977802931556,
+            "flanker": -2.237069384592389,
+            "ranger": -2.5780744390881707
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 36.24800860659479,
+          "change": -5.178196325063482,
+          "contribution": {
+            "vanguard": -0.2133601681939214,
+            "flanker": -2.303159094254144,
+            "ranger": -2.6616770626154165
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 36.26846270475308,
+          "change": -5.157742226905192,
+          "contribution": {
+            "vanguard": -0.06736420229051987,
+            "flanker": -2.3535310281662483,
+            "ranger": -2.736846996448424
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 35.95986979699978,
+          "change": -5.466335134658486,
+          "contribution": {
+            "vanguard": -0.34502722169708616,
+            "flanker": -2.316060613806349,
+            "ranger": -2.8052472991550514
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.42620493165827,
+          "expectedOnline": 35.70483317300549,
+          "change": -5.721371758652779,
+          "contribution": {
+            "vanguard": -0.5701320494615784,
+            "flanker": -2.283042320214155,
+            "ranger": -2.868197388977046
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1093,
+      "change": -6.174729531788911,
+      "contribution": {
+        "vanguard": -0.6743681789197622,
+        "flanker": -2.141123203723186,
+        "ranger": -3.3592381491459626
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.51261114602378,
+          "change": -5.977738379679536,
+          "contribution": {
+            "vanguard": -0.48476247086567525,
+            "flanker": -2.0756231407774948,
+            "ranger": -3.4173527680363662
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.381528041864016,
+          "change": -6.1088214838393,
+          "contribution": {
+            "vanguard": -0.5337699822860611,
+            "flanker": -2.0918298758156952,
+            "ranger": -3.4832216257375435
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.454663085690825,
+          "change": -6.0356864400124906,
+          "contribution": {
+            "vanguard": -0.3436868461068781,
+            "flanker": -2.1510425726148106,
+            "ranger": -3.540957021290802
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.14301658862987,
+          "change": -6.347332937073446,
+          "contribution": {
+            "vanguard": -0.605383579047345,
+            "flanker": -2.1496754140577323,
+            "ranger": -3.5922739439683684
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 34.894014216217165,
+          "change": -6.59633530948615,
+          "contribution": {
+            "vanguard": -0.813562197322547,
+            "flanker": -2.1442692916256862,
+            "ranger": -3.6385038205379163
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.2491291792806,
+          "change": -6.241220346422715,
+          "contribution": {
+            "vanguard": -0.8459752266476896,
+            "flanker": -2.153901043644681,
+            "ranger": -3.2413440761303436
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.491832078395724,
+          "change": -5.9985174473075915,
+          "contribution": {
+            "vanguard": -0.8724133017939255,
+            "flanker": -2.17420606068143,
+            "ranger": -2.9518980848322363
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.490349525703316,
+          "expectedOnline": 35.39816561521326,
+          "change": -6.092183910490057,
+          "contribution": {
+            "vanguard": -0.8953918272879757,
+            "flanker": -2.18843823056796,
+            "ranger": -3.0083538526341216
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1097,
+      "change": -5.143320801381805,
+      "contribution": {
+        "vanguard": -0.3084770241739916,
+        "flanker": -2.09779711703508,
+        "ranger": -2.737046660172733
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 36.23904398287439,
+          "change": -4.938353378339983,
+          "contribution": {
+            "vanguard": -0.08141160212492693,
+            "flanker": -2.057824382344293,
+            "ranger": -2.799117393870762
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 36.20385802317509,
+          "change": -4.973539338039288,
+          "contribution": {
+            "vanguard": 0.0401008933964538,
+            "flanker": -2.122122409191525,
+            "ranger": -2.891517822244217
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 36.458050315734006,
+          "change": -4.719347045480369,
+          "contribution": {
+            "vanguard": 0.12755709707121216,
+            "flanker": -2.1719783030122093,
+            "ranger": -2.674925839539372
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 36.11663830874385,
+          "change": -5.060759052470523,
+          "contribution": {
+            "vanguard": -0.17541112152223923,
+            "flanker": -2.127249836559622,
+            "ranger": -2.758098094388662
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 36.07971035586644,
+          "change": -5.097687005347936,
+          "contribution": {
+            "vanguard": -0.42449155385772624,
+            "flanker": -2.0883942345902424,
+            "ranger": -2.584801216899968
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 35.94321461031342,
+          "change": -5.234182750900956,
+          "contribution": {
+            "vanguard": -0.4698688109771373,
+            "flanker": -2.103006884746987,
+            "ranger": -2.6613070551768323
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 35.711482757621226,
+          "change": -5.4659146035931485,
+          "contribution": {
+            "vanguard": -0.6653593953704409,
+            "flanker": -2.069448141215542,
+            "ranger": -2.7311070670071658
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.177397361214375,
+          "expectedOnline": 35.52061412433214,
+          "change": -5.656783236882234,
+          "contribution": {
+            "vanguard": -0.8189317000071282,
+            "flanker": -2.042352744620218,
+            "ranger": -2.795498792254887
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1103,
+      "change": -5.42132409894431,
+      "contribution": {
+        "vanguard": 0.20676175982396056,
+        "flanker": -2.301738763648064,
+        "ranger": -3.3263470951202057
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 36.15519502012369,
+          "change": -5.11044317425079,
+          "contribution": {
+            "vanguard": 0.2594252655347672,
+            "flanker": -2.211282165286294,
+            "ranger": -3.1585862744992625
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 36.108091066667946,
+          "change": -5.157547127706536,
+          "contribution": {
+            "vanguard": 0.3369220700444018,
+            "flanker": -2.2578091904423836,
+            "ranger": -3.2366600073085543
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 35.749268640075016,
+          "change": -5.516369554299466,
+          "contribution": {
+            "vanguard": 0.03369376974120186,
+            "flanker": -2.245290933015891,
+            "ranger": -3.304772391024777
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 35.77054633312285,
+          "change": -5.49509186125163,
+          "contribution": {
+            "vanguard": 0.16727407836785463,
+            "flanker": -2.2973558090311195,
+            "ranger": -3.3650101305883653
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 35.63055728870812,
+          "change": -5.6350809056663635,
+          "contribution": {
+            "vanguard": 0.08354182764529365,
+            "flanker": -2.2996159739250475,
+            "ranger": -3.4190067593866096
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 35.64764608339358,
+          "change": -5.6179921109809,
+          "contribution": {
+            "vanguard": 0.18894150536871496,
+            "flanker": -2.3388997633762427,
+            "ranger": -3.4680338529733725
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 35.64773376894617,
+          "change": -5.617904425428314,
+          "contribution": {
+            "vanguard": 0.26481277379758694,
+            "flanker": -2.3696396751529853,
+            "ranger": -3.5130775240729153
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.26563819437448,
+          "expectedOnline": 36.045474562404,
+          "change": -5.220163631970479,
+          "contribution": {
+            "vanguard": 0.3194827880918633,
+            "flanker": -2.394016598954552,
+            "ranger": -3.1456298211077907
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1109,
+      "change": -5.6840719554674095,
+      "contribution": {
+        "vanguard": -0.9447014507643585,
+        "flanker": -2.14552517064801,
+        "ranger": -2.593845334055041
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 36.49404713955607,
+          "change": -4.9914640522743525,
+          "contribution": {
+            "vanguard": -0.634951886915856,
+            "flanker": -2.0968699218620577,
+            "ranger": -2.259642243496439
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 36.19896027967831,
+          "change": -5.286550912152116,
+          "contribution": {
+            "vanguard": -0.78583929768894,
+            "flanker": -2.1210614173245816,
+            "ranger": -2.3796501971385937
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 36.00941033427097,
+          "change": -5.476100857559459,
+          "contribution": {
+            "vanguard": -0.8578214374892047,
+            "flanker": -2.1340812837746213,
+            "ranger": -2.484198136295633
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 35.849984785491905,
+          "change": -5.635526406338521,
+          "contribution": {
+            "vanguard": -0.9144609500387991,
+            "flanker": -2.144843932699577,
+            "ranger": -2.576221523600144
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 35.714087288885594,
+          "change": -5.771423902944832,
+          "contribution": {
+            "vanguard": -0.9592817836112141,
+            "flanker": -2.1539769101089448,
+            "ranger": -2.6581652092246735
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 35.52038198110728,
+          "change": -5.965129210723148,
+          "contribution": {
+            "vanguard": -1.0689938526859812,
+            "flanker": -2.1641170398691827,
+            "ranger": -2.7320183181679845
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 35.36166530800017,
+          "change": -6.123845883830256,
+          "contribution": {
+            "vanguard": -1.1540363436817174,
+            "flanker": -2.170435767126719,
+            "ranger": -2.79937377302182
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.485511191830426,
+          "expectedOnline": 35.262976773913834,
+          "change": -6.222534417916592,
+          "contribution": {
+            "vanguard": -1.1822260540031557,
+            "flanker": -2.1788150924183967,
+            "ranger": -2.861493271495039
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1117,
+      "change": -5.085292977761499,
+      "contribution": {
+        "vanguard": -0.26046227427573043,
+        "flanker": -2.2024207422310456,
+        "ranger": -2.6224099612547236
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 36.58292511349202,
+          "change": -4.590058006378186,
+          "contribution": {
+            "vanguard": -0.19010880322759863,
+            "flanker": -2.1163823770728527,
+            "ranger": -2.2835668260777346
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 36.25875951375222,
+          "change": -4.914223606117986,
+          "contribution": {
+            "vanguard": -0.3847422345617074,
+            "flanker": -2.108249528020371,
+            "ranger": -2.421231843535908
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 36.31270645186011,
+          "change": -4.860276668010094,
+          "contribution": {
+            "vanguard": -0.11738643721939823,
+            "flanker": -2.20353039516241,
+            "ranger": -2.539359835628286
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 36.02048971154001,
+          "change": -5.152493408330194,
+          "contribution": {
+            "vanguard": -0.3302485708452956,
+            "flanker": -2.1806476816530385,
+            "ranger": -2.6415971558318603
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 36.09383521450699,
+          "change": -5.0791479053632145,
+          "contribution": {
+            "vanguard": -0.08334548169869294,
+            "flanker": -2.2647626435557484,
+            "ranger": -2.731039780108773
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 35.929644748023804,
+          "change": -5.243338371846399,
+          "contribution": {
+            "vanguard": -0.15994891485935506,
+            "flanker": -2.2731531218072782,
+            "ranger": -2.8102363351797655
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 35.67403049747742,
+          "change": -5.498952622392785,
+          "contribution": {
+            "vanguard": -0.3796809611657383,
+            "flanker": -2.238028851884297,
+            "ranger": -2.88124280934275
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.1729831198702,
+          "expectedOnline": 35.82912988621707,
+          "change": -5.343853233653135,
+          "contribution": {
+            "vanguard": -0.4382367906280571,
+            "flanker": -2.2346113386923676,
+            "ranger": -2.6710051043327105
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1123,
+      "change": -4.397866486020935,
+      "contribution": {
+        "vanguard": -0.13716019807779048,
+        "flanker": -2.1090195237069396,
+        "ranger": -2.151686764236205
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.74171378212767,
+          "change": -4.166118410054672,
+          "contribution": {
+            "vanguard": 0.0657603036874453,
+            "flanker": -2.060962878888218,
+            "ranger": -2.1709158348538997
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.64429527826799,
+          "change": -4.263536913914351,
+          "contribution": {
+            "vanguard": -0.14608821914409967,
+            "flanker": -2.049649108921115,
+            "ranger": -2.0677995858491363
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.40905989586577,
+          "change": -4.498772296316574,
+          "contribution": {
+            "vanguard": -0.2391917899268113,
+            "flanker": -2.053851215214686,
+            "ranger": -2.2057292911750763
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.66545260762742,
+          "change": -4.242379584554918,
+          "contribution": {
+            "vanguard": 0.007528483834925955,
+            "flanker": -2.136109906906056,
+            "ranger": -2.1137981614837877
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.46287743961546,
+          "change": -4.444954752566879,
+          "contribution": {
+            "vanguard": -0.06756904769850773,
+            "flanker": -2.1456363760844916,
+            "ranger": -2.23174932878388
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.3613175696481,
+          "change": -4.546514622534239,
+          "contribution": {
+            "vanguard": -0.28444629838257524,
+            "flanker": -2.1137786133448655,
+            "ranger": -2.148289710806799
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.358898351778485,
+          "change": -4.548933840403855,
+          "contribution": {
+            "vanguard": -0.3413325877073111,
+            "flanker": -2.121172503584185,
+            "ranger": -2.086428749112359
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 40.90783219218234,
+          "expectedOnline": 36.43611072436035,
+          "change": -4.471721467821993,
+          "contribution": {
+            "vanguard": -0.09194242928539016,
+            "flanker": -2.1909955867118973,
+            "ranger": -2.1887834518247056
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1129,
+      "change": -5.407949411770143,
+      "contribution": {
+        "vanguard": -0.31522888298894325,
+        "flanker": -2.1468462366820527,
+        "ranger": -2.945874292099147
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.961926462613626,
+          "change": -5.194031766105887,
+          "contribution": {
+            "vanguard": -0.18314685820657198,
+            "flanker": -2.087859625121054,
+            "ranger": -2.9230252827782612
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.780892278970555,
+          "change": -5.375065949748958,
+          "contribution": {
+            "vanguard": -0.25491239212448136,
+            "flanker": -2.1058837623411466,
+            "ranger": -3.0142697952833295
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.965550638718085,
+          "change": -5.190407590001428,
+          "contribution": {
+            "vanguard": -0.31392731055411244,
+            "flanker": -2.1182524175574846,
+            "ranger": -2.758227861889831
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 36.01653758817474,
+          "change": -5.13942064054477,
+          "contribution": {
+            "vanguard": -0.10582774171043732,
+            "flanker": -2.193028648498305,
+            "ranger": -2.840564250336029
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.73016637093796,
+          "change": -5.4257918577815545,
+          "contribution": {
+            "vanguard": -0.35450606274004315,
+            "flanker": -2.157364948386217,
+            "ranger": -2.913920846655294
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.61569026006727,
+          "change": -5.540267968652245,
+          "contribution": {
+            "vanguard": -0.40019358593646714,
+            "flanker": -2.1599709623211005,
+            "ranger": -2.980103420394677
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.50128331697336,
+          "change": -5.654674911746156,
+          "contribution": {
+            "vanguard": -0.4381500759164988,
+            "flanker": -2.1759864076109907,
+            "ranger": -3.040538428218666
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.15595822871951,
+          "expectedOnline": 35.41202361913937,
+          "change": -5.743934609580144,
+          "contribution": {
+            "vanguard": -0.4711670367229341,
+            "flanker": -2.1764231216201244,
+            "ranger": -3.096344451237086
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1151,
+      "change": -5.308736003516413,
+      "contribution": {
+        "vanguard": -0.19693907740034874,
+        "flanker": -2.1520206436038265,
+        "ranger": -2.9597762825122373
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.94560009827071,
+          "change": -5.2040626085454775,
+          "contribution": {
+            "vanguard": -0.34481272438502114,
+            "flanker": -1.9894948757052358,
+            "ranger": -2.869755008455221
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.96861789829104,
+          "change": -5.181044808525144,
+          "contribution": {
+            "vanguard": -0.10932102206882395,
+            "flanker": -2.1099620430891206,
+            "ranger": -2.961761743367199
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.81616964789803,
+          "change": -5.333493058918158,
+          "contribution": {
+            "vanguard": -0.18190107380097942,
+            "flanker": -2.109964208756498,
+            "ranger": -3.0416277763606803
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.5502478454372,
+          "change": -5.599414861378989,
+          "contribution": {
+            "vanguard": -0.41257497135890847,
+            "flanker": -2.0749783606325365,
+            "ranger": -3.1118615293875442
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.968069685518216,
+          "change": -5.181593021297971,
+          "contribution": {
+            "vanguard": -0.17395567398522024,
+            "flanker": -2.1797322912756285,
+            "ranger": -2.827905056037122
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.99046044858615,
+          "change": -5.159202258230039,
+          "contribution": {
+            "vanguard": -0.004011220002614853,
+            "flanker": -2.2599551524820116,
+            "ranger": -2.895235885745412
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.71367030056309,
+          "change": -5.435992406253099,
+          "contribution": {
+            "vanguard": -0.27123745618026146,
+            "flanker": -2.2080752079478136,
+            "ranger": -2.9566797421250244
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.14966270681619,
+          "expectedOnline": 35.77457770183376,
+          "change": -5.375085004982424,
+          "contribution": {
+            "vanguard": -0.07769847742096066,
+            "flanker": -2.2840030089417676,
+            "ranger": -3.0133835186196953
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1153,
+      "change": -5.061165912066169,
+      "contribution": {
+        "vanguard": -0.3172401402842066,
+        "flanker": -2.253512025373202,
+        "ranger": -2.4904137464087603
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.68037070304125,
+          "change": -4.7012997902736515,
+          "contribution": {
+            "vanguard": -0.018847944932717315,
+            "flanker": -2.146346139922522,
+            "ranger": -2.536105705418412
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.64671602322419,
+          "change": -4.734954470090713,
+          "contribution": {
+            "vanguard": -0.15491190583476447,
+            "flanker": -2.195985214746883,
+            "ranger": -2.3840573495090664
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.540578915879806,
+          "change": -4.841091577435094,
+          "contribution": {
+            "vanguard": -0.3571080649605231,
+            "flanker": -2.2115172311138975,
+            "ranger": -2.2724662813606735
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.2656552140985,
+          "change": -5.116015279216398,
+          "contribution": {
+            "vanguard": -0.5183855115555431,
+            "flanker": -2.2197726289876982,
+            "ranger": -2.377857138673157
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.37923814441417,
+          "change": -5.002432348900733,
+          "contribution": {
+            "vanguard": -0.22444635870135224,
+            "flanker": -2.3070119963767035,
+            "ranger": -2.4709739938226774
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.11391991759386,
+          "change": -5.267750575721038,
+          "contribution": {
+            "vanguard": -0.4185437218764202,
+            "flanker": -2.295023129703398,
+            "ranger": -2.5541837241412204
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 35.895892128244405,
+          "change": -5.4857783650704945,
+          "contribution": {
+            "vanguard": -0.5733147331889039,
+            "flanker": -2.283041848927175,
+            "ranger": -2.6294217829544153
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.3816704933149,
+          "expectedOnline": 36.04166560349367,
+          "change": -5.3400048898212304,
+          "contribution": {
+            "vanguard": -0.2723628812234284,
+            "flanker": -2.3693980132073404,
+            "ranger": -2.698243995390462
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1163,
+      "change": -5.64124958115435,
+      "contribution": {
+        "vanguard": -0.24328615883046883,
+        "flanker": -2.198929737882406,
+        "ranger": -3.1990336844414746
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 36.63048631104958,
+          "change": -4.682309018377971,
+          "contribution": {
+            "vanguard": 0.4013097576319721,
+            "flanker": -2.1106201073775592,
+            "ranger": -2.9729986686323846
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 36.37638170497819,
+          "change": -4.936413624449358,
+          "contribution": {
+            "vanguard": 0.31088274402112387,
+            "flanker": -2.1959143432864083,
+            "ranger": -3.051382025184073
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 35.985054910855474,
+          "change": -5.327740418572077,
+          "contribution": {
+            "vanguard": 0.003916860648391918,
+            "flanker": -2.2106825469540645,
+            "ranger": -3.1209747322664043
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 35.66774228095522,
+          "change": -5.6450530484723345,
+          "contribution": {
+            "vanguard": -0.24687435232215904,
+            "flanker": -2.2146123988753885,
+            "ranger": -3.183566297274787
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 35.41217160819958,
+          "change": -5.900623721227973,
+          "contribution": {
+            "vanguard": -0.4469254164993283,
+            "flanker": -2.2131353178099133,
+            "ranger": -3.240562986918731
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 35.206122617871415,
+          "change": -6.106672711556136,
+          "contribution": {
+            "vanguard": -0.6044083012013637,
+            "flanker": -2.20920121108189,
+            "ranger": -3.2930631992728823
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 35.09505906922502,
+          "change": -6.217736260202528,
+          "contribution": {
+            "vanguard": -0.6599766582734988,
+            "flanker": -2.21583826736176,
+            "ranger": -3.3419213345672696
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.31279532942755,
+          "expectedOnline": 34.99934748305113,
+          "change": -6.31344784637642,
+          "contribution": {
+            "vanguard": -0.7042139046488884,
+            "flanker": -2.221433710312265,
+            "ranger": -3.3878002314152655
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1171,
+      "change": -4.971320457868342,
+      "contribution": {
+        "vanguard": 0.08845051080772802,
+        "flanker": -2.3099612452553524,
+        "ranger": -2.7498097234207184
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 36.350083922915005,
+          "change": -4.861655056366608,
+          "contribution": {
+            "vanguard": 0.3397369412263605,
+            "flanker": -2.2530920586934635,
+            "ranger": -2.948299938899505
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 36.48319078968288,
+          "change": -4.728548189598733,
+          "contribution": {
+            "vanguard": 0.25413840699314133,
+            "flanker": -2.2811057581262633,
+            "ranger": -2.7015808384656106
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 36.69894413298665,
+          "change": -4.512794846294966,
+          "contribution": {
+            "vanguard": 0.3415314689096907,
+            "flanker": -2.3326008973628825,
+            "ranger": -2.5217254178417745
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 36.51771356224918,
+          "change": -4.694025417032435,
+          "contribution": {
+            "vanguard": 0.2709205585740608,
+            "flanker": -2.3499141947262325,
+            "ranger": -2.6150317808802632
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 36.17269992386969,
+          "change": -5.039039055411919,
+          "contribution": {
+            "vanguard": -0.03370149726498421,
+            "flanker": -2.307507191378117,
+            "ranger": -2.6978303667688186
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 35.88623173943904,
+          "change": -5.3255072398425725,
+          "contribution": {
+            "vanguard": -0.28336979962721526,
+            "flanker": -2.2699349123092416,
+            "ranger": -2.772202527906116
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 35.9645444222603,
+          "change": -5.247194557021309,
+          "contribution": {
+            "vanguard": -0.06443810690646856,
+            "flanker": -2.3429406768934946,
+            "ranger": -2.8398157732213467
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.21173897928161,
+          "expectedOnline": 35.84993967790342,
+          "change": -5.361799301378191,
+          "contribution": {
+            "vanguard": -0.11721388544276105,
+            "flanker": -2.34259427255312,
+            "ranger": -2.9019911433823102
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1181,
+      "change": -4.880805169760647,
+      "contribution": {
+        "vanguard": 0.07533148784637185,
+        "flanker": -2.364014881634339,
+        "ranger": -2.5921217759726796
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.89602002223286,
+          "change": -4.551179563522936,
+          "contribution": {
+            "vanguard": 0.09863031924878503,
+            "flanker": -2.255985955150964,
+            "ranger": -2.393823927620757
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.835354721100614,
+          "change": -4.611844864655183,
+          "contribution": {
+            "vanguard": 0.21729729474183182,
+            "flanker": -2.3295660507579945,
+            "ranger": -2.49957610863902
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.500121328060615,
+          "change": -4.947078257695182,
+          "contribution": {
+            "vanguard": -0.05764029216184951,
+            "flanker": -2.2966806678329483,
+            "ranger": -2.592757297700384
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.502581536745254,
+          "change": -4.944618049010543,
+          "contribution": {
+            "vanguard": 0.09882983429524946,
+            "flanker": -2.367642494966399,
+            "ranger": -2.6758053883393935
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.42411922834674,
+          "change": -5.023080357409057,
+          "contribution": {
+            "vanguard": -0.15961989841473925,
+            "flanker": -2.3283681263085043,
+            "ranger": -2.5350923326858137
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.458834841689416,
+          "change": -4.988364744066381,
+          "contribution": {
+            "vanguard": 0.020097887646831698,
+            "flanker": -2.396908662407763,
+            "ranger": -2.61155396930545
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.46407424364151,
+          "change": -4.983125342114285,
+          "contribution": {
+            "vanguard": 0.1473045768373744,
+            "flanker": -2.4487491032600985,
+            "ranger": -2.6816808156915606
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.4471995857558,
+          "expectedOnline": 36.45004940614419,
+          "change": -4.997150179611609,
+          "contribution": {
+            "vanguard": 0.23775218057749115,
+            "flanker": -2.4882179923900414,
+            "ranger": -2.746684367799059
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1187,
+      "change": -4.891573969716729,
+      "contribution": {
+        "vanguard": -0.15848406781987304,
+        "flanker": -2.1896440127053753,
+        "ranger": -2.543445889191481
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.58682256141113,
+          "change": -4.608189653796778,
+          "contribution": {
+            "vanguard": 0.2169881685569794,
+            "flanker": -2.118155620401191,
+            "ranger": -2.7070222019525665
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.60600952989243,
+          "change": -4.589002685315478,
+          "contribution": {
+            "vanguard": 0.11631459263263602,
+            "flanker": -2.169604365332007,
+            "ranger": -2.535712912616107
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.479382085752135,
+          "change": -4.715630129455775,
+          "contribution": {
+            "vanguard": -0.13451666293513398,
+            "flanker": -2.171296882208722,
+            "ranger": -2.409816584311919
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.30104665171234,
+          "change": -4.89396556349557,
+          "contribution": {
+            "vanguard": -0.21254892340809425,
+            "flanker": -2.178753129524183,
+            "ranger": -2.502663510563292
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.369711058371244,
+          "change": -4.825301156836666,
+          "contribution": {
+            "vanguard": 0.005174266073460387,
+            "flanker": -2.2447376358635474,
+            "ranger": -2.585737787046579
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.067448996385856,
+          "change": -5.127563218822054,
+          "contribution": {
+            "vanguard": -0.23890387412785566,
+            "flanker": -2.2277144766975874,
+            "ranger": -2.6609448679966112
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 36.02664656855685,
+          "change": -5.168365646651061,
+          "contribution": {
+            "vanguard": -0.43357112279893667,
+            "flanker": -2.210995441356551,
+            "ranger": -2.5237990824955743
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.19501221520791,
+          "expectedOnline": 35.99043851184746,
+          "change": -5.204573703360452,
+          "contribution": {
+            "vanguard": -0.5868089865520396,
+            "flanker": -2.195894550259215,
+            "ranger": -2.4218701665491977
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1193,
+      "change": -4.983658954427641,
+      "contribution": {
+        "vanguard": -0.0881651929352468,
+        "flanker": -2.3823342094585356,
+        "ranger": -2.513159552033859
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 37.44719768133982,
+          "change": -4.233648776282195,
+          "contribution": {
+            "vanguard": 0.41754946009111765,
+            "flanker": -2.3369797035156976,
+            "ranger": -2.3142185328576153
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 37.035151268104926,
+          "change": -4.645695189517092,
+          "contribution": {
+            "vanguard": 0.1525900850151499,
+            "flanker": -2.363728606900582,
+            "ranger": -2.43455666763166
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.99204240447459,
+          "change": -4.688804053147429,
+          "contribution": {
+            "vanguard": 0.26449364357635596,
+            "flanker": -2.414134532106916,
+            "ranger": -2.5391631646168684
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.74642390393017,
+          "change": -4.934422553691846,
+          "contribution": {
+            "vanguard": 0.09954854178064447,
+            "flanker": -2.4029294397993524,
+            "ranger": -2.631041655673138
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.64101941405078,
+          "change": -5.039827043571236,
+          "contribution": {
+            "vanguard": -0.15598339886619192,
+            "flanker": -2.4021473779297273,
+            "ranger": -2.4816962667753173
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.430218004180716,
+          "change": -5.250628453441301,
+          "contribution": {
+            "vanguard": -0.2960432764927674,
+            "flanker": -2.389969066104989,
+            "ranger": -2.5646161108435446
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.15283986163939,
+          "change": -5.528006595982625,
+          "contribution": {
+            "vanguard": -0.5082843669482173,
+            "flanker": -2.3800539238807445,
+            "ranger": -2.6396683051536622
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.68084645762202,
+          "expectedOnline": 36.13260748783461,
+          "change": -5.5482389697874055,
+          "contribution": {
+            "vanguard": -0.6791922316380656,
+            "flanker": -2.368731025430275,
+            "ranger": -2.5003157127190647
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1201,
+      "change": -4.590907044034152,
+      "contribution": {
+        "vanguard": 0.16628238705983364,
+        "flanker": -2.202077045796853,
+        "ranger": -2.5551123852971327
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.91514364839944,
+          "change": -4.230875030087724,
+          "contribution": {
+            "vanguard": 0.10923231850754907,
+            "flanker": -2.0910610958660443,
+            "ranger": -2.249046252729228
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.87460789793615,
+          "change": -4.271410780551015,
+          "contribution": {
+            "vanguard": 0.24354974465145793,
+            "flanker": -2.146708535834608,
+            "ranger": -2.3682519893678653
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.507377728985084,
+          "change": -4.638640949502083,
+          "contribution": {
+            "vanguard": -0.03279311261025815,
+            "flanker": -2.1333313952084416,
+            "ranger": -2.472516441683383
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.526483256499475,
+          "change": -4.619535421987692,
+          "contribution": {
+            "vanguard": 0.13596049454981105,
+            "flanker": -2.190846834782266,
+            "ranger": -2.564649081755237
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.35221645134713,
+          "change": -4.793802227140034,
+          "contribution": {
+            "vanguard": 0.05759338067483455,
+            "flanker": -2.204397621353529,
+            "ranger": -2.64699798646134
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.361527739045414,
+          "change": -4.784490939441753,
+          "contribution": {
+            "vanguard": 0.18747342451542556,
+            "flanker": -2.2504857056480696,
+            "ranger": -2.721478658309109
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.351266088075505,
+          "change": -4.794752590411662,
+          "contribution": {
+            "vanguard": 0.28090968317721376,
+            "flanker": -2.2860340003646726,
+            "ranger": -2.789628273224203
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.14601867848717,
+          "expectedOnline": 36.55227026533591,
+          "change": -4.593748413151253,
+          "contribution": {
+            "vanguard": 0.34833316301263534,
+            "flanker": -2.313751177317191,
+            "ranger": -2.6283303988466975
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1213,
+      "change": -5.001423695482535,
+      "contribution": {
+        "vanguard": 0.10243318801507387,
+        "flanker": -2.149468685015342,
+        "ranger": -2.9543881984822664
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.226125119137045,
+          "change": -4.8930817895543655,
+          "contribution": {
+            "vanguard": 0.4256338709342925,
+            "flanker": -2.091110496734397,
+            "ranger": -3.2276051637542613
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 35.83254776854116,
+          "change": -5.286659140150249,
+          "contribution": {
+            "vanguard": 0.1107818345206238,
+            "flanker": -2.093767284785875,
+            "ranger": -3.3036736898849974
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 35.83009880625029,
+          "change": -5.289108102441119,
+          "contribution": {
+            "vanguard": 0.21726960007792445,
+            "flanker": -2.136609121680023,
+            "ranger": -3.36976858083902
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.221665974219356,
+          "change": -4.897540934472055,
+          "contribution": {
+            "vanguard": 0.2932992065732343,
+            "flanker": -2.1703953944918126,
+            "ranger": -3.0204447465534767
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.195197108038016,
+          "change": -4.924009800653394,
+          "contribution": {
+            "vanguard": -0.0052071987345942245,
+            "flanker": -2.1527106816582546,
+            "ranger": -2.766091920260545
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.1538736843814,
+          "change": -4.965333224310008,
+          "contribution": {
+            "vanguard": -0.2528813237526002,
+            "flanker": -2.132644601993654,
+            "ranger": -2.579807298563754
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.22469218996968,
+          "change": -4.89451471872173,
+          "contribution": {
+            "vanguard": -0.055225609410946674,
+            "flanker": -2.1882269878466656,
+            "ranger": -2.6510621214641183
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.11920690869141,
+          "expectedOnline": 36.258065055134054,
+          "change": -4.861141853557356,
+          "contribution": {
+            "vanguard": 0.08579512391265709,
+            "flanker": -2.230284910932053,
+            "ranger": -2.7166520665379608
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1217,
+      "change": -4.6476357259588035,
+      "contribution": {
+        "vanguard": -0.5544651565035236,
+        "flanker": -1.994300026912031,
+        "ranger": -2.0988705425432492
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.362567604780914,
+          "change": -4.632875052525932,
+          "contribution": {
+            "vanguard": -0.7796864599704822,
+            "flanker": -1.8675328245071665,
+            "ranger": -1.9856557680482834
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.0895839351569,
+          "change": -4.905858722149944,
+          "contribution": {
+            "vanguard": -0.8944595455774262,
+            "flanker": -1.8689088455040128,
+            "ranger": -2.1424903310685046
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.12723650659621,
+          "change": -4.868206150710634,
+          "contribution": {
+            "vanguard": -0.9185872142973028,
+            "flanker": -1.895295230173093,
+            "ranger": -2.0543237062402384
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.44648280398125,
+          "change": -4.548959853325599,
+          "contribution": {
+            "vanguard": -0.5687236936849528,
+            "flanker": -1.9903964460127856,
+            "ranger": -1.9898397136278603
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.27887454314655,
+          "change": -4.716568114160296,
+          "contribution": {
+            "vanguard": -0.5963324083869483,
+            "flanker": -1.9996934103932726,
+            "ranger": -2.120542295380075
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.525659120128765,
+          "change": -4.469783537178081,
+          "contribution": {
+            "vanguard": -0.3392170710361337,
+            "flanker": -2.073076970062753,
+            "ranger": -2.0574894960791945
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.54268669666337,
+          "change": -4.452755960643479,
+          "contribution": {
+            "vanguard": -0.15364058412863338,
+            "flanker": -2.128670189350543,
+            "ranger": -2.170445187164303
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 40.995442657306846,
+          "expectedOnline": 36.40936424033038,
+          "change": -4.586078416976463,
+          "contribution": {
+            "vanguard": -0.18507427494630826,
+            "flanker": -2.1308262992926204,
+            "ranger": -2.270177842737534
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1223,
+      "change": -4.897625794290177,
+      "contribution": {
+        "vanguard": 0.11439025056632243,
+        "flanker": -2.2559558668229953,
+        "ranger": -2.756060178033504
+      },
+      "byRound": [
+        {
+          "phaseRound": 17,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.38310756933426,
+          "change": -4.8180308187066245,
+          "contribution": {
+            "vanguard": 0.32272003513425557,
+            "flanker": -2.2035532331965912,
+            "ranger": -2.9371976206442882
+          }
+        },
+        {
+          "phaseRound": 18,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.47563668836487,
+          "change": -4.725501699676009,
+          "contribution": {
+            "vanguard": 0.20180186540303185,
+            "flanker": -2.209172759966157,
+            "ranger": -2.718130805112884
+          }
+        },
+        {
+          "phaseRound": 19,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.44990776631344,
+          "change": -4.751230621727444,
+          "contribution": {
+            "vanguard": 0.32496496553943643,
+            "flanker": -2.274978231775204,
+            "ranger": -2.801217355491677
+          }
+        },
+        {
+          "phaseRound": 20,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.41208281402326,
+          "change": -4.789055574017624,
+          "contribution": {
+            "vanguard": 0.41221684237368095,
+            "flanker": -2.3256771819495685,
+            "ranger": -2.875595234441736
+          }
+        },
+        {
+          "phaseRound": 21,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.353300663826154,
+          "change": -4.8478377242147275,
+          "contribution": {
+            "vanguard": 0.12090231073556386,
+            "flanker": -2.28225281910712,
+            "ranger": -2.6864872158431714
+          }
+        },
+        {
+          "phaseRound": 22,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.1970353632553,
+          "change": -5.004103024785579,
+          "contribution": {
+            "vanguard": 0.02869519021153503,
+            "flanker": -2.276192663250144,
+            "ranger": -2.7566055517469694
+          }
+        },
+        {
+          "phaseRound": 23,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.151915359597005,
+          "change": -5.049223028443876,
+          "contribution": {
+            "vanguard": -0.21215547856188977,
+            "flanker": -2.233945670061832,
+            "ranger": -2.6031218798201543
+          }
+        },
+        {
+          "phaseRound": 24,
+          "expectedFrozen": 41.20113838804088,
+          "expectedOnline": 36.00511452529135,
+          "change": -5.196023862749534,
+          "contribution": {
+            "vanguard": -0.28402372630503453,
+            "flanker": -2.241874375277346,
+            "ranger": -2.670125761167154
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": "Exact outcome table for authored tactics on deterministic controllers. The probability decomposition is an offline diagnostic of changed action preferences, not a deployable oracle, new training reward, or complete causal account of learning.",
+  "protocolSha256": "55e285e159297b706b41d852b70b21eefcf4012d23d89865679f95a87a9d8251"
+}

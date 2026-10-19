@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What improved enemy effectiveness?</title>
+<style>
+html,body{margin:0;background:transparent;color:var(--foreground);font-family:var(--font-sans,system-ui)}
+*{box-sizing:border-box}#retention-findings{width:100%;font-size:var(--font-size-base,14px)}
+h3{font:inherit;font-weight:500;margin:0 0 8px}.caption,.context{color:var(--muted-foreground)}
+.caption{margin:0 0 20px}.row{margin:0 0 16px}.label{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.value{font-variant-numeric:tabular-nums;white-space:nowrap}.context{margin-top:4px}
+svg{width:100%;display:block;overflow:visible}svg text{fill:var(--muted-foreground);font:inherit}
+.zero{stroke:var(--border);stroke-width:1}.whisker{stroke:var(--chart-1);stroke-width:3}.dot{fill:var(--chart-1)}
+.axis{margin-top:4px}.axislabel{text-align:center;color:var(--muted-foreground);margin-top:6px}
+</style></head><body>
+<section id="retention-findings" aria-label="Measured changes in enemy damage with paired 95 percent intervals">
+<h3>What improved enemy effectiveness?</h3>
+<p class="caption">Mean damage difference per encounter · 95% intervals</p>
+<div id="rows"></div><svg id="axis" class="axis" height="30" aria-hidden="true"></svg>
+<div class="axislabel">Less damage ← &nbsp; HP difference &nbsp; → More damage</div>
+</section>
+<script>
+const comparisons=[{"label": "Learning after the switch", "context": "Earlier opponents \u00b7 original learner versus boundary-frozen", "mean": 2.0416666666666665, "interval": [0.3333333333333333, 3.8333333333333335]}, {"label": "Learning after the switch", "context": "Fresh opponents \u00b7 original learner versus boundary-frozen", "mean": 4.5, "interval": [2.3541666666666665, 6.791666666666667]}, {"label": "Removing automatic decay", "context": "Fresh opponents \u00b7 no-decay learner versus original", "mean": 0.125, "interval": [-0.125, 0.375]}, {"label": "Feints with decay removed", "context": "Known feint case \u00b7 learning versus boundary-frozen", "mean": -4.625, "interval": [-5.875, -3.375]}];
+const root=document.getElementById('retention-findings'),rows=document.getElementById('rows'),ns='http://www.w3.org/2000/svg';
+const values=comparisons.flatMap(c=>[c.mean,...c.interval,0]),span=Math.max(...values)-Math.min(...values),
+ lo=Math.floor(Math.min(...values)-span*.1),hi=Math.ceil(Math.max(...values)+span*.1);
+const fmt=v=>(v>0?'+':'')+v.toFixed(2);
+function elem(tag,attrs,parent){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);parent.append(e);return e;}
+for(const c of comparisons){
+ const row=document.createElement('div');row.className='row';
+ const label=document.createElement('div');label.className='label';
+ const name=document.createElement('span');name.textContent=c.label;
+ const value=document.createElement('span');value.className='value';value.textContent=`${fmt(c.mean)} [${c.interval.map(fmt).join(', ')}]`;
+ label.append(name,value);const context=document.createElement('div');context.className='context';context.textContent=c.context;
+ const svg=document.createElementNS(ns,'svg');svg.setAttribute('height','36');svg.setAttribute('role','img');svg.setAttribute('aria-label',`${c.label}: ${value.textContent} HP`);
+ row.append(label,context,svg);rows.append(row);c.svg=svg;
+}
+function draw(){
+ const w=root.getBoundingClientRect().width, x=v=>16+(v-lo)/(hi-lo)*(w-32);
+ for(const c of comparisons){const s=c.svg;s.replaceChildren();s.setAttribute('viewBox',`0 0 ${w} 36`);
+ elem('line',{x1:x(0),x2:x(0),y1:0,y2:36,class:'zero'},s);
+ elem('line',{x1:x(c.interval[0]),x2:x(c.interval[1]),y1:18,y2:18,class:'whisker'},s);
+ elem('circle',{cx:x(c.mean),cy:18,r:5,class:'dot'},s);}
+ const a=document.getElementById('axis');a.replaceChildren();a.setAttribute('viewBox',`0 0 ${w} 30`);
+ const ticks=w<420?[-6,0,6]:[-6,-3,0,3,6];
+ for(const v of ticks)elem('text',{x:x(v),y:20,'text-anchor':'middle'},a).textContent=v===0?'0 · no effect':String(v);
+}
+new ResizeObserver(draw).observe(root);draw();
+console.log(JSON.stringify({comparisons:comparisons.length,overflow:document.documentElement.scrollWidth>innerWidth,finite:comparisons.every(c=>[c.mean,...c.interval].every(Number.isFinite))}));
+</script></body></html>

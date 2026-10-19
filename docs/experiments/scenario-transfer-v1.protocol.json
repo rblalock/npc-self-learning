@@ -1,0 +1,303 @@
+{
+  "schema": 1,
+  "id": "scenario-transfer-v1",
+  "specified_at": "2026-10-18T20:18:41.750824+00:00",
+  "status": "Specified before measurement. Fresh policy seeds and three separately authored scenarios; local prospective validation, not public preregistration.",
+  "hypothesis": "Assess whether original and additive learning effects persist in separately specified cover/spawn scenarios and fresh policy seeds. Run both regardless of development outcome.",
+  "reference": {
+    "archive": "baseline-v1.source.tar.gz",
+    "note": "New actual combats for every rule/seed/world; only immutable simulator/core reused. Fixed traces executed once per world, never counted as independent seed repeats."
+  },
+  "reward": {
+    "id": "individual-plus-teammates",
+    "team_weight": 0.5,
+    "team_size": 3,
+    "damage_scale": 32,
+    "cost": 0.22,
+    "defeat_cost": 0.18,
+    "formula": "clamp(own_damage / 32 + 0.5 * observed_other_damage / 96 - 0.22 - (own_defeated ? 0.18 : 0), -1, 1)",
+    "team_evidence": "Sum damage from other roles with a legitimate sighting. Own observation gate unchanged. Original personal damage scale, cost, defeat penalty and clamp retained. No player style enters the reward.",
+    "choice": "One additive candidate; same teammate increment as rejected blend, full personal credit retained; no weight sweep."
+  },
+  "seeds": [
+    2003,
+    2011,
+    2017,
+    2027,
+    2029,
+    2039,
+    2053,
+    2063,
+    2069,
+    2081,
+    2083,
+    2087,
+    2089,
+    2099,
+    2111,
+    2113
+  ],
+  "policy_config": {
+    "roles": [
+      {
+        "id": "vanguard",
+        "actions": [
+          "rush",
+          "hold"
+        ]
+      },
+      {
+        "id": "flanker",
+        "actions": [
+          "flank_left",
+          "flank_right"
+        ]
+      },
+      {
+        "id": "ranger",
+        "actions": [
+          "aim",
+          "lead"
+        ]
+      }
+    ],
+    "contexts": [
+      "arena"
+    ],
+    "learning_rate": 0.22,
+    "exploration": 0.16,
+    "temperature": 0.3,
+    "decay": 0.025,
+    "max_update": 0.16
+  },
+  "training_style": "orbit",
+  "training_rounds": 24,
+  "post_switch_rounds": 24,
+  "switches": [
+    "reverse",
+    "feint"
+  ],
+  "communication": "direct",
+  "windows": {
+    "late_training": [
+      17,
+      24
+    ],
+    "early_switch": [
+      1,
+      4
+    ],
+    "late_switch": [
+      17,
+      24
+    ],
+    "curve_block_size": 4
+  },
+  "uncertainty": {
+    "method": "Paired percentile bootstrap of per-seed mean differences; never resample individual rounds as independent units.",
+    "resamples": 5000,
+    "seed": 260018,
+    "interval": 0.95,
+    "scope": "Intervals describe policy-sampling variation over these fixed controllers and the equal-weight mean of three authored scenarios; not a population of maps or people."
+  },
+  "branching": "For each rule, seed and scenario, train 24 clockwise rounds; branch online/frozen from identical rule-specific snapshot into 24 reversal rounds and independent 24 feint rounds. Fresh physical state at every branch. Every first combat must match within the online/frozen pair.",
+  "gates": {
+    "feint_vs_original": {
+      "minimum_mean_gain": 3,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "feint_continued_learning": {
+      "minimum_mean_gain": 3,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "reverse_vs_original": {
+      "minimum_mean_gain": -3,
+      "minimum_lower_bound": -3,
+      "strict_lower": false
+    },
+    "reverse_continued_learning": {
+      "minimum_mean_gain": 6,
+      "minimum_lower_bound": 0,
+      "strict_lower": true
+    },
+    "decision": "Generalization screen requires all four aggregate gates plus no scenario mean loss worse than 6 HP against original. Promotion also requires all additive-credit-v1 development gates. Keep both outcomes even if either screen fails.",
+    "maximum_scenario_mean_loss": 6
+  },
+  "secondary_metrics": [
+    "Four-round damage curves and early/late windows",
+    "Damage against a fixed baseline selected only on clockwise calibration across these three scenarios",
+    "Player clear/death rates and duration",
+    "Per-role tactic probability changes",
+    "Accepted rewards, own and observed-team damage, defeat state for every feedback"
+  ],
+  "invariants": [
+    "Original v1 evidence and hashed sources remain unchanged",
+    "Scenario geometry and enemy spawn coordinates change as specified; within each scenario only host reward attribution differs. Stats, weapons, tactics, learner config, controllers and observation rules are identical.",
+    "No player style label is supplied to reward computation or policy",
+    "Candidate feedback and displayed recorded rewards must agree",
+    "Frozen memories are exact; first combat matches within each online/frozen pair",
+    "All seeds, rounds and failures retained; never overwrite evidence"
+  ],
+  "limits": [
+    "Only policy sampling is seeded; three authored scenarios and known scripted controllers.",
+    "Fixed baseline selected only on clockwise calibration in these three scenarios, not reverse or feint.",
+    "Rewards describe effectiveness, not fun; human experience remains unmeasured.",
+    "Team credit is not a causal contribution estimator and can credit a noncontributing teammate.",
+    "Intervals describe policy-seed variation, not people or a population of maps; secondary analyses exploratory.",
+    "A favorable result permits the next evaluation, not a broad public effectiveness claim.",
+    "No scout/report condition or engine integration is tested."
+  ],
+  "archive": {
+    "id": "baseline-v1",
+    "archive": "docs/experiments/baseline-v1.source.tar.gz",
+    "sha256": "1d2a0b92c30c166394e143c2514004734f494e0263978aaeb57d7ce115cea346",
+    "files": 69,
+    "purpose": "Immutable source, generated Wasm/simulator, and raw evidence for adaptation-v1 and reward-attribution-v1 before the app advances."
+  },
+  "scenarios": [
+    {
+      "id": "south-entry",
+      "walls": [
+        {
+          "x": 250,
+          "y": 156,
+          "w": 105,
+          "h": 64
+        },
+        {
+          "x": 565,
+          "y": 380,
+          "w": 105,
+          "h": 64
+        },
+        {
+          "x": 250,
+          "y": 380,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 606,
+          "y": 156,
+          "w": 64,
+          "h": 64
+        }
+      ],
+      "spawns": [
+        {
+          "x": 105,
+          "y": 475
+        },
+        {
+          "x": 815,
+          "y": 125
+        },
+        {
+          "x": 790,
+          "y": 475
+        }
+      ]
+    },
+    {
+      "id": "wide-crossings",
+      "walls": [
+        {
+          "x": 230,
+          "y": 160,
+          "w": 70,
+          "h": 55
+        },
+        {
+          "x": 620,
+          "y": 385,
+          "w": 70,
+          "h": 55
+        },
+        {
+          "x": 230,
+          "y": 385,
+          "w": 70,
+          "h": 55
+        },
+        {
+          "x": 620,
+          "y": 160,
+          "w": 70,
+          "h": 55
+        }
+      ],
+      "spawns": [
+        {
+          "x": 105,
+          "y": 300
+        },
+        {
+          "x": 815,
+          "y": 475
+        },
+        {
+          "x": 790,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "id": "central-obstacles",
+      "walls": [
+        {
+          "x": 350,
+          "y": 215,
+          "w": 60,
+          "h": 45
+        },
+        {
+          "x": 510,
+          "y": 340,
+          "w": 60,
+          "h": 45
+        },
+        {
+          "x": 260,
+          "y": 380,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "x": 605,
+          "y": 155,
+          "w": 60,
+          "h": 60
+        }
+      ],
+      "spawns": [
+        {
+          "x": 105,
+          "y": 300
+        },
+        {
+          "x": 815,
+          "y": 475
+        },
+        {
+          "x": 790,
+          "y": 105
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    "individual-online",
+    "individual-frozen",
+    "additive-online",
+    "additive-frozen",
+    "selected-fixed"
+  ],
+  "fixed_baseline": {
+    "candidate_space": "All eight original joint tactics",
+    "calibration": "One clockwise encounter in each of the three scenarios; choose global equal-weight winner, tie lexical id. No reverse/feint selection outcomes used.",
+    "seed": 42
+  },
+  "analysis": "Report each scenario, plus paired bootstrap over 16 seed-level means averaged equally across the three scenarios. The three authored worlds are not independent samples from a map population. Secondary comparisons exploratory."
+}

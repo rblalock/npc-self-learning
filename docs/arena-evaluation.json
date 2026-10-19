@@ -1,0 +1,508 @@
+{
+  "note": "Same arena simulator and compiled Rust/Wasm policy as the browser. Higher damage means more effective enemies; these are scripted controllers, not human playtests.",
+  "results": [
+    {
+      "seed": 3,
+      "baseline": true,
+      "firstDamage": 62.4,
+      "trainedDamage": 48,
+      "switchedDamage": 49.2,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "hold",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_left",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_right",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "aim",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "lead",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "baseline": false,
+      "firstDamage": 74.4,
+      "trainedDamage": 80.4,
+      "switchedDamage": 57.6,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0.24708560327178197,
+          "samples": 37,
+          "probability": 0.8115754482189372
+        },
+        {
+          "action": "hold",
+          "score": -0.32565813706589414,
+          "samples": 23,
+          "probability": 0.18842455178106263
+        },
+        {
+          "action": "flank_left",
+          "score": -0.18816589893444488,
+          "samples": 44,
+          "probability": 0.2734406090752188
+        },
+        {
+          "action": "flank_right",
+          "score": 0.1738424582031666,
+          "samples": 16,
+          "probability": 0.7265593909247812
+        },
+        {
+          "action": "aim",
+          "score": -0.12040294235244484,
+          "samples": 5,
+          "probability": 0.15979795827807147
+        },
+        {
+          "action": "lead",
+          "score": 0.5558229547516629,
+          "samples": 55,
+          "probability": 0.8402020417219285
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "baseline": true,
+      "firstDamage": 33.6,
+      "trainedDamage": 44.4,
+      "switchedDamage": 55.2,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "hold",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_left",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_right",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "aim",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "lead",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "baseline": false,
+      "firstDamage": 36,
+      "trainedDamage": 64.8,
+      "switchedDamage": 62.4,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0.2614047400178609,
+          "samples": 39,
+          "probability": 0.8095593103752492
+        },
+        {
+          "action": "hold",
+          "score": -0.30498387079808276,
+          "samples": 21,
+          "probability": 0.19044068962475064
+        },
+        {
+          "action": "flank_left",
+          "score": -0.12161257204083023,
+          "samples": 40,
+          "probability": 0.2884683116324656
+        },
+        {
+          "action": "flank_right",
+          "score": 0.21089574984189005,
+          "samples": 20,
+          "probability": 0.7115316883675343
+        },
+        {
+          "action": "aim",
+          "score": -0.08531076309035956,
+          "samples": 10,
+          "probability": 0.16782364585368992
+        },
+        {
+          "action": "lead",
+          "score": 0.5589812460907433,
+          "samples": 50,
+          "probability": 0.83217635414631
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "baseline": true,
+      "firstDamage": 40.8,
+      "trainedDamage": 45.6,
+      "switchedDamage": 46.8,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "hold",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_left",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_right",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "aim",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "lead",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "baseline": false,
+      "firstDamage": 69.6,
+      "trainedDamage": 73.2,
+      "switchedDamage": 61.2,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0.26970266311965074,
+          "samples": 39,
+          "probability": 0.8099677093776585
+        },
+        {
+          "action": "hold",
+          "score": -0.29796526456273364,
+          "samples": 21,
+          "probability": 0.19003229062234148
+        },
+        {
+          "action": "flank_left",
+          "score": -0.1857186098693696,
+          "samples": 41,
+          "probability": 0.277810822594383
+        },
+        {
+          "action": "flank_right",
+          "score": 0.16755292911447373,
+          "samples": 19,
+          "probability": 0.7221891774056169
+        },
+        {
+          "action": "aim",
+          "score": -0.1367057965609362,
+          "samples": 5,
+          "probability": 0.13872296865763595
+        },
+        {
+          "action": "lead",
+          "score": 0.6397238618540467,
+          "samples": 55,
+          "probability": 0.861277031342364
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "baseline": true,
+      "firstDamage": 43.2,
+      "trainedDamage": 60,
+      "switchedDamage": 48,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "hold",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_left",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_right",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "aim",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "lead",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "baseline": false,
+      "firstDamage": 45.6,
+      "trainedDamage": 80.4,
+      "switchedDamage": 64.8,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0.28175444420505386,
+          "samples": 39,
+          "probability": 0.8068074224735533
+        },
+        {
+          "action": "hold",
+          "score": -0.2761168422782087,
+          "samples": 21,
+          "probability": 0.19319257752644658
+        },
+        {
+          "action": "flank_left",
+          "score": -0.17685760225381195,
+          "samples": 43,
+          "probability": 0.27872398716546093
+        },
+        {
+          "action": "flank_right",
+          "score": 0.17460532735732517,
+          "samples": 17,
+          "probability": 0.7212760128345389
+        },
+        {
+          "action": "aim",
+          "score": -0.09544442207720151,
+          "samples": 5,
+          "probability": 0.14421097977339303
+        },
+        {
+          "action": "lead",
+          "score": 0.6520674923682946,
+          "samples": 55,
+          "probability": 0.855789020226607
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "baseline": true,
+      "firstDamage": 64.8,
+      "trainedDamage": 42,
+      "switchedDamage": 44.4,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "hold",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_left",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "flank_right",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "aim",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        },
+        {
+          "action": "lead",
+          "score": 0,
+          "samples": 0,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "baseline": false,
+      "firstDamage": 76.8,
+      "trainedDamage": 80.4,
+      "switchedDamage": 61.2,
+      "policy": [
+        {
+          "action": "rush",
+          "score": 0.27109861607638996,
+          "samples": 38,
+          "probability": 0.8010425561206731
+        },
+        {
+          "action": "hold",
+          "score": -0.26948108730242715,
+          "samples": 22,
+          "probability": 0.19895744387932687
+        },
+        {
+          "action": "flank_left",
+          "score": -0.13165209339901368,
+          "samples": 43,
+          "probability": 0.28639349703300304
+        },
+        {
+          "action": "flank_right",
+          "score": 0.2048409798451886,
+          "samples": 17,
+          "probability": 0.7136065029669969
+        },
+        {
+          "action": "aim",
+          "score": 0.07449841349097414,
+          "samples": 5,
+          "probability": 0.19517066273798309
+        },
+        {
+          "action": "lead",
+          "score": 0.6263547669413181,
+          "samples": 55,
+          "probability": 0.8048293372620169
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "seeds": [
+      3,
+      17,
+      42,
+      101,
+      2026
+    ],
+    "rounds_per_run": 60,
+    "modes": [
+      "uniform baseline without learning",
+      "adaptive with online boundary updates"
+    ],
+    "sequence": [
+      {
+        "style": "orbit",
+        "rounds": 5,
+        "report": "firstDamage"
+      },
+      {
+        "style": "orbit",
+        "rounds": 35,
+        "report": "training only"
+      },
+      {
+        "style": "orbit",
+        "rounds": 10,
+        "report": "trainedDamage"
+      },
+      {
+        "style": "reverse",
+        "rounds": 10,
+        "report": "switchedDamage"
+      }
+    ],
+    "total_encounters": 600,
+    "evaluation_continues_learning": true,
+    "duration_limit_seconds": 26,
+    "sim_source_sha256": "44496cb14d8a72d2125ee4f36b0c2f5d101b4bb9113d866559cfc10abb21f914",
+    "wasm_sha256": "395958d0f3b981bb7c67f06412851dcde921ac8f40b847d147f1de80a4b28a26"
+  },
+  "aggregate": {
+    "baseline": {
+      "firstDamage": 48.96,
+      "trainedDamage": 48,
+      "switchedDamage": 48.72
+    },
+    "adaptive": {
+      "firstDamage": 60.48,
+      "trainedDamage": 75.84,
+      "switchedDamage": 61.44
+    }
+  }
+}

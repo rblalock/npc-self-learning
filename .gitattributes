@@ -1,0 +1,6 @@
+# Preserve third-party license bytes exactly.
+**/*LICENSE.txt -whitespace
+# Machine-generated evidence and prebuilt publication inputs.
+docs/experiments/*.json linguist-generated
+docs/experiments/*.json.gz linguist-generated
+publication/inputs/** linguist-generated

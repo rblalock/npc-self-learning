@@ -1,0 +1,878 @@
+{
+  "groups": {
+    "bait-switch/staggered-lanes": {
+      "narrow": {
+        "online": 35.666666666666664,
+        "frozen": 30,
+        "effect": {
+          "meanDifference": 5.666666666666667,
+          "interval": [
+            -0.5,
+            12.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 36,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 68,
+              "right": 36,
+              "difference": 32
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 42,
+              "difference": 9
+            },
+            {
+              "seed": 3049,
+              "left": 3,
+              "right": 6,
+              "difference": -3
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 42,
+              "difference": 3
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 9,
+              "difference": 27
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 36,
+              "right": 48,
+              "difference": -12
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            }
+          ]
+        }
+      },
+      "diverse": {
+        "online": 37.333333333333336,
+        "frozen": 32.416666666666664,
+        "effect": {
+          "meanDifference": 4.916666666666667,
+          "interval": [
+            1.5,
+            9.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 3011,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3019,
+              "left": 18,
+              "right": 12,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 39,
+              "right": 36,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 61,
+              "right": 52,
+              "difference": 9
+            },
+            {
+              "seed": 3041,
+              "left": 51,
+              "right": 45,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 45,
+              "right": 39,
+              "difference": 6
+            },
+            {
+              "seed": 3067,
+              "left": 36,
+              "right": 9,
+              "difference": 27
+            },
+            {
+              "seed": 3079,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 60,
+              "right": 61,
+              "difference": -1
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            }
+          ]
+        }
+      }
+    },
+    "bait-switch/offset-islands": {
+      "narrow": {
+        "online": 25.75,
+        "frozen": 24,
+        "effect": {
+          "meanDifference": 1.75,
+          "interval": [
+            -0.5,
+            4.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 33,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 12,
+              "difference": 9
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 36,
+              "difference": 3
+            }
+          ]
+        }
+      },
+      "diverse": {
+        "online": 25.5,
+        "frozen": 24.5,
+        "effect": {
+          "meanDifference": 1,
+          "interval": [
+            -1.5,
+            3.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 27,
+              "right": 33,
+              "difference": -6
+            },
+            {
+              "seed": 3011,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 3019,
+              "left": 0,
+              "right": 0,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 21,
+              "right": 15,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 42,
+              "right": 42,
+              "difference": 0
+            },
+            {
+              "seed": 3049,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 51,
+              "right": 57,
+              "difference": -6
+            },
+            {
+              "seed": 3089,
+              "left": 39,
+              "right": 36,
+              "difference": 3
+            }
+          ]
+        }
+      }
+    },
+    "reactive/staggered-lanes": {
+      "narrow": {
+        "online": 22.75,
+        "frozen": 23.25,
+        "effect": {
+          "meanDifference": -0.5,
+          "interval": [
+            -3.5,
+            2.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 27,
+              "difference": -9
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 18,
+              "difference": 6
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 39,
+              "difference": -6
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 3,
+              "difference": 9
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 9,
+              "difference": 6
+            },
+            {
+              "seed": 3089,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            }
+          ]
+        }
+      },
+      "diverse": {
+        "online": 23.75,
+        "frozen": 24.25,
+        "effect": {
+          "meanDifference": -0.5,
+          "interval": [
+            -2.5,
+            1.5
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 18,
+              "right": 21,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 3037,
+              "left": 33,
+              "right": 27,
+              "difference": 6
+            },
+            {
+              "seed": 3041,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 9,
+              "difference": 3
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 27,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 12,
+              "difference": -6
+            },
+            {
+              "seed": 3083,
+              "left": 15,
+              "right": 18,
+              "difference": -3
+            },
+            {
+              "seed": 3089,
+              "left": 42,
+              "right": 39,
+              "difference": 3
+            }
+          ]
+        }
+      }
+    },
+    "reactive/offset-islands": {
+      "narrow": {
+        "online": 19.25,
+        "frozen": 16.25,
+        "effect": {
+          "meanDifference": 3,
+          "interval": [
+            0.5,
+            6
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 33,
+              "difference": -3
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 15,
+              "difference": 6
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 27,
+              "difference": 15
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 15,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 15,
+              "right": 15,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 15,
+              "right": 6,
+              "difference": 9
+            }
+          ]
+        }
+      },
+      "diverse": {
+        "online": 18.25,
+        "frozen": 15.5,
+        "effect": {
+          "meanDifference": 2.75,
+          "interval": [
+            0.25,
+            5.75
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 30,
+              "right": 21,
+              "difference": 9
+            },
+            {
+              "seed": 3011,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 3019,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3023,
+              "left": 21,
+              "right": 18,
+              "difference": 3
+            },
+            {
+              "seed": 3037,
+              "left": 42,
+              "right": 27,
+              "difference": 15
+            },
+            {
+              "seed": 3041,
+              "left": 21,
+              "right": 15,
+              "difference": 6
+            },
+            {
+              "seed": 3049,
+              "left": 12,
+              "right": 12,
+              "difference": 0
+            },
+            {
+              "seed": 3061,
+              "left": 12,
+              "right": 15,
+              "difference": -3
+            },
+            {
+              "seed": 3067,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3079,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            },
+            {
+              "seed": 3089,
+              "left": 6,
+              "right": 6,
+              "difference": 0
+            }
+          ]
+        }
+      }
+    },
+    "aggregate": {
+      "narrow": {
+        "online": 25.854166666666668,
+        "frozen": 23.375,
+        "effect": {
+          "meanDifference": 2.4791666666666665,
+          "interval": [
+            0.4375,
+            4.875
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 30,
+              "difference": -3.75
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 26.25,
+              "difference": 4.5
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 9,
+              "difference": 3
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 27.75,
+              "difference": 2.25
+            },
+            {
+              "seed": 3037,
+              "left": 41,
+              "right": 28.5,
+              "difference": 12.5
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 33.75,
+              "difference": 2.25
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 11.25,
+              "difference": 2.25
+            },
+            {
+              "seed": 3061,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 18,
+              "difference": 6.75
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 13.5,
+              "difference": 0
+            },
+            {
+              "seed": 3083,
+              "left": 27,
+              "right": 28.5,
+              "difference": -1.5
+            },
+            {
+              "seed": 3089,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            }
+          ]
+        }
+      },
+      "diverse": {
+        "online": 26.208333333333332,
+        "frozen": 24.166666666666668,
+        "effect": {
+          "meanDifference": 2.0416666666666665,
+          "interval": [
+            0.3333333333333333,
+            3.8333333333333335
+          ],
+          "seedCount": 12,
+          "pairs": [
+            {
+              "seed": 3001,
+              "left": 26.25,
+              "right": 25.5,
+              "difference": 0.75
+            },
+            {
+              "seed": 3011,
+              "left": 30.75,
+              "right": 26.25,
+              "difference": 4.5
+            },
+            {
+              "seed": 3019,
+              "left": 12,
+              "right": 10.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 3023,
+              "left": 30,
+              "right": 28.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 3037,
+              "left": 39.25,
+              "right": 30.25,
+              "difference": 9
+            },
+            {
+              "seed": 3041,
+              "left": 36,
+              "right": 34.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 3049,
+              "left": 13.5,
+              "right": 12,
+              "difference": 1.5
+            },
+            {
+              "seed": 3061,
+              "left": 23.25,
+              "right": 23.25,
+              "difference": 0
+            },
+            {
+              "seed": 3067,
+              "left": 24.75,
+              "right": 18,
+              "difference": 6.75
+            },
+            {
+              "seed": 3079,
+              "left": 13.5,
+              "right": 15,
+              "difference": -1.5
+            },
+            {
+              "seed": 3083,
+              "left": 33,
+              "right": 35.5,
+              "difference": -2.5
+            },
+            {
+              "seed": 3089,
+              "left": 32.25,
+              "right": 30.75,
+              "difference": 1.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "newEncounters": 1152,
+  "reusedOnlineEncounters": 1152,
+  "reconstructionReplays": 2304,
+  "primarySupported": false
+}

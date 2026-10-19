@@ -1,0 +1,25 @@
+{
+  "measurementRuntime": "Archived baseline Wasm, verified by both experiments source hashes. Current game binary is not used by the experiment.",
+  "comparisons": {
+    "crates/tactical-air-core/src/lib.rs": {
+      "matches": true,
+      "currentSha256": "f62d1253f44028ee849dd199779764562821789ef8b83b9db75c7c84b152beae",
+      "archivedSha256": "f62d1253f44028ee849dd199779764562821789ef8b83b9db75c7c84b152beae"
+    },
+    "crates/tactical-air-wasm/src/lib.rs": {
+      "matches": true,
+      "currentSha256": "f0b1e01f46c285a60ccc0947983cb288c21a1a1535215c25ba1c9b8d07f1ce51",
+      "archivedSha256": "f0b1e01f46c285a60ccc0947983cb288c21a1a1535215c25ba1c9b8d07f1ce51"
+    },
+    "apps/arena/src/sim.ts": {
+      "matches": true,
+      "currentSha256": "fc7c458301ff2592f80fb4830616fc1f73924b355fa3d5180c0e6f810afe1cdf",
+      "archivedSha256": "fc7c458301ff2592f80fb4830616fc1f73924b355fa3d5180c0e6f810afe1cdf"
+    },
+    "apps/arena/public/wasm/tactical_air_bg.wasm": {
+      "matches": false,
+      "currentSha256": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92",
+      "archivedSha256": "3ad3f2a18b624d56e620fc3f32ea7cfbef382ce188e158b12cefffd38c2d8970"
+    }
+  }
+}

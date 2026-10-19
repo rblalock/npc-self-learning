@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "version": "research-program-v1",
+  "status": "Specified locally before any measured program outcomes. Six protocols and their shared source are frozen together before the first run; no results from one study may tune another. Not public preregistration.",
+  "primary_uncertainty": {
+    "resamples": 12000,
+    "seed": 260021,
+    "interval": 0.9916666666666667
+  },
+  "secondary_uncertainty": {
+    "resamples": 5000,
+    "seed": 260022,
+    "interval": 0.95
+  },
+  "uncertainty_scope": "Paired percentile bootstrap of 16 seed means, averaging cases and roles within seed. Primary intervals use nominal Bonferroni 99.167% coverage for six predeclared primary comparisons; bootstrap coverage is approximate. All secondary intervals are 95%, exploratory and unadjusted. Neither authored cases nor rounds are independent map-population draws.",
+  "fresh_cases": [
+    "zigzag-advance/long-spines",
+    "zigzag-advance/courtyard",
+    "cover-peek/long-spines",
+    "cover-peek/courtyard"
+  ],
+  "fresh_split": "Two new behavior rules crossed with two new map templates, parameterized by separate seed streams. Shared across these six simultaneously locked protocols; reuse does not constitute six independently invented generators. After examination these become regression fixtures.",
+  "primary_rounds": 4,
+  "minimum_gain": 3,
+  "maximum_case_loss": 6,
+  "invariants": [
+    "Archived Rust/Wasm core and Arena.update physical simulation. No weapon, speed, HP, visibility or cooldown changes.",
+    "Single-enemy cases retain only the specified live enemy. Inactive array slots preserve bullet IDs and contribute no targeting, collisions, damage, observation or feedback.",
+    "Synthetic players receive delayed self state, visible enemies and telegraphs, nearby visible projectiles and public map geometry only. No tactic IDs, policy cells, hidden positions or scripted phase labels.",
+    "Terrain context derives only from public wall area: more than 5.5% is dense, otherwise sparse. No player family or direction is supplied to the learner.",
+    "Frozen counterparts fork from the exact online boundary, including RNG. Full combats, inputs, choices, observations and reward commits retained.",
+    "All valid worlds and outcomes retained; geometry rejection reasons recorded.",
+    "No threshold, seed count, generator, reward, training schedule or candidate changes after measurement.",
+    "No algorithm installed in the game on the basis of these screens alone."
+  ],
+  "budget": "Equal declared encounter histories within each comparison, with actual simulation steps, decision counts, elapsed time and CPU recorded. This is not an equal-CPU or equal-step claim. Replays and unit-test fights are not additional scored evidence.",
+  "limits": [
+    "Authored tactics and small fixed family sets; no arbitrary-game or opponent-population generalization.",
+    "Tactic choices occur once per encounter. This tests between-encounter adaptation, not within-fight tactical replanning.",
+    "Only specified host representations/rewards change; the core API is reused without modification.",
+    "Negative and insensitive fixtures are retained. A failed screen is not evidence that an entire research direction cannot work."
+  ],
+  "kind": "deception",
+  "id": "deception-stress-v1",
+  "seeds": [
+    14001,
+    14011,
+    14021,
+    14031,
+    14041,
+    14051,
+    14061,
+    14071,
+    14081,
+    14091,
+    14101,
+    14111,
+    14121,
+    14131,
+    14141,
+    14151
+  ],
+  "expected_encounters": 9216,
+  "question": "Does a deliberately misleading movement history hurt more than beginning with no learned preferences?",
+  "procedure": "Isolated ranger; four reserved cases. Twenty-four opposite-direction bait fights or 24 target-direction matched-history fights; target direction for 24 afterward. Compare baited-online, baited-frozen, matched-history online, and zero-cell online with the bait checkpoint RNG/counters. Attacker uses a fixed predeclared movement reversal and never reads the policy. This is a scripted baiting stress test, not an optimized adversarial attack or a distinct behavioral definition of deception.",
+  "primary_key": "baited-minus-naive",
+  "primary_endpoint": "Baited online minus reset-memory online damage in the first four attack fights; non-inferiority margin is -3 HP.",
+  "gate": "Non-inferiority requires primary mean >=-3 HP and nominal multiplicity-adjusted lower bound >-3 HP. Failure is vulnerability or uncertainty in this scripted stress test, not proof of optimized exploitability.",
+  "demonstration": {
+    "seed": 14001,
+    "case": "zigzag-advance/long-spines",
+    "selection": "First seed and first fresh case selected before outcomes; retain unfavorable or equal comparisons."
+  }
+}

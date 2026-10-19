@@ -1,0 +1,4904 @@
+{
+  "groups": {
+    "south-entry": {
+      "reverse": {
+        "individual": {
+          "damage": 57.5625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.584375000000183
+        },
+        "individualFrozen": {
+          "damage": 38.0625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.86796875000011
+        },
+        "additive": {
+          "damage": 58.78125,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.436328125000188
+        },
+        "additiveFrozen": {
+          "damage": 37.78125,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.896484375000107
+        },
+        "fixedDamage": 36,
+        "additiveMinusOriginal": {
+          "meanDifference": 1.21875,
+          "interval": [
+            0.46875,
+            2.0625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 46.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2011,
+              "left": 64.5,
+              "right": 64.5,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 66,
+              "right": 64.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 2029,
+              "left": 58.5,
+              "right": 55.5,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 66,
+              "right": 64.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 63,
+              "right": 58.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2063,
+              "left": 63,
+              "right": 63,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 58.5,
+              "right": 58.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 64.5,
+              "right": 64.5,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 49.5,
+              "right": 49.5,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 63,
+              "right": 61.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 55.5,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 45,
+              "right": 42,
+              "difference": 3
+            },
+            {
+              "seed": 2113,
+              "left": 66,
+              "right": 66,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 19.5,
+          "interval": [
+            16.6875,
+            22.40625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 46.5,
+              "right": 34.5,
+              "difference": 12
+            },
+            {
+              "seed": 2011,
+              "left": 64.5,
+              "right": 40.5,
+              "difference": 24
+            },
+            {
+              "seed": 2017,
+              "left": 64.5,
+              "right": 40.5,
+              "difference": 24
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 40.5,
+              "difference": 13.5
+            },
+            {
+              "seed": 2029,
+              "left": 55.5,
+              "right": 39,
+              "difference": 16.5
+            },
+            {
+              "seed": 2039,
+              "left": 64.5,
+              "right": 48,
+              "difference": 16.5
+            },
+            {
+              "seed": 2053,
+              "left": 58.5,
+              "right": 43.5,
+              "difference": 15
+            },
+            {
+              "seed": 2063,
+              "left": 63,
+              "right": 34.5,
+              "difference": 28.5
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 34.5,
+              "difference": 18
+            },
+            {
+              "seed": 2081,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2083,
+              "left": 64.5,
+              "right": 37.5,
+              "difference": 27
+            },
+            {
+              "seed": 2087,
+              "left": 49.5,
+              "right": 34.5,
+              "difference": 15
+            },
+            {
+              "seed": 2089,
+              "left": 61.5,
+              "right": 39,
+              "difference": 22.5
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 39,
+              "difference": 16.5
+            },
+            {
+              "seed": 2111,
+              "left": 42,
+              "right": 31.5,
+              "difference": 10.5
+            },
+            {
+              "seed": 2113,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 21,
+          "interval": [
+            18.46875,
+            23.53125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 34.5,
+              "difference": 16.5
+            },
+            {
+              "seed": 2011,
+              "left": 64.5,
+              "right": 40.5,
+              "difference": 24
+            },
+            {
+              "seed": 2017,
+              "left": 66,
+              "right": 40.5,
+              "difference": 25.5
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 40.5,
+              "difference": 13.5
+            },
+            {
+              "seed": 2029,
+              "left": 58.5,
+              "right": 39,
+              "difference": 19.5
+            },
+            {
+              "seed": 2039,
+              "left": 66,
+              "right": 43.5,
+              "difference": 22.5
+            },
+            {
+              "seed": 2053,
+              "left": 63,
+              "right": 43.5,
+              "difference": 19.5
+            },
+            {
+              "seed": 2063,
+              "left": 63,
+              "right": 34.5,
+              "difference": 28.5
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 34.5,
+              "difference": 18
+            },
+            {
+              "seed": 2081,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2083,
+              "left": 64.5,
+              "right": 37.5,
+              "difference": 27
+            },
+            {
+              "seed": 2087,
+              "left": 49.5,
+              "right": 34.5,
+              "difference": 15
+            },
+            {
+              "seed": 2089,
+              "left": 63,
+              "right": 39,
+              "difference": 24
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 39,
+              "difference": 16.5
+            },
+            {
+              "seed": 2111,
+              "left": 45,
+              "right": 31.5,
+              "difference": 13.5
+            },
+            {
+              "seed": 2113,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": 22.78125,
+          "interval": [
+            19.40625,
+            25.96875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 36,
+              "difference": 15
+            },
+            {
+              "seed": 2011,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2017,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 36,
+              "difference": 18
+            },
+            {
+              "seed": 2029,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2039,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            },
+            {
+              "seed": 2053,
+              "left": 63,
+              "right": 36,
+              "difference": 27
+            },
+            {
+              "seed": 2063,
+              "left": 63,
+              "right": 36,
+              "difference": 27
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 36,
+              "difference": 16.5
+            },
+            {
+              "seed": 2081,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2083,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2087,
+              "left": 49.5,
+              "right": 36,
+              "difference": 13.5
+            },
+            {
+              "seed": 2089,
+              "left": 63,
+              "right": 36,
+              "difference": 27
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 36,
+              "difference": 19.5
+            },
+            {
+              "seed": 2111,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 2113,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": 21.5625,
+          "interval": [
+            18,
+            24.9375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 46.5,
+              "right": 36,
+              "difference": 10.5
+            },
+            {
+              "seed": 2011,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2017,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 36,
+              "difference": 18
+            },
+            {
+              "seed": 2029,
+              "left": 55.5,
+              "right": 36,
+              "difference": 19.5
+            },
+            {
+              "seed": 2039,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2053,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2063,
+              "left": 63,
+              "right": 36,
+              "difference": 27
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 36,
+              "difference": 16.5
+            },
+            {
+              "seed": 2081,
+              "left": 58.5,
+              "right": 36,
+              "difference": 22.5
+            },
+            {
+              "seed": 2083,
+              "left": 64.5,
+              "right": 36,
+              "difference": 28.5
+            },
+            {
+              "seed": 2087,
+              "left": 49.5,
+              "right": 36,
+              "difference": 13.5
+            },
+            {
+              "seed": 2089,
+              "left": 61.5,
+              "right": 36,
+              "difference": 25.5
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 36,
+              "difference": 19.5
+            },
+            {
+              "seed": 2111,
+              "left": 42,
+              "right": 36,
+              "difference": 6
+            },
+            {
+              "seed": 2113,
+              "left": 66,
+              "right": 36,
+              "difference": 30
+            }
+          ]
+        }
+      },
+      "feint": {
+        "individual": {
+          "damage": 27.09375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.339062500000033
+        },
+        "individualFrozen": {
+          "damage": 20.0625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.164843750000212
+        },
+        "additive": {
+          "damage": 27.1875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.401302083333363
+        },
+        "additiveFrozen": {
+          "damage": 20.0625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.102604166666882
+        },
+        "fixedDamage": 24,
+        "additiveMinusOriginal": {
+          "meanDifference": 0.09375,
+          "interval": [
+            0,
+            0.28125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 22.5,
+              "right": 22.5,
+              "difference": 0
+            },
+            {
+              "seed": 2063,
+              "left": 28.5,
+              "right": 27,
+              "difference": 1.5
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2113,
+              "left": 30,
+              "right": 30,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 7.03125,
+          "interval": [
+            5.8125,
+            8.34375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 27,
+              "right": 19.5,
+              "difference": 7.5
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 18,
+              "difference": 7.5
+            },
+            {
+              "seed": 2017,
+              "left": 30,
+              "right": 18,
+              "difference": 12
+            },
+            {
+              "seed": 2027,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 22.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2039,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 2053,
+              "left": 22.5,
+              "right": 19.5,
+              "difference": 3
+            },
+            {
+              "seed": 2063,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 22.5,
+              "difference": 9
+            },
+            {
+              "seed": 2081,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2083,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 19.5,
+              "difference": 7.5
+            },
+            {
+              "seed": 2089,
+              "left": 28.5,
+              "right": 16.5,
+              "difference": 12
+            },
+            {
+              "seed": 2099,
+              "left": 28.5,
+              "right": 22.5,
+              "difference": 6
+            },
+            {
+              "seed": 2111,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 2113,
+              "left": 30,
+              "right": 19.5,
+              "difference": 10.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 7.125,
+          "interval": [
+            5.99765625000001,
+            8.34375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 27,
+              "right": 19.5,
+              "difference": 7.5
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 18,
+              "difference": 7.5
+            },
+            {
+              "seed": 2017,
+              "left": 30,
+              "right": 19.5,
+              "difference": 10.5
+            },
+            {
+              "seed": 2027,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 22.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2039,
+              "left": 27,
+              "right": 19.5,
+              "difference": 7.5
+            },
+            {
+              "seed": 2053,
+              "left": 22.5,
+              "right": 19.5,
+              "difference": 3
+            },
+            {
+              "seed": 2063,
+              "left": 28.5,
+              "right": 21,
+              "difference": 7.5
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 22.5,
+              "difference": 9
+            },
+            {
+              "seed": 2081,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2083,
+              "left": 24,
+              "right": 21,
+              "difference": 3
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 2089,
+              "left": 28.5,
+              "right": 16.5,
+              "difference": 12
+            },
+            {
+              "seed": 2099,
+              "left": 28.5,
+              "right": 21,
+              "difference": 7.5
+            },
+            {
+              "seed": 2111,
+              "left": 27,
+              "right": 21,
+              "difference": 6
+            },
+            {
+              "seed": 2113,
+              "left": 30,
+              "right": 19.5,
+              "difference": 10.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": 3.1875,
+          "interval": [
+            2.0625,
+            4.3125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 2027,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2053,
+              "left": 22.5,
+              "right": 24,
+              "difference": -1.5
+            },
+            {
+              "seed": 2063,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2081,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2089,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2099,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2111,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2113,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": 3.09375,
+          "interval": [
+            2.0625,
+            4.21875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 2027,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2053,
+              "left": 22.5,
+              "right": 24,
+              "difference": -1.5
+            },
+            {
+              "seed": 2063,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2081,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2089,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2099,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2111,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2113,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            }
+          ]
+        }
+      }
+    },
+    "wide-crossings": {
+      "reverse": {
+        "individual": {
+          "damage": 39.09375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.246744791666764
+        },
+        "individualFrozen": {
+          "damage": 33.84375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.352734375000033
+        },
+        "additive": {
+          "damage": 41.53125,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.68802083333346
+        },
+        "additiveFrozen": {
+          "damage": 33.46875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.41640625000003
+        },
+        "fixedDamage": 24,
+        "additiveMinusOriginal": {
+          "meanDifference": 2.4375,
+          "interval": [
+            0.9375,
+            4.21875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 51,
+              "right": 46.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2017,
+              "left": 52.5,
+              "right": 51,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 40.5,
+              "right": 37.5,
+              "difference": 3
+            },
+            {
+              "seed": 2029,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 43.5,
+              "right": 43.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 45,
+              "right": 36,
+              "difference": 9
+            },
+            {
+              "seed": 2063,
+              "left": 42,
+              "right": 37.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 34.5,
+              "right": 34.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 43.5,
+              "right": 43.5,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 34.5,
+              "right": 33,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 49.5,
+              "right": 43.5,
+              "difference": 6
+            },
+            {
+              "seed": 2099,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 28.5,
+              "right": 30,
+              "difference": -1.5
+            },
+            {
+              "seed": 2113,
+              "left": 52.5,
+              "right": 42,
+              "difference": 10.5
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 5.25,
+          "interval": [
+            3,
+            7.596093749999966
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 22.5,
+              "difference": 10.5
+            },
+            {
+              "seed": 2011,
+              "left": 46.5,
+              "right": 43.5,
+              "difference": 3
+            },
+            {
+              "seed": 2017,
+              "left": 51,
+              "right": 52.5,
+              "difference": -1.5
+            },
+            {
+              "seed": 2027,
+              "left": 37.5,
+              "right": 30,
+              "difference": 7.5
+            },
+            {
+              "seed": 2029,
+              "left": 39,
+              "right": 34.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2039,
+              "left": 43.5,
+              "right": 43.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 36,
+              "right": 31.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2063,
+              "left": 37.5,
+              "right": 22.5,
+              "difference": 15
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 30,
+              "difference": 9
+            },
+            {
+              "seed": 2081,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2083,
+              "left": 43.5,
+              "right": 28.5,
+              "difference": 15
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 27,
+              "difference": 6
+            },
+            {
+              "seed": 2089,
+              "left": 43.5,
+              "right": 40.5,
+              "difference": 3
+            },
+            {
+              "seed": 2099,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 30,
+              "right": 28.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2113,
+              "left": 42,
+              "right": 39,
+              "difference": 3
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 8.0625,
+          "interval": [
+            5.34375,
+            10.78125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 22.5,
+              "difference": 10.5
+            },
+            {
+              "seed": 2011,
+              "left": 51,
+              "right": 43.5,
+              "difference": 7.5
+            },
+            {
+              "seed": 2017,
+              "left": 52.5,
+              "right": 51,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 40.5,
+              "right": 30,
+              "difference": 10.5
+            },
+            {
+              "seed": 2029,
+              "left": 39,
+              "right": 30,
+              "difference": 9
+            },
+            {
+              "seed": 2039,
+              "left": 43.5,
+              "right": 43.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 45,
+              "right": 31.5,
+              "difference": 13.5
+            },
+            {
+              "seed": 2063,
+              "left": 42,
+              "right": 22.5,
+              "difference": 19.5
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 30,
+              "difference": 9
+            },
+            {
+              "seed": 2081,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2083,
+              "left": 43.5,
+              "right": 28.5,
+              "difference": 15
+            },
+            {
+              "seed": 2087,
+              "left": 34.5,
+              "right": 27,
+              "difference": 7.5
+            },
+            {
+              "seed": 2089,
+              "left": 49.5,
+              "right": 40.5,
+              "difference": 9
+            },
+            {
+              "seed": 2099,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 2113,
+              "left": 52.5,
+              "right": 39,
+              "difference": 13.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": 17.53125,
+          "interval": [
+            14.0625,
+            21
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 2011,
+              "left": 51,
+              "right": 24,
+              "difference": 27
+            },
+            {
+              "seed": 2017,
+              "left": 52.5,
+              "right": 24,
+              "difference": 28.5
+            },
+            {
+              "seed": 2027,
+              "left": 40.5,
+              "right": 24,
+              "difference": 16.5
+            },
+            {
+              "seed": 2029,
+              "left": 39,
+              "right": 24,
+              "difference": 15
+            },
+            {
+              "seed": 2039,
+              "left": 43.5,
+              "right": 24,
+              "difference": 19.5
+            },
+            {
+              "seed": 2053,
+              "left": 45,
+              "right": 24,
+              "difference": 21
+            },
+            {
+              "seed": 2063,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 24,
+              "difference": 15
+            },
+            {
+              "seed": 2081,
+              "left": 34.5,
+              "right": 24,
+              "difference": 10.5
+            },
+            {
+              "seed": 2083,
+              "left": 43.5,
+              "right": 24,
+              "difference": 19.5
+            },
+            {
+              "seed": 2087,
+              "left": 34.5,
+              "right": 24,
+              "difference": 10.5
+            },
+            {
+              "seed": 2089,
+              "left": 49.5,
+              "right": 24,
+              "difference": 25.5
+            },
+            {
+              "seed": 2099,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 2111,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2113,
+              "left": 52.5,
+              "right": 24,
+              "difference": 28.5
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": 15.09375,
+          "interval": [
+            12.5625,
+            17.90625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 2011,
+              "left": 46.5,
+              "right": 24,
+              "difference": 22.5
+            },
+            {
+              "seed": 2017,
+              "left": 51,
+              "right": 24,
+              "difference": 27
+            },
+            {
+              "seed": 2027,
+              "left": 37.5,
+              "right": 24,
+              "difference": 13.5
+            },
+            {
+              "seed": 2029,
+              "left": 39,
+              "right": 24,
+              "difference": 15
+            },
+            {
+              "seed": 2039,
+              "left": 43.5,
+              "right": 24,
+              "difference": 19.5
+            },
+            {
+              "seed": 2053,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 2063,
+              "left": 37.5,
+              "right": 24,
+              "difference": 13.5
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 24,
+              "difference": 15
+            },
+            {
+              "seed": 2081,
+              "left": 34.5,
+              "right": 24,
+              "difference": 10.5
+            },
+            {
+              "seed": 2083,
+              "left": 43.5,
+              "right": 24,
+              "difference": 19.5
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 2089,
+              "left": 43.5,
+              "right": 24,
+              "difference": 19.5
+            },
+            {
+              "seed": 2099,
+              "left": 36,
+              "right": 24,
+              "difference": 12
+            },
+            {
+              "seed": 2111,
+              "left": 30,
+              "right": 24,
+              "difference": 6
+            },
+            {
+              "seed": 2113,
+              "left": 42,
+              "right": 24,
+              "difference": 18
+            }
+          ]
+        }
+      },
+      "feint": {
+        "individual": {
+          "damage": 54.84375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.71809895833345
+        },
+        "individualFrozen": {
+          "damage": 53.90625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.28606770833342
+        },
+        "additive": {
+          "damage": 54.84375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.758984375000118
+        },
+        "additiveFrozen": {
+          "damage": 53.71875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 21.336067708333413
+        },
+        "fixedDamage": 60,
+        "additiveMinusOriginal": {
+          "meanDifference": 0,
+          "interval": [
+            -0.375,
+            0.375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 55.5,
+              "right": 57,
+              "difference": -1.5
+            },
+            {
+              "seed": 2017,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 2029,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 58.5,
+              "right": 58.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 55.5,
+              "right": 55.5,
+              "difference": 0
+            },
+            {
+              "seed": 2063,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 54,
+              "difference": -1.5
+            },
+            {
+              "seed": 2081,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 57,
+              "right": 57,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 57,
+              "right": 55.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 52.5,
+              "right": 51,
+              "difference": 1.5
+            },
+            {
+              "seed": 2113,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 0.9375,
+          "interval": [
+            0.375,
+            1.59375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 49.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2011,
+              "left": 57,
+              "right": 57,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 52.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2029,
+              "left": 54,
+              "right": 55.5,
+              "difference": -1.5
+            },
+            {
+              "seed": 2039,
+              "left": 58.5,
+              "right": 57,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 55.5,
+              "right": 54,
+              "difference": 1.5
+            },
+            {
+              "seed": 2063,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 54,
+              "right": 52.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2081,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 51,
+              "right": 49.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2087,
+              "left": 54,
+              "right": 52.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 57,
+              "right": 52.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 55.5,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 51,
+              "right": 51,
+              "difference": 0
+            },
+            {
+              "seed": 2113,
+              "left": 60,
+              "right": 58.5,
+              "difference": 1.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 1.125,
+          "interval": [
+            0.46875,
+            1.78125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 49.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2011,
+              "left": 55.5,
+              "right": 57,
+              "difference": -1.5
+            },
+            {
+              "seed": 2017,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 52.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2029,
+              "left": 54,
+              "right": 54,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 58.5,
+              "right": 57,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 55.5,
+              "right": 54,
+              "difference": 1.5
+            },
+            {
+              "seed": 2063,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 52.5,
+              "right": 52.5,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 51,
+              "right": 49.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2087,
+              "left": 54,
+              "right": 52.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 57,
+              "right": 52.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2099,
+              "left": 57,
+              "right": 54,
+              "difference": 3
+            },
+            {
+              "seed": 2111,
+              "left": 52.5,
+              "right": 51,
+              "difference": 1.5
+            },
+            {
+              "seed": 2113,
+              "left": 60,
+              "right": 58.5,
+              "difference": 1.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": -5.15625,
+          "interval": [
+            -6.46875,
+            -3.65625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 2011,
+              "left": 55.5,
+              "right": 60,
+              "difference": -4.5
+            },
+            {
+              "seed": 2017,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2029,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2039,
+              "left": 58.5,
+              "right": 60,
+              "difference": -1.5
+            },
+            {
+              "seed": 2053,
+              "left": 55.5,
+              "right": 60,
+              "difference": -4.5
+            },
+            {
+              "seed": 2063,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2069,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2081,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2083,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 2087,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2089,
+              "left": 57,
+              "right": 60,
+              "difference": -3
+            },
+            {
+              "seed": 2099,
+              "left": 57,
+              "right": 60,
+              "difference": -3
+            },
+            {
+              "seed": 2111,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2113,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": -5.15625,
+          "interval": [
+            -6.46875,
+            -3.65625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 2011,
+              "left": 57,
+              "right": 60,
+              "difference": -3
+            },
+            {
+              "seed": 2017,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2029,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2039,
+              "left": 58.5,
+              "right": 60,
+              "difference": -1.5
+            },
+            {
+              "seed": 2053,
+              "left": 55.5,
+              "right": 60,
+              "difference": -4.5
+            },
+            {
+              "seed": 2063,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2069,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2081,
+              "left": 52.5,
+              "right": 60,
+              "difference": -7.5
+            },
+            {
+              "seed": 2083,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 2087,
+              "left": 54,
+              "right": 60,
+              "difference": -6
+            },
+            {
+              "seed": 2089,
+              "left": 57,
+              "right": 60,
+              "difference": -3
+            },
+            {
+              "seed": 2099,
+              "left": 55.5,
+              "right": 60,
+              "difference": -4.5
+            },
+            {
+              "seed": 2111,
+              "left": 51,
+              "right": 60,
+              "difference": -9
+            },
+            {
+              "seed": 2113,
+              "left": 60,
+              "right": 60,
+              "difference": 0
+            }
+          ]
+        }
+      }
+    },
+    "central-obstacles": {
+      "reverse": {
+        "individual": {
+          "damage": 28.21875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 16.038541666666976
+        },
+        "individualFrozen": {
+          "damage": 25.59375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 16.135156250000303
+        },
+        "additive": {
+          "damage": 28.40625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 16.041927083333643
+        },
+        "additiveFrozen": {
+          "damage": 25.59375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 16.08020833333364
+        },
+        "fixedDamage": 24,
+        "additiveMinusOriginal": {
+          "meanDifference": 0.1875,
+          "interval": [
+            0,
+            0.46875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 22.5,
+              "right": 21,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2063,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 28.5,
+              "right": 28.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 28.5,
+              "right": 27,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 27,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 25.5,
+              "right": 25.5,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2113,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 2.625,
+          "interval": [
+            1.78125,
+            3.5625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 28.5,
+              "right": 25.5,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2017,
+              "left": 21,
+              "right": 21,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2039,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 28.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2063,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2069,
+              "left": 28.5,
+              "right": 27,
+              "difference": 1.5
+            },
+            {
+              "seed": 2081,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2113,
+              "left": 33,
+              "right": 28.5,
+              "difference": 4.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 2.8125,
+          "interval": [
+            2.0625,
+            3.65625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 28.5,
+              "right": 25.5,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 19.5,
+              "difference": 6
+            },
+            {
+              "seed": 2017,
+              "left": 22.5,
+              "right": 21,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2039,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 2063,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2069,
+              "left": 28.5,
+              "right": 25.5,
+              "difference": 3
+            },
+            {
+              "seed": 2081,
+              "left": 28.5,
+              "right": 25.5,
+              "difference": 3
+            },
+            {
+              "seed": 2083,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 25.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 31.5,
+              "right": 27,
+              "difference": 4.5
+            },
+            {
+              "seed": 2113,
+              "left": 33,
+              "right": 28.5,
+              "difference": 4.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": 4.40625,
+          "interval": [
+            2.8125,
+            5.908593749999966
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 22.5,
+              "right": 24,
+              "difference": -1.5
+            },
+            {
+              "seed": 2027,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 2063,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2069,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2081,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2083,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2113,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": 4.21875,
+          "interval": [
+            2.53125,
+            5.8125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2011,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 21,
+              "right": 24,
+              "difference": -3
+            },
+            {
+              "seed": 2027,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2029,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            },
+            {
+              "seed": 2063,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2069,
+              "left": 28.5,
+              "right": 24,
+              "difference": 4.5
+            },
+            {
+              "seed": 2081,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2083,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2087,
+              "left": 27,
+              "right": 24,
+              "difference": 3
+            },
+            {
+              "seed": 2089,
+              "left": 24,
+              "right": 24,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 25.5,
+              "right": 24,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 31.5,
+              "right": 24,
+              "difference": 7.5
+            },
+            {
+              "seed": 2113,
+              "left": 33,
+              "right": 24,
+              "difference": 9
+            }
+          ]
+        }
+      },
+      "feint": {
+        "individual": {
+          "damage": 33.1875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.43242187500024
+        },
+        "individualFrozen": {
+          "damage": 30.84375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.32890625000024
+        },
+        "additive": {
+          "damage": 33.1875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.41861979166691
+        },
+        "additiveFrozen": {
+          "damage": 30.84375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.32890625000024
+        },
+        "fixedDamage": 36,
+        "additiveMinusOriginal": {
+          "meanDifference": 0,
+          "interval": [
+            -0.28125,
+            0.28125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 34.5,
+              "right": 34.5,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 34.5,
+              "right": 33,
+              "difference": 1.5
+            },
+            {
+              "seed": 2029,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 34.5,
+              "right": 34.5,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2063,
+              "left": 34.5,
+              "right": 34.5,
+              "difference": 0
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 28.5,
+              "right": 30,
+              "difference": -1.5
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2113,
+              "left": 34.5,
+              "right": 34.5,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 2.34375,
+          "interval": [
+            1.78125,
+            2.90625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 36,
+              "right": 34.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2027,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 2029,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 28.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2063,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            },
+            {
+              "seed": 2081,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 30,
+              "right": 27,
+              "difference": 3
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2099,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2113,
+              "left": 34.5,
+              "right": 30,
+              "difference": 4.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 2.34375,
+          "interval": [
+            1.59375,
+            3.1875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 33,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 36,
+              "right": 34.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2027,
+              "left": 34.5,
+              "right": 30,
+              "difference": 4.5
+            },
+            {
+              "seed": 2029,
+              "left": 33,
+              "right": 30,
+              "difference": 3
+            },
+            {
+              "seed": 2039,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 27,
+              "difference": 6
+            },
+            {
+              "seed": 2063,
+              "left": 34.5,
+              "right": 31.5,
+              "difference": 3
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 31.5,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2083,
+              "left": 28.5,
+              "right": 27,
+              "difference": 1.5
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2089,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2099,
+              "left": 31.5,
+              "right": 30,
+              "difference": 1.5
+            },
+            {
+              "seed": 2111,
+              "left": 33,
+              "right": 31.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2113,
+              "left": 34.5,
+              "right": 30,
+              "difference": 4.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": -2.8125,
+          "interval": [
+            -3.65625,
+            -2.0625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2011,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2027,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2029,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2039,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2063,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 36,
+              "difference": -4.5
+            },
+            {
+              "seed": 2081,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2083,
+              "left": 28.5,
+              "right": 36,
+              "difference": -7.5
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2089,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2099,
+              "left": 31.5,
+              "right": 36,
+              "difference": -4.5
+            },
+            {
+              "seed": 2111,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2113,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": -2.8125,
+          "interval": [
+            -3.46875,
+            -2.15625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2011,
+              "left": 36,
+              "right": 36,
+              "difference": 0
+            },
+            {
+              "seed": 2017,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2027,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2029,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2039,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2053,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2063,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            },
+            {
+              "seed": 2069,
+              "left": 31.5,
+              "right": 36,
+              "difference": -4.5
+            },
+            {
+              "seed": 2081,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2083,
+              "left": 30,
+              "right": 36,
+              "difference": -6
+            },
+            {
+              "seed": 2087,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2089,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2099,
+              "left": 31.5,
+              "right": 36,
+              "difference": -4.5
+            },
+            {
+              "seed": 2111,
+              "left": 33,
+              "right": 36,
+              "difference": -3
+            },
+            {
+              "seed": 2113,
+              "left": 34.5,
+              "right": 36,
+              "difference": -1.5
+            }
+          ]
+        }
+      }
+    },
+    "aggregate": {
+      "reverse": {
+        "individual": {
+          "damage": 41.625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.623220486111354
+        },
+        "individualFrozen": {
+          "damage": 32.5,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.451953125000156
+        },
+        "additive": {
+          "damage": 42.90625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 18.388758680555814
+        },
+        "additiveFrozen": {
+          "damage": 32.28125,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.4643663194446
+        },
+        "fixedDamage": 28,
+        "additiveMinusOriginal": {
+          "meanDifference": 1.28125,
+          "interval": [
+            0.71875,
+            1.9375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37.5,
+              "right": 36,
+              "difference": 1.5
+            },
+            {
+              "seed": 2011,
+              "left": 47,
+              "right": 45.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2017,
+              "left": 47,
+              "right": 45.5,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 42,
+              "right": 41,
+              "difference": 1
+            },
+            {
+              "seed": 2029,
+              "left": 41.5,
+              "right": 40.5,
+              "difference": 1
+            },
+            {
+              "seed": 2039,
+              "left": 45,
+              "right": 44.5,
+              "difference": 0.5
+            },
+            {
+              "seed": 2053,
+              "left": 47,
+              "right": 42.5,
+              "difference": 4.5
+            },
+            {
+              "seed": 2063,
+              "left": 45.5,
+              "right": 44,
+              "difference": 1.5
+            },
+            {
+              "seed": 2069,
+              "left": 40,
+              "right": 40,
+              "difference": 0
+            },
+            {
+              "seed": 2081,
+              "left": 40.5,
+              "right": 40,
+              "difference": 0.5
+            },
+            {
+              "seed": 2083,
+              "left": 46.5,
+              "right": 46.5,
+              "difference": 0
+            },
+            {
+              "seed": 2087,
+              "left": 37,
+              "right": 36.5,
+              "difference": 0.5
+            },
+            {
+              "seed": 2089,
+              "left": 45.5,
+              "right": 43,
+              "difference": 2.5
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 39,
+              "difference": 0
+            },
+            {
+              "seed": 2111,
+              "left": 35,
+              "right": 34.5,
+              "difference": 0.5
+            },
+            {
+              "seed": 2113,
+              "left": 50.5,
+              "right": 47,
+              "difference": 3.5
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 9.125,
+          "interval": [
+            7.8125,
+            10.625781249999989
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 36,
+              "right": 27.5,
+              "difference": 8.5
+            },
+            {
+              "seed": 2011,
+              "left": 45.5,
+              "right": 34.5,
+              "difference": 11
+            },
+            {
+              "seed": 2017,
+              "left": 45.5,
+              "right": 38,
+              "difference": 7.5
+            },
+            {
+              "seed": 2027,
+              "left": 41,
+              "right": 32.5,
+              "difference": 8.5
+            },
+            {
+              "seed": 2029,
+              "left": 40.5,
+              "right": 33,
+              "difference": 7.5
+            },
+            {
+              "seed": 2039,
+              "left": 44.5,
+              "right": 38.5,
+              "difference": 6
+            },
+            {
+              "seed": 2053,
+              "left": 42.5,
+              "right": 34.5,
+              "difference": 8
+            },
+            {
+              "seed": 2063,
+              "left": 44,
+              "right": 28,
+              "difference": 16
+            },
+            {
+              "seed": 2069,
+              "left": 40,
+              "right": 30.5,
+              "difference": 9.5
+            },
+            {
+              "seed": 2081,
+              "left": 40,
+              "right": 31,
+              "difference": 9
+            },
+            {
+              "seed": 2083,
+              "left": 46.5,
+              "right": 32,
+              "difference": 14.5
+            },
+            {
+              "seed": 2087,
+              "left": 36.5,
+              "right": 29,
+              "difference": 7.5
+            },
+            {
+              "seed": 2089,
+              "left": 43,
+              "right": 34.5,
+              "difference": 8.5
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 33,
+              "difference": 6
+            },
+            {
+              "seed": 2111,
+              "left": 34.5,
+              "right": 29,
+              "difference": 5.5
+            },
+            {
+              "seed": 2113,
+              "left": 47,
+              "right": 34.5,
+              "difference": 12.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 10.625,
+          "interval": [
+            9.21875,
+            12.21875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37.5,
+              "right": 27.5,
+              "difference": 10
+            },
+            {
+              "seed": 2011,
+              "left": 47,
+              "right": 34.5,
+              "difference": 12.5
+            },
+            {
+              "seed": 2017,
+              "left": 47,
+              "right": 37.5,
+              "difference": 9.5
+            },
+            {
+              "seed": 2027,
+              "left": 42,
+              "right": 32.5,
+              "difference": 9.5
+            },
+            {
+              "seed": 2029,
+              "left": 41.5,
+              "right": 31.5,
+              "difference": 10
+            },
+            {
+              "seed": 2039,
+              "left": 45,
+              "right": 37,
+              "difference": 8
+            },
+            {
+              "seed": 2053,
+              "left": 47,
+              "right": 35,
+              "difference": 12
+            },
+            {
+              "seed": 2063,
+              "left": 45.5,
+              "right": 28,
+              "difference": 17.5
+            },
+            {
+              "seed": 2069,
+              "left": 40,
+              "right": 30,
+              "difference": 10
+            },
+            {
+              "seed": 2081,
+              "left": 40.5,
+              "right": 31,
+              "difference": 9.5
+            },
+            {
+              "seed": 2083,
+              "left": 46.5,
+              "right": 32,
+              "difference": 14.5
+            },
+            {
+              "seed": 2087,
+              "left": 37,
+              "right": 29,
+              "difference": 8
+            },
+            {
+              "seed": 2089,
+              "left": 45.5,
+              "right": 34.5,
+              "difference": 11
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 33,
+              "difference": 6
+            },
+            {
+              "seed": 2111,
+              "left": 35,
+              "right": 29,
+              "difference": 6
+            },
+            {
+              "seed": 2113,
+              "left": 50.5,
+              "right": 34.5,
+              "difference": 16
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": 14.90625,
+          "interval": [
+            12.78125,
+            17.03125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37.5,
+              "right": 28,
+              "difference": 9.5
+            },
+            {
+              "seed": 2011,
+              "left": 47,
+              "right": 28,
+              "difference": 19
+            },
+            {
+              "seed": 2017,
+              "left": 47,
+              "right": 28,
+              "difference": 19
+            },
+            {
+              "seed": 2027,
+              "left": 42,
+              "right": 28,
+              "difference": 14
+            },
+            {
+              "seed": 2029,
+              "left": 41.5,
+              "right": 28,
+              "difference": 13.5
+            },
+            {
+              "seed": 2039,
+              "left": 45,
+              "right": 28,
+              "difference": 17
+            },
+            {
+              "seed": 2053,
+              "left": 47,
+              "right": 28,
+              "difference": 19
+            },
+            {
+              "seed": 2063,
+              "left": 45.5,
+              "right": 28,
+              "difference": 17.5
+            },
+            {
+              "seed": 2069,
+              "left": 40,
+              "right": 28,
+              "difference": 12
+            },
+            {
+              "seed": 2081,
+              "left": 40.5,
+              "right": 28,
+              "difference": 12.5
+            },
+            {
+              "seed": 2083,
+              "left": 46.5,
+              "right": 28,
+              "difference": 18.5
+            },
+            {
+              "seed": 2087,
+              "left": 37,
+              "right": 28,
+              "difference": 9
+            },
+            {
+              "seed": 2089,
+              "left": 45.5,
+              "right": 28,
+              "difference": 17.5
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 28,
+              "difference": 11
+            },
+            {
+              "seed": 2111,
+              "left": 35,
+              "right": 28,
+              "difference": 7
+            },
+            {
+              "seed": 2113,
+              "left": 50.5,
+              "right": 28,
+              "difference": 22.5
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": 13.625,
+          "interval": [
+            11.811718750000004,
+            15.4375
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 36,
+              "right": 28,
+              "difference": 8
+            },
+            {
+              "seed": 2011,
+              "left": 45.5,
+              "right": 28,
+              "difference": 17.5
+            },
+            {
+              "seed": 2017,
+              "left": 45.5,
+              "right": 28,
+              "difference": 17.5
+            },
+            {
+              "seed": 2027,
+              "left": 41,
+              "right": 28,
+              "difference": 13
+            },
+            {
+              "seed": 2029,
+              "left": 40.5,
+              "right": 28,
+              "difference": 12.5
+            },
+            {
+              "seed": 2039,
+              "left": 44.5,
+              "right": 28,
+              "difference": 16.5
+            },
+            {
+              "seed": 2053,
+              "left": 42.5,
+              "right": 28,
+              "difference": 14.5
+            },
+            {
+              "seed": 2063,
+              "left": 44,
+              "right": 28,
+              "difference": 16
+            },
+            {
+              "seed": 2069,
+              "left": 40,
+              "right": 28,
+              "difference": 12
+            },
+            {
+              "seed": 2081,
+              "left": 40,
+              "right": 28,
+              "difference": 12
+            },
+            {
+              "seed": 2083,
+              "left": 46.5,
+              "right": 28,
+              "difference": 18.5
+            },
+            {
+              "seed": 2087,
+              "left": 36.5,
+              "right": 28,
+              "difference": 8.5
+            },
+            {
+              "seed": 2089,
+              "left": 43,
+              "right": 28,
+              "difference": 15
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 28,
+              "difference": 11
+            },
+            {
+              "seed": 2111,
+              "left": 34.5,
+              "right": 28,
+              "difference": 6.5
+            },
+            {
+              "seed": 2113,
+              "left": 47,
+              "right": 28,
+              "difference": 19
+            }
+          ]
+        }
+      },
+      "feint": {
+        "individual": {
+          "damage": 38.375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.163194444444525
+        },
+        "individualFrozen": {
+          "damage": 34.9375,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.259939236111247
+        },
+        "additive": {
+          "damage": 38.40625,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 20.192968750000073
+        },
+        "additiveFrozen": {
+          "damage": 34.875,
+          "playerClearRate": 1,
+          "playerDeathRate": 0,
+          "duration": 19.25585937500014
+        },
+        "fixedDamage": 40,
+        "additiveMinusOriginal": {
+          "meanDifference": 0.03125,
+          "interval": [
+            -0.125,
+            0.1875
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37,
+              "right": 37,
+              "difference": 0
+            },
+            {
+              "seed": 2011,
+              "left": 39,
+              "right": 39.5,
+              "difference": -0.5
+            },
+            {
+              "seed": 2017,
+              "left": 41.5,
+              "right": 41.5,
+              "difference": 0
+            },
+            {
+              "seed": 2027,
+              "left": 38,
+              "right": 37.5,
+              "difference": 0.5
+            },
+            {
+              "seed": 2029,
+              "left": 38,
+              "right": 38,
+              "difference": 0
+            },
+            {
+              "seed": 2039,
+              "left": 40,
+              "right": 40,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 37,
+              "right": 37,
+              "difference": 0
+            },
+            {
+              "seed": 2063,
+              "left": 38.5,
+              "right": 38,
+              "difference": 0.5
+            },
+            {
+              "seed": 2069,
+              "left": 38.5,
+              "right": 39,
+              "difference": -0.5
+            },
+            {
+              "seed": 2081,
+              "left": 37,
+              "right": 37,
+              "difference": 0
+            },
+            {
+              "seed": 2083,
+              "left": 34.5,
+              "right": 35,
+              "difference": -0.5
+            },
+            {
+              "seed": 2087,
+              "left": 38,
+              "right": 38,
+              "difference": 0
+            },
+            {
+              "seed": 2089,
+              "left": 39.5,
+              "right": 39.5,
+              "difference": 0
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 38.5,
+              "difference": 0.5
+            },
+            {
+              "seed": 2111,
+              "left": 37.5,
+              "right": 37,
+              "difference": 0.5
+            },
+            {
+              "seed": 2113,
+              "left": 41.5,
+              "right": 41.5,
+              "difference": 0
+            }
+          ]
+        },
+        "individualLearningBenefit": {
+          "meanDifference": 3.4375,
+          "interval": [
+            2.9375,
+            4.03125
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37,
+              "right": 34,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 39.5,
+              "right": 36.5,
+              "difference": 3
+            },
+            {
+              "seed": 2017,
+              "left": 41.5,
+              "right": 36.5,
+              "difference": 5
+            },
+            {
+              "seed": 2027,
+              "left": 37.5,
+              "right": 34,
+              "difference": 3.5
+            },
+            {
+              "seed": 2029,
+              "left": 38,
+              "right": 36,
+              "difference": 2
+            },
+            {
+              "seed": 2039,
+              "left": 40,
+              "right": 36.5,
+              "difference": 3.5
+            },
+            {
+              "seed": 2053,
+              "left": 37,
+              "right": 34,
+              "difference": 3
+            },
+            {
+              "seed": 2063,
+              "left": 38,
+              "right": 35,
+              "difference": 3
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 35,
+              "difference": 4
+            },
+            {
+              "seed": 2081,
+              "left": 37,
+              "right": 34.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2083,
+              "left": 35,
+              "right": 32.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2087,
+              "left": 38,
+              "right": 34.5,
+              "difference": 3.5
+            },
+            {
+              "seed": 2089,
+              "left": 39.5,
+              "right": 33.5,
+              "difference": 6
+            },
+            {
+              "seed": 2099,
+              "left": 38.5,
+              "right": 36,
+              "difference": 2.5
+            },
+            {
+              "seed": 2111,
+              "left": 37,
+              "right": 34.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2113,
+              "left": 41.5,
+              "right": 36,
+              "difference": 5.5
+            }
+          ]
+        },
+        "additiveLearningBenefit": {
+          "meanDifference": 3.53125,
+          "interval": [
+            3.03125,
+            4.0625
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37,
+              "right": 34,
+              "difference": 3
+            },
+            {
+              "seed": 2011,
+              "left": 39,
+              "right": 36.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2017,
+              "left": 41.5,
+              "right": 37,
+              "difference": 4.5
+            },
+            {
+              "seed": 2027,
+              "left": 38,
+              "right": 34,
+              "difference": 4
+            },
+            {
+              "seed": 2029,
+              "left": 38,
+              "right": 35.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2039,
+              "left": 40,
+              "right": 36,
+              "difference": 4
+            },
+            {
+              "seed": 2053,
+              "left": 37,
+              "right": 33.5,
+              "difference": 3.5
+            },
+            {
+              "seed": 2063,
+              "left": 38.5,
+              "right": 35,
+              "difference": 3.5
+            },
+            {
+              "seed": 2069,
+              "left": 38.5,
+              "right": 35.5,
+              "difference": 3
+            },
+            {
+              "seed": 2081,
+              "left": 37,
+              "right": 34.5,
+              "difference": 2.5
+            },
+            {
+              "seed": 2083,
+              "left": 34.5,
+              "right": 32.5,
+              "difference": 2
+            },
+            {
+              "seed": 2087,
+              "left": 38,
+              "right": 35,
+              "difference": 3
+            },
+            {
+              "seed": 2089,
+              "left": 39.5,
+              "right": 33.5,
+              "difference": 6
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 35,
+              "difference": 4
+            },
+            {
+              "seed": 2111,
+              "left": 37.5,
+              "right": 34.5,
+              "difference": 3
+            },
+            {
+              "seed": 2113,
+              "left": 41.5,
+              "right": 36,
+              "difference": 5.5
+            }
+          ]
+        },
+        "additiveMinusFixed": {
+          "meanDifference": -1.59375,
+          "interval": [
+            -2.40625,
+            -0.7492187500000114
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2011,
+              "left": 39,
+              "right": 40,
+              "difference": -1
+            },
+            {
+              "seed": 2017,
+              "left": 41.5,
+              "right": 40,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2029,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2039,
+              "left": 40,
+              "right": 40,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2063,
+              "left": 38.5,
+              "right": 40,
+              "difference": -1.5
+            },
+            {
+              "seed": 2069,
+              "left": 38.5,
+              "right": 40,
+              "difference": -1.5
+            },
+            {
+              "seed": 2081,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2083,
+              "left": 34.5,
+              "right": 40,
+              "difference": -5.5
+            },
+            {
+              "seed": 2087,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2089,
+              "left": 39.5,
+              "right": 40,
+              "difference": -0.5
+            },
+            {
+              "seed": 2099,
+              "left": 39,
+              "right": 40,
+              "difference": -1
+            },
+            {
+              "seed": 2111,
+              "left": 37.5,
+              "right": 40,
+              "difference": -2.5
+            },
+            {
+              "seed": 2113,
+              "left": 41.5,
+              "right": 40,
+              "difference": 1.5
+            }
+          ]
+        },
+        "individualMinusFixed": {
+          "meanDifference": -1.625,
+          "interval": [
+            -2.40625,
+            -0.75
+          ],
+          "seedCount": 16,
+          "pairs": [
+            {
+              "seed": 2003,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2011,
+              "left": 39.5,
+              "right": 40,
+              "difference": -0.5
+            },
+            {
+              "seed": 2017,
+              "left": 41.5,
+              "right": 40,
+              "difference": 1.5
+            },
+            {
+              "seed": 2027,
+              "left": 37.5,
+              "right": 40,
+              "difference": -2.5
+            },
+            {
+              "seed": 2029,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2039,
+              "left": 40,
+              "right": 40,
+              "difference": 0
+            },
+            {
+              "seed": 2053,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2063,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2069,
+              "left": 39,
+              "right": 40,
+              "difference": -1
+            },
+            {
+              "seed": 2081,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2083,
+              "left": 35,
+              "right": 40,
+              "difference": -5
+            },
+            {
+              "seed": 2087,
+              "left": 38,
+              "right": 40,
+              "difference": -2
+            },
+            {
+              "seed": 2089,
+              "left": 39.5,
+              "right": 40,
+              "difference": -0.5
+            },
+            {
+              "seed": 2099,
+              "left": 38.5,
+              "right": 40,
+              "difference": -1.5
+            },
+            {
+              "seed": 2111,
+              "left": 37,
+              "right": 40,
+              "difference": -3
+            },
+            {
+              "seed": 2113,
+              "left": 41.5,
+              "right": 40,
+              "difference": 1.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "measures": {
+    "feint_vs_original": {
+      "meanDifference": 0.03125,
+      "interval": [
+        -0.125,
+        0.1875
+      ],
+      "seedCount": 16,
+      "pairs": [
+        {
+          "seed": 2003,
+          "left": 37,
+          "right": 37,
+          "difference": 0
+        },
+        {
+          "seed": 2011,
+          "left": 39,
+          "right": 39.5,
+          "difference": -0.5
+        },
+        {
+          "seed": 2017,
+          "left": 41.5,
+          "right": 41.5,
+          "difference": 0
+        },
+        {
+          "seed": 2027,
+          "left": 38,
+          "right": 37.5,
+          "difference": 0.5
+        },
+        {
+          "seed": 2029,
+          "left": 38,
+          "right": 38,
+          "difference": 0
+        },
+        {
+          "seed": 2039,
+          "left": 40,
+          "right": 40,
+          "difference": 0
+        },
+        {
+          "seed": 2053,
+          "left": 37,
+          "right": 37,
+          "difference": 0
+        },
+        {
+          "seed": 2063,
+          "left": 38.5,
+          "right": 38,
+          "difference": 0.5
+        },
+        {
+          "seed": 2069,
+          "left": 38.5,
+          "right": 39,
+          "difference": -0.5
+        },
+        {
+          "seed": 2081,
+          "left": 37,
+          "right": 37,
+          "difference": 0
+        },
+        {
+          "seed": 2083,
+          "left": 34.5,
+          "right": 35,
+          "difference": -0.5
+        },
+        {
+          "seed": 2087,
+          "left": 38,
+          "right": 38,
+          "difference": 0
+        },
+        {
+          "seed": 2089,
+          "left": 39.5,
+          "right": 39.5,
+          "difference": 0
+        },
+        {
+          "seed": 2099,
+          "left": 39,
+          "right": 38.5,
+          "difference": 0.5
+        },
+        {
+          "seed": 2111,
+          "left": 37.5,
+          "right": 37,
+          "difference": 0.5
+        },
+        {
+          "seed": 2113,
+          "left": 41.5,
+          "right": 41.5,
+          "difference": 0
+        }
+      ]
+    },
+    "feint_continued_learning": {
+      "meanDifference": 3.53125,
+      "interval": [
+        3.03125,
+        4.0625
+      ],
+      "seedCount": 16,
+      "pairs": [
+        {
+          "seed": 2003,
+          "left": 37,
+          "right": 34,
+          "difference": 3
+        },
+        {
+          "seed": 2011,
+          "left": 39,
+          "right": 36.5,
+          "difference": 2.5
+        },
+        {
+          "seed": 2017,
+          "left": 41.5,
+          "right": 37,
+          "difference": 4.5
+        },
+        {
+          "seed": 2027,
+          "left": 38,
+          "right": 34,
+          "difference": 4
+        },
+        {
+          "seed": 2029,
+          "left": 38,
+          "right": 35.5,
+          "difference": 2.5
+        },
+        {
+          "seed": 2039,
+          "left": 40,
+          "right": 36,
+          "difference": 4
+        },
+        {
+          "seed": 2053,
+          "left": 37,
+          "right": 33.5,
+          "difference": 3.5
+        },
+        {
+          "seed": 2063,
+          "left": 38.5,
+          "right": 35,
+          "difference": 3.5
+        },
+        {
+          "seed": 2069,
+          "left": 38.5,
+          "right": 35.5,
+          "difference": 3
+        },
+        {
+          "seed": 2081,
+          "left": 37,
+          "right": 34.5,
+          "difference": 2.5
+        },
+        {
+          "seed": 2083,
+          "left": 34.5,
+          "right": 32.5,
+          "difference": 2
+        },
+        {
+          "seed": 2087,
+          "left": 38,
+          "right": 35,
+          "difference": 3
+        },
+        {
+          "seed": 2089,
+          "left": 39.5,
+          "right": 33.5,
+          "difference": 6
+        },
+        {
+          "seed": 2099,
+          "left": 39,
+          "right": 35,
+          "difference": 4
+        },
+        {
+          "seed": 2111,
+          "left": 37.5,
+          "right": 34.5,
+          "difference": 3
+        },
+        {
+          "seed": 2113,
+          "left": 41.5,
+          "right": 36,
+          "difference": 5.5
+        }
+      ]
+    },
+    "reverse_vs_original": {
+      "meanDifference": 1.28125,
+      "interval": [
+        0.71875,
+        1.9375
+      ],
+      "seedCount": 16,
+      "pairs": [
+        {
+          "seed": 2003,
+          "left": 37.5,
+          "right": 36,
+          "difference": 1.5
+        },
+        {
+          "seed": 2011,
+          "left": 47,
+          "right": 45.5,
+          "difference": 1.5
+        },
+        {
+          "seed": 2017,
+          "left": 47,
+          "right": 45.5,
+          "difference": 1.5
+        },
+        {
+          "seed": 2027,
+          "left": 42,
+          "right": 41,
+          "difference": 1
+        },
+        {
+          "seed": 2029,
+          "left": 41.5,
+          "right": 40.5,
+          "difference": 1
+        },
+        {
+          "seed": 2039,
+          "left": 45,
+          "right": 44.5,
+          "difference": 0.5
+        },
+        {
+          "seed": 2053,
+          "left": 47,
+          "right": 42.5,
+          "difference": 4.5
+        },
+        {
+          "seed": 2063,
+          "left": 45.5,
+          "right": 44,
+          "difference": 1.5
+        },
+        {
+          "seed": 2069,
+          "left": 40,
+          "right": 40,
+          "difference": 0
+        },
+        {
+          "seed": 2081,
+          "left": 40.5,
+          "right": 40,
+          "difference": 0.5
+        },
+        {
+          "seed": 2083,
+          "left": 46.5,
+          "right": 46.5,
+          "difference": 0
+        },
+        {
+          "seed": 2087,
+          "left": 37,
+          "right": 36.5,
+          "difference": 0.5
+        },
+        {
+          "seed": 2089,
+          "left": 45.5,
+          "right": 43,
+          "difference": 2.5
+        },
+        {
+          "seed": 2099,
+          "left": 39,
+          "right": 39,
+          "difference": 0
+        },
+        {
+          "seed": 2111,
+          "left": 35,
+          "right": 34.5,
+          "difference": 0.5
+        },
+        {
+          "seed": 2113,
+          "left": 50.5,
+          "right": 47,
+          "difference": 3.5
+        }
+      ]
+    },
+    "reverse_continued_learning": {
+      "meanDifference": 10.625,
+      "interval": [
+        9.21875,
+        12.21875
+      ],
+      "seedCount": 16,
+      "pairs": [
+        {
+          "seed": 2003,
+          "left": 37.5,
+          "right": 27.5,
+          "difference": 10
+        },
+        {
+          "seed": 2011,
+          "left": 47,
+          "right": 34.5,
+          "difference": 12.5
+        },
+        {
+          "seed": 2017,
+          "left": 47,
+          "right": 37.5,
+          "difference": 9.5
+        },
+        {
+          "seed": 2027,
+          "left": 42,
+          "right": 32.5,
+          "difference": 9.5
+        },
+        {
+          "seed": 2029,
+          "left": 41.5,
+          "right": 31.5,
+          "difference": 10
+        },
+        {
+          "seed": 2039,
+          "left": 45,
+          "right": 37,
+          "difference": 8
+        },
+        {
+          "seed": 2053,
+          "left": 47,
+          "right": 35,
+          "difference": 12
+        },
+        {
+          "seed": 2063,
+          "left": 45.5,
+          "right": 28,
+          "difference": 17.5
+        },
+        {
+          "seed": 2069,
+          "left": 40,
+          "right": 30,
+          "difference": 10
+        },
+        {
+          "seed": 2081,
+          "left": 40.5,
+          "right": 31,
+          "difference": 9.5
+        },
+        {
+          "seed": 2083,
+          "left": 46.5,
+          "right": 32,
+          "difference": 14.5
+        },
+        {
+          "seed": 2087,
+          "left": 37,
+          "right": 29,
+          "difference": 8
+        },
+        {
+          "seed": 2089,
+          "left": 45.5,
+          "right": 34.5,
+          "difference": 11
+        },
+        {
+          "seed": 2099,
+          "left": 39,
+          "right": 33,
+          "difference": 6
+        },
+        {
+          "seed": 2111,
+          "left": 35,
+          "right": 29,
+          "difference": 6
+        },
+        {
+          "seed": 2113,
+          "left": 50.5,
+          "right": 34.5,
+          "difference": 16
+        }
+      ]
+    }
+  },
+  "gates": {
+    "feint_vs_original": false,
+    "feint_continued_learning": true,
+    "reverse_vs_original": true,
+    "reverse_continued_learning": true,
+    "no_scenario_regression": true
+  },
+  "disposition": "do-not-promote",
+  "actualEncounters": 11760,
+  "protocolSha256": "0a7dfb0486ecd9b716b596457cd144026c32ebec2651df394b61af5c0dd59da1"
+}

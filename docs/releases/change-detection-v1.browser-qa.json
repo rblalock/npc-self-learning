@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-19T03:10:00Z",
+  "url": "http://127.0.0.1:5176/change-detection-v1-view.html",
+  "desktop": {
+    "width": 1120,
+    "height": 900,
+    "checked": 255,
+    "alarm": "Alarm after this fight: Hold a lane reward changed from 0.74 to 0.49 across two four-observation windows.",
+    "scores": "Close distance\t0.60 → 0.59 → 0.00\nHold a lane\t0.47 → 0.58 → 0.00",
+    "playbackAdvanced": "1.1 s",
+    "pageOverflow": false,
+    "fieldbook": {
+      "groups": 3,
+      "recordings": 255
+    }
+  },
+  "mobile": {
+    "width": 360,
+    "height": 800,
+    "pageWidth": 360,
+    "controlsWithinViewport": true,
+    "horizontalTables": "Both wide comparison tables scroll inside their containers; no page overflow",
+    "chartPaths": 5
+  },
+  "snapshotReview": true,
+  "uncaughtErrors": 0
+}

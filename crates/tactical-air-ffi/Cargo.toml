@@ -1,0 +1,13 @@
+[package]
+name = "tactical-air-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+tactical-air-core = { path = "../tactical-air-core" }
+serde_json = "1.0"

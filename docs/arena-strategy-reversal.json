@@ -1,0 +1,1196 @@
+{
+  "protocol": "40 clockwise encounters, then 10 counterclockwise encounters, continuous adaptive learning with the actual Arena and Rust/Wasm; exploratory controller fixture, no tactic/style lookup",
+  "results": [
+    {
+      "seed": 3,
+      "clockwisePolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.6880152087647631,
+            "role": "vanguard",
+            "samples": 26,
+            "score": -0.02183084579901095
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.3119847912352368,
+            "role": "vanguard",
+            "samples": 14,
+            "score": -0.31088927027063673
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.8032314764171474,
+            "role": "flanker",
+            "samples": 31,
+            "score": 0.3200758703981209
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.1967685235828524,
+            "role": "flanker",
+            "samples": 9,
+            "score": -0.22698486592248798
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.10014466608530069,
+            "role": "ranger",
+            "samples": 5,
+            "score": -0.19977667754660883
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8998553339146992,
+            "role": "ranger",
+            "samples": 35,
+            "score": 0.9120798303619087
+          }
+        ],
+        "encounter": 40,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversedPolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.8108712302741113,
+            "role": "vanguard",
+            "samples": 33,
+            "score": 0.2573313997901388
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.18912876972588866,
+            "role": "vanguard",
+            "samples": 17,
+            "score": -0.31318121923037084
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.28262488314078965,
+            "role": "flanker",
+            "samples": 38,
+            "score": -0.2611726729830063
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.7173751168592104,
+            "role": "flanker",
+            "samples": 12,
+            "score": 0.08262791483419195
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.15829620761569843,
+            "role": "ranger",
+            "samples": 5,
+            "score": -0.15509255233571762
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8417037923843015,
+            "role": "ranger",
+            "samples": 45,
+            "score": 0.5274250241878391
+          }
+        ],
+        "encounter": 50,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversalOutcomes": [
+        {
+          "encounter": 41,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 42,
+          "result": "cleared",
+          "duration": 25.716666666666487,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 43,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 44,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 45,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 46,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 47,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 48,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 49,
+          "result": "cleared",
+          "duration": 25.716666666666487,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 50,
+          "result": "cleared",
+          "duration": 25.78333333333315,
+          "health": 76,
+          "damage": 24,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "clockwisePolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.6891932996805704,
+            "role": "vanguard",
+            "samples": 26,
+            "score": -0.0217364678857946
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.31080670031942953,
+            "role": "vanguard",
+            "samples": 14,
+            "score": -0.3129029850897956
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.815197238638544,
+            "role": "flanker",
+            "samples": 29,
+            "score": 0.31630553038932585
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.18480276136145582,
+            "role": "flanker",
+            "samples": 11,
+            "score": -0.2681120780186986
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.10205012775957548,
+            "role": "ranger",
+            "samples": 4,
+            "score": -0.16908031566368442
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8979498722404246,
+            "role": "ranger",
+            "samples": 36,
+            "score": 0.9149644817015744
+          }
+        ],
+        "encounter": 40,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversedPolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.8101823666650539,
+            "role": "vanguard",
+            "samples": 33,
+            "score": 0.2663025369980096
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.18981763333494597,
+            "role": "vanguard",
+            "samples": 17,
+            "score": -0.30203942572458103
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.2848576279511238,
+            "role": "flanker",
+            "samples": 33,
+            "score": -0.13361171711192532
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.7151423720488761,
+            "role": "flanker",
+            "samples": 17,
+            "score": 0.2058484653828144
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.18812576454423957,
+            "role": "ranger",
+            "samples": 6,
+            "score": 0.033682824333582516
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8118742354557603,
+            "role": "ranger",
+            "samples": 44,
+            "score": 0.6073769204007656
+          }
+        ],
+        "encounter": 50,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversalOutcomes": [
+        {
+          "encounter": 41,
+          "result": "cleared",
+          "duration": 25.716666666666487,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 42,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "aim",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 43,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "aim",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 44,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 45,
+          "result": "cleared",
+          "duration": 25.78333333333315,
+          "health": 76,
+          "damage": 24,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 46,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 47,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 48,
+          "result": "cleared",
+          "duration": 25.716666666666487,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 49,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 50,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "clockwisePolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.6972540299339859,
+            "role": "vanguard",
+            "samples": 23,
+            "score": -0.02129707496471889
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.3027459700660141,
+            "role": "vanguard",
+            "samples": 17,
+            "score": -0.32707167974589624
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.8100180645541457,
+            "role": "flanker",
+            "samples": 31,
+            "score": 0.31213733373197206
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.18998193544585426,
+            "role": "flanker",
+            "samples": 9,
+            "score": -0.255688611482241
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.10313845901578064,
+            "role": "ranger",
+            "samples": 5,
+            "score": -0.15836464757750446
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8968615409842193,
+            "role": "ranger",
+            "samples": 35,
+            "score": 0.9108273971513995
+          }
+        ],
+        "encounter": 40,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversedPolicy": {
+        "cells": [
+          {
+            "action": "rush",
+            "context": "arena",
+            "probability": 0.813100031986402,
+            "role": "vanguard",
+            "samples": 31,
+            "score": 0.27585981589818315
+          },
+          {
+            "action": "hold",
+            "context": "arena",
+            "probability": 0.18689996801359782,
+            "role": "vanguard",
+            "samples": 19,
+            "score": -0.30175677701629794
+          },
+          {
+            "action": "flank_left",
+            "context": "arena",
+            "probability": 0.284236743961677,
+            "role": "flanker",
+            "samples": 35,
+            "score": -0.12943835648808272
+          },
+          {
+            "action": "flank_right",
+            "context": "arena",
+            "probability": 0.715763256038323,
+            "role": "flanker",
+            "samples": 15,
+            "score": 0.21122557086762667
+          },
+          {
+            "action": "aim",
+            "context": "arena",
+            "probability": 0.1497034761599779,
+            "role": "ranger",
+            "samples": 5,
+            "score": -0.12294316681090742
+          },
+          {
+            "action": "lead",
+            "context": "arena",
+            "probability": 0.8502965238400221,
+            "role": "ranger",
+            "samples": 45,
+            "score": 0.5978144372651528
+          }
+        ],
+        "encounter": 50,
+        "pending": 0,
+        "queued": 0,
+        "version": 1
+      },
+      "reversalOutcomes": [
+        {
+          "encounter": 41,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 42,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 43,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 44,
+          "result": "cleared",
+          "duration": 21.916666666666703,
+          "health": 40,
+          "damage": 60,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 45,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 46,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 47,
+          "result": "cleared",
+          "duration": 25.78333333333315,
+          "health": 76,
+          "damage": 24,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_left",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 48,
+          "result": "cleared",
+          "duration": 25.716666666666487,
+          "health": 52,
+          "damage": 48,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "hold",
+              "reward": -0.4,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.35000000000000003,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 49,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "encounter": 50,
+          "result": "cleared",
+          "duration": 21.250000000000075,
+          "health": 16,
+          "damage": 84,
+          "baseline": false,
+          "rewards": [
+            {
+              "role": "vanguard",
+              "tactic": "rush",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "flanker",
+              "tactic": "flank_right",
+              "reward": 0.35000000000000003,
+              "observed": true
+            },
+            {
+              "role": "ranger",
+              "tactic": "lead",
+              "reward": 0.7250000000000001,
+              "observed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "archive": "tactical-air-conservative-lab-v1.tar.gz",
+  "sha256": "8db3e7d521cac4c7dd797682c22690b71f6b7e4e33d21e8f3506f5ce07c0ae0d",
+  "cleanExtraction": true,
+  "memberChecksums": 77,
+  "tests": 6,
+  "cachedTransitions": 259584,
+  "physicalTableReplays": 192,
+  "physicalTrajectoryReplays": 8160,
+  "pythonArithmeticMatched": true,
+  "bootstrapIndependentlyRecomputed": false,
+  "browser": {
+    "recordingCombinations": 126,
+    "desktopWidth": 1280,
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "scrubToEnd": true,
+    "playbackCompleted": true,
+    "keyboardFocus": "visible 3px outline",
+    "autoplay": false,
+    "reducedMotionEmulation": "not available in T3 preview; no autoplay in any mode"
+  }
+}

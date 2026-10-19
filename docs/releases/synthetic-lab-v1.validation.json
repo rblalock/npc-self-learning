@@ -1,0 +1,38 @@
+{
+  "package": {
+    "artifact": "target/releases/tactical-air-synthetic-lab-v1.tar.gz",
+    "sha256": "cebe4cab307de5cf98116bfa678dc714d65b397232d0fa3191268b9b72fe4aef",
+    "bytes": 4341147,
+    "files": 48,
+    "measuredEncounters": 10016
+  },
+  "packagedChecksumsMatched": 47,
+  "standaloneGuideLinksValid": true,
+  "runtimeIdenticalToColdTestedPackage": true,
+  "presentationOnlyPackageChanges": [
+    "docs/synthetic-lab.md",
+    "scripts/package-synthetic.mjs"
+  ],
+  "newTestsPassed": 10,
+  "existingArenaSdkStudyTestsPassed": 28,
+  "existingExperimentTestsPassed": 9,
+  "typecheckPassed": true,
+  "populationFullVerification": {
+    "verifiedAt": "2026-10-18T21:27:40.882Z",
+    "verifiedEncounters": 9920,
+    "replayedDecisions": 29760,
+    "fullCombatReplays": 9920,
+    "full": true,
+    "disposition": "do-not-promote",
+    "resultsSha256": "41a49e92847c22c1ba696e40cf71075247da5f33175eb80ca07edd5fbb319a3e"
+  },
+  "diagnosticFullVerification": {
+    "verifiedAt": "2026-10-18T21:26:25.397Z",
+    "fullCombatReplays": 96,
+    "resultsSha256": "39a1d8b975cd2d95d086f54950ceac8f070a7661938111a346f7e87a31e57f66"
+  },
+  "coldPackagePolicyDecisionsVerified": 29760,
+  "coldPackageCombatReplays": 1040,
+  "coldReplayExportMatchedExactly": true,
+  "browserQa": "docs/experiments/synthetic-population-v1.browser-qa.json"
+}

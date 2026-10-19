@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "learning-opportunity-audit-v1",
+  "status": "Separately specified diagnostic after observing the individual and team primary results; not untouched confirmation. The six main protocols and source remain frozen. No audit outcome tunes those runs.",
+  "question": "How much controllable tactic headroom is present, and do direction switches actually require different best tactics?",
+  "studies": [
+    "individual-adaptation-v1",
+    "team-coordination-v1",
+    "situational-memory-v1",
+    "return-memory-v1",
+    "deception-stress-v1",
+    "curriculum-budget-v1"
+  ],
+  "expected_encounters": 3584,
+  "procedure": "Enumerate both legal actions for each isolated role, or all eight squad combinations, for every reserved world/player seed and both directions used by each main study. One actual fight per forced action is sufficient to enumerate these deterministic conditional worlds; bot randomness is counter-based and resets per encounter. Preserve complete real-core fixed-choice traces and actual combat. Do not use table results in online policies.",
+  "counts": {
+    "individual": 768,
+    "team": 1024,
+    "situational": 256,
+    "return": 256,
+    "deception": 256,
+    "curriculum": 1024
+  },
+  "metrics": [
+    "Best-minus-worst damage range",
+    "Fraction with no action-dependent damage",
+    "Fraction of direction pairs with disjoint best-action sets (requiring a different optimal choice), treating ties as sets",
+    "Fraction of pairs whose best-action sets change but still overlap",
+    "Fraction of observed feedback eligible for training",
+    "Offline best-action damage minus the main primary comparator: an optimistic upper bound, not a learned policy"
+  ],
+  "verification": "Independent policy feedback replay, full combat replay, and equality between each fresh main-study fight and its corresponding forced-action table entry for damage, health, duration, enemy outcomes and input fingerprint.",
+  "limits": [
+    "Post-hoc diagnostic on examined generators, with new counterfactual measurements.",
+    "Optimal means best among this small authored tactic set for a particular fixed world/controller parameter realization.",
+    "The table is an offline oracle and must not be presented as learned foresight.",
+    "A direction reversal need not change the optimal tactic. Warm-start benefit or lack of baiting harm alone cannot establish strategy-specific recall or adversarial robustness.",
+    "Do not discard insensitive cases or alter success thresholds after seeing the audit. Use findings to design a separately specified next benchmark."
+  ]
+}

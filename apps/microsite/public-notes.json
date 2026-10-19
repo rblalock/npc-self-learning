@@ -1,0 +1,204 @@
+{
+  "documents": [
+    {
+      "source": "README.md",
+      "slug": "repository"
+    },
+    {
+      "source": "docs/arena-evaluation.md",
+      "slug": "arena-evaluation"
+    },
+    {
+      "source": "docs/assets/README.md",
+      "slug": "assets"
+    },
+    {
+      "source": "docs/change-detection-lab-v1.md",
+      "slug": "change-detection-lab-v1"
+    },
+    {
+      "source": "docs/conservative-intervention-v1.md",
+      "slug": "conservative-intervention-v1"
+    },
+    {
+      "source": "docs/contract.md",
+      "slug": "contract"
+    },
+    {
+      "source": "docs/counterplay-prototype.md",
+      "slug": "counterplay-prototype"
+    },
+    {
+      "source": "docs/experiments/adaptation-v1-interpretation.md",
+      "slug": "adaptation-v1-interpretation"
+    },
+    {
+      "source": "docs/experiments/adaptation-v1.md",
+      "slug": "adaptation-v1"
+    },
+    {
+      "source": "docs/experiments/additive-credit-v1.md",
+      "slug": "additive-credit-v1"
+    },
+    {
+      "source": "docs/experiments/change-detection-v1.md",
+      "slug": "change-detection-v1"
+    },
+    {
+      "source": "docs/experiments/curriculum-budget-v1.md",
+      "slug": "curriculum-budget-v1"
+    },
+    {
+      "source": "docs/experiments/deception-stress-v1.md",
+      "slug": "deception-stress-v1"
+    },
+    {
+      "source": "docs/experiments/feint-interactions-v1.md",
+      "slug": "feint-interactions-v1"
+    },
+    {
+      "source": "docs/experiments/individual-adaptation-v1.md",
+      "slug": "individual-adaptation-v1"
+    },
+    {
+      "source": "docs/experiments/learning-opportunity-audit-v1.md",
+      "slug": "learning-opportunity-audit-v1"
+    },
+    {
+      "source": "docs/experiments/opportunity-validation-v2.md",
+      "slug": "opportunity-validation-v2"
+    },
+    {
+      "source": "docs/experiments/retention-v1.md",
+      "slug": "retention-v1"
+    },
+    {
+      "source": "docs/experiments/return-memory-v1.md",
+      "slug": "return-memory-v1"
+    },
+    {
+      "source": "docs/experiments/reward-attribution-v1-interpretation.md",
+      "slug": "reward-attribution-v1-interpretation"
+    },
+    {
+      "source": "docs/experiments/reward-attribution-v1.md",
+      "slug": "reward-attribution-v1"
+    },
+    {
+      "source": "docs/experiments/scenario-transfer-v1.md",
+      "slug": "scenario-transfer-v1"
+    },
+    {
+      "source": "docs/experiments/situational-memory-v1.md",
+      "slug": "situational-memory-v1"
+    },
+    {
+      "source": "docs/experiments/switch-boundary-v1.md",
+      "slug": "switch-boundary-v1"
+    },
+    {
+      "source": "docs/experiments/synthetic-population-v1.md",
+      "slug": "synthetic-population-v1"
+    },
+    {
+      "source": "docs/experiments/team-coordination-v1.md",
+      "slug": "team-coordination-v1"
+    },
+    {
+      "source": "docs/held-out-evaluation.md",
+      "slug": "held-out-evaluation"
+    },
+    {
+      "source": "docs/integration.md",
+      "slug": "integration"
+    },
+    {
+      "source": "docs/learning.md",
+      "slug": "learning"
+    },
+    {
+      "source": "docs/opportunity-lab-v2.md",
+      "slug": "opportunity-lab-v2"
+    },
+    {
+      "source": "docs/playtest.md",
+      "slug": "playtest"
+    },
+    {
+      "source": "docs/publication/article.md",
+      "slug": "article"
+    },
+    {
+      "source": "docs/publication/evidence-ledger.md",
+      "slug": "evidence-ledger"
+    },
+    {
+      "source": "docs/publication/research-report.md",
+      "slug": "research-report"
+    },
+    {
+      "source": "docs/releases/CHANGELOG.md",
+      "slug": "CHANGELOG"
+    },
+    {
+      "source": "docs/releases/quickstart.md",
+      "slug": "quickstart"
+    },
+    {
+      "source": "docs/research-program.md",
+      "slug": "research-program"
+    },
+    {
+      "source": "docs/research-status.md",
+      "slug": "research-status"
+    },
+    {
+      "source": "docs/retention-lab.md",
+      "slug": "retention-lab"
+    },
+    {
+      "source": "docs/roadmap.md",
+      "slug": "roadmap"
+    },
+    {
+      "source": "docs/synthetic-lab.md",
+      "slug": "synthetic-lab"
+    },
+    {
+      "source": "docs/verification-0.2.md",
+      "slug": "verification-0.2"
+    },
+    {
+      "source": "docs/verification-0.3.md",
+      "slug": "verification-0.3"
+    },
+    {
+      "source": "docs/verification-change-detection-v1.md",
+      "slug": "verification-change-detection-v1"
+    },
+    {
+      "source": "docs/verification-opportunity-v2.md",
+      "slug": "verification-opportunity-v2"
+    },
+    {
+      "source": "docs/verification-research-program-v1.md",
+      "slug": "verification-research-program-v1"
+    },
+    {
+      "source": "docs/verification-retention-v1.md",
+      "slug": "verification-retention-v1"
+    },
+    {
+      "source": "docs/verification-synthetic-v1.md",
+      "slug": "verification-synthetic-v1"
+    },
+    {
+      "source": "docs/verification.md",
+      "slug": "verification"
+    },
+    {
+      "source": "docs/releases/privacy-edition-v1.md",
+      "slug": "privacy-edition-v1"
+    }
+  ]
+}

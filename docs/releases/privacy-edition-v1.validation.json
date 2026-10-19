@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "edition": "privacy-v1",
+  "verifiedAt": "2026-10-19T13:28:48.909604+00:00",
+  "archives": [
+    {
+      "archive": "tactical-air-browser-0.3.0.tar.gz",
+      "sha256": "9606849f54296e67852479285b8dc226f426c73fcc4790f471a71aad383bb244",
+      "members": 11,
+      "checksumsVerified": 0
+    },
+    {
+      "archive": "tactical-air-browser-0.3.0.tgz",
+      "sha256": "d79d8a263ff676100c7aed384f97ce8402813e95c62c8e94c5e1407b99cd359b",
+      "members": 10,
+      "checksumsVerified": 0
+    },
+    {
+      "archive": "tactical-air-change-detection-lab-v1.tar.gz",
+      "sha256": "1fec013f0b4154cfa4ef0ad92b81e59f1d1026a22d2cf8c837d09287c09b11f7",
+      "members": 77,
+      "checksumsVerified": 76
+    },
+    {
+      "archive": "tactical-air-conservative-lab-v1.tar.gz",
+      "sha256": "8db3e7d521cac4c7dd797682c22690b71f6b7e4e33d21e8f3506f5ce07c0ae0d",
+      "members": 79,
+      "checksumsVerified": 78
+    },
+    {
+      "archive": "tactical-air-macos-arm64-0.3.0.tar.gz",
+      "sha256": "f148b438ed4e013f47bfc1e3b32d0e4deaaeb93faed533fedf551979c4bbdb1a",
+      "members": 7,
+      "checksumsVerified": 0
+    },
+    {
+      "archive": "tactical-air-opportunity-lab-v2.tar.gz",
+      "sha256": "fe78c2ff42e5a78d7dd73c87a959e67d899d5b26ceed401bf8b97e3699fafdc6",
+      "members": 69,
+      "checksumsVerified": 68
+    },
+    {
+      "archive": "tactical-air-research-lab-v1-r2.tar.gz",
+      "sha256": "59dc5a98375a5a82cf37f35e6b37787aee082761bc44888f8d5f26a78cafbdf3",
+      "members": 89,
+      "checksumsVerified": 88
+    },
+    {
+      "archive": "tactical-air-research-lab-v1.tar.gz",
+      "sha256": "a353c37755cd78965e121ed3fc2fdc6fbc42d51d6f21d0acb5d2d8e4da2a17d0",
+      "members": 89,
+      "checksumsVerified": 88
+    },
+    {
+      "archive": "tactical-air-retention-lab-v1.tar.gz",
+      "sha256": "53e8c1076f9600aff23807e414d70060765677ad84ba1e7669265f0c2db31487",
+      "members": 73,
+      "checksumsVerified": 72
+    },
+    {
+      "archive": "tactical-air-source-0.3.0.tar.gz",
+      "sha256": "e1005fee44a1ee25a4bcacc1d8ce1f0c16779165b1d843b5b146b8fa36df4fee",
+      "members": 180,
+      "checksumsVerified": 0
+    },
+    {
+      "archive": "tactical-air-synthetic-lab-v1.tar.gz",
+      "sha256": "cebe4cab307de5cf98116bfa678dc714d65b397232d0fa3191268b9b72fe4aef",
+      "members": 49,
+      "checksumsVerified": 48
+    }
+  ],
+  "releaseInstallationChecks": [
+    {
+      "name": "clean Rust host with save/replay",
+      "passed": true
+    },
+    {
+      "name": "clean npm dependency install",
+      "passed": true
+    },
+    {
+      "name": "production build from extracted source",
+      "passed": true
+    },
+    {
+      "name": "actual arena and study tests from extracted source",
+      "passed": true
+    },
+    {
+      "name": "install downloadable npm tarball",
+      "passed": true
+    },
+    {
+      "name": "independent installed npm consumer through real Wasm",
+      "passed": true
+    },
+    {
+      "name": "compile caller against extracted native release",
+      "passed": true
+    },
+    {
+      "name": "execute extracted native release",
+      "passed": true
+    }
+  ],
+  "tests": {
+    "rustBehaviorAndFfi": 21,
+    "arenaAndClient": 28,
+    "researchMechanisms": 58
+  },
+  "exactReconstruction": {
+    "changeDetectionPhysicalFights": 69120,
+    "conservativeCachedTransitions": 259584,
+    "conservativePhysicalTableFights": 192,
+    "conservativePhysicalTrajectoryFights": 8160,
+    "conservativeReplayPayloadAndHtml": "byte-identical"
+  },
+  "nativeLibrary": {
+    "portableInstallName": "@rpath/libtactical_air_ffi.dylib",
+    "adHocSignatureVerified": true,
+    "extractedCConsumerPassed": true
+  },
+  "site": {
+    "htmlPages": 60,
+    "localReferences": 384,
+    "missing": 0
+  },
+  "scope": "Verification of privacy-edition distributions; no new scored experimental observations."
+}

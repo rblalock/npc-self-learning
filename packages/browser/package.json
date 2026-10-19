@@ -1,0 +1,20 @@
+{
+  "name": "@tactical-air/browser",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Typed browser and Node client for the Tactical Air Rust learning library",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "wasm"
+  ],
+  "sideEffects": false
+}

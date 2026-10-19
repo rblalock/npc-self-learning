@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "adaptation-v1",
+  "specified_on": "2026-10-18",
+  "status": "Local protocol specified before this benchmark run; not a public preregistration. Existing controllers and earlier results were already known.",
+  "primary_question": "After clockwise training and a switch to counterclockwise movement, does continued learning outperform the exact same trained policy held frozen?",
+  "seeds": [1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097, 1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193, 1201, 1213, 1217, 1223],
+  "training_style": "orbit",
+  "training_rounds": 24,
+  "post_switch_rounds": 24,
+  "primary_switch": "reverse",
+  "secondary_switches": ["feint", "cover"],
+  "communication": "direct",
+  "policy_config": {
+    "roles": [
+      { "id": "vanguard", "actions": ["rush", "hold"] },
+      { "id": "flanker", "actions": ["flank_left", "flank_right"] },
+      { "id": "ranger", "actions": ["aim", "lead"] }
+    ],
+    "contexts": ["arena"],
+    "learning_rate": 0.22,
+    "exploration": 0.16,
+    "temperature": 0.3,
+    "decay": 0.025,
+    "max_update": 0.16
+  },
+  "fixed_baseline": {
+    "candidate_space": "All eight fixed joint profiles: one of two existing legal tactics for each of three roles.",
+    "calibration_styles": ["orbit", "reverse", "cover"],
+    "selection_metric": "Equal-weight mean enemy damage across the three calibration controllers.",
+    "tie_break": "Lexicographically smallest profile id.",
+    "seed": 42,
+    "repetitions_per_style": 1,
+    "note": "Fixed profiles and controllers are deterministic in this arena; repeated seeds do not create independent worlds. The winner stays fixed across every test and switch. This is the strongest enumerated profile on this declared suite, not an optimal authored AI. Feint is excluded from selection; no controller is new to the project."
+  },
+  "conditions": ["uniform", "selected-fixed", "online", "trained-frozen"],
+  "branching": "Each online and trained-frozen post-switch branch restores the identical per-seed trained snapshot including RNG. Uniform branches restore their own per-seed baseline snapshot. Every branch begins with fresh arena physical state. Learning alone differs between the two trained branches; subsequent choices diverge as probabilities change.",
+  "windows": {
+    "late_training": [17, 24],
+    "early_switch": [1, 4],
+    "late_switch": [17, 24],
+    "curve_block_size": 4
+  },
+  "primary_metric": "Per-seed mean damage to the player, capped at 100 HP per encounter, during post-switch rounds 17–24: online minus trained-frozen for reverse.",
+  "secondary_metrics": ["Damage differences against uniform and selected-fixed", "Four-round adaptation curves", "Immediate damage change after the player switches", "Player clear and death rates and encounter duration", "Per-role probability shifts and mean total variation from the trained policy"],
+  "uncertainty": {
+    "method": "Paired percentile bootstrap of per-seed mean differences; never resample individual rounds as independent units.",
+    "resamples": 5000,
+    "seed": 260018,
+    "interval": 0.95,
+    "scope": "Intervals describe tactic-sampling variation for these fixed controllers and this one map. They exclude map, player and population variation. Secondary intervals are exploratory and unadjusted for multiple comparisons."
+  },
+  "primary_signal_rule": {
+    "minimum_mean_damage_gain": 6,
+    "lower_interval_bound_must_exceed": 0,
+    "interpretation": "Support requires at least 6 HP average gain (half one projectile hit) and a positive lower interval bound. This is an engineering screening threshold, not a measure of fun. An unmet rule is retained as a negative or inconclusive result; it does not justify changing this protocol after execution."
+  },
+  "invariants": ["Same simulator, map, spawns, controllers, damage, health, speed and abilities across conditions", "No style label or precomputed counter supplied to the learner", "Fixed and uniform modes cannot train or age scores", "Frozen branches preserve every score and sample count exactly", "All eight fixed candidates and every seed/round retained", "Controller settings and learning parameters remain unchanged during this experiment"],
+  "limits": ["Scripted controllers, one deterministic arena, direct observations rather than scout-delivered missions", "The only seeded stochasticity is tactic selection", "Damage rewards can favor tactics that are not enjoyable", "Per-role rewards do not isolate interactions among teammates", "No human enjoyment, fairness, personalization or cross-game generalization claim", "Public claims require the protocol, raw data, source hashes and limitations alongside results"]
+}

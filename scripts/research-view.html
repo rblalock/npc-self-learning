@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tactical Air · Research fieldbook</title>
+<style>
+:root{color-scheme:light;--paper:#f1ecd9;--ink:#2e382d;--muted:#62684f;--line:#c4c5aa;--blue:#245d78;--red:#a24132}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px}.brand{font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:28px;line-height:1.15;margin:24px 0 8px}h2{font-size:17px;margin:0 0 12px}p{margin:8px 0;color:var(--muted)}
+label{display:flex;gap:8px;align-items:center}button,select{font:inherit;min-height:44px;padding:7px 11px;border:1px solid var(--muted);border-radius:3px;color:var(--ink);background:transparent;max-width:100%}button{cursor:pointer}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:20px 0 12px}
+.field{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(260px,1fr);gap:24px;align-items:start}canvas{width:100%;height:auto;display:block;background:#e6dfc5;border:1px solid var(--line)}
+.scrub{display:flex;align-items:center;gap:12px;margin:12px 0}input{flex:1;min-width:0;accent-color:var(--blue)}output{font-variant-numeric:tabular-nums;min-width:5em}
+.note{font-size:14px}.key{color:var(--muted);font-size:14px}.key span{margin-right:16px}.player{color:var(--blue)}.enemy{color:var(--red)}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:8px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-weight:600}th:last-child,td:last-child{text-align:right}td:first-child{padding-right:10px}
+aside section+section{margin-top:28px}.results{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}.resultline{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.estimate{font-size:24px;font-variant-numeric:tabular-nums}.graph{width:100%;height:200px;display:block}.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}.swatch{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:6px}.a{background:var(--blue)}.b{background:var(--red)}
+summary{cursor:pointer;min-height:44px;padding-top:12px}details p{font-size:14px}a{color:var(--blue)}[hidden]{display:none!important}
+@media(max-width:760px){main{padding:16px}.field{grid-template-columns:1fr}aside{display:grid;grid-template-columns:1fr 1fr;gap:20px}aside section+section{margin:0}h1{font-size:24px}}
+@media(max-width:490px){aside{grid-template-columns:1fr}label{flex-wrap:wrap}.controls label{max-width:100%}select{width:100%}header label{width:100%}th,td{overflow-wrap:anywhere}}
+</style></head><body><main>
+<header><span class="brand">Tactical Air / Research fieldbook</span><label>Study <select id="study"></select></label></header>
+<h1 id="title"></h1><p id="question"></p>
+<div class="controls"><button id="play" type="button">Play replay</button><label id="roleLabel">Enemy <select id="role"></select></label><label>Condition <select id="condition"></select></label><label>Speed <select id="speed"><option value="1">1×</option><option value="4">4×</option></select></label></div>
+<div class="field"><section><canvas id="map" width="920" height="600" aria-label="Recorded combat with actual cover geometry; blue is the synthetic player, red counters are enemies"></canvas>
+<div class="scrub"><input id="time" aria-label="Replay time" type="range" min="0" max="1000" step="1" value="0"><output id="clock">0.0 s</output></div>
+<div class="key"><span class="player">● Player</span><span class="enemy" id="roster"></span></div><p id="outcome"></p><p class="note" id="identity"></p></section>
+<aside><section><h2>This recorded encounter</h2><table><thead><tr><th>Condition</th><th>Enemy damage</th></tr></thead><tbody id="comparison"></tbody></table></section>
+<section><h2>Choices and learning</h2><table><thead><tr><th>Choice</th><th>Odds · score update</th></tr></thead><tbody id="learning"></tbody></table></section></aside></div>
+<section class="results"><h2 id="aggregateTitle">Across the reserved cases</h2><div class="resultline"><span class="estimate" id="estimate"></span><span id="effectLabel"></span></div><p class="note" id="interval"></p><p id="finding"></p>
+<svg id="curve" class="graph" role="img" aria-label="Mean enemy damage over consecutive four-encounter blocks"></svg><div class="legend"><span><i class="swatch a"></i><span id="leftLegend"></span></span><span><i class="swatch b"></i><span id="rightLegend"></span></span></div>
+<p class="note" id="opportunity"></p></section>
+<details><summary>Protocol, evidence and limits</summary><p id="selection"></p><p>These are actual recorded states sampled at 10 Hz from the 60 Hz simulation. One encounter illustrates behavior; the estimates above summarize the full reserved suite. Frozen means learned preferences continue to select actions but receive no updates.</p><p id="auditNote"></p><p id="provenance" style="overflow-wrap:anywhere"></p><p><a id="report" href="#">Read the full report</a></p></details>
+</main><script>
+const bundle=__PAYLOAD__, $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg',ctx=$('map').getContext('2d');
+let study,demo,playing=false,t=0,last=0;
+const format=x=>(x>0?'+':'')+x.toFixed(2),roleNames={vanguard:'Vanguard',flanker:'Flanker',ranger:'Ranger',squad:'Squad'};
+function options(select,items){select.replaceChildren();for(const [value,label] of items){const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o);}}
+function row(table,values){const tr=document.createElement('tr');for(const v of values){const td=document.createElement('td');td.textContent=v;tr.append(td);}table.append(tr);}
+function recording(){return demo.recordings[$('condition').value];}
+function changeStudy(){study=bundle.studies[Number($('study').value)];$('title').textContent=study.title;$('question').textContent=study.question;
+ $('aggregateTitle').textContent=study.demos.length===3?'Across the reserved cases · all three roles':'Across the reserved cases';
+ const findings=['Small positive effect; below the declared 3 HP improvement threshold.','Joint choices did not improve on independent choices receiving the same reward.','No measured gain from terrain memory; this solo test offered little room to improve.','No clear return-memory advantage. Most reversals did not require a different best tactic.','Within the declared harm margin, but no audited reversal required a different best tactic. This does not establish deception resistance.','Selecting the hardest practice fights did not beat uniform training at the same total encounter budget.'];
+ $('finding').textContent=findings[Number($('study').value)];
+ options($('role'),study.demos.map((d,i)=>[i,roleNames[d.role]]));$('roleLabel').hidden=study.demos.length===1;
+ $('estimate').textContent=`${format(study.primary.meanDifference)} HP`;$('effectLabel').textContent=`${study.comparison[0]} minus ${study.comparison[1].toLowerCase()}`;
+ $('interval').textContent=`99.167% interval [${study.primary.interval.map(format).join(', ')}] · ${study.primaryWindow} encounters · 16 seed replicates · ${study.encounters.toLocaleString()} scored fights`;
+ $('leftLegend').textContent=study.comparison[0];$('rightLegend').textContent=study.comparison[1];
+ $('selection').textContent=bundle.selection;$('auditNote').textContent='The action-table audit is a separate diagnostic. A direction change may leave the best tactic unchanged; saved-A memory is an externally signaled reference, and the baiting test is a scripted reversal.';
+ $('provenance').textContent=`${study.id} · result SHA-256 ${study.resultsSha256}. All ${bundle.combatReplays} replay reconstruction fights matched stored records.`;
+ $('report').href=study.id+'.md';changeRole();drawCurve();}
+function changeRole(){demo=study.demos[Number($('role').value)];options($('condition'),Object.entries(demo.recordings).map(([k,v])=>[k,v.label]));$('comparison').replaceChildren();
+ for(const r of Object.values(demo.recordings))row($('comparison'),[r.label,`${r.row.damage} HP`]);
+ $('identity').textContent=`${study.case} · seed ${study.seed} · ${demo.scenario.phase}, encounter ${demo.round} · preselected example`;
+ const opp=study.opportunity[demo.role];$('opportunity').textContent=`Audit for ${roleNames[demo.role].toLowerCase()}: ${(100*(1-opp.noDamageChoiceFraction)).toFixed(1)}% of situations had action-dependent damage; ${(100*opp.disjointOptimaFraction).toFixed(1)}% of direction switches required a different best tactic.`;
+ $('roster').textContent=demo.role==='squad'?'V Vanguard · F Flanker · R Ranger':`${demo.role[0].toUpperCase()} ${roleNames[demo.role]}`;choose();}
+function choose(){playing=false;t=0;$('play').textContent='Play replay';$('learning').replaceChildren();
+ for(const c of recording().decisions)row($('learning'),[c.label,`${(100*c.probability).toFixed(1)}% · ${c.before.toFixed(2)} → ${c.after.toFixed(2)}${c.accepted?'':' (no update)'}`]);draw();}
+function draw(){const r=recording(),f=r.frames.findLast(f=>f.time<=t)??r.frames[0];ctx.clearRect(0,0,920,600);ctx.fillStyle='#e6dfc5';ctx.fillRect(0,0,920,600);ctx.strokeStyle='#c0bea0';ctx.lineWidth=1;
+ for(let x=20;x<920;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,600);ctx.stroke();}for(let y=20;y<600;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(920,y);ctx.stroke();}
+ for(const w of demo.scenario.world.walls){ctx.fillStyle='#acae87';ctx.fillRect(w.x,w.y,w.w,w.h);ctx.strokeStyle='#505a40';ctx.strokeRect(w.x,w.y,w.w,w.h);}
+ for(const e of f.enemies){if(e.hp<=0)continue;if(e.windup>0){ctx.strokeStyle='#a24132';ctx.setLineDash(e.windup<=.22?[]:[6,8]);ctx.beginPath();ctx.moveTo(e.x,e.y);ctx.lineTo(e.target.x,e.target.y);ctx.stroke();ctx.setLineDash([]);}
+ ctx.fillStyle='#f1ecd9';ctx.strokeStyle='#a24132';ctx.lineWidth=2;ctx.fillRect(e.x-17,e.y-17,34,34);ctx.strokeRect(e.x-17,e.y-17,34,34);ctx.fillStyle='#a24132';ctx.font='bold 20px system-ui';ctx.textAlign='center';ctx.fillText(e.role[0].toUpperCase(),e.x,e.y+7);ctx.fillRect(e.x-17,e.y+23,34*e.hp/72,4);}
+ for(const b of f.bullets){ctx.fillStyle=b.enemy===null?'#245d78':'#a24132';ctx.beginPath();ctx.arc(b.x,b.y,4,0,Math.PI*2);ctx.fill();}
+ ctx.fillStyle='#245d78';ctx.beginPath();ctx.arc(f.player.x,f.player.y,15,0,Math.PI*2);ctx.fill();ctx.fillRect(f.player.x-20,f.player.y+23,40*f.player.hp/100,4);
+ $('clock').textContent=t.toFixed(1)+' s';$('time').value=1000*t/r.row.duration;$('outcome').textContent=`Player health: ${f.player.hp} HP${t>=r.row.duration?' · '+r.row.result+' · '+r.row.damage+' HP enemy damage':''}`;}
+function svg(tag,attrs,parent){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);parent.append(e);return e;}
+function drawCurve(){if(!study)return;const s=$('curve'),w=s.clientWidth,h=200,points=study.curves,top=20,bottom=158,left=46,right=w-12,max=Math.max(12,...points.flatMap(p=>[p.left,p.right]))*1.1,
+ x=v=>left+(v-4)/Math.max(4,points.at(-1).to-4)*(right-left),y=v=>bottom-v/max*(bottom-top);s.replaceChildren();s.setAttribute('viewBox',`0 0 ${w} ${h}`);
+ for(let i=0;i<=3;i++){const v=max*i/3;svg('line',{x1:left,x2:right,y1:y(v),y2:y(v),stroke:'#c4c5aa'},s);svg('text',{x:left-8,y:y(v)+4,'text-anchor':'end',fill:'#62684f','font-size':12},s).textContent=v.toFixed(0);}
+ for(const p of points)svg('text',{x:x(p.to),y:bottom+20,'text-anchor':'middle',fill:'#62684f','font-size':12},s).textContent=p.to;
+ for(const [key,color] of [['left','#245d78'],['right','#a24132']]){svg('path',{d:points.map((p,i)=>`${i?'L':'M'}${x(p.to)},${y(p[key])}`).join(' '),fill:'none',stroke:color,'stroke-width':2},s);for(const p of points)svg('circle',{cx:x(p.to),cy:y(p[key]),r:3,fill:color},s);}
+ svg('text',{x:left,y:12,fill:'#62684f','font-size':12},s).textContent='Mean enemy damage (HP)';svg('text',{x:(left+right)/2,y:196,'text-anchor':'middle',fill:'#62684f','font-size':12},s).textContent='Encounter (four-fight blocks)';}
+options($('study'),bundle.studies.map((s,i)=>[i,s.title]));$('study').addEventListener('change',changeStudy);$('role').addEventListener('change',changeRole);$('condition').addEventListener('change',choose);
+ $('time').addEventListener('input',()=>{t=Number($('time').value)/1000*recording().row.duration;draw();});$('play').addEventListener('click',()=>{if(t>=recording().row.duration)t=0;playing=!playing;last=performance.now();$('play').textContent=playing?'Pause':'Play replay';});
+ function tick(now){if(playing){t=Math.min(recording().row.duration,t+(now-last)/1000*Number($('speed').value));draw();if(t>=recording().row.duration){playing=false;$('play').textContent='Play replay';}}last=now;requestAnimationFrame(tick);}
+ changeStudy();new ResizeObserver(drawCurve).observe($('curve'));requestAnimationFrame(tick);console.log(JSON.stringify({studies:bundle.studies.length,overflow:document.documentElement.scrollWidth>innerWidth}));
+</script></body></html>

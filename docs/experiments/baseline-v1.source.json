@@ -1,0 +1,7 @@
+{
+  "id": "baseline-v1",
+  "archive": "docs/experiments/baseline-v1.source.tar.gz",
+  "sha256": "1d2a0b92c30c166394e143c2514004734f494e0263978aaeb57d7ce115cea346",
+  "files": 69,
+  "purpose": "Immutable source, generated Wasm/simulator, and raw evidence for adaptation-v1 and reward-attribution-v1 before the app advances."
+}

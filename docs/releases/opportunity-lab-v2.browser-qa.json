@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-19T01:41:52.210411+00:00",
+  "viewer": "docs/experiments/opportunity-validation-v2-view-2.html",
+  "studies": 6,
+  "recordings": 35,
+  "phases": 14,
+  "missingSeedPhasesRetained": 3,
+  "widthsWithoutOverflow": [
+    1280,
+    390,
+    320
+  ],
+  "scrubPositions": [
+    0,
+    0.5,
+    1
+  ],
+  "checks": {
+    "healthMatchesStoredRow": true,
+    "regretMatchesOracleMinusDamage": true,
+    "finiteChartCoordinates": true,
+    "primaryScopeLabelExplicit": true,
+    "playPause": true,
+    "speed4x": true,
+    "restartAtEnd": true
+  },
+  "scope": "Presentation checks. All scored evidence independently verified in the experiment verification record."
+}

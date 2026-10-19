@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "feint-interactions-v1",
+  "status": "Specified before measurement; local prospective diagnostic, not public preregistration. No mechanism candidate is selected using the reserved synthetic outcomes.",
+  "question": "Which authored tactic interactions receive ambiguous individual credit, and which learned role-preference changes account for the original-map feint decline under the exact deterministic outcome table?",
+  "seed": 42,
+  "styles": ["orbit", "reverse", "feint"],
+  "worlds": ["original", "south-entry", "wide-crossings", "central-obstacles"],
+  "profiles": "All eight joint authored tactic combinations; one actual combat per deterministic world/style/profile. Repeating a fixed profile across policy seeds would not add independent observations.",
+  "expected_encounters": 96,
+  "reference": "docs/experiments/adaptation-v1.results.json",
+  "late_rounds": [17, 24],
+  "analysis": "For each role, compare its two actions with other roles fixed. Retain team damage and individual reward changes. On original-map feints, compute expected damage from the product of each role's actual pre-choice probabilities. Attribute the online-minus-frozen expected difference by averaging marginal replacements over all six role orders (Shapley decomposition). Average rounds within seed, then the 32 historical seeds.",
+  "limits": [
+    "Outcome-table maxima are offline diagnostic upper bounds, not fair deployable baselines.",
+    "The decomposition accounts for changed probabilities within this outcome table. It does not identify the causal learning mechanism that changed them.",
+    "The independent-role probability product models sampling expectations, not the realized RNG sequence in each encounter.",
+    "No player labels or counterfactual outcomes enter live learning. Core, rewards, stats, observation rules and shipped gameplay remain unchanged."
+  ]
+}

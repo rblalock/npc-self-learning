@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "opportunity-validation-v2",
+  "status": "Specified locally after development action-table exploration, before any reserved admission or learning outcomes. Not public preregistration.",
+  "question": "On prospectively qualified tasks where the best legal response changes, how much does learning reduce regret and how quickly does it recover?",
+  "seeds": [
+    22001,
+    22038,
+    22075,
+    22112,
+    22149,
+    22186,
+    22223,
+    22260,
+    22297,
+    22334,
+    22371,
+    22408,
+    22445,
+    22482,
+    22519,
+    22556
+  ],
+  "development_seeds": [
+    201,
+    202,
+    203,
+    204
+  ],
+  "groups": [
+    "solo-vanguard",
+    "solo-flanker",
+    "solo-ranger",
+    "squad",
+    "context-flanker",
+    "context-ranger"
+  ],
+  "candidates_per_seed": 32,
+  "phase_rounds": 32,
+  "minimum_qualified_seeds": 12,
+  "minimum_gain": 3,
+  "primary_uncertainty": {
+    "resamples": 12000,
+    "seed": 260023,
+    "interval": 0.9916666666666667
+  },
+  "secondary_uncertainty": {
+    "resamples": 5000,
+    "seed": 260024,
+    "interval": 0.95
+  },
+  "admission": {
+    "minimum_bidirectional_damage_gap": 12,
+    "minimum_bidirectional_reward_gap": 0.15,
+    "all_actions_observable": true,
+    "selection": "Enumerate every candidate and every legal action in both states before running any learner. Keep all outcomes. Select the first qualifying candidate per group/seed by index. Never backfill a seed with no qualifying candidate. No learner performance enters selection.",
+    "conditioning": "This is a deliberately action-sensitive challenge population, not a random sample of games or players. Report both candidate-level and seed-level qualification. The reserve contains new parameter/world seeds for familiar controller families, not unseen behavior families."
+  },
+  "primary": "Six comparisons: each solo role and the joint squad online-minus-exact-switch-frozen mean damage over all 32 B encounters; each terrain-context host minus pooled context on 32 frozen alternating test encounters. Damage difference equals reduction of mean realized oracle regret. Require >=12 qualified seeds, >=3 HP mean gain and adjusted lower interval bound >0. Context also requires >=3 HP over the shuffled-label capacity control with a positive secondary 95% lower bound. No production promotion.",
+  "procedure": "Solo and squad: train A for 32, branch B for 32 into online, frozen, uniform, and cell-reset online; return A for 32 from the B-online checkpoint into online, frozen and cell-reset; sham A for 32 from the original A checkpoint into online/frozen. Squad uses a real joint eight-action policy with shared reward; an additional independent-role host receives the identical reward, with its own 32 A training and 32 B online/frozen branches. Context: pooled/terrain/shuffled hosts each train for 32 alternating A/B encounters and test frozen for 32 alternating B/A encounters. Only map geometry changes between context A and B.",
+  "recovery": {
+    "threshold": 0.35,
+    "consecutive": 3,
+    "definition": "First ending encounter of three consecutive PRE-CHOICE distributions whose exact expected regret is <=35% of that state\u2019s best-minus-worst action range. Report initially displaced cases separately; initially acceptable policies are not evidence of recovery. Unreached cases are right-censored after 32; restricted-check summaries encode them as 33 and never discard them. No mean over successes alone."
+  },
+  "regret": "Offline best legal action damage minus actual damage; cumulative regret sums over encounters. Expected regret integrates the actual joint-choice probabilities against full conditional outcome tables (products for independent roles). Tables never enter choose/feedback. This oracle is an optimistic reference, not a deployable agent.",
+  "limits": [
+    "Development enumerated 4,608 fights and informed the generator and reward eligibility criterion; development outcomes are not reserved evidence.",
+    "Authored controllers use delayed restricted public observations. Slower firing schedules intentionally allow differences between tactics to emerge; player weapon capabilities and all enemy stats stay unchanged.",
+    "Individual means isolated enemy, not player-identity recognition. One tactic is chosen per encounter, not within-fight replanning.",
+    "The joint/independent sampling distributions differ despite matched scalar exploration and temperature. This comparison does not isolate factorization from exploration.",
+    "Seed bootstrap coverage is approximate at n<=16. Cases and repeated rounds are not independent population draws. Secondary controls, return results, curves, recovery and expected regret are exploratory.",
+    "A/B tasks repeat exactly conditional on actions; new learning experiences differ through stochastic choices and feedback, not an independently resampled physical world each round.",
+    "Damage opportunity does not guarantee practical learnability within 32 encounters; reward saturation, noisy sampling and memory interference may still matter.",
+    "Rejects and missing qualification are part of the result. No thresholds, sample sizes, labels or candidates change after freezing.",
+    "Public terrain is the only contextual cue. No strategy labels, future actions, oracle choices or rewards are supplied to the learner.",
+    "Previous measured sources, results and the production game remain unchanged."
+  ],
+  "demonstration": {
+    "seed": 22001,
+    "selection": "First reserved seed and its first qualifying case in each group, regardless of learning result. If it has no qualifying case, show that failure rather than substitute a better seed.",
+    "round": 32
+  }
+}

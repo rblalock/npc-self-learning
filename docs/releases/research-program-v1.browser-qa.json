@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-18T22:36:23.288134+00:00",
+  "viewer": "docs/experiments/research-program-v1-view-2.html",
+  "studies": 6,
+  "recordings": 35,
+  "checks": {
+    "allConditionsAndAllThreeRoles": true,
+    "scrubPositions": [
+      0,
+      0.5,
+      1
+    ],
+    "finalHealthMatchesRecordedRow": true,
+    "finiteProbabilities": true,
+    "widthsWithoutHorizontalOverflow": [
+      1280,
+      1100,
+      390,
+      320
+    ],
+    "playPause": true,
+    "fourTimesSpeed": true,
+    "restartAtEnd": true,
+    "consoleErrors": 0,
+    "httpStatus": 200
+  },
+  "scope": "Browser playback and layout checks; aggregate outcomes verified separately by full simulation replay."
+}

@@ -1,0 +1,50 @@
+{
+  "resultSha256": "4d72b2476e40e3399935ca4644742ca2d18ebef56d6d38096c99b83912e20049",
+  "rawArithmeticMatched": true,
+  "comparisons": [
+    {
+      "group": "solo-vanguard",
+      "arm": "detector-reset",
+      "gain": -0.3671875,
+      "stableGain": -3.22265625,
+      "falseAlarms": 62
+    },
+    {
+      "group": "solo-vanguard",
+      "arm": "detector-selective",
+      "gain": -0.3046875,
+      "stableGain": -4.37109375,
+      "falseAlarms": 51
+    },
+    {
+      "group": "solo-flanker",
+      "arm": "detector-reset",
+      "gain": -0.4765625,
+      "stableGain": -0.9375,
+      "falseAlarms": 32
+    },
+    {
+      "group": "solo-flanker",
+      "arm": "detector-selective",
+      "gain": -0.42578125,
+      "stableGain": -0.71484375,
+      "falseAlarms": 32
+    },
+    {
+      "group": "solo-ranger",
+      "arm": "detector-reset",
+      "gain": -0.921875,
+      "stableGain": -0.50390625,
+      "falseAlarms": 32
+    },
+    {
+      "group": "solo-ranger",
+      "arm": "detector-selective",
+      "gain": -0.69140625,
+      "stableGain": -0.3515625,
+      "falseAlarms": 30
+    }
+  ],
+  "learningEncounters": 62976,
+  "auditEncounters": 6144
+}
