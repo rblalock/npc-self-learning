@@ -10,7 +10,7 @@
     "preview": "vite preview apps/arena --host 127.0.0.1 --port 5174 --strictPort",
     "check": "tsc --noEmit",
     "build": "npm run build:wasm && npm run build:sdk && npm run check && node scripts/stamp-build.mjs && vite build apps/arena --base=./",
-    "test": "cargo test --workspace && npm run build:wasm && npm run build:sdk && npm run test:arena && npm run test:synthetic && npm run test:retention && npm run test:research && npm run test:opportunity && npm run test:opportunity-v2 && npm run test:change && npm run test:conservative",
+    "test": "cargo test --workspace && npm run build:wasm && npm run build:sdk && npm run test:arena && npm run test:synthetic && npm run test:retention && npm run test:research && npm run test:opportunity && npm run test:opportunity-v2 && npm run test:change && npm run test:conservative && npm run test:agentic",
     "compile:sim": "tsc apps/arena/src/sim.ts apps/arena/src/study.ts apps/arena/src/mission.ts apps/arena/src/playtest.ts --outDir target/arena-test --target es2022 --module esnext --moduleResolution bundler --skipLibCheck",
     "test:arena": "npm run compile:sim && node --test scripts/arena.test.mjs scripts/study.test.mjs scripts/sdk.test.mjs scripts/mission.test.mjs scripts/evaluation.test.mjs scripts/playtest.test.mjs",
     "evaluate:arena": "npm run compile:sim && node scripts/evaluate-arena.mjs",
@@ -59,7 +59,11 @@
     "package:conservative": "node scripts/package-conservative-v1.mjs",
     "build:microsite": "node scripts/build-microsite.mjs",
     "prepare:publication": "node scripts/prepare-publication.mjs",
-    "check:privacy": "python3 scripts/check-publication-privacy.py"
+    "check:privacy": "python3 scripts/check-publication-privacy.py",
+    "compile:agentic": "tsc apps/arena/src/sim.ts --outDir target/agentic-sim --target es2022 --module esnext --moduleResolution bundler --skipLibCheck",
+    "test:agentic": "npm run compile:agentic && node --test scripts/agentic-*.test.mjs",
+    "evaluate:agentic": "npm run compile:agentic && node scripts/evaluate-agentic-v1.mjs",
+    "verify:agentic": "npm run compile:agentic && node scripts/verify-agentic-v1.mjs"
   },
   "devDependencies": {
     "typescript": "^5.9.3",

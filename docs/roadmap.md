@@ -55,7 +55,20 @@ The [fieldbook](experiments/change-detection-v1-view.html) exposes actual fights
 
 The [follow-up](conservative-intervention-v1.md) completes deterioration-only evidence, half-strength score interventions and separate observation batches on longer known histories. Stress tests cover outliers, saturation, sparse observations and ignored feedback. All three candidates fail the benefit gates; none consumes fresh validation. The original learner remains unchanged. The [recorded viewer](experiments/conservative-development-v1-view.html), complete transition record and downloadable kit preserve the negative result.
 
-## Next: context transfer and team sample allocation
+## Completed: agent-assisted NPC feasibility pilot
+
+The [between-round pilot](agentic-npc-pilot-v1.md) gives each case ten ordinary-learning warm-up fights, then compares algorithmic learning, a statistical planner, random plans and two live-agent repetitions over sixteen fights. The agent reviews only its NPC's completed observations and selects among seven bounded plans. Rust learning continues, and combat statistics stay fixed.
+
+All 340 scored fights and 128 recorded decisions replay exactly. Mean NPC damage improves by 5.63 HP on stable histories and 5.44 HP on recurring histories versus ordinary learning. The agent also exceeds the declared statistical comparator's aggregate, but loses to random planning in one case/history. Two familiar cases establish feasibility and descriptive outcomes; they do not establish general superiority, a memory benefit or the value of repeated adjustment over a fixed plan.
+
+## Next: isolate the value of agent review
+
+1. Select a fixed-plan comparator on separate development data, then compare it with repeated agent review under the same history and encounter budget.
+2. Ablate carried notes and access to earlier observations while preserving the action menu and call budget. Separate memory value from the expanded behavior choices.
+3. Use longer stable, change and return histories to measure recovery and unnecessary switching. Keep model repetitions nested within cases and record every failure, latency and cost.
+4. Lock the candidate and analysis before testing unfamiliar worlds. Do not treat these two development fixtures as fresh validation.
+
+## Further work: context transfer and team sample allocation
 
 1. Test the useful public-context rule on reserved unfamiliar layouts and less exact repetitions. Keep pooled and shuffled-label capacity controls. Current terrain evidence does not establish transfer.
 2. Separate squad sample allocation from representation under matched shared reward and total cost. Keep independent roles as a baseline and account for their different induced exploration distribution.

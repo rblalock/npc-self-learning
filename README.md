@@ -10,9 +10,11 @@ The game owns perception, movement, combat and rewards. The library owns bounded
 
 ## Latest research
 
+The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review after ten warm-up fights. Across two familiar ranger cases, agent-controlled plans increased NPC damage by 5.63 HP per fight on stable histories and 5.44 HP on changing histories versus ordinary learning. All 340 fights replay exactly. This is development evidence: a better fixed plan could explain some gains, and memory benefit remains untested. Inspect the [recorded viewer](docs/experiments/agentic-npc-pilot-v1-view.html) or [frozen offline kit](publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz). This experimental host is separate from the playable game's controller.
+
 The [completed article](docs/publication/article.md) and [companion report](docs/publication/research-report.md) cover individual adaptation, team choice, public terrain memory and automatic forgetting.
 
-The latest [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.
+The earlier [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.
 
 Watch the [126 recorded fights and all-seed results](docs/experiments/conservative-development-v1-view.html), or use the [verified headless kit](target/releases/tactical-air-conservative-lab-v1.tar.gz). This adds zero new scored physical fights. Earlier [qualified-opportunity results](docs/opportunity-lab-v2.md) support solo adaptation and useful public context; the joint squad result remains inconclusive. See the [roadmap](docs/roadmap.md).
 
@@ -118,6 +120,8 @@ See [release notes](docs/releases/CHANGELOG.md), [timing data](docs/releases/per
 The [change-detection follow-up](docs/change-detection-lab-v1.md) tests automatic full reset and selective forgetting on noisy abrupt, gradual, recurring and stable histories. All 69,120 new fights reproduce exactly. Neither candidate passes: false resets discard useful memory. The original learner remains unchanged. Explore the [recorded fieldbook](docs/experiments/change-detection-v1-view.html) or the [headless kit](target/releases/tactical-air-change-detection-lab-v1.tar.gz).
 
 ## Where this goes next
+
+Test whether repeated agent review adds value beyond a development-selected fixed plan, and whether its remembered history helps. Longer histories and fresh worlds are needed before generalizing the pilot's positive damage result.
 
 Separate detecting a change from deciding that forgetting will improve performance. Calibrate against stable noisy histories before another reserved run, then test context transfer and team sample allocation under matched budgets. Human recognition, fairness and enjoyment have not been measured.
 

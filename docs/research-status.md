@@ -140,3 +140,15 @@ The [completed follow-up](conservative-intervention-v1.md) reuses all 48 examine
 Down-only reset, down-only score softening and separate-batch softening all have negative changing-history mean gains in every role. The separate-batch candidate passes the declared stability and stress gates, with 0.93, 0.56 and 0.71 interventions per hundred stable fights for vanguard, flanker and ranger. It fails the 1 HP benefit gate in all roles. Both overlapping-window candidates also fail the pre-run single-outlier stress check. **No candidate advances; no fresh validation is consumed.**
 
 All cached transitions reproduce. Verification repeats 192 physical table fights and 8,160 trajectory fights; these are not new scored evidence. A separate Python check matches means, pairs, rates, budget and eligibility, without independently recomputing bootstrap intervals. The [viewer](experiments/conservative-development-v1-view.html) displays 126 reconstructed fights, with post-results selection disclosed and all-seed data beside them. The [article](publication/article.md) and [research report](publication/research-report.md) incorporate the outcome.
+
+## Agent-assisted NPC development pilot
+
+The [between-round pilot](agentic-npc-pilot-v1.md) adds 340 scored physical fights on two familiar ranger cases: twenty shared warm-up fights and 320 comparison fights. This brings the scored physical workload to **254,684 across nineteen scored records**; cached development, verification and connection smoke tests remain excluded.
+
+After warm-up, a live model reviews its branch's completed observations and chooses one of seven bounded NPC plans. Ordinary Rust learning continues. Algorithm-only, statistical and random-plan branches share the same checkpoint and realized opponent history. Two agent repetitions per case/history measure model-run variation, not new independent cases.
+
+The agent's mean damage advantage over ordinary learning is +5.625 HP per fight for stable histories and +5.4375 for recurring histories. Against the declared statistical planner it is +3.375 and +5.0625 HP. All comparisons are descriptive. The agent loses to the random planner's average in one case/history, and no branch produces a player defeat or NPC survival. All 128 model calls succeed; CLI-reported cost is $2.9748312 and mean latency is 4.88 seconds.
+
+Every fight, observation, recorded decision and captured frame reproduces exactly without new model requests. The [viewer](experiments/agentic-npc-pilot-v1-view.html) and [frozen evidence kit](../publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz) preserve the run. A post-run concurrency fix latches the three-failure stop across branches; it did not affect this failure-free run and is disclosed separately from the frozen sources.
+
+**Continue development; do not claim a memory or adaptation advantage yet.** Some successful trajectories settle on a static plan. Compare repeated review with a development-selected fixed plan and a history/note ablation, then use longer histories before fresh validation. This experiment does not change the playable game's controller or the published earlier results.
