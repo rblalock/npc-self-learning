@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "verified": true,
+  "incomplete": true,
+  "effectivenessComparisonComplete": false,
+  "resultsSha256": "21439887ab07671373a91d35c5a4f9cc9f8bb2679838924a056cdc6a69fc9e82",
+  "protocolSha256": "c51cd1916250d1919750ee5f70806a8487ce58a526bb56942fba331cfa027b1c",
+  "sourceHashesChecked": true,
+  "frozenProtocolChecked": true,
+  "calibrationFightsReplayed": 1384,
+  "evaluationFightsReplayed": 432,
+  "totalPhysicalFightsReplayed": 1816,
+  "warmupFightsReplayed": 20,
+  "controlFightsReplayed": 384,
+  "agentFightsReplayed": 28,
+  "fallbackAgentFightsReplayed": 4,
+  "uniqueAgentDecisionsReplayed": 20,
+  "initializedPairs": 8,
+  "completedAgentBranches": 0,
+  "branchRounds": [
+    {
+      "caseSeed": 31001,
+      "caseIndex": 0,
+      "history": "stable",
+      "replicate": 1,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31001,
+      "caseIndex": 0,
+      "history": "stable",
+      "replicate": 2,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31001,
+      "caseIndex": 0,
+      "history": "recurring",
+      "replicate": 1,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31001,
+      "caseIndex": 0,
+      "history": "recurring",
+      "replicate": 2,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31042,
+      "caseIndex": 2,
+      "history": "stable",
+      "replicate": 1,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31042,
+      "caseIndex": 2,
+      "history": "stable",
+      "replicate": 2,
+      "full": 2,
+      "recent": 2
+    },
+    {
+      "caseSeed": 31042,
+      "caseIndex": 2,
+      "history": "recurring",
+      "replicate": 1,
+      "full": 1,
+      "recent": 1
+    },
+    {
+      "caseSeed": 31042,
+      "caseIndex": 2,
+      "history": "recurring",
+      "replicate": 2,
+      "full": 1,
+      "recent": 1
+    }
+  ],
+  "dispatchedCalls": 20,
+  "completedCalls": 20,
+  "pendingCalls": 0,
+  "successfulCalls": 16,
+  "failedCalls": 4,
+  "unknownCostCalls": 4,
+  "knownReportedCostUsd": 0.24851800000000002,
+  "accountedCostUsd": 0.6485179999999999,
+  "consecutiveFailures": 4,
+  "stoppedReason": "provider-failure-threshold",
+  "reportedCostUsd": null,
+  "reservedCostUsd": 0,
+  "modelCallsMade": 0,
+  "scope": "Exact offline replay of all recorded calibration, controls, observations, decisions and partial agent fights. No absent outcomes are inferred; no completed effectiveness comparison or independent model-output replication. Snapshot consistency does not authenticate provider reports or prove that no later journal records exist."
+}

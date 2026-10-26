@@ -5,7 +5,7 @@ settled on one plan. This follow-up separates a good plan choice from the value
 of reviewing later fights. It also tests continued access to the agent's fight
 history and notes.
 
-**Status: implemented; live comparison incomplete.** On October 26, the first
+**Status: implemented; live comparison incomplete after two stopped attempts.** On October 26, the first
 attempt stopped during initialization because the Claude CLI was signed out.
 Four already-dispatched requests failed with zero reported input/output tokens
 and zero reported cost. The three-failure stop latched and blocked further calls.
@@ -18,12 +18,35 @@ the planned completed study. See the [attempt data](experiments/agentic-npc-abla
 [frozen offline kit](../publication/inputs/releases/tactical-air-agentic-ablation-v2-attempt-1.tar.gz).
 The archive SHA-256 is
 `739ae5ac958465b8517eafcd183a33306286d5ef62310e47b2bad5a482152d84`.
-It contains 39 files, including 38 content checksums. A later run must use a new
-output directory and disclose this restart. The stopped journal remains latched.
+It contains 39 files, including 38 content checksums. That stopped journal remains latched.
+
+The second attempt used a new output directory after authentication succeeded.
+Sixteen model requests succeeded, then four concurrent requests hit their
+90-second deadline. The failure limit stopped further requests. The record
+contains 1,384 calibration and 432 evaluation/control fights, including the
+partial agent trajectories. These 1,816 fights are another infrastructure
+attempt, not a completed comparison. The successful requests reported
+$0.248518; costs for the four timeouts are unknown. Counting each unknown at its
+$0.10 reservation gives $0.648518 in admission accounting, not a final bill.
+
+The [second attempt data](experiments/agentic-npc-ablation-v2.attempt-2.json.gz),
+[offline verification](experiments/agentic-npc-ablation-v2.attempt-2.verification.json),
+and [frozen kit](../publication/inputs/releases/tactical-air-agentic-ablation-v2-attempt-2.tar.gz)
+preserve the successful decisions, failed-call fallbacks and exact run sources.
+All 1,816 fights and twenty decisions reproduced exactly from a clean archive
+extraction, including four fallback fights. The forty-file archive has 39
+content checksums and SHA-256
+`fcc5433dea308e91ead458d4e8843a4bd4bd347b8c4b0f13b4c8b3d11778b61e`.
+See the [validation record](releases/agentic-npc-ablation-v2-attempt-2.validation.json).
+Neither attempt is discarded or used to claim effectiveness. A further run must
+use a new directory and disclose both restarts; neither stopped journal may be
+reset to continue.
 
 The current CLI runner checks authentication before creating an experiment.
-That guard was added after the failed attempt; its archive preserves the actual
-earlier runner. Use the archive for historical verification.
+That guard was added after the first attempt. Its wait was extended before the
+second attempt because a successful authentication check took fourteen seconds.
+A successful sign-in check did not prevent the later request timeouts. Each
+archive preserves its actual runner; use it for historical verification.
 
 This is development work on the same two ranger worlds. The schedules are new;
 the worlds are familiar. The player remains the opponent. All adjustments are

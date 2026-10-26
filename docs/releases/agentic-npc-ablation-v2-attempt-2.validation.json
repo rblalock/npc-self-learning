@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "study": "agentic-npc-ablation-v2",
+  "attempt": 2,
+  "date": "2026-10-26",
+  "incomplete": true,
+  "effectivenessComparisonComplete": false,
+  "archive": "publication/inputs/releases/tactical-air-agentic-ablation-v2-attempt-2.tar.gz",
+  "archiveSha256": "fcc5433dea308e91ead458d4e8843a4bd4bd347b8c4b0f13b4c8b3d11778b61e",
+  "archiveFiles": 40,
+  "memberChecksumsPassed": 39,
+  "recordedSourceHashesPassed": 33,
+  "resultsSha256": "21439887ab07671373a91d35c5a4f9cc9f8bb2679838924a056cdc6a69fc9e82",
+  "resultsHashEncoding": "SHA-256 of JSON.stringify(parsedPartial), without trailing newline",
+  "replay": {
+    "cleanExtraction": true,
+    "calibrationFights": 1384,
+    "evaluationFights": 432,
+    "scoredPhysicalFights": 1816,
+    "recordedAgentDecisions": 20,
+    "fallbackAgentFights": 4,
+    "modelCallsMade": 0,
+    "journalAccountingMatched": true
+  },
+  "requests": {
+    "successful": 16,
+    "failed": 4,
+    "failure": "Four concurrent 90-second timeouts; permanent failure stop retained.",
+    "knownReportedCostUsd": 0.24851800000000002,
+    "unknownCostCalls": 4,
+    "reportedCostUsd": null,
+    "accountedCostUsd": 0.6485179999999999
+  },
+  "independentIntegrityCheck": {
+    "recordedSourcesMatched": 33,
+    "observationHashesMatched": 20,
+    "transcriptHashSetsMatched": 20
+  },
+  "completedKitPackagingCheck": {
+    "syntheticFixture": true,
+    "files": 42,
+    "memberChecksumsPassed": 41,
+    "viewerRegeneratedByteIdentically": true,
+    "modelCallsMade": 0
+  },
+  "scope": "Preserved incomplete attempt; no agent-effectiveness conclusion. The partial verifier was added after the run and is included with its checksum. Exact replay of recorded decisions does not reproduce fresh model sampling.",
+  "tests": {
+    "v2SuitePassed": 75,
+    "v2SuiteFailed": 0,
+    "partialVerifierCasesIncluded": 44,
+    "diffWhitespace": "passed"
+  }
+}

@@ -63,7 +63,7 @@ All 340 scored fights and 128 recorded decisions replay exactly. Mean NPC damage
 
 ## Next: isolate the value of agent review
 
-The [v2 comparison](agentic-npc-ablation-v2.md) is implemented with a calibrated fixed plan, paired held-initial branches, and full-history versus latest-fight agent inputs. Tests and the 64-recording viewer checks pass. Its first live attempt stopped before model inference because the CLI was signed out; all 1,700 recorded physical fights reproduce. Authenticate the CLI and execute a new, disclosed run before drawing any comparison result.
+The [v2 comparison](agentic-npc-ablation-v2.md) is implemented with a calibrated fixed plan, paired held-initial branches, and full-history versus latest-fight agent inputs. Tests and the synthetic 64-recording viewer checks pass. Two live attempts stopped: the first before inference because the CLI was signed out; the second after sixteen successful requests and four timeouts. Both records are preserved. Resolve the request hangs and execute a new, disclosed run before drawing any comparison result.
 
 1. Select a fixed-plan comparator on separate development data, then compare it with repeated agent review under the same history and encounter budget.
 2. Ablate carried notes and access to earlier observations while preserving the action menu and call budget. Separate memory value from the expanded behavior choices.

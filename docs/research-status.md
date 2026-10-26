@@ -153,8 +153,16 @@ Every fight, observation, recorded decision and captured frame reproduces exactl
 
 **Continue development; do not claim a memory or adaptation advantage yet.** Some successful trajectories settle on a static plan. Compare repeated review with a development-selected fixed plan and a history/note ablation, then use longer histories before fresh validation. This experiment does not change the playable game's controller or the published earlier results.
 
-## Fixed-plan and planner-history follow-up: incomplete initialization
+## Fixed-plan and planner-history follow-up: interrupted attempts
 
 The [v2 follow-up](agentic-npc-ablation-v2.md) is implemented and frozen for a 24-round comparison after ten shared warm-ups. It adds calibrated fixed and held-initial controls, plus full-history and latest-fight agent branches with a shared initial decision. Policy summaries are omitted from both planner inputs; Rust learning continues.
 
 The first live attempt on October 26 stopped because Claude CLI authentication was absent. Four in-flight requests failed before inference, reporting zero tokens and zero cost. The latched failure stop prevented further calls. All 1,384 calibration and 316 recorded evaluation/control fights reproduce exactly. This incomplete infrastructure attempt is preserved separately from completed-study totals and supports no new agent-effectiveness comparison. A later authenticated run must disclose the restart rather than overwrite or relabel this attempt.
+
+The second attempt passed authentication and completed sixteen model requests.
+The following four concurrent requests timed out after ninety seconds, triggering
+the same permanent stop. Its 1,384 calibration and 432 evaluation/control fights
+are also excluded from completed-study totals. The sixteen successful requests
+reported $0.248518; four timeout costs remain unknown, with $0.40 conservatively
+counted for admission. There is no completed v2 effectiveness result. The record
+preserves successful decisions, fallbacks, partial trajectories and run sources.
