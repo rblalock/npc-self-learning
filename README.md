@@ -12,6 +12,8 @@ The game owns perception, movement, combat and rewards. The library owns bounded
 
 The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review after ten warm-up fights. Across two familiar ranger cases, agent-controlled plans increased NPC damage by 5.63 HP per fight on stable histories and 5.44 HP on changing histories versus ordinary learning. All 340 fights replay exactly. This is development evidence: a better fixed plan could explain some gains, and memory benefit remains untested. Inspect the [recorded viewer](docs/experiments/agentic-npc-pilot-v1-view.html) or [frozen offline kit](publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz). This experimental host is separate from the playable game's controller.
 
+The [fixed-plan and planner-history follow-up](docs/agentic-npc-ablation-v2.md) is implemented. Its first live attempt stopped at initialization because the model CLI was signed out; the incomplete record is preserved and verified. The full comparison has no result yet.
+
 The [completed article](docs/publication/article.md) and [companion report](docs/publication/research-report.md) cover individual adaptation, team choice, public terrain memory and automatic forgetting.
 
 The earlier [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.

@@ -152,3 +152,9 @@ The agent's mean damage advantage over ordinary learning is +5.625 HP per fight 
 Every fight, observation, recorded decision and captured frame reproduces exactly without new model requests. The [viewer](experiments/agentic-npc-pilot-v1-view.html) and [frozen evidence kit](../publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz) preserve the run. A post-run concurrency fix latches the three-failure stop across branches; it did not affect this failure-free run and is disclosed separately from the frozen sources.
 
 **Continue development; do not claim a memory or adaptation advantage yet.** Some successful trajectories settle on a static plan. Compare repeated review with a development-selected fixed plan and a history/note ablation, then use longer histories before fresh validation. This experiment does not change the playable game's controller or the published earlier results.
+
+## Fixed-plan and planner-history follow-up: incomplete initialization
+
+The [v2 follow-up](agentic-npc-ablation-v2.md) is implemented and frozen for a 24-round comparison after ten shared warm-ups. It adds calibrated fixed and held-initial controls, plus full-history and latest-fight agent branches with a shared initial decision. Policy summaries are omitted from both planner inputs; Rust learning continues.
+
+The first live attempt on October 26 stopped because Claude CLI authentication was absent. Four in-flight requests failed before inference, reporting zero tokens and zero cost. The latched failure stop prevented further calls. All 1,384 calibration and 316 recorded evaluation/control fights reproduce exactly. This incomplete infrastructure attempt is preserved separately from completed-study totals and supports no new agent-effectiveness comparison. A later authenticated run must disclose the restart rather than overwrite or relabel this attempt.

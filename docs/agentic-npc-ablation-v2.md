@@ -5,6 +5,26 @@ settled on one plan. This follow-up separates a good plan choice from the value
 of reviewing later fights. It also tests continued access to the agent's fight
 history and notes.
 
+**Status: implemented; live comparison incomplete.** On October 26, the first
+attempt stopped during initialization because the Claude CLI was signed out.
+Four already-dispatched requests failed with zero reported input/output tokens
+and zero reported cost. The three-failure stop latched and blocked further calls.
+No completed agent comparison or new effectiveness claim comes from this attempt.
+
+The record preserves 1,384 calibration fights and 316 evaluation/control fights,
+all replayed exactly. These are infrastructure-attempt executions, separate from
+the planned completed study. See the [attempt data](experiments/agentic-npc-ablation-v2.attempt-1.json.gz),
+[verification](experiments/agentic-npc-ablation-v2.attempt-1.verification.json), and
+[frozen offline kit](../publication/inputs/releases/tactical-air-agentic-ablation-v2-attempt-1.tar.gz).
+The archive SHA-256 is
+`739ae5ac958465b8517eafcd183a33306286d5ef62310e47b2bad5a482152d84`.
+It contains 39 files, including 38 content checksums. A later run must use a new
+output directory and disclose this restart. The stopped journal remains latched.
+
+The current CLI runner checks authentication before creating an experiment.
+That guard was added after the failed attempt; its archive preserves the actual
+earlier runner. Use the archive for historical verification.
+
 This is development work on the same two ranger worlds. The schedules are new;
 the worlds are familiar. The player remains the opponent. All adjustments are
 to the enemy NPC's existing behavior menu.
@@ -98,6 +118,6 @@ node scripts/replay-agentic-v2.mjs target/my-agentic-v2-run/results.json target/
 ```
 
 Live requests use the authenticated Claude CLI through the existing isolated
-provider adapter. `--resume` preserves completed requests and never resends an
+provider adapter. Run `claude auth login` if signed out. `--resume` preserves completed requests and never resends an
 unknown pending request. Historical replay uses recorded responses and makes
 no new model calls; it does not promise identical regenerated model output.
