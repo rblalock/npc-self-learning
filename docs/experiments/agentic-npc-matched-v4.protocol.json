@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "seed": 31001,
+      "index": 0
+    },
+    {
+      "seed": 31042,
+      "index": 2
+    }
+  ],
+  "warmupRounds": 10,
+  "postRounds": 24,
+  "histories": [
+    "stable",
+    "recurring"
+  ],
+  "agentReplicates": 2,
+  "changeStartMin": 6,
+  "changeStartWidth": 3,
+  "returnStartMin": 17,
+  "returnStartWidth": 3,
+  "maxConcurrency": 4,
+  "fixedReference": {
+    "summary": "docs/experiments/agentic-npc-ablation-v2.summary.json",
+    "plans": [
+      {
+        "seed": 31001,
+        "index": 0,
+        "planId": "far"
+      },
+      {
+        "seed": 31042,
+        "index": 2,
+        "planId": "far"
+      }
+    ],
+    "previousCalibrationFights": 1384
+  },
+  "schema": 1,
+  "id": "agentic-npc-matched-v4",
+  "status": "Final development comparison on two familiar worlds and reused v2 schedules, not fresh validation.",
+  "objective": "Compare agent and deterministic algorithmic NPC plan selection with matched initial experience and zero simulation probes.",
+  "survey": {
+    "order": [
+      "baseline",
+      "aim",
+      "lead",
+      "close",
+      "far",
+      "short-lead",
+      "long-lead",
+      "long-lead",
+      "short-lead",
+      "far",
+      "close",
+      "lead",
+      "aim",
+      "baseline"
+    ],
+    "probabilityB": 0.1,
+    "stream": "seedFor(case.seed, case.index, agentic-matched-v4-survey); randomAt(stream, mixture, index)",
+    "rule": "Two sequential committed passes after ten v2 warmups. Plan attempts and average order position are balanced, not hidden opponent conditions. Keep every missing observation; no replacement, reroll, reset or counterfactual. Every branch restores the final post-survey Rust checkpoint."
+  },
+  "selector": {
+    "id": "discounted-ucb",
+    "damageCapHp": 100,
+    "halfLifeFights": 12,
+    "explorationHp": 12,
+    "initial": "Highest weighted mean among observed plans. If every plan is unobserved, retain current plan.",
+    "subsequent": "Weighted mean + 12*sqrt(log(1+N)/n), n=sum(2^(-age/12)) for observed executions of that plan, N=sum(n) across plans. Age is elapsed fights since observation; unobserved fights still age earlier data. Unobserved plans get infinite priority after initialization.",
+    "ties": "Retain current plan if tied for maximum, otherwise first catalog plan.",
+    "tuning": "Declared constants, zero tuning simulations or parameter sweeps. Credible comparator, not a proven optimal algorithm. Held-first algorithm protects against exploration losses."
+  },
+  "agent": {
+    "provider": "claude-cli",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "timeoutMs": 90000,
+    "maxBudgetUsdPerCall": 0.1,
+    "maxCalls": 192,
+    "maxReportedCostUsd": 12.8,
+    "maxConsecutiveFailures": 3,
+    "sampling": "Provider defaults; fresh isolated CLI process for each unique request. No exposed temperature or seed control.",
+    "memoryCharacters": 1500,
+    "retries": 0
+  },
+  "arms": {
+    "retained": "Baseline plan, continued Rust learning, shared post-survey checkpoint. Context only.",
+    "fixed": "Prior v2 calibrated far plan replayed from new post-survey checkpoint, not its old score. Extra 1384 calibration fights remain an advantage.",
+    "algorithm": "Deterministic discounted UCB, all own public observations, no extra queries.",
+    "algorithm-initial": "Hold the algorithm first complete plan with ordinary Rust choose/feedback/commit.",
+    "agent": "Two fresh stochastic repetitions reviewing full own observed history plus previous bounded note.",
+    "agent-initial": "Hold the paired agent first complete plan, including recorded fallback on initial failure."
+  },
+  "observationBoundary": "Same allowlisted observation schema and identical initial records, menu, baseline current plan and empty memory. Thereafter each selector sees its own completed history and any own bounded note. No policy cells, seeds, case/history/arm IDs, hidden labels, schedule, coordinates, counterfactuals, audit tables or other branches. True round clock and total preparation rounds are public. Algorithm ignores text notes and computes statistics solely from public records. The full input schema is available equally; selected histories naturally diverge.",
+  "schedule": "Reuse exact v2 evaluation schedules after a new 14-fight survey. Recompute and exactly reproduce the 20 v2 warmup fights, then retain their state into the survey. Changed preparation means old evaluation scores cannot be reused as controls.",
+  "controls": "Reuse v1's exact seven ranger plans and physics. No new actions, memory edits, stat buffs, generated code or simulated probes. Every fixed and agent round uses normal Rust choose, legal masks, feedback and commit. A held auto-choice plan may still choose different aim/lead tactics. Opponent inputs may respond to different NPC behavior.",
+  "failurePolicy": "Reuse the audited v2 durable journal: max four concurrent, rotating round waves, no retries, unknown outcomes never resent, permanent stop after three consecutive failures. Failed calls retain the actual current plan and previous note; shared-initial failure holds baseline. Preserve incomplete data and do not shorten horizon/replicates. Prior v4 attempts must be accounted before any restart. Admission accounting and per-call caps are not guarantees against in-flight cost overruns. The live CLI registers one durable output directory for this study and takes an exclusive writer lock. A different output directory or protocol is rejected even after the writer exits. No replacement attempt is permitted under this frozen protocol; it requires an audited financial amendment accounting for prior calls, reported costs and unknown allowances. Same-directory resume retains the original journal and failure latch.",
+  "budget": {
+    "preparationFights": 48,
+    "warmupFights": 20,
+    "surveyFights": 28,
+    "evaluationFights": 768,
+    "totalPhysicalFights": 816,
+    "uniqueModelRequests": 192,
+    "newCalibrationFights": 0,
+    "extraSimulationProbes": 0,
+    "newAlgorithmTuningFights": 0,
+    "formula": "2 worlds*(10 replayed warmups+14 committed survey fights+2 histories*8 branches*24 evaluation fights). Agent requests 2*2*2*24. Warmups reproduce existing trajectories and are counted as physical executions, not new independent evidence."
+  },
+  "analysis": "Primary: agent minus active algorithm, agent minus paired held-agent, algorithm minus held-algorithm. Also agent minus held-algorithm and held-agent minus held-algorithm. Average agent repetitions within each world/history, then four cells equally. Report each model repetition, all eight agent trajectories, stable/recurring separately, all 24 evaluation rounds, plus cumulative performance over 38 post-warmup fights including common survey. All exploratory and fallback rounds count. Report algorithm selection latency separately from model latency/cost; runtime is hardware/context-dependent. No confidence intervals or p-values.",
+  "advanceGates": {
+    "agentVsAlgorithmHp": 2,
+    "agentVsAlgorithmInitialHp": 2,
+    "agentVsInitialHp": 1,
+    "maximumCellHarmHp": 1,
+    "requirePositiveEachReplicate": true,
+    "rule": "Continuous agent review advances only if all three overall gain thresholds pass, all three contrasts are positive in each repetition averaged over four cells, and no world/history mean contrast to these controls is below -1 HP. These are engineering gates, not statistical tests.",
+    "heldAgent": "If continuous review fails, consider a held-agent candidate only if held-agent minus held-algorithm is >=2 HP overall, positive in each repetition and no cell below -1 HP.",
+    "algorithm": "Continued algorithm selection merits further consideration over held-algorithm only if >=1 HP overall and no cell below -1 HP. This does not promote a game feature."
+  },
+  "stoppingRule": "One complete development run, no post-result prompt edits, parameter sweeps, best-run selection or replacement attempts. If no candidate clears declared gates, stop this seven-plan agent development line and publish the negative result; fresh validation is unnecessary. Any passing candidate must be frozen before one separately bounded unfamiliar-world confirmation, with no retuning/replacement cases. No fresh validation is authorized automatically by this run.",
+  "claimLimits": "Two familiar worlds, reused schedules and nested model repetitions. A balanced survey equalizes attempts and observed records, not hidden conditions or latent Rust state during each plan trial. Two observations per plan are noisy. Both selectors have the same experience allowance and observation schema but develop different histories. Algorithm constants are untuned choices; winning does not prove superiority over all algorithms or value of nondeterminism. Rust learning persists, model weights unchanged, seven authored plans only, no tactic invention. Prior far is extra-experience diagnostic only. Replay uses recorded model outputs.",
+  "publication": "Freeze protocol and sources before live calls; preserve v1/v2/v3 untouched. Publish filtered decisions, all selector choices and preparation evidence, all physical results, offline verifier and viewer. Keep raw provider sessions and credentials private."
+}
