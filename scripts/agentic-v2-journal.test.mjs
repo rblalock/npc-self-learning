@@ -55,7 +55,7 @@ test('records exact inputs, safe provider provenance and a filename-safe JSON ke
   const response = ok(), input = observation(), inputKey = key(1, '../../agent/private');
   const { dir, journal, config } = await fixture(t, { provider: { async decide(value) { received = value; return response; } } });
   const call = await journal.decide(inputKey, input);
-  assert.deepEqual(call, { id: sha(inputKey), key: inputKey, observation: input, observationSha256: sha(input), dispatched: true, response });
+  assert.deepEqual(call, { id: sha(inputKey), key: inputKey, observation: input, observationSha256: sha(input), dispatched: true, admissionOrder: 1, completedBeforeAdmission: 0, completionOrder: 1, response });
   assert.deepEqual(received, input);
   assert.deepEqual((await stored(dir, call.id)).response, response);
   assert.deepEqual(await readdir(join(dir, 'calls')), [`${call.id}.json`]);

@@ -3,12 +3,34 @@ import { readFile } from 'node:fs/promises';
 import { gunzipSync } from 'node:zlib';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { ROOT,checkSources } from './agentic-v2/io.mjs';
+import { ROOT,PROTOCOL,checkSources } from './agentic-v2/io.mjs';
 import { sha,decisionFrom,validateDecision } from './agentic-v2/design.mjs';
 import { calibrate,warmup,fixedBranch,agentBranch,initialObservation,summarize } from './agentic-v2/trial.mjs';
 
-export async function verify(r,{sources=true}={}) {
+export function verifyAdmissions(calls,limits) {
+  const admitted=[...calls].sort((a,b)=>a.admissionOrder-b.admissionOrder),settled=[...calls].sort((a,b)=>a.completionOrder-b.completionOrder);
+  assert.ok(calls.length<=limits.maxCalls,'Request cap exceeded');
+  let previousCompleted=0;
+  settled.forEach((c,i)=>assert.equal(c.completionOrder,i+1,'Invalid completion order'));
+  for(const [i,c]of admitted.entries()) {
+    assert.equal(c.dispatched,true,'Call was not dispatched');assert.equal(c.admissionOrder,i+1,'Invalid admission order');
+    assert.ok(Number.isSafeInteger(c.completedBeforeAdmission)&&c.completedBeforeAdmission>=previousCompleted&&c.completedBeforeAdmission<=i,'Invalid admission completion count');
+    previousCompleted=c.completedBeforeAdmission;
+    const prior=settled.slice(0,c.completedBeforeAdmission);let streak=0,stopped=false,cost=0;
+    for(const x of prior){assert.ok(x.admissionOrder<c.admissionOrder,'Completion preceded admission');streak=x.response.status==='ok'?0:streak+1;stopped ||= streak>=limits.maxConsecutiveFailures;cost+=x.response.metadata.costUsd??limits.maxBudgetUsdPerCall;}
+    assert.ok(!stopped,'Request admitted after failure stop');
+    const required=cost+(i-c.completedBeforeAdmission+1)*limits.maxBudgetUsdPerCall;
+    assert.ok(required<=limits.maxReportedCostUsd+1e-9,'Request admitted after cost cap');
+    const value=c.response?.metadata?.costUsd;
+    assert.ok(value===null||(typeof value==='number'&&Number.isFinite(value)&&value>=0),'Invalid reported cost');
+    assert.ok(['ok','error'].includes(c.response.status),'Invalid response status');
+  }
+}
+
+export async function verify(r,{sources=true,allowProtocolOverride=false}={}) {
   assert.equal(r.protocolSha256,sha(r.protocol));if(sources)await checkSources(r.sources);
+  if(!allowProtocolOverride)assert.deepEqual(r.protocol,JSON.parse(await readFile(resolve(ROOT,PROTOCOL),'utf8')),'Results differ from frozen protocol');
+  assert.ok(!r.incomplete,'Cannot verify incomplete study');verifyAdmissions(r.calls,r.protocol.agent);
   assert.equal(r.calibration.length,r.protocol.cases.length);assert.equal(r.cases.length,r.protocol.cases.length);
   assert.equal(sha(r.calibration),r.calibrationSha256);
   const byKey=new Map(),used=new Set();

@@ -97,8 +97,8 @@ async function durableJson(path, value) {
 
 /**
  * One writer owns directory; resume only after the previous writer has exited.
- * decide() returns a detached {id,key,observation,observationSha256,dispatched,
- * response}. Exact duplicates share an in-flight request or reuse its result.
+ * decide() returns detached inputs, response and admission/completion counters.
+ * Exact duplicates share an in-flight request or reuse its result.
  * Admission/configuration/storage errors reject; provider failures are recorded
  * error responses with legal fallbacks. No request is retried.
  *
@@ -144,7 +144,7 @@ export async function createJournal({ directory, provider, limits, resume = fals
   }
   const state = () => ({ schema: 1, limits: budget, ...summary() });
   const publicRecord = record => structuredClone(Object.fromEntries(
-    ['id', 'key', 'observation', 'observationSha256', 'dispatched', 'response'].map(field => [field, record[field]]),
+    ['id', 'key', 'observation', 'observationSha256', 'dispatched', 'admissionOrder', 'completedBeforeAdmission', 'completionOrder', 'response'].map(field => [field, record[field]]),
   ));
   function persist(record) {
     const savedRecord = structuredClone(record), savedState = state();
@@ -191,6 +191,8 @@ export async function createJournal({ directory, provider, limits, resume = fals
       assert.equal(name, `${record.id}.json`, 'Journal filename differs from key hash');
       assert.equal(record.observationSha256, sha(record.observation), 'Journal observation hash changed');
       assert.equal(record.dispatched, true, 'Invalid journal reservation');
+      assert.ok(Number.isSafeInteger(record.admissionOrder) && record.admissionOrder > 0, 'Invalid admission order');
+      assert.ok(Number.isSafeInteger(record.completedBeforeAdmission) && record.completedBeforeAdmission >= 0 && record.completedBeforeAdmission < record.admissionOrder, 'Invalid admission completion count');
       if (record.response !== null) {
         assert.deepEqual(record.response, checkedResponse(record.response, record.observation), 'Invalid stored provider response');
         assert.ok(Number.isSafeInteger(record.completionOrder) && record.completionOrder > 0, 'Invalid completion order');
@@ -198,6 +200,8 @@ export async function createJournal({ directory, provider, limits, resume = fals
       records.set(record.id, record);
     }
     const settled = [...records.values()].filter(record => record.response !== null).sort((a, b) => a.completionOrder - b.completionOrder);
+    const admitted = [...records.values()].sort((a,b) => a.admissionOrder-b.admissionOrder);
+    admitted.forEach((record,i) => assert.equal(record.admissionOrder,i+1,'Journal admission order has a gap or duplicate'));
     for (const record of settled) {
       assert.equal(record.completionOrder, completed + 1, 'Journal completion order has a gap or duplicate');
       account(record.response);
@@ -230,7 +234,7 @@ export async function createJournal({ directory, provider, limits, resume = fals
     assert.ok(Number.isFinite(nextCost) && nextCost <= budget.maxReportedCostUsd + tolerance, 'Agent cost-accounting budget exhausted');
     // No await before insertion/reservation: concurrent branches cannot both
     // consume the last allowance, including while the journal write is pending.
-    const record = { id, key, observation, observationSha256, dispatched: true, response: null, completionOrder: null };
+    const record = { id, key, observation, observationSha256, dispatched: true, admissionOrder: records.size+1, completedBeforeAdmission: completed, response: null, completionOrder: null };
     records.set(id, record);
     const admission = persist(record);
     const work = (async () => {
