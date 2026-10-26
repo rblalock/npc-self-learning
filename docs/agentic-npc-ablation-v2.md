@@ -42,6 +42,13 @@ Neither attempt is discarded or used to claim effectiveness. A further run must
 use a new directory and disclose both restarts; neither stopped journal may be
 reset to continue.
 
+Before attempt three, the execution accounting cap was reduced to $12.15.
+The previous $0.248518 in known costs and $0.40 in unknown-cost allowances are
+carried forward, keeping combined admission accounting below $12.80. This
+financial amendment changes no cases, schedules, comparisons, prompts, model
+settings or planned request count. Earlier archives retain their original
+protocols. Actual charges for timed-out requests remain unknown.
+
 The current CLI runner checks authentication before creating an experiment.
 That guard was added after the first attempt. Its wait was extended before the
 second attempt because a successful authentication check took fourteen seconds.
@@ -92,7 +99,8 @@ matched training budget with the agent.
 The [frozen protocol](experiments/agentic-npc-ablation-v2.protocol.json) specifies
 1,384 calibration fights, 788 evaluation fights and 376 unique model requests.
 The common initial request is counted once despite serving three branches.
-Model calls have a $12.80 accounting cap, at most four concurrent requests, no
+The current run has a $12.15 accounting cap after prior-attempt allowances,
+at most four concurrent requests, no
 repair calls and a persisted stop after three consecutive failures. Unknown
 costs consume the per-call reservation. In-flight provider charges can exceed
 their declared limit; reported costs are not an independently reconciled bill.
