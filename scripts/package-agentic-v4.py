@@ -21,9 +21,11 @@ for name, expected in results['sources'].items():
     content = path.read_bytes()
     assert hashlib.sha256(content).hexdigest() == expected, name
     files[name] = content
-for name in ['results.json', 'summary.json', 'verification.json', 'arithmetic.json', 'view.html']:
+for name in ['results.json', 'summary.json', 'verification.json', 'arithmetic.json']:
     files[name] = (run / name).read_bytes()
-for name in ['scripts/replay-agentic-v4.mjs', 'scripts/agentic-v4/view.html', 'scripts/analyze-agentic-v4.py']:
+files['view.html'] = (run / 'view-r2.html').read_bytes()
+files['view-original.html'] = (run / 'view.html').read_bytes()
+for name in ['scripts/replay-agentic-v4-r2.mjs', 'scripts/agentic-v4/view-r2.html']:
     files[name] = (root / name).read_bytes()
 files['package.json'] = b'{"name":"npc-matched-v4-evidence","private":true,"type":"module","scripts":{"verify":"node scripts/verify-agentic-v4.mjs results.json"}}\n'
 files['README.txt'] = b'''Tactical Air: matched-experience NPC plan selection, v4
@@ -32,7 +34,11 @@ Node.js 24, Python 3 and system tar. No package install or model account require
 shasum -a 256 -c SHA256SUMS
 npm run verify
 python3 scripts/analyze-agentic-v4.py results.json summary.json
-node scripts/replay-agentic-v4.mjs results.json regenerated-view.html
+node scripts/replay-agentic-v4-r2.mjs results.json regenerated-view.html
+
+view.html uses presentation revision 2 (mobile wrapping and request-count wording).
+The original viewer is view-original.html; all 51 frozen study sources remain unchanged.
+Both viewer generators and templates are included and checksummed.
 
 Open view.html for the shared preparation, all evaluation trajectories and first/final fight recordings.
 Both selectors receive the same initial evidence and menu, then their own completed histories.

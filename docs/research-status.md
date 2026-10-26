@@ -2,6 +2,8 @@
 
 This record separates implementation checks, scripted effectiveness measurements, and human experience. Passing a correctness test is not an enjoyment result.
 
+The latest [matched-experience v4 study](agentic-npc-matched-v4.md) is complete. No selector candidate passed its advancement gates: stop this seven-plan development line and publish the existing evidence, with no fresh validation warranted. Completed scored physical workload is now **260,696 executions across twenty-three records**. This is execution workload, not independent sample size.
+
 ## Completed experiments
 
 The [adaptation-v1 report](experiments/adaptation-v1.md) is complete and passed integrity checks: 8,568 actual encounters, 32 independent tactic-sampling seeds, one deterministic map, and three scripted movement changes. The [protocol](experiments/adaptation-v1.protocol.json) was specified before this run; the fixtures were already familiar. It is a local engineering experiment, not a public preregistration.
@@ -131,7 +133,7 @@ No human-player data has been collected for the [human study protocol](playtest.
 
 The emphasis on uncertainty rather than isolated point estimates is consistent with [Agarwal et al., *Deep Reinforcement Learning at the Edge of the Statistical Precipice*](https://arxiv.org/abs/2108.13264). This prototype is a small bandit in one arena; it does not reproduce that paper's broad multi-task benchmark or claim that bootstrap intervals remove its sampling limitations.
 
-See the [roadmap](roadmap.md) for validated learning opportunities, fresh confirmation and reusable releases.
+See the [roadmap](roadmap.md) for completed findings, the publication decision and separately scoped open questions.
 
 ## Conservative-intervention development
 
@@ -174,4 +176,22 @@ The [completed v3 comparison](agentic-npc-switching-v3.md) adds **788 scored phy
 
 The separate [menu audit](agentic-menu-opportunity-v1.md) adds **2,236 scored diagnostic simulations**: 1,372 probes and 864 committed trajectory fights. Privileged greedy selection gains **3.875 HP** over the best held plan. The agent never receives those hidden scenarios or counterfactual results. Local probe maxima are not globally achievable bounds, and the two familiar worlds do not establish generalization.
 
-Together these bring completed scored physical workload to **259,880 across twenty-two scored records**. This is execution workload, not an independent sample count. Prior calibration/warm-ups reused by the audit, the interrupted v2 attempts, tests and verification replays remain excluded. All new scored outcomes reproduce exactly. V3 reported cost is **$9.9732408**, with no failures or unknown costs; the next comparison should test plan selection against a strong non-LLM controller at matched experience and query budgets before fresh validation.
+Together these bring completed scored physical workload to **259,880 across twenty-two scored records**. This is execution workload, not an independent sample count. Prior calibration/warm-ups reused by the audit, the interrupted v2 attempts, tests and verification replays remain excluded. All new scored outcomes reproduce exactly. V3 reported cost is **$9.9732408**, with no failures or unknown costs. These findings motivated the matched-experience comparison completed below.
+
+## Matched-experience NPC selection and stopping decision
+
+The [completed v4 comparison](agentic-npc-matched-v4.md) adds **816 physical executions**: **20 reproduced warm-ups, 28 survey fights and 768 evaluation fights**. The previous total of **259,880 across twenty-two scored records** therefore becomes **260,696 across twenty-three**. Reproduced warm-ups count as execution workload and add no independent evidence. The prior 1,384 calibration fights are referenced without rerunning or adding them again; interrupted v2 attempts, tests, cached transitions, verification and presentation reconstructions remain excluded from this completed scored total.
+
+Each world receives a public initial survey of all seven plans in forward and reverse catalog order. Both selectors receive identical preparation records, plan permissions and the same complete post-survey Rust checkpoint, then see their own subsequent histories. Attempts and average order position are balanced; hidden opponent conditions and evolving policy state during each sequential trial are not. Two survey attempts per plan remain noisy. The survey changes initialization, so historical evaluation scores are not direct controls.
+
+Across four equally weighted world/history cells, averaging model repetitions within each cell, continuous agent review averages **20.625 HP** of damage per evaluation fight, the active algorithm **20.5**, and both held-first controls **20.375**. Agent gains are **+0.125 HP** over the active algorithm and **+0.25 HP** over either held control. Its mean loss to the active algorithm in world 31042's recurring history is **−6.25 HP**. All five continuous-review gates fail. The held-agent candidate gains zero over held-algorithm and fails its gain and repetition checks; its cell harm check passes. Continued algorithmic selection gains only **+0.125 HP** over its held control and loses up to **2.5 HP** in individual cells, failing both checks.
+
+Ordinary Rust learning averages **15.375 HP**. The extra-experience `far` reference averages **25.125 HP** from the new initialization, with its **1,384 prior calibration fights** disclosed. Its historical **25.625 HP** is not the v4 reference result. Including the shared survey, agent/algorithm/held-control means are **17.605263 / 17.526316 / 17.447368 HP** across 38 post-warm-up fights. Full numeric details and all eight agent trajectories remain in the [summary](experiments/agentic-npc-matched-v4.summary.json); the [frozen protocol](experiments/agentic-npc-matched-v4.protocol.json) retains the predeclared gates. No evaluation player defeat or NPC survival occurs.
+
+All **192 logical requests succeed**, with zero retries, failures or unknown-cost records and **$6.9760712** in CLI-reported cost. The requested and reported model is `claude-sonnet-5-5` at medium effort. Mean request lifecycle latency is **5.257458 seconds**, p95 **8.294921 seconds**; the 96 algorithm selections average **0.012151 ms**, p95 **0.018958 ms**. Agent timing includes isolated CLI setup and cleanup, while algorithm timing measures selection only. Simulation waits for requests. The no-tools configuration and zero reported web-use counters are recorded, but provider identity, usage and cost telemetry are not independently authenticated. Every response reports `numTurns: 2`; 192 counts logical requests, not verified backend turns.
+
+All **816 physical outcomes**, **192 recorded agent decisions** and **96 algorithm decisions** replay exactly with zero model calls. The [verification](experiments/agentic-npc-matched-v4.verification.json) checks the protocol and **51 source hashes** frozen at **`6fd0795`**; the [independent arithmetic](experiments/agentic-npc-matched-v4.arithmetic.json) agrees with counts, costs, means and gates. The implementation test run passed **110 tests**. Replay checks recorded responses, not independently regenerated model behavior.
+
+The [complete results](experiments/agentic-npc-matched-v4.results.json.gz), [offline kit](../publication/inputs/releases/tactical-air-agentic-matched-v4.tar.gz) and [kit validation record](releases/agentic-npc-matched-v4.validation.json) preserve the evidence. The separately fingerprinted [r2 viewer](experiments/agentic-npc-matched-v4-view-2.html) improves mobile layout and disclosure after the run while retaining the frozen original viewer and sources; it changes no study input or outcome.
+
+**Stop this seven-plan development line and publish.** There is enough development evidence to report the prototype and unsuccessful interventions; no candidate warrants fresh validation. Do not add a prompt revision, parameter sweep or replacement run to pursue a favorable result. Two familiar worlds, reused schedules and model repetitions nested within them do not establish a general AI verdict, unfamiliar-world effectiveness or human enjoyment. The playable game's controller remains unchanged.

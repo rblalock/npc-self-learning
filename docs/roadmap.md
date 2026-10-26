@@ -1,6 +1,6 @@
 # Research progress and open questions
 
-The experiments measure adaptation, team learning and memory tied to observable situations. Whether these mechanisms improve human play remains a separate question.
+The experiments measure adaptation, team learning and memory tied to observable situations. The final matched-experience NPC selector comparison is complete: no candidate passed, so the current seven-plan development line stops. The next step is publication of the completed evidence, with no fresh validation warranted. Whether these mechanisms improve human play remains a separate question.
 
 ## Completed in 0.3.0
 
@@ -71,13 +71,22 @@ The [three-fight gate](agentic-npc-switching-v3.md) completes 788 fights and 376
 
 The [seven-plan audit](agentic-menu-opportunity-v1.md) adds 2,236 diagnostic simulations. A privileged greedy trajectory averages 29.5 HP versus 25.625 for the strongest held plan. It uses hidden current scenarios and counterfactual probes; the live agents receive neither. The audit establishes available opportunity in these familiar cases, not agent-achieved adaptation or a global performance ceiling.
 
-## Next: compare plan selection at a matched budget
+## Completed: matched-experience plan selection
 
-1. Test an agent and a strong non-LLM selector using identical observable evidence, action permissions and simulation-query budgets. Count all exploration and retain held-initial and fixed controls.
-2. Separate discovering a useful plan from responding to a changed opponent. The current gate does not solve either problem across both worlds.
-3. Freeze any improved candidate and its analysis before unfamiliar-world validation. Repeated requests on these two familiar cases do not increase the independent sample size.
+The [v4 study](agentic-npc-matched-v4.md) completes **816 physical executions**: twenty reproduced warm-ups, twenty-eight public survey fights and 768 evaluation fights. Agent and algorithm start with the same public preparation records and complete Rust checkpoint, then observe their own subsequent fights. There are **192 successful logical agent requests**, with **$6.9760712** in CLI-reported cost. All physical outcomes replay exactly, independent arithmetic agrees, and 110 implementation tests passed.
 
-## Further work: context transfer and team sample allocation
+Continuous review averages **20.625 HP** per evaluation fight, the active algorithm **20.5**, and both held-first controls **20.375**. All five continuous-review checks fail; the held-agent candidate fails its gain and repetition checks, and continued algorithmic selection fails both checks. The extra-experience `far` reference averages **25.125 HP** after the changed initialization and retains its disclosed 1,384 prior calibration fights. Its historical 25.625 HP is not a direct control.
+
+## Next: publish the completed development record
+
+1. Stop this seven-plan agent development line. No candidate warrants fresh validation; do not revise the prompt, sweep parameters, replace the run or add repetitions to obtain a favorable result.
+2. Publish the measured prototype and both favorable and unfavorable development findings with the [complete results](experiments/agentic-npc-matched-v4.results.json.gz), [summary](experiments/agentic-npc-matched-v4.summary.json), [physical verification](experiments/agentic-npc-matched-v4.verification.json), [independent arithmetic](experiments/agentic-npc-matched-v4.arithmetic.json), [offline kit](../publication/inputs/releases/tactical-air-agentic-matched-v4.tar.gz) and [kit validation record](releases/agentic-npc-matched-v4.validation.json). The development evidence is sufficient for publication.
+3. Use the separately fingerprinted [r2 viewer](experiments/agentic-npc-matched-v4-view-2.html) for mobile layout and disclosure improvements, while retaining the frozen original viewer and all measured sources from `6fd0795`. This is a presentation revision, not a study change.
+4. Keep the scope explicit: two familiar worlds, reused schedules and nested repetitions; a sequential public survey with only two attempts per plan; unauthenticated provider telemetry; and logical requests rather than a verified backend-turn count. This is a bounded negative result, not a general AI verdict.
+
+## Separate open questions: context transfer and team sample allocation
+
+These open questions do not alter the stopping decision or delay publication. Each would require its own hypothesis, budget and frozen protocol.
 
 1. Test the useful public-context rule on reserved unfamiliar layouts and less exact repetitions. Keep pooled and shuffled-label capacity controls. Current terrain evidence does not establish transfer.
 2. Separate squad sample allocation from representation under matched shared reward and total cost. Keep independent roles as a baseline and account for their different induced exploration distribution.
