@@ -30,6 +30,7 @@ for name, expected in results['sources'].items():
 files['results.json'] = result_bytes
 files['summary.json'] = (run / 'summary.json').read_bytes()
 files['view.html'] = (run / 'view.html').read_bytes()
+files['scripts/analyze-agentic-v2.py'] = (root / 'scripts/analyze-agentic-v2.py').read_bytes()
 files['package.json'] = (json.dumps({'name':'tactical-air-agentic-ablation-evidence','private':True,'type':'module',
     'scripts':{'verify':'node scripts/verify-agentic-v2.mjs results.json'}},indent=2)+'\n').encode()
 files['README.txt'] = b'''Tactical Air: repeated NPC review and planner-history development study
@@ -37,6 +38,7 @@ files['README.txt'] = b'''Tactical Air: repeated NPC review and planner-history 
 Requires Node.js 24 and tar. No dependency install or model credentials.
 Verify archive contents: shasum -a 256 -c SHA256SUMS
 Re-execute all combat/policy decisions: npm run verify
+Check descriptive arithmetic (Python 3): python3 scripts/analyze-agentic-v2.py results.json summary.json
 Open view.html to inspect the recorded fights and every agent adjustment.
 
 This kit freezes the sources actually used for the run. It replays recorded

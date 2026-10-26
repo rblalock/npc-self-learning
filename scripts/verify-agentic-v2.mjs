@@ -31,6 +31,16 @@ export async function verify(r,{sources=true,allowProtocolOverride=false}={}) {
   assert.equal(r.protocolSha256,sha(r.protocol));if(sources)await checkSources(r.sources);
   if(!allowProtocolOverride)assert.deepEqual(r.protocol,JSON.parse(await readFile(resolve(ROOT,PROTOCOL),'utf8')),'Results differ from frozen protocol');
   assert.ok(!r.incomplete,'Cannot verify incomplete study');verifyAdmissions(r.calls,r.protocol.agent);
+  const dependencyKey=k=>JSON.stringify([k.caseSeed,k.caseIndex,k.history,k.replicate,k.arm,k.round]);
+  const dependencies=new Map(r.calls.map(c=>[dependencyKey(c.key),c]));
+  for(const c of r.calls) {
+    assert.ok(Number.isSafeInteger(c.key.round)&&c.key.round>0,'Invalid request round');
+    if(c.key.round===1){assert.equal(c.key.arm,'shared');continue;}
+    assert.ok(['full','recent'].includes(c.key.arm));
+    const predecessor=dependencies.get(dependencyKey({...c.key,arm:c.key.round===2?'shared':c.key.arm,round:c.key.round-1}));
+    assert.ok(predecessor,'Missing decision predecessor');
+    assert.ok(c.completedBeforeAdmission>=predecessor.completionOrder,'Decision admitted before predecessor completed');
+  }
   assert.equal(r.calibration.length,r.protocol.cases.length);assert.equal(r.cases.length,r.protocol.cases.length);
   assert.equal(sha(r.calibration),r.calibrationSha256);
   const byKey=new Map(),used=new Set();

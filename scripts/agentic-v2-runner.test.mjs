@@ -33,6 +33,11 @@ test('paired study counts shared initialization once and exactly verifies calibr
     for(const mutation of [c=>{c.dispatched=false;},c=>{c.response.metadata.costUsd=-1;},c=>{c.response.metadata.costUsd=100;}]){
       const bad=structuredClone(results.calls),first=bad.find(c=>c.admissionOrder===1);mutation(first);assert.throws(()=>verifyAdmissions(bad,protocol.agent));
     }
+    const impossible=structuredClone(results),initial=impossible.calls.find(c=>c.key.arm==='shared');
+    initial.response.metadata.costUsd=100;
+    for(const c of impossible.calls){c.completedBeforeAdmission=0;c.completionOrder=c===initial?impossible.calls.length:c.completionOrder-1;}
+    assert.doesNotThrow(()=>verifyAdmissions(impossible.calls,protocol.agent),'Generic ordering alone misses the dependency');
+    await assert.rejects(verify(impossible,{sources:false,allowProtocolOverride:true}),/before predecessor completed/);
     await assert.rejects(run({out,protocol,provider:{decide(){throw Error('Must not call');}},log:()=>{}}),/Completed result exists/);
   }finally{await rm(out,{recursive:true,force:true});}
 });
