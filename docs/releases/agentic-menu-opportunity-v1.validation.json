@@ -1,0 +1,22 @@
+{
+  "archiveSha256": "8e9a0f922d1057b6e3a0fb5155a4fc93947f7c22421fe21901a9d194ce3b03f3",
+  "contentChecksums": 44,
+  "sourceFingerprints": 38,
+  "cleanExtractionReplay": {
+    "verified": true,
+    "resultsSha256": "679b19754f8bc80477131220d25d7ea70d1581cf37fd87185bfdaff1396858bf",
+    "totalPhysicalFightsReplayed": 2236,
+    "byCategory": {
+      "checkpointProbes": 28,
+      "heldCommitted": 672,
+      "referenceProbes": 672,
+      "referenceCommitted": 96,
+      "greedyProbes": 672,
+      "greedyCommitted": 96
+    },
+    "modelCallsMade": 0,
+    "scope": "Offline deterministic replay of this privileged development diagnostic; no agent predictions or global optimality claim."
+  },
+  "testsPassed": 9,
+  "newModelCalls": 0
+}

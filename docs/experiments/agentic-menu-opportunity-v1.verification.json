@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "resultsSha256": "679b19754f8bc80477131220d25d7ea70d1581cf37fd87185bfdaff1396858bf",
+  "totalPhysicalFightsReplayed": 2236,
+  "byCategory": {
+    "checkpointProbes": 28,
+    "heldCommitted": 672,
+    "referenceProbes": 672,
+    "referenceCommitted": 96,
+    "greedyProbes": 672,
+    "greedyCommitted": 96
+  },
+  "modelCallsMade": 0,
+  "scope": "Offline deterministic replay of this privileged development diagnostic; no agent predictions or global optimality claim."
+}
