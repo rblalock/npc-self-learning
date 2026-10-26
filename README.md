@@ -10,9 +10,9 @@ The game owns perception, movement, combat and rewards. The library owns bounded
 
 ## Latest research
 
-The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review after ten warm-up fights. Across two familiar ranger cases, agent-controlled plans increased NPC damage by 5.63 HP per fight on stable histories and 5.44 HP on changing histories versus ordinary learning. All 340 fights replay exactly. This is development evidence: a better fixed plan could explain some gains, and memory benefit remains untested. Inspect the [recorded viewer](docs/experiments/agentic-npc-pilot-v1-view.html) or [frozen offline kit](publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz). This experimental host is separate from the playable game's controller.
+The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review after ten warm-up fights. Across two familiar ranger cases, agent-controlled plans increased NPC damage by 5.63 HP per fight on stable histories and 5.44 HP on changing histories versus ordinary learning. All 340 fights replay exactly. This is development evidence: that pilot did not isolate the value of repeated review or access to history. Inspect the [recorded viewer](docs/experiments/agentic-npc-pilot-v1-view.html) or [frozen offline kit](publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz). This experimental host is separate from the playable game's controller.
 
-The [fixed-plan and planner-history follow-up](docs/agentic-npc-ablation-v2.md) is implemented. Two stopped attempts are preserved: an initial sign-in failure, then sixteen successful requests followed by four timeouts. The full comparison has no result yet.
+The [fixed-plan and planner-history follow-up](docs/agentic-npc-ablation-v2.md) is complete: 2,172 fights and 376 successful requests. Full-history review averaged 16.8125 HP per fight, versus 17.00 when holding the agent’s first choice, 15.6875 with latest-fight input, and 25.625 with a separately calibrated fixed plan. Repeated review added no average benefit over the initial selection. These are descriptive results on two familiar cases; the fixed benchmark used extra calibration experience. The [viewer](docs/experiments/agentic-npc-ablation-v2-view.html) and [offline kit](publication/inputs/releases/tactical-air-agentic-ablation-v2.tar.gz) preserve all results; both interrupted attempts remain separately available.
 
 The [completed article](docs/publication/article.md) and [companion report](docs/publication/research-report.md) cover individual adaptation, team choice, public terrain memory and automatic forgetting.
 
@@ -123,7 +123,7 @@ The [change-detection follow-up](docs/change-detection-lab-v1.md) tests automati
 
 ## Where this goes next
 
-Test whether repeated agent review adds value beyond a development-selected fixed plan, and whether its remembered history helps. Longer histories and fresh worlds are needed before generalizing the pilot's positive damage result.
+Compare the agent's history-and-note input with a simple minimum-evidence rule for switching plans. Audit whether the full seven-plan menu offers situations where changing plans can outperform a strong held plan. Lock an improved candidate before testing unfamiliar worlds; the completed review comparison does not justify continuous agent calls yet.
 
 Separate detecting a change from deciding that forgetting will improve performance. Calibrate against stable noisy histories before another reserved run, then test context transfer and team sample allocation under matched budgets. Human recognition, fairness and enjoyment have not been measured.
 

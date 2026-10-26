@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "verified": true,
+  "resultsSha256": "85f2d9a4f8f78864dc3ebeeadef83db71b05fb3cad96a69b5d7231b0e93e07a4",
+  "calibrationFightsReplayed": 1384,
+  "evaluationFightsReplayed": 788,
+  "totalPhysicalFightsReplayed": 2172,
+  "uniqueAgentDecisionsReplayed": 376,
+  "sourceHashesChecked": true,
+  "modelCallsMade": 0,
+  "scope": "Exact replay of recorded model decisions; not independent replication or regenerated model outputs."
+}

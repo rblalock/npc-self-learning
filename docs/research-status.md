@@ -153,16 +153,16 @@ Every fight, observation, recorded decision and captured frame reproduces exactl
 
 **Continue development; do not claim a memory or adaptation advantage yet.** Some successful trajectories settle on a static plan. Compare repeated review with a development-selected fixed plan and a history/note ablation, then use longer histories before fresh validation. This experiment does not change the playable game's controller or the published earlier results.
 
-## Fixed-plan and planner-history follow-up: interrupted attempts
+## Repeated NPC review and planner-history comparison
 
-The [v2 follow-up](agentic-npc-ablation-v2.md) is implemented and frozen for a 24-round comparison after ten shared warm-ups. It adds calibrated fixed and held-initial controls, plus full-history and latest-fight agent branches with a shared initial decision. Policy summaries are omitted from both planner inputs; Rust learning continues.
+The [completed v2 follow-up](agentic-npc-ablation-v2.md) adds **2,172 scored physical fights**: 1,384 calibration fights and 788 evaluation fights, including twenty shared warm-ups. This brings the completed scored workload to **256,856 across twenty scored records**. Two infrastructure attempts add 1,700 and 1,816 separately preserved executions, excluded from that total. Verification, cached development and connection smoke tests remain excluded.
 
-The first live attempt on October 26 stopped because Claude CLI authentication was absent. Four in-flight requests failed before inference, reporting zero tokens and zero cost. The latched failure stop prevented further calls. All 1,384 calibration and 316 recorded evaluation/control fights reproduce exactly. This incomplete infrastructure attempt is preserved separately from completed-study totals and supports no new agent-effectiveness comparison. A later authenticated run must disclose the restart rather than overwrite or relabel this attempt.
+Across equally weighted cases and histories, full review averages **16.8125 HP** per post-warm-up fight, calibrated fixed **25.625**, held initial **17.00**, and latest-fight review **15.6875**. The three primary full-minus-control differences are **−8.8125**, **−0.1875**, and **+1.125 HP**, respectively. Continued review beats the held initial choice in only one of eight paired trajectories, ties twice and loses five times. Full review improves over ordinary learning on stable histories (+4 HP), but loses on changing histories (−1.125 HP).
 
-The second attempt passed authentication and completed sixteen model requests.
-The following four concurrent requests timed out after ninety seconds, triggering
-the same permanent stop. Its 1,384 calibration and 432 evaluation/control fights
-are also excluded from completed-study totals. The sixteen successful requests
-reported $0.248518; four timeout costs remain unknown, with $0.40 conservatively
-counted for admission. There is no completed v2 effectiveness result. The record
-preserves successful decisions, fallbacks, partial trajectories and run sources.
+Full-history agents make 38 plan switches after initialization; latest-fight agents make 94. Access to accumulated history and notes therefore supports a narrow descriptive benefit over the latest-fight input in these runs, without demonstrating a notes-only benefit or superiority over a strong held plan. The calibrated fixed plan is `far` in both cases; it retains ordinary Rust tactic learning and receives additional calibration experience. It is not an equal-resource selector comparison.
+
+All **376 planner requests succeed**, with **$6.4860687** CLI-reported cost, 4.900-second mean latency and 8.754-second p95. Every physical fight, observation, recorded decision and captured frame replays exactly. The clean-extraction kit also regenerates the viewer byte for byte. No evaluation branch defeats the player or leaves the NPC alive.
+
+The completed run follows an initial sign-in failure and a second run stopped after sixteen successes and four timeouts. Both stopped journals remain latched and archived. Before the third attempt, only the accounting cap changed: $12.15 plus $0.648518 in prior known costs and unknown-cost allowances fits within $12.80. Across all v2 attempts, known reported cost is $6.7345867; adding four timeout allowances gives $7.1345867 in admission accounting. Actual charges for those timeouts remain unknown.
+
+Two familiar ranger worlds and two model repetitions remain development evidence. No p-values, generalization claim or decoding-randomness benefit follows. Next compare a minimum-evidence switching rule and establish adaptation opportunity across the expanded plan menu before advancing a candidate to unfamiliar cases.

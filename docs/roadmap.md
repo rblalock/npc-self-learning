@@ -61,14 +61,16 @@ The [between-round pilot](agentic-npc-pilot-v1.md) gives each case ten ordinary-
 
 All 340 scored fights and 128 recorded decisions replay exactly. Mean NPC damage improves by 5.63 HP on stable histories and 5.44 HP on recurring histories versus ordinary learning. The agent also exceeds the declared statistical comparator's aggregate, but loses to random planning in one case/history. Two familiar cases establish feasibility and descriptive outcomes; they do not establish general superiority, a memory benefit or the value of repeated adjustment over a fixed plan.
 
-## Next: isolate the value of agent review
+## Completed: repeated review and planner-history comparison
 
-The [v2 comparison](agentic-npc-ablation-v2.md) is implemented with a calibrated fixed plan, paired held-initial branches, and full-history versus latest-fight agent inputs. Tests and the synthetic 64-recording viewer checks pass. Two live attempts stopped: the first before inference because the CLI was signed out; the second after sixteen successful requests and four timeouts. Both records are preserved. Resolve the request hangs and execute a new, disclosed run before drawing any comparison result.
+The [v2 comparison](agentic-npc-ablation-v2.md) completed 2,172 fights and 376 successful requests. Full-history review averaged 0.1875 HP less than holding its initial choice, 1.125 HP more than latest-fight review, and 8.8125 HP less than the calibrated fixed plan. The full-history agent switched less often, but continued review did not improve its mean over the first selection. All physical outcomes and decisions replay exactly; the 64-recording viewer, source kit and both interrupted attempts are preserved.
 
-1. Select a fixed-plan comparator on separate development data, then compare it with repeated agent review under the same history and encounter budget.
-2. Ablate carried notes and access to earlier observations while preserving the action menu and call budget. Separate memory value from the expanded behavior choices.
-3. Use longer stable, change and return histories to measure recovery and unnecessary switching. Keep model repetitions nested within cases and record every failure, latency and cost.
-4. Lock the candidate and analysis before testing unfamiliar worlds. Do not treat these two development fixtures as fresh validation.
+## Next: test the switching rule and available opportunity
+
+1. Compare accumulated history with a simple minimum-evidence rule before changing plans. Keep the same observation and action permissions; retain the held-initial comparator and account for all exploration.
+2. Audit the full seven-plan menu for situations where changing plans can outperform a strong held plan. The earlier two-tactic admission check did not establish this opportunity for distance and prediction settings.
+3. Compare any improved selector with a strong non-LLM selector using matched observations and simulation access. The calibrated fixed benchmark is informative, but receives extra calibration experience.
+4. Lock the candidate and analysis before testing unfamiliar worlds. Two familiar development cases and repeated model calls are not fresh-world validation.
 
 ## Further work: context transfer and team sample allocation
 
