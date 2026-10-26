@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'">
+<title>NPC review ablation v2 — Tactical Air</title>
+<style>
+:root{color-scheme:light;--ink:#23362b;--muted:#5e685c;--paper:#f4f1e4;--line:#c5c9b6;--card:#fffdf5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+main{max-width:1140px;margin:auto;padding:28px 24px}h1{font-size:32px;line-height:1.15;margin:8px 0 14px}h2{font-size:21px;margin:28px 0 12px}h3{font-size:16px;margin:0 0 10px}p{max-width:85ch}
+.eyebrow{font:12px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.sub{color:var(--muted);font-size:14px}.notice{border-left:3px solid #9f6b27;padding:12px 16px;background:#e9e1ca;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:18px 0;border-block:1px solid var(--line)}.stats strong{font-size:24px;display:block}.stats span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:18px;background:var(--card);border:1px solid var(--line);min-width:0}.card p{margin:8px 0}.cards details{font-size:14px}
+.controls{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}.controls label{display:grid;gap:4px;font-size:12px;color:var(--muted);min-width:0;max-width:100%}
+select,button{font:inherit;border:1px solid #8e9984;border-radius:3px;padding:10px 12px;background:var(--card);color:var(--ink);max-width:100%;min-height:44px}button,summary{cursor:pointer}summary{padding:5px 0}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #b77927;outline-offset:2px}button:disabled{opacity:.5;cursor:default}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;table-layout:fixed}caption{text-align:left;color:var(--muted);font-size:13px;margin:8px 0}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}th{font-weight:600;font-size:12px;color:var(--muted)}
+.chart{width:100%;height:270px;display:block;border-bottom:1px solid var(--line)}.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:12px;margin-top:12px}.legend span:before{content:'';display:inline-block;width:22px;border-top:3px var(--pattern,solid) var(--color);vertical-align:middle;margin-right:6px}.legend .selected{font-weight:700}
+.replay{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px;margin-top:20px}.map{background:#dbe0c1;border:1px solid #a2ad8d;width:100%;height:auto;display:block}.notes{font-size:14px;min-width:0}.notes p{margin:4px 0 14px}.notes strong{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.playback{display:flex;gap:10px;align-items:center;margin-top:10px}.playback input{flex:1;min-width:0;width:100%;height:44px}.playback button{flex-shrink:0}.playback output{font-size:12px;min-width:46px;text-align:right}
+.rounds th:nth-child(1){width:10%}.rounds th:nth-child(2){width:18%}.rounds th:nth-child(3){width:12%}.rounds th:nth-child(4){width:60%}.rounds p{margin:5px 0}.rounds summary{font-size:13px}.evidence{margin:8px 0}.evidence table{font-size:12px}.evidence th,.evidence td{padding:6px}.evidence details{margin:5px 0}
+details p,code,.hash{overflow-wrap:anywhere;word-break:break-word}code{font-size:11px}.hashes{list-style:none;padding:0}.hashes li{margin:12px 0}.hashes code{display:block}footer{overflow-wrap:anywhere;margin-top:30px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:12px}footer p{max-width:none}
+@media(max-width:700px){main{padding:20px 14px}h1{font-size:27px}.cards,.replay{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.stats strong{font-size:22px}.controls label{flex:1 1 145px}select{width:100%}.chart{height:245px}.playback{gap:8px}.playback button{font-size:13px;padding:8px}.card{padding:14px}
+table.responsive,table.responsive tbody,table.responsive caption{display:block}table.responsive caption{width:100%}table.responsive thead{display:none}table.responsive tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}table.responsive td{display:grid;grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:12px;padding:5px 0;border:0;width:auto}table.responsive td:before{content:attr(data-label);font-size:12px;color:var(--muted);font-weight:600}table.responsive td.wide{display:block}table.responsive td.wide:before{display:block;margin-bottom:5px}.evidence table{table-layout:fixed}.evidence th,.evidence td{padding:5px 2px}.rounds details{max-width:100%}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">Tactical Air / development mechanism study / v2</div>
+<h1>What does repeated NPC review add?</h1>
+<p class="sub" id="intro"></p>
+<div class="stats" id="stats"></div>
+<p class="sub" id="budget"></p>
+<p class="notice" id="scope"></p>
+
+<h2>Calibrated fixed plans</h2>
+<p class="sub">Each case selects one complete plan using separate calibration fights, then holds it across both evaluation histories. This informed static benchmark receives extra simulator experience; resources and information are not equal across arms.</p>
+<div class="cards" id="calibration"></div>
+
+<h2>Aggregate NPC damage</h2>
+<p class="sub">HP dealt per post-warm-up fight; higher favors the enemy NPC. Average model repetitions within each case/history, then give cases equal weight. Every evaluation round counts, including exploration and provider failures.</p>
+<table class="responsive"><caption>Mean damage by controller and opponent history</caption><thead><tr><th>History</th><th>Retained</th><th>Calibrated fixed</th><th>Held initial</th><th>Full review</th><th>Recent only</th></tr></thead><tbody id="aggregate"></tbody></table>
+<table class="responsive"><caption>Three primary descriptive contrasts · HP per fight · positive favors full review</caption><thead><tr><th>History</th><th>Full − fixed</th><th>Full − initial</th><th>Full − recent</th></tr></thead><tbody id="contrasts"></tbody></table>
+<p class="notice">Full − initial measures repeated review beyond the realized first selection. Full − recent measures continued access to chronological history and notes together after shared initialization. Recent-only retains Rust learning, current plan, and consequences of earlier choices. This is neither a globally memory-free comparison nor a notes-only effect.</p>
+
+<h2>Inspect all eight trajectories</h2>
+<div class="controls"><label>Case<select id="case"></select></label><label>Opponent history<select id="history"></select></label></div>
+<p class="sub" id="case-plan"></p>
+<svg id="chart" class="chart" viewBox="0 0 1000 270" role="img" aria-label="All eight cumulative NPC damage trajectories"></svg>
+<div class="legend" id="legend"></div>
+<p class="sub">Cumulative NPC damage, including every post-warm-up fight. Solid lines: repetition 1 and unreplicated controls; dashed lines: repetition 2. Overlapping lines can indicate identical outcomes. Hidden A/B labels and future schedules are evaluator information, never planner input.</p>
+<table class="responsive"><caption>All branches in this case/history</caption><thead><tr><th>Controller</th><th>Mean HP</th><th>Total HP</th><th>Player defeats</th><th>NPC survivals</th><th>Plan changes</th></tr></thead><tbody id="branch-summary"></tbody></table>
+<table class="responsive"><caption>Paired per-repetition differences · HP per fight · descriptive, not independent worlds</caption><thead><tr><th>Repetition</th><th>Full − fixed</th><th>Full − initial</th><th>Full − recent</th></tr></thead><tbody id="paired"></tbody></table>
+
+<div class="controls"><label>Controller and repetition<select id="arm"></select></label><label>Recorded fight<select id="round"></select></label></div>
+<div class="replay"><div>
+<canvas id="map" class="map" width="920" height="600" role="img" aria-label="Recorded fight: blue player, red enemy ranger">Recorded combat replay. Measured outcomes are also described alongside the canvas.</canvas>
+<div class="playback"><button id="play" type="button">Play fight</button><input id="scrub" type="range" min="0" value="0" aria-label="Replay frame"><output id="time" for="scrub"></output></div>
+<p class="sub">Actual recorded simulation frames; playback starts paused. Blue: player. Red: enemy ranger. First and final fights were selected for capture before results; paired first fights intentionally appear in multiple branches.</p>
+</div><div class="notes" id="notes"></div></div>
+
+<h2>Every round: plan, damage and evidence</h2>
+<p class="sub" id="round-context"></p>
+<table class="responsive rounds"><thead><tr><th>Round</th><th>Plan / tactic</th><th>Damage HP</th><th>Review and evidence</th></tr></thead><tbody id="rounds"></tbody></table>
+
+<details><summary>Study boundaries and controls</summary><p id="limits"></p><p>All arms retain ordinary Rust learning. Both reviewing arms omit policy cells, scores, counts and probabilities. Full review receives completed warm-up and own-branch fights plus its previous bounded note. Recent-only receives the shared initial warm-up request; later requests receive only the latest own fight, current plan and true round clock. Recent output notes are recorded but never fed back.</p><p>Plans can change engagement distance, aim/lead selection and lead prediction. Health, damage, speed, cooldowns and visibility are fixed. A held plan can still produce different learned tactics. New keyed schedules are not unseen-world validation, and model repetitions are nested trajectories. No p-values or confidence intervals are claimed.</p></details>
+<footer><p id="provenance"></p><details><summary>Source fingerprints</summary><ul class="hashes" id="hashes"></ul></details><p>This standalone viewer makes no model calls or external requests. Replays use recorded model decisions and simulation frames; a fresh model run may differ.</p></footer>
+</main>
+<script>
+const DATA=__DATA__;
+const $=id=>document.getElementById(id);
+const labels={retained:'Retained learner',fixed:'Calibrated fixed',initial:'Held initial',full:'Full review',recent:'Recent only'};
+const colors={retained:'#657263',fixed:'#8c641e',initial:'#795599',full:'#9b392b',recent:'#236b85'};
+const order={retained:0,fixed:1,initial:2,full:3,recent:4};
+const fmt=n=>Number.isFinite(n)?n.toFixed(2):'unknown';
+const signed=n=>Number.isFinite(n)?(n>=0?'+':'')+fmt(n):'unknown';
+const money=n=>Number.isFinite(n)?'$'+n.toFixed(4):'unknown';
+const seconds=n=>Number.isFinite(n)?fmt(n/1000)+' s':'unknown latency';
+const callById=new Map(DATA.calls.map(c=>[c.id,c]));
+const branchLabel=b=>labels[b.arm]+(b.replicate?' / repetition '+b.replicate:'');
+function el(tag,text,parent){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(parent)parent.append(e);return e;}
+function option(select,value,text){const e=el('option',text,select);e.value=String(value);}
+function cell(row,label,text,wide=false){const e=el('td',undefined,row);e.dataset.label=label;if(wide)e.className='wide';if(text!==undefined)el('span',String(text),e);return e;}
+function tableRow(parent,headers,values){const tr=el('tr',undefined,parent);values.forEach((v,i)=>cell(tr,headers[i],v));return tr;}
+function paragraph(parent,text,cls){const p=el('p',text,parent);if(cls)p.className=cls;return p;}
+function details(parent,title){const d=el('details',undefined,parent);el('summary',title,d);return d;}
+function note(title,text,parent=$('notes')){el('strong',title,parent);paragraph(parent,text);}
+function callText(call){if(!call)return 'No model call';const m=call.metadata;return call.status+(call.errorCode?' / '+call.errorCode:'')+' · '+seconds(m.durationMs)+' · '+money(m.costUsd)+' · '+(m.models.join(', ')||'model unreported');}
+
+const s=DATA.summary,p=DATA.protocol;
+$('intro').textContent=p.warmupRounds+' shared warm-up fights, then '+p.postRounds+' evaluation rounds per branch. Two familiar ranger worlds compare ordinary learning, calibrated fixed plans, held initial selections, full review and recent-only review.';
+for(const [value,label] of [[s.calibrationFights,'calibration fights · separate budget'],[s.evaluationFights,'evaluation fights · includes warm-ups'],[s.recordedCalls,'unique model requests · shared once'],[s.failedCalls,'failed requests · fallbacks included'],[money(s.reportedCostUsd),'total CLI-reported cost'],[DATA.recordedFights,'first/final recorded fights']]){
+  const d=el('div',undefined,$('stats'));el('strong',String(value),d);el('span',label,d);
+}
+$('budget').textContent='Calibration '+s.calibrationFights+' + evaluation '+s.evaluationFights+' = '+s.scoredFights+' scored physical fights. '+
+  (p.budget?'Protocol budget: '+p.budget.calibrationFights+' calibration / '+p.budget.evaluationFights+' evaluation / '+p.budget.uniqueModelRequests+' unique requests. ':'')+
+  s.successfulCalls+' successful requests; '+s.unknownCostCalls+' costs unknown; known reported cost '+money(s.knownReportedCostUsd)+'. Mean latency '+seconds(s.meanLatencyMs)+'; p95 '+seconds(s.p95LatencyMs)+'. Shared initial requests are counted once. Calibration uses no model requests.';
+$('scope').textContent=p.status;
+$('limits').textContent=s.limits;
+for(const c of s.selection){
+  const card=el('article',undefined,$('calibration'));card.className='card';
+  el('h3','Case '+c.seed+' / fixture '+c.index,card);paragraph(card,'Selected plan: '+c.planId);
+  paragraph(card,'Selected across both histories and all calibration repetitions. This plan is frozen for evaluation.','sub');
+  const d=details(card,'All calibration plan means');const t=el('table',undefined,d);el('caption','Calibration NPC damage, HP per fight',t);
+  const head=el('tr',undefined,el('thead',undefined,t));for(const label of ['Plan','Mean damage'])el('th',label,head);
+  const body=el('tbody',undefined,t);for(const m of c.means)tableRow(body,['Plan','Mean damage'],[m.planId,fmt(m.meanDamage)]);
+  paragraph(d,'Tie rule: '+c.tieBreak);paragraph(d,'Calibration SHA-256: '+c.calibrationSha256,'hash');
+}
+for(const h of p.histories){
+  const data=s.byHistory[h];
+  tableRow($('aggregate'),['History','Retained','Calibrated fixed','Held initial','Full review','Recent only'],[h,...['retained','fixed','initial','full','recent'].map(k=>fmt(data.means[k]))]);
+  tableRow($('contrasts'),['History','Full − fixed','Full − initial','Full − recent'],[h,...['fullVsFixed','fullVsInitial','fullVsRecent'].map(k=>signed(data.differences[k]))]);
+}
+DATA.cases.forEach((c,i)=>option($('case'),i,c.seed+' / fixture '+c.index));
+p.histories.forEach(h=>option($('history'),h,h));
+const selected=()=>DATA.cases[+$('case').value];
+const branches=()=>[...selected().histories[$('history').value]].sort((a,b)=>a.replicate-b.replicate||order[a.arm]-order[b.arm]);
+const branch=()=>branches().find(b=>b.arm+':'+b.replicate===$('arm').value);
+const pair=()=>s.pairs.find(x=>x.seed===selected().seed&&x.index===selected().index&&x.history===$('history').value);
+const calibrated=()=>s.selection.find(x=>x.seed===selected().seed&&x.index===selected().index);
+const sharedRow=b=>branches().find(x=>x.arm==='full'&&x.replicate===b.replicate)?.rows[0];
+
+function evidence(parent,observation,hash){
+  if(!observation)return;
+  const d=details(parent,'Evidence supplied before the decision ('+observation.history.length+' completed fights)');d.className='evidence';
+  paragraph(d,'Next physical round '+observation.nextRound+' · current plan '+observation.currentPlanId+'. Policy scores and future schedules are omitted.');
+  paragraph(d,'Input note: '+(observation.memory||'Empty.'));
+  const t=el('table',undefined,d);el('caption','Only reported observations supplied to this request',t);
+  const head=el('tr',undefined,el('thead',undefined,t));for(const h of ['Round','Plan / tactic','Observed HP','NPC HP'])el('th',h,head);
+  const body=el('tbody',undefined,t);
+  for(const r of observation.history)tableRow(body,['Round','Plan / tactic','Observed HP','NPC HP'],[r.round,r.planId+' / '+r.tactic,r.observed?fmt(r.npcDamage):'unobserved',fmt(r.npcRemainingHealth)]);
+  const tele=details(d,'Observed telemetry by fight');
+  for(const r of observation.history){
+    const text=r.telemetry.map(t=>t.role+': '+fmt(t.visibleSeconds)+' s visible; speed '+fmt(t.meanVisibleSpeed)+'; stopped fraction '+fmt(t.stoppedFraction)+'; range '+fmt(t.meanVisibleRange)+'; '+t.shotsFired+' shots / '+t.hits+' hits').join(' · ');
+    paragraph(tele,'Round '+r.round+' · '+(text||'No telemetry reported.'));
+  }
+  paragraph(d,'Observation SHA-256: '+hash,'hash');
+}
+function review(parent,b,r){
+  if(r.decision){
+    paragraph(parent,r.decision.reason||'No reason recorded.');
+    const d=details(parent,'Prediction, note and call');
+    paragraph(d,'Prediction before this fight: '+(r.decision.prediction||'None recorded.'));
+    paragraph(d,(b.arm==='recent'?'Output note (recorded, never fed back): ':'Output note for the next review: ')+(r.decision.memory||'Empty.'));
+    paragraph(d,(r.postRound===1?'Shared initial request: ':'Request: ')+callText(callById.get(r.callId)));
+    paragraph(d,'Call ID: '+r.callId,'hash');
+    evidence(parent,r.observation,r.observationSha256);
+  }else if(b.arm==='initial'){
+    const first=sharedRow(b);
+    paragraph(parent,'Hold initial plan '+b.planId+'. '+(r.postRound===1?'Shared initial selection; no additional request.':'No model request for this round.'));
+    const d=details(parent,'Shared initial selection and evidence');
+    paragraph(d,first.decision.reason);paragraph(d,'Initial prediction: '+first.decision.prediction);
+    paragraph(d,callText(callById.get(b.originCallId)));paragraph(d,'Origin call ID: '+b.originCallId,'hash');
+    evidence(d,first.observation,first.observationSha256);
+  }else{
+    paragraph(parent,b.arm==='fixed'?'Hold the separately calibrated plan '+b.planId+'. No model request.':'Ordinary Rust learner with the baseline plan. No model request.');
+    if(b.arm==='fixed')paragraph(parent,'Calibration evidence: mean '+fmt(calibrated().means.find(x=>x.planId===b.planId)?.meanDamage)+' HP per calibration fight.','sub');
+  }
+}
+
+let frames=[],walls=[],frame=0,playing=false,raf=null,startTimestamp=null,startTime=0;
+function stop(){playing=false;$('play').textContent='Play fight';if(raf!==null)cancelAnimationFrame(raf);raf=null;startTimestamp=null;}
+function draw(){
+  const ctx=$('map').getContext('2d');ctx.clearRect(0,0,920,600);ctx.fillStyle='#dbe0c1';ctx.fillRect(0,0,920,600);
+  ctx.strokeStyle='#c3cba9';ctx.lineWidth=1;
+  for(let x=20;x<920;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,600);ctx.stroke();}
+  for(let y=20;y<600;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(920,y);ctx.stroke();}
+  for(const w of walls){ctx.fillStyle='#879777';ctx.fillRect(w.x,w.y,w.w,w.h);ctx.strokeStyle='#536c4b';ctx.strokeRect(w.x,w.y,w.w,w.h);}
+  const f=frames[frame];if(!f)return;
+  ctx.fillStyle='#285e7a';ctx.beginPath();ctx.arc(f.player.x,f.player.y,13,0,Math.PI*2);ctx.fill();
+  for(const e of f.enemies){
+    if(e.hp<=0)continue;ctx.fillStyle='#9b392b';ctx.beginPath();ctx.moveTo(e.x,e.y-18);ctx.lineTo(e.x+15,e.y+12);ctx.lineTo(e.x-15,e.y+12);ctx.closePath();ctx.fill();
+    if(e.windup>0&&e.target){ctx.strokeStyle='#c77b32';ctx.beginPath();ctx.moveTo(e.x,e.y);ctx.lineTo(e.target.x,e.target.y);ctx.stroke();}
+  }
+  for(const bullet of f.bullets){ctx.fillStyle=bullet.enemy===null?'#285e7a':'#9b392b';ctx.beginPath();ctx.arc(bullet.x,bullet.y,3,0,Math.PI*2);ctx.fill();}
+  ctx.fillStyle='#23362b';ctx.font='18px system-ui';ctx.fillText('Player HP '+fmt(f.player.hp),18,28);
+  ctx.fillText('NPC HP '+f.enemies.map(e=>fmt(Math.max(0,e.hp))).join(', '),18,52);
+  $('time').textContent=f.time.toFixed(1)+' s';$('scrub').value=String(frame);
+  $('scrub').setAttribute('aria-valuetext',f.time.toFixed(1)+' seconds, frame '+(frame+1)+' of '+frames.length);
+}
+function animate(t){
+  if(!playing)return;if(startTimestamp===null)startTimestamp=t;
+  const time=startTime+(t-startTimestamp)/1000;
+  while(frame<frames.length-1&&frames[frame+1].time<=time)frame++;
+  draw();if(frame>=frames.length-1){stop();return;}raf=requestAnimationFrame(animate);
+}
+$('play').onclick=()=>{
+  if(playing){stop();return;}if(!frames.length)return;if(frame>=frames.length-1)frame=0;
+  playing=true;startTimestamp=null;startTime=frames[frame].time;$('play').textContent='Pause';draw();raf=requestAnimationFrame(animate);
+};
+$('scrub').oninput=()=>{stop();frame=+$('scrub').value;draw();};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+
+function recording(){
+  stop();const b=branch(),i=+$('round').value,r=b.rows[i];frames=r.fight.frames;walls=b.schedule[i].walls;frame=0;
+  $('scrub').max=String(frames.length-1);$('scrub').disabled=frames.length<2;$('play').disabled=frames.length<2;$('notes').replaceChildren();
+  note('Recorded fight',branchLabel(b)+' · post-warm-up round '+r.postRound+' / physical round '+r.fight.round);
+  note('Applied NPC plan',r.fight.planId+' · actual Rust tactic: '+r.fight.tactic);
+  note('Measured evaluator outcome',fmt(r.fight.physical.damage)+' HP dealt; NPC remaining health '+fmt(r.fight.physical.enemies[0].hp)+'; result '+r.fight.physical.result+'.');
+  note('Hidden schedule (evaluator only)',(b.schedule[i].side===0?'A':'B')+' · probability of B '+fmt(b.schedule[i].probabilityB));
+  review($('notes'),b,r);draw();
+}
+function controller(){
+  stop();const b=branch();$('round').replaceChildren();
+  b.rows.forEach((r,i)=>{if(r.fight.frames)option($('round'),i,'Round '+r.postRound+(i===0?' · first':' · final'));});
+  $('round-context').textContent=branchLabel(b)+'. Rounds below are post-warm-up; physical rounds include the '+p.warmupRounds+' warm-ups. '+
+    (b.arm==='recent'?'Only the shared first request includes warm-up history; later requests receive one latest fight and no previous note.':'')+
+    ' Plan changes are relative to the previous plan, starting from baseline. Rust learning continues.';
+  $('rounds').replaceChildren();
+  for(const r of b.rows){
+    const tr=el('tr',undefined,$('rounds'));cell(tr,'Round',r.postRound);cell(tr,'Plan / tactic',r.fight.planId+' / '+r.fight.tactic+(r.changed?' · changed':''));cell(tr,'Damage HP',fmt(r.fight.physical.damage));
+    review(cell(tr,'Review and evidence',undefined,true),b,r);
+  }
+  chart();recording();
+}
+function chart(){
+  const svg=$('chart');svg.replaceChildren();$('legend').replaceChildren();
+  const bs=branches(),width=Math.max(300,svg.clientWidth),height=width<650?245:270,left=52,right=15,top=18,bottom=32;
+  svg.setAttribute('viewBox','0 0 '+width+' '+height);
+  const series=bs.map(b=>{let sum=0;return b.rows.map(r=>sum+=r.fight.physical.damage);});
+  const max=Math.max(1,...series.flat()),ns='http://www.w3.org/2000/svg';
+  function node(tag,attrs,text){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;svg.append(e);return e;}
+  for(let i=0;i<=4;i++){
+    const v=max*i/4,y=height-bottom-v/max*(height-top-bottom);
+    node('line',{x1:left,y1:y,x2:width-right,y2:y,stroke:'#c5c9b6'});node('text',{x:left-7,y:y+4,fill:'#5e685c','font-size':11,'text-anchor':'end'},Math.round(v));
+  }
+  node('text',{x:4,y:12,fill:'#5e685c','font-size':11},'HP');
+  bs.forEach((b,i)=>{
+    const active=b.arm+':'+b.replicate===$('arm').value;
+    const points=[[left,height-bottom],...series[i].map((v,k)=>[left+(k+1)/p.postRounds*(width-left-right),height-bottom-v/max*(height-top-bottom)])].map(x=>x.join(',')).join(' ');
+    const line=node('polyline',{points,fill:'none',stroke:colors[b.arm],'stroke-width':active?3.5:2,'stroke-dasharray':b.replicate===2?'7 4':'',opacity:active?1:.8});
+    const title=document.createElementNS(ns,'title');title.textContent=branchLabel(b)+' · total '+fmt(series[i].at(-1))+' HP';line.append(title);
+    const item=el('span',branchLabel(b),$('legend'));item.style.setProperty('--color',colors[b.arm]);item.style.setProperty('--pattern',b.replicate===2?'dashed':'solid');if(active)item.className='selected';
+  });
+  for(const k of [...new Set([0,Math.round(p.postRounds/4),Math.round(p.postRounds/2),Math.round(p.postRounds*3/4),p.postRounds])])
+    node('text',{x:left+k/p.postRounds*(width-left-right),y:height-9,fill:'#5e685c','font-size':11,'text-anchor':'middle'},String(k));
+}
+function caseChange(){
+  stop();$('arm').replaceChildren();const bs=branches();
+  bs.forEach(b=>option($('arm'),b.arm+':'+b.replicate,branchLabel(b)));
+  $('arm').value='full:'+Math.min(...bs.filter(b=>b.arm==='full').map(b=>b.replicate));
+  $('case-plan').textContent='Calibrated plan for this case: '+calibrated().planId+' (same plan in stable and recurring histories).';
+  const q=pair();$('branch-summary').replaceChildren();
+  for(const b of bs){const x=q.arms[b.arm].find(x=>x.replicate===b.replicate);tableRow($('branch-summary'),['Controller','Mean HP','Total HP','Player defeats','NPC survivals','Plan changes'],[branchLabel(b),fmt(x.meanDamage),fmt(x.totalDamage),x.playerDefeats,x.npcSurvivals,x.changes]);}
+  $('paired').replaceChildren();
+  for(const full of [...q.arms.full].sort((a,b)=>a.replicate-b.replicate)){
+    const initial=q.arms.initial.find(x=>x.replicate===full.replicate),recent=q.arms.recent.find(x=>x.replicate===full.replicate);
+    tableRow($('paired'),['Repetition','Full − fixed','Full − initial','Full − recent'],[full.replicate,signed(full.meanDamage-q.arms.fixed[0].meanDamage),signed(full.meanDamage-initial.meanDamage),signed(full.meanDamage-recent.meanDamage)]);
+  }
+  controller();
+}
+$('case').onchange=caseChange;$('history').onchange=caseChange;$('arm').onchange=controller;$('round').onchange=recording;
+$('provenance').textContent='Protocol '+p.id+' · results SHA-256 '+DATA.resultsSha256+' · protocol SHA-256 '+DATA.protocolSha256+' · frozen source manifest SHA-256 '+DATA.sourcesSha256+'. '+DATA.recordedFights+' first/final recordings. Hashes identify the supplied artifacts; this viewer does not re-run the study.';
+for(const [kind,manifest] of [['Frozen study source',DATA.sources],['Viewer source',DATA.viewerSources]])for(const [path,hash] of Object.entries(manifest)){
+  const item=el('li',kind+' · '+path,$('hashes'));el('code',hash,item);
+}
+caseChange();
+new ResizeObserver(chart).observe($('chart'));
+</script>
+</body></html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Matched-experience NPC selectors v4 — Tactical Air</title>
+<style>
+:root{color-scheme:light;--ink:#23362b;--muted:#5e685c;--paper:#f4f1e4;--line:#c5c9b6;--card:#fffdf5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+main{max-width:1140px;margin:auto;padding:28px 24px}h1{font-size:32px;line-height:1.15;margin:8px 0 14px}h2{font-size:21px;margin:28px 0 12px}h3{font-size:16px;margin:0 0 10px}p{max-width:85ch}
+.eyebrow{font:12px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.sub{color:var(--muted);font-size:14px}.notice{border-left:3px solid #9f6b27;padding:12px 16px;background:#e9e1ca;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:18px 0;border-block:1px solid var(--line)}.stats strong{font-size:24px;display:block}.stats span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:18px;background:var(--card);border:1px solid var(--line);min-width:0}.card p{margin:8px 0}.cards details{font-size:14px}
+.controls{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}.controls label{display:grid;gap:4px;font-size:12px;color:var(--muted);min-width:0;max-width:100%}
+select,button{font:inherit;border:1px solid #8e9984;border-radius:3px;padding:10px 12px;background:var(--card);color:var(--ink);max-width:100%;min-height:44px}button,summary{cursor:pointer}summary{padding:5px 0}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #b77927;outline-offset:2px}button:disabled{opacity:.5;cursor:default}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;table-layout:fixed}caption{text-align:left;color:var(--muted);font-size:13px;margin:8px 0}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}th{font-weight:600;font-size:12px;color:var(--muted)}
+.chart{width:100%;height:270px;display:block;border-bottom:1px solid var(--line)}.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:12px;margin-top:12px}.legend span:before{content:'';display:inline-block;width:22px;border-top:3px var(--pattern,solid) var(--color);vertical-align:middle;margin-right:6px}.legend .selected{font-weight:700}
+.replay{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px;margin-top:20px}.map{background:#dbe0c1;border:1px solid #a2ad8d;width:100%;height:auto;display:block}.notes{font-size:14px;min-width:0}.notes p{margin:4px 0 14px}.notes strong{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.playback{display:flex;gap:10px;align-items:center;margin-top:10px}.playback input{flex:1;min-width:0;width:100%;height:44px}.playback button{flex-shrink:0}.playback output{font-size:12px;min-width:46px;text-align:right}
+.rounds th:nth-child(1){width:7%}.rounds th:nth-child(2){width:13%}.rounds th:nth-child(3){width:17%}.rounds th:nth-child(4){width:10%}.rounds th:nth-child(5){width:53%}.rounds p{margin:5px 0}.rounds summary{font-size:13px}.evidence{margin:8px 0}.evidence table{font-size:12px}.evidence th,.evidence td{padding:6px}.evidence details{margin:5px 0}
+details p,code,.hash{overflow-wrap:anywhere;word-break:break-word}code{font-size:11px}.hashes{list-style:none;padding:0}.hashes li{margin:12px 0}.hashes code{display:block}footer{overflow-wrap:anywhere;margin-top:30px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:12px}footer p{max-width:none}
+@media(max-width:700px){main{padding:20px 14px}h1{font-size:27px}.cards,.replay{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.stats strong{font-size:22px}.controls label{flex:1 1 145px}select{width:100%}.chart{height:245px}.playback{gap:8px}.playback button{font-size:13px;padding:8px}.card{padding:14px}
+table.responsive,table.responsive tbody,table.responsive caption{display:block}table.responsive caption{width:100%}table.responsive thead{display:none}table.responsive tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}table.responsive td{display:grid;grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:12px;padding:5px 0;border:0;width:auto}table.responsive td:before{content:attr(data-label);font-size:12px;color:var(--muted);font-weight:600}table.responsive td.wide{display:block}table.responsive td.wide:before{display:block;margin-bottom:5px}.evidence table{table-layout:fixed}.evidence th,.evidence td{padding:5px 2px}.rounds details{max-width:100%}}
+
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 ui-monospace,monospace}.failure{border-left:3px solid #9b392b;padding:8px 12px;background:#f4e4ce}.table-scroll{overflow-x:auto}.table-scroll table{min-width:780px}.legend button{font-size:12px;min-height:36px;padding:5px 8px;border-color:var(--color)}.legend button:before{content:"";display:inline-block;width:20px;border-top:3px var(--pattern,solid) var(--color);margin-right:6px;vertical-align:middle}.legend button.selected{outline:2px solid var(--color)}
+</style></head>
+<body><main>
+<div class="eyebrow">Tactical Air / matched-experience development study / v4</div>
+<h1>What does the selector add with the same experience?</h1>
+<p id="intro" class="sub"></p>
+<div id="stats" class="stats"></div>
+<p id="budget" class="sub"></p>
+<p id="scope" class="notice"></p>
+<p id="fixture" class="notice" hidden></p>
+
+<h2>Experience and allocation cost</h2>
+<p>Every branch starts from the same preparation checkpoint in its case: ten baseline warmups followed by a balanced survey of all seven plans. The survey consumes real fights and updates the Rust learner. Agent and algorithm receive those completed observations, then only their own subsequent history. The shared preparation is counted once per case in the physical run budget.</p>
+<table class="responsive"><caption>Actual physical fights and unique model requests allocated in this run</caption><thead><tr><th>Allocation</th><th>Physical fights</th><th>Model requests</th><th>Experience / cost</th></tr></thead><tbody id="allocation"></tbody></table>
+<p class="sub">Held-initial branches reuse their partner’s first selection without another model request; their fights are still recorded physical evaluations. Survey-inclusive means charge the same survey to each trajectory for comparison, without counting those shared fights again in the run budget. Provider failures and exploratory choices remain in the outcomes.</p>
+
+<h2>Aggregate NPC damage</h2>
+<p id="mean-context" class="sub"></p>
+<div class="table-scroll"><table><caption>Full evaluation / scored mean damage · HP per fight</caption><thead><tr><th>History</th><th>Retained</th><th>Prior fixed</th><th>Algorithm</th><th>Algorithm initial</th><th>Agent</th><th>Agent initial</th></tr></thead><tbody id="aggregate"></tbody></table></div>
+<div class="table-scroll"><table><caption>Survey-inclusive means · all post-warmup fights, including allocation cost</caption><thead><tr><th>History</th><th>Retained</th><th>Prior fixed</th><th>Algorithm</th><th>Algorithm initial</th><th>Agent</th><th>Agent initial</th></tr></thead><tbody id="inclusive"></tbody></table></div>
+<table class="responsive"><caption>Descriptive evaluation contrasts · positive favors the first named arm</caption><thead><tr><th>History</th><th>Agent − algorithm<br>Primary</th><th>Agent − agent initial<br>Primary</th><th>Algorithm − algorithm initial</th><th>Agent − prior fixed<br>Diagnostic</th></tr></thead><tbody id="contrasts"></tbody></table>
+<table class="responsive"><caption>Initial-selection references · distinguish agent gains from algorithm exploration losses</caption><thead><tr><th>History</th><th>Agent − held algorithm</th><th>Held agent − held algorithm</th></tr></thead><tbody id="initial-contrasts"></tbody></table>
+<p class="notice">The primary comparisons ask whether agent review improves on the deterministic selector and on holding its own first selection. Algorithm versus its held-initial branch checks the value of its continuing adaptation. The prior calibrated fixed arm has 1,384 extra calibration fights and remains a diagnostic reference. Two familiar worlds × two histories × two model repetitions do not create new independent worlds.</p>
+
+<h2>Inspect preparation and all eight trajectories</h2>
+<div class="controls"><label>Case<select id="case"></select></label><label>Opponent history<select id="history"></select></label></div>
+<p id="preparation-context" class="sub"></p>
+<table class="responsive"><caption>Shared survey allocation and outcomes · evaluator damage versus observed evidence</caption><thead><tr><th>Survey plan</th><th>Fights</th><th>Observed fights</th><th>All-fight mean HP</th><th>Observed mean HP</th></tr></thead><tbody id="preparation-plans"></tbody></table>
+<details><summary>Complete chronological preparation history</summary><p class="sub">Unobserved outcomes are marked in the supplied evidence column. Evaluator damage is shown separately and was not substituted for missing planner evidence.</p><table class="responsive"><thead><tr><th>Physical round</th><th>Preparation phase</th><th>Plan / tactic</th><th>Evaluator HP</th><th>Observed HP</th><th>NPC HP</th></tr></thead><tbody id="preparation-rows"></tbody></table></details>
+<p id="case-plan" class="sub"></p>
+<svg id="chart" class="chart" viewBox="0 0 1000 270" role="img" aria-label="All eight cumulative NPC damage trajectories"></svg>
+<div id="legend" class="legend" aria-label="Select a trajectory"></div>
+<p class="sub">Cumulative damage includes all evaluation fights. Solid: repetition 1 and unreplicated controls; dashed: repetition 2. Click a legend entry to inspect an overlapping line. All eight branches appear in the table below. Switch counts exclude the first selection after preparation.</p>
+<table class="responsive"><caption>Every branch in this case/history · evaluator outcomes</caption><thead><tr><th>Controller</th><th>Full / scored mean HP</th><th>Including survey HP</th><th>Total evaluation HP</th><th>Player defeats</th><th>NPC survivals</th><th>Later switches</th></tr></thead><tbody id="branch-summary"></tbody></table>
+<table class="responsive"><caption>Paired model repetitions · HP per fight · nested trajectories, not independent worlds</caption><thead><tr><th>Repetition</th><th>Agent − algorithm</th><th>Agent − agent initial</th><th>Agent − prior fixed</th><th>Agent − held algorithm</th><th>Held agent − held algorithm</th></tr></thead><tbody id="paired"></tbody></table>
+
+<h2>Initial-selection controls</h2>
+<p class="sub">Each held-initial branch keeps the first applied complete plan from its active partner. The paired first fight is identical. Ordinary Rust tactic learning continues in both branches. No execution gate is used.</p>
+<div id="initial-controls" class="cards"></div>
+
+<h2>Recorded first and final fights</h2>
+<div class="controls"><label>Controller and repetition<select id="arm"></select></label><label>Recorded fight<select id="round"></select></label></div>
+<div class="replay"><div>
+<canvas id="map" class="map" width="920" height="600" role="img" aria-label="Recorded fight: blue player, red enemy ranger">Recorded combat replay. Measured outcomes are also described alongside the canvas.</canvas>
+<div class="playback"><button id="play" type="button">Play fight</button><input id="scrub" type="range" min="0" value="0" aria-label="Replay frame"><output id="time" for="scrub"></output></div>
+<p class="sub">Recorded simulation frames. Agent repetition 1 is selected initially, with playback paused. Blue: player. Red: ranger NPC. First/final capture was chosen before outcomes; paired initial fights intentionally appear in multiple recordings.</p>
+</div><div id="notes" class="notes"></div></div>
+
+<h2>Every evaluation round: decision and evidence</h2>
+<p id="round-context" class="sub"></p>
+<table class="responsive rounds"><thead><tr><th>Round</th><th>Selected plan</th><th>Applied plan / tactic</th><th>Damage HP</th><th>Decision, note and supplied evidence</th></tr></thead><tbody id="rounds"></tbody></table>
+
+<h2>Failures, cost and latency</h2>
+<p id="call-budget"></p>
+<details><summary>Requests that used a fallback</summary><p id="failure-context" class="sub"></p><table class="responsive"><thead><tr><th>Case / history / repetition</th><th>Round</th><th>Status / error code</th><th>Applied fallback</th><th>Reported cost / latency</th></tr></thead><tbody id="failures"></tbody></table></details>
+<details><summary>Public metadata for every unique model request</summary><p class="sub">These are public accounting fields only. Raw provider transcripts, prompts, command arguments, sessions and stdout/stderr are excluded.</p><table class="responsive"><thead><tr><th>Case / history / repetition</th><th>Round</th><th>Status</th><th>Cost</th><th>Latency</th><th>Model</th></tr></thead><tbody id="calls"></tbody></table></details>
+
+<h2>Prior calibrated fixed reference</h2>
+<p class="sub">The far plan was frozen using the earlier v2 calibration, before v2 evaluation. It is reused unchanged in v4. Its 1,384 prior calibration fights are outside this run and outside the matched-experience comparison.</p>
+<div id="fixed-reference" class="cards"></div>
+<details><summary>Study boundaries and controls</summary><p id="limits"></p><p>These are familiar development worlds and reused encounter schedules, with two histories and two nested model repetitions. They are not unfamiliar validation worlds. Every controller retains Rust learning. Agent and algorithm observations include the full chronological preparation and own history, the actual current plan, complete plan menu, true physical round and the private previous note. Hidden labels, seeds, future schedules, internal policy scores and other branches are not planner evidence. Model reasons, predictions and notes are claims, not measured findings. Plans are authored choices; this study does not establish invented tactics, model weight learning, human enjoyment or arbitrary-game transfer.</p></details>
+<footer><p id="provenance"></p><details><summary>Source fingerprints</summary><ul id="hashes" class="hashes"></ul></details><p>This standalone viewer makes no external requests or model calls. It displays recorded evidence and frames; it does not rerun simulations or authenticate provider transcripts. Hashes identify the supplied artifacts and the replay code used to build this page.</p></footer>
+</main>
+<script>
+const DATA=__DATA__;
+const $=id=>document.getElementById(id);
+const labels={retained:'Retained learner',fixed:'Prior calibrated fixed',algorithm:'Algorithm review','algorithm-initial':'Held algorithm initial',agent:'Agent review','agent-initial':'Held agent initial'};
+const colors={retained:'#657263',fixed:'#8c641e',algorithm:'#236b85','algorithm-initial':'#589796',agent:'#9b392b','agent-initial':'#795599'};
+const arms=Object.keys(labels);
+const fmt=n=>Number.isFinite(n)?n.toFixed(2):'unknown';
+const signed=n=>Number.isFinite(n)?(n>=0?'+':'')+fmt(n):'unknown';
+const money=n=>Number.isFinite(n)?'$'+n.toFixed(4):'unknown';
+const seconds=n=>Number.isFinite(n)?fmt(n/1000)+' s':'unknown latency';
+const avg=values=>values.length?values.reduce((a,b)=>a+b,0)/values.length:null;
+const total=values=>values.reduce((a,b)=>a+b,0);
+const callById=new Map(DATA.calls.map(c=>[c.id,c]));
+const branchLabel=b=>labels[b.arm]+(b.replicate?' / repetition '+b.replicate:'');
+const branchKey=b=>b.arm+':'+b.replicate;
+function el(tag,text,parent){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(parent)parent.append(e);return e;}
+function option(select,value,text){const e=el('option',text,select);e.value=String(value);}
+function cell(row,label,text,wide=false){const e=el('td',undefined,row);e.dataset.label=label;if(wide)e.className='wide';if(text!==undefined)el('span',String(text),e);return e;}
+function tableRow(parent,headers,values){const tr=el('tr',undefined,parent);values.forEach((v,i)=>cell(tr,headers[i],v));return tr;}
+function paragraph(parent,text,cls){const e=el('p',text,parent);if(cls)e.className=cls;return e;}
+function details(parent,title){const d=el('details',undefined,parent);el('summary',title,d);return d;}
+function note(title,text,parent=$('notes')){el('strong',title,parent);paragraph(parent,text);}
+function callText(call){if(!call)return 'No model call';const m=call.metadata;return call.status+(call.errorCode?' / '+call.errorCode:'')+' · '+seconds(m.durationMs)+' · '+money(m.costUsd)+' · '+(m.models.join(', ')||'model unreported')+(call.dispatched?'':' · not dispatched');}
+function fullMean(b){return avg(b.rows.map(r=>r.fight.physical.damage));}
+function inclusiveMean(c,b){return avg([...c.preparation.rows.slice(c.preparation.warmupRounds),...b.rows.map(r=>r.fight)].map(f=>f.physical.damage));}
+const s=DATA.summary,p=DATA.protocol;
+const contexts=[];
+for(const c of DATA.cases)for(const [history,bs] of Object.entries(c.histories))for(const b of bs)if(b.arm==='agent')for(const r of b.rows)contexts.push({c,history,b,r,call:callById.get(r.callId)});
+const where=x=>x.c.seed+' / '+x.c.index+' · '+x.history+' · repetition '+x.b.replicate;
+$('intro').textContent=p.warmupRounds+' shared baseline warmups plus a balanced plan survey, then '+p.postRounds+' evaluation fights per branch. Two familiar worlds compare a deterministic selector with a model selecting from the same seven authored NPC plans.';
+for(const [value,label] of [[s.preparationFights,'shared preparation fights'],[s.evaluationFights,'evaluation fights across eight branches'],[s.recordedCalls,'unique model requests'],[s.failedCalls,'failed requests'],[money(s.reportedCostUsd),'total CLI-reported cost'],[DATA.recordedFights,'first/final recordings']]){const d=el('div',undefined,$('stats'));el('strong',String(value),d);el('span',label,d);}
+$('budget').textContent=s.preparationFights+' preparation + '+s.evaluationFights+' evaluation = '+s.scoredFights+' physical fights in this run. Preparation is shared once per case. The prior fixed reference carries '+DATA.fixedReference.previousCalibrationFights+' additional calibration fights. No separate new calibration or simulation queries are used.';
+$('scope').textContent=(p.status||'Development comparison')+' Two familiar worlds, two histories and two model repetitions; descriptive evidence, not new independent worlds.';
+$('limits').textContent=s.limits;
+if(DATA.fixture){$('fixture').hidden=false;$('fixture').textContent='SYNTHETIC FIXTURE — validates replay behavior only. These are not live model findings.';}
+const warmups=total(DATA.cases.map(c=>c.preparation.warmupRounds)),surveys=total(DATA.cases.map(c=>c.preparation.surveyRounds));
+tableRow($('allocation'),['Allocation','Physical fights','Model requests','Experience / cost'],['Shared warmups',warmups,0,'Once per case; baseline plan']);
+tableRow($('allocation'),['Allocation','Physical fights','Model requests','Experience / cost'],['Shared balanced survey',surveys,0,'Once per case; all seven plans; included in survey-inclusive means']);
+for(const arm of arms){const bs=DATA.cases.flatMap(c=>Object.values(c.histories).flat().filter(b=>b.arm===arm));tableRow($('allocation'),['Allocation','Physical fights','Model requests','Experience / cost'],[labels[arm],total(bs.map(b=>b.rows.length)),arm==='agent'?s.recordedCalls:0,arm==='fixed'?'Extra '+DATA.fixedReference.previousCalibrationFights+' prior calibration fights':arm.endsWith('-initial')?'Reuse partner’s initial selection; no later review':'Matched preparation; own subsequent history']);}
+$('mean-context').textContent='Higher NPC damage favors the enemy NPC. All '+p.postRounds+' evaluation fights, including initialization, exploration and provider failures, contribute to the full/scored evaluation means. Repetitions are averaged within each case/history, then case/history units receive equal weight. Survey-inclusive means separately include the allocation cost of the full survey plus evaluation, excluding warmups; the prior fixed arm’s earlier calibration is disclosed, not added to this run’s means.';
+for(const [history,data] of [['Overall',s.overall],...p.histories.map(h=>[h,s.byHistory[h]])]){
+  tableRow($('aggregate'),['History',...arms.map(a=>labels[a])],[history,...arms.map(a=>fmt(data.means[a]))]);
+  tableRow($('inclusive'),['History',...arms.map(a=>labels[a])],[history,...arms.map(a=>fmt(data.cumulativeMeans[a]))]);
+  tableRow($('contrasts'),['History','Agent − algorithm · primary','Agent − agent initial · primary','Algorithm − algorithm initial','Agent − prior fixed · diagnostic'],[history,...['agentVsAlgorithm','agentVsInitial','algorithmVsInitial','agentVsFixed'].map(k=>signed(data.differences[k]))]);
+  tableRow($('initial-contrasts'),['History','Agent − held algorithm','Held agent − held algorithm'],[history,signed(data.differences.agentVsAlgorithmInitial),signed(data.differences.heldAgentVsHeldAlgorithm)]);
+}
+$('call-budget').textContent=s.recordedCalls+' unique requests; '+s.successfulCalls+' successful status, '+s.failedCalls+' failed status, '+s.fallbackCalls+' executed fallbacks. Known reported cost '+money(s.knownReportedCostUsd)+'; '+s.unknownCostCalls+' costs unknown; complete total '+money(s.reportedCostUsd)+'. Mean latency '+seconds(s.meanLatencyMs)+'; p95 '+seconds(s.p95LatencyMs)+'; '+s.unknownLatencyCalls+' latencies unknown'+(s.unknownLatencyCalls?' (known-only mean '+seconds(s.knownMeanLatencyMs)+')':'')+'. Algorithm selection: '+s.algorithmSelectionCalls+' timed selections, mean '+fmt(s.meanAlgorithmLatencyMs)+' ms, p95 '+fmt(s.p95AlgorithmLatencyMs)+' ms. These timings are hardware/context-dependent and exclude simulation time. Held-initial controls add no requests. Algorithm review makes no model requests. Reported cost excludes prior calibration and is not a complete compute-cost measure.';
+$('failure-context').textContent=s.fallbackCalls?'Fallback fights remain in every applicable mean. Failed decisions retain the current plan and previous note. Raw error messages and transcripts are not exported.':'No recorded request used an execution fallback.';
+for(const x of contexts){
+  tableRow($('calls'),['Case / history / repetition','Round','Status','Cost','Latency','Model'],[where(x),x.r.postRound,x.call.status+(x.call.errorCode?' / '+x.call.errorCode:''),money(x.call.metadata.costUsd),seconds(x.call.metadata.durationMs),x.call.metadata.models.join(', ')||'unreported']);
+  if(x.call.fallback)tableRow($('failures'),['Case / history / repetition','Round','Status / error code','Applied fallback','Reported cost / latency'],[where(x),x.r.postRound,x.call.status+' / '+(x.call.errorCode||'invalid decision'),x.r.fight.planId,money(x.call.metadata.costUsd)+' / '+seconds(x.call.metadata.durationMs)]);
+}
+for(const c of DATA.fixedReference.selection){
+  const card=el('article',undefined,$('fixed-reference'));card.className='card';el('h3','Case '+c.seed+' / fixture '+c.index,card);paragraph(card,'Reused plan: '+c.planId+'. Diagnostic reference with extra prior calibration experience.');
+  const d=details(card,'Prior v2 calibration evidence'),t=el('table',undefined,d);el('caption','NPC damage per calibration fight',t);
+  const head=el('tr',undefined,el('thead',undefined,t));for(const h of ['Plan','Mean HP'])el('th',h,head);const body=el('tbody',undefined,t);
+  for(const m of c.means)tableRow(body,['Plan','Mean HP'],[m.planId,fmt(m.meanDamage)]);
+  paragraph(d,'Prior tie rule: '+c.tieBreak);paragraph(d,'Calibration SHA-256: '+c.calibrationSha256,'hash');paragraph(d,'Summary: '+DATA.fixedReference.summary+' · SHA-256 '+DATA.fixedReference.sha256,'hash');
+}
+DATA.cases.forEach((c,i)=>option($('case'),i,c.seed+' / fixture '+c.index));p.histories.forEach(h=>option($('history'),h,h));
+const selected=()=>DATA.cases[+$('case').value];
+const branches=()=>[...selected().histories[$('history').value]].sort((a,b)=>a.replicate-b.replicate||arms.indexOf(a.arm)-arms.indexOf(b.arm));
+const branch=()=>branches().find(b=>branchKey(b)===$('arm').value);
+const pair=()=>s.pairs.find(x=>x.seed===selected().seed&&x.index===selected().index&&x.history===$('history').value);
+const calibrated=()=>DATA.fixedReference.selection.find(x=>x.seed===selected().seed&&x.index===selected().index);
+const initialPartner=b=>branches().find(x=>x.arm===b.arm.replace('-initial','')&&x.replicate===b.replicate);
+
+function evidence(parent,obs,hash){
+  if(!obs)return;
+  const d=details(parent,'Actual supplied evidence · '+obs.history.length+' completed fights');d.className='evidence';
+  paragraph(d,'Next physical round '+obs.nextRound+' · '+obs.preparationRounds+' preparation fights · actual current plan '+obs.currentPlanId+'. Full chronological preparation and own history; no hidden labels, future schedule or internal policy scores.');
+  paragraph(d,'Private previous note (model claim for agent branches): '+(obs.memory||'Empty.'));
+  const menu=details(d,'Complete plan menu and decision rules');paragraph(menu,obs.objective);paragraph(menu,obs.rules);
+  for(const plan of obs.plans)paragraph(menu,plan.id+': '+plan.description+' · forced action '+(plan.action||'Rust learner choice')+' · tuning '+JSON.stringify(plan.tuning));
+  const t=el('table',undefined,d);el('caption','Exactly the completed chronological history supplied to this decision',t);const head=el('tr',undefined,el('thead',undefined,t));for(const h of ['Round','Plan / tactic','Observed HP','NPC HP'])el('th',h,head);
+  const body=el('tbody',undefined,t);for(const r of obs.history)tableRow(body,['Round','Plan / tactic','Observed HP','NPC HP'],[r.round,r.planId+' / '+r.tactic,r.observed?fmt(r.npcDamage):'unobserved',fmt(r.npcRemainingHealth)]);
+  const raw=details(d,'Exact observation JSON · includes observed telemetry and true clock');el('pre',JSON.stringify(obs,null,2),raw);paragraph(d,'Observation SHA-256: '+hash,'hash');
+}
+function decisionReview(parent,b,r){
+  const agent=b.arm==='agent',call=callById.get(r.callId);
+  if(agent&&call?.fallback)paragraph(parent,'Provider fallback: '+(call.errorCode||'invalid decision')+'. Retain current plan '+r.fight.planId+' and the previous note. This outcome is included.', 'failure');
+  paragraph(parent,(agent?'Reason (model claim; fallback text if failed): ':'Deterministic selector explanation: ')+r.decision.reason);
+  const d=details(parent,agent?'Prediction, private note and public call metadata':'Selector prediction and state');
+  paragraph(d,(agent?'Prediction (model claim before this fight): ':'Selector prediction: ')+(r.decision.prediction||'None recorded.'));
+  paragraph(d,(agent?'Output note for the next decision (model claim): ':'Algorithm memory: ')+(r.decision.memory||'Empty.'));
+  paragraph(d,callText(call));if(r.callId)paragraph(d,'Call ID: '+r.callId,'hash');
+  evidence(parent,r.observation,r.observationSha256);
+}
+function review(parent,b,r){
+  if(r.decision){decisionReview(parent,b,r);return;}
+  if(b.arm.endsWith('-initial')){
+    const partner=initialPartner(b),first=partner.rows[0];paragraph(parent,'Hold partner’s initial plan '+b.planId+'. No new request or later review; Rust learning continues.');
+    const d=details(parent,'Original selection and evidence');decisionReview(d,partner,first);return;
+  }
+  paragraph(parent,b.arm==='fixed'?'Hold the prior v2 calibrated plan '+b.planId+'. This diagnostic reference has extra prior calibration experience.':'Use baseline with ordinary Rust learning. No plan-selector request.');
+}
+function recommended(b,r){if(r.decision)return r.decision.planId+(callById.get(r.callId)?.fallback?' · fallback':'');if(b.arm.endsWith('-initial'))return b.planId+' · held initial';return b.arm==='fixed'?b.planId+' · prior selection':'baseline';}
+let frames=[],walls=[],frame=0,playing=false,raf=null,startTimestamp=null,startTime=0;
+function stop(){playing=false;$('play').textContent='Play fight';if(raf!==null)cancelAnimationFrame(raf);raf=null;startTimestamp=null;}
+function draw(){
+  const ctx=$('map').getContext('2d');ctx.clearRect(0,0,920,600);ctx.fillStyle='#dbe0c1';ctx.fillRect(0,0,920,600);
+  ctx.strokeStyle='#c3cba9';ctx.lineWidth=1;
+  for(let x=20;x<920;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,600);ctx.stroke();}
+  for(let y=20;y<600;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(920,y);ctx.stroke();}
+  for(const w of walls){ctx.fillStyle='#879777';ctx.fillRect(w.x,w.y,w.w,w.h);ctx.strokeStyle='#536c4b';ctx.strokeRect(w.x,w.y,w.w,w.h);}
+  const f=frames[frame];if(!f)return;
+  ctx.fillStyle='#285e7a';ctx.beginPath();ctx.arc(f.player.x,f.player.y,13,0,Math.PI*2);ctx.fill();
+  for(const e of f.enemies){
+    if(e.hp<=0)continue;ctx.fillStyle='#9b392b';ctx.beginPath();ctx.moveTo(e.x,e.y-18);ctx.lineTo(e.x+15,e.y+12);ctx.lineTo(e.x-15,e.y+12);ctx.closePath();ctx.fill();
+    if(e.windup>0&&e.target){ctx.strokeStyle='#c77b32';ctx.beginPath();ctx.moveTo(e.x,e.y);ctx.lineTo(e.target.x,e.target.y);ctx.stroke();}
+  }
+  for(const bullet of f.bullets){ctx.fillStyle=bullet.enemy===null?'#285e7a':'#9b392b';ctx.beginPath();ctx.arc(bullet.x,bullet.y,3,0,Math.PI*2);ctx.fill();}
+  ctx.fillStyle='#23362b';ctx.font='18px system-ui';ctx.fillText('Player HP '+fmt(f.player.hp),18,28);
+  ctx.fillText('NPC HP '+f.enemies.map(e=>fmt(Math.max(0,e.hp))).join(', '),18,52);
+  $('time').textContent=f.time.toFixed(1)+' s';$('scrub').value=String(frame);
+  $('scrub').setAttribute('aria-valuetext',f.time.toFixed(1)+' seconds, frame '+(frame+1)+' of '+frames.length);
+}
+function animate(t){
+  if(!playing)return;if(startTimestamp===null)startTimestamp=t;
+  const time=startTime+(t-startTimestamp)/1000;
+  while(frame<frames.length-1&&frames[frame+1].time<=time)frame++;
+  draw();if(frame>=frames.length-1){stop();return;}raf=requestAnimationFrame(animate);
+}
+$('play').onclick=()=>{
+  if(playing){stop();return;}if(!frames.length)return;if(frame>=frames.length-1)frame=0;
+  playing=true;startTimestamp=null;startTime=frames[frame].time;$('play').textContent='Pause';draw();raf=requestAnimationFrame(animate);
+};
+$('scrub').oninput=()=>{stop();frame=+$('scrub').value;draw();};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+
+function recording(){
+  stop();const b=branch(),i=+$('round').value,r=b.rows[i];frames=r.fight.frames||[];walls=b.schedule[i].walls;frame=0;
+  $('scrub').max=String(Math.max(0,frames.length-1));$('scrub').value='0';$('scrub').disabled=frames.length<2;$('play').disabled=frames.length<2;$('notes').replaceChildren();
+  note('Recorded fight',branchLabel(b)+' · evaluation round '+r.postRound+' / physical round '+r.fight.round);
+  note('Selected NPC plan',recommended(b,r));
+  note('Applied plan and tactic',r.fight.planId+' · actual Rust tactic: '+r.fight.tactic);
+  note('Measured evaluator outcome',fmt(r.fight.physical.damage)+' HP dealt; NPC remaining health '+fmt(r.fight.physical.enemies[0].hp)+'; result '+r.fight.physical.result+'.');
+  note('Hidden schedule · evaluator only',(b.schedule[i].side===0?'A':'B')+' · probability of B '+fmt(b.schedule[i].probabilityB)+'. This label and probability were not supplied to the selector.');
+  review($('notes'),b,r);draw();
+}
+function controller(){
+  stop();const b=branch();$('round').replaceChildren();
+  b.rows.forEach((r,i)=>{if(r.fight.frames?.length)option($('round'),i,'Evaluation '+r.postRound+(i===0?' · first':' · final'));});
+  $('round-context').textContent=branchLabel(b)+'. Physical rounds include '+selected().preparation.rounds+' preparation fights ('+selected().preparation.warmupRounds+' warmups + '+selected().preparation.surveyRounds+' survey). Every active-selector decision receives full chronological preparation and own history, the actual current plan, menu, true physical clock and previous private note. No execution gate. Model reasons, predictions and notes are claims.';
+  $('rounds').replaceChildren();
+  for(const r of b.rows){
+    const tr=el('tr',undefined,$('rounds'));cell(tr,'Round',r.postRound);cell(tr,'Selected plan',recommended(b,r));
+    cell(tr,'Applied plan / tactic',r.fight.planId+' / '+r.fight.tactic+(r.postRound===1?' · initial selection':r.changed?' · switched':' · retained'));
+    cell(tr,'Damage HP',fmt(r.fight.physical.damage));review(cell(tr,'Decision, note and supplied evidence',undefined,true),b,r);
+  }
+  chart();recording();
+}
+function chart(){
+  const svg=$('chart');svg.replaceChildren();$('legend').replaceChildren();
+  const bs=branches(),width=Math.max(300,svg.clientWidth),height=width<650?245:270,left=52,right=15,top=18,bottom=32;
+  svg.setAttribute('viewBox','0 0 '+width+' '+height);
+  const series=bs.map(b=>{let sum=0;return b.rows.map(r=>sum+=r.fight.physical.damage);});
+  const max=Math.max(1,...series.flat()),ns='http://www.w3.org/2000/svg';
+  function node(tag,attrs,text){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;svg.append(e);return e;}
+  for(let i=0;i<=4;i++){
+    const v=max*i/4,y=height-bottom-v/max*(height-top-bottom);
+    node('line',{x1:left,y1:y,x2:width-right,y2:y,stroke:'#c5c9b6'});node('text',{x:left-7,y:y+4,fill:'#5e685c','font-size':11,'text-anchor':'end'},Math.round(v));
+  }
+  node('text',{x:4,y:12,fill:'#5e685c','font-size':11},'HP');
+  let selectedLine=null;
+  bs.forEach((b,i)=>{
+    const active=branchKey(b)===$('arm').value;
+    const points=[[left,height-bottom],...series[i].map((v,k)=>[left+(k+1)/p.postRounds*(width-left-right),height-bottom-v/max*(height-top-bottom)])].map(x=>x.join(',')).join(' ');
+    const line=node('polyline',{points,fill:'none',stroke:colors[b.arm],'stroke-width':active?3.5:2,'stroke-dasharray':b.replicate===2?'7 4':'',opacity:active?1:.75});
+    const title=document.createElementNS(ns,'title');title.textContent=branchLabel(b)+' · total '+fmt(series[i].at(-1))+' HP';line.append(title);if(active)selectedLine=line;
+    const item=el('button',branchLabel(b),$('legend'));item.type='button';item.style.setProperty('--color',colors[b.arm]);item.style.setProperty('--pattern',b.replicate===2?'dashed':'solid');item.setAttribute('aria-pressed',String(active));if(active)item.className='selected';
+    item.onclick=()=>{$('arm').value=branchKey(b);controller();};
+  });
+  if(selectedLine)svg.append(selectedLine);
+  for(const k of [...new Set([0,Math.round(p.postRounds/4),Math.round(p.postRounds/2),Math.round(p.postRounds*3/4),p.postRounds])])node('text',{x:left+k/p.postRounds*(width-left-right),y:height-9,fill:'#5e685c','font-size':11,'text-anchor':'middle'},String(k));
+}
+function caseChange(){
+  stop();$('arm').replaceChildren();const c=selected(),bs=branches();
+  bs.forEach(b=>option($('arm'),branchKey(b),branchLabel(b)));$('arm').value='agent:1';
+  $('preparation-context').textContent=c.preparation.warmupRounds+' warmups + '+c.preparation.surveyRounds+' survey fights = '+c.preparation.rounds+' shared preparation fights for this case. All eight branches and both histories use the same resulting checkpoint. Initial current plan: '+c.preparation.rows.at(-1).planId+'. Checkpoint SHA-256: '+c.preparation.checkpointSha256;
+  $('preparation-plans').replaceChildren();for(const x of c.preparation.plans)tableRow($('preparation-plans'),['Survey plan','Fights','Observed fights','All-fight mean HP','Observed mean HP'],[x.planId,x.fights,x.observed,fmt(x.meanDamage),x.observed?fmt(x.meanObservedDamage):'no observations']);
+  $('preparation-rows').replaceChildren();for(const [i,r] of c.preparation.rows.entries())tableRow($('preparation-rows'),['Physical round','Preparation phase','Plan / tactic','Evaluator HP','Observed HP','NPC HP'],[r.round,i<c.preparation.warmupRounds?'Warmup':'Survey',r.planId+' / '+r.tactic,fmt(r.physical.damage),r.feedback.observed?fmt(r.physical.enemies.find(e=>e.role==='ranger').damage):'unobserved',fmt(r.physical.enemies[0].hp)]);
+  $('case-plan').textContent='Prior calibrated fixed plan: '+calibrated().planId+'. All trajectories share preparation and the evaluation schedule in this case/history. Agent and algorithm diverge only through their own decisions and resulting histories.';
+  const q=pair();$('branch-summary').replaceChildren();
+  for(const b of bs){
+    const x=q.arms[b.arm].find(x=>x.replicate===b.replicate);
+    tableRow($('branch-summary'),['Controller','Full / scored mean HP','Including survey HP','Total evaluation HP','Player defeats','NPC survivals','Later switches'],[branchLabel(b),fmt(x.meanDamage),fmt(inclusiveMean(c,b)),fmt(x.totalDamage),x.playerDefeats,x.npcSurvivals,x.subsequentSwitches]);
+  }
+  $('paired').replaceChildren();for(const x of [...q.paired].sort((a,b)=>a.replicate-b.replicate))tableRow($('paired'),['Repetition','Agent − algorithm','Agent − agent initial','Agent − prior fixed','Agent − held algorithm','Held agent − held algorithm'],[x.replicate,signed(x.agentVsAlgorithm),signed(x.agentVsInitial),signed(q.arms.agent.find(b=>b.replicate===x.replicate).meanDamage-q.means.fixed),signed(x.agentVsAlgorithmInitial),signed(x.heldAgentVsHeldAlgorithm)]);
+  $('initial-controls').replaceChildren();
+  for(const active of bs.filter(b=>b.arm==='algorithm'||b.arm==='agent')){
+    const held=bs.find(b=>b.arm===active.arm+'-initial'&&b.replicate===active.replicate),first=active.rows[0];
+    const card=el('article',undefined,$('initial-controls'));card.className='card';el('h3',branchLabel(active),card);
+    paragraph(card,'Initial plan '+first.fight.planId+'; held control '+held.planId+'. First measured fight: '+fmt(first.fight.physical.damage)+' HP in both branches.');
+    paragraph(card,'Active mean '+fmt(fullMean(active))+' versus held-initial mean '+fmt(fullMean(held))+' HP; difference '+signed(fullMean(active)-fullMean(held))+' HP.');
+    paragraph(card,active.arm==='agent'?'Shared origin request '+held.originCallId+'. '+callText(callById.get(held.originCallId)):'Deterministic first selection; no model request.','sub');
+    const d=details(card,'Initial decision and exact supplied evidence');decisionReview(d,active,first);
+    const choose=el('button','Inspect held-initial trajectory',card);choose.type='button';choose.onclick=()=>{$('arm').value=branchKey(held);controller();};
+  }
+  controller();
+}
+$('case').onchange=caseChange;$('history').onchange=caseChange;$('arm').onchange=controller;$('round').onchange=recording;
+$('provenance').textContent='Protocol '+p.id+' · results JSON SHA-256 '+DATA.resultsSha256+' · input bytes SHA-256 '+DATA.inputBytesSha256+' · protocol SHA-256 '+DATA.protocolSha256+' · supplied study source manifest SHA-256 '+DATA.sourcesSha256+'. '+DATA.recordedFights+' first/final recordings. Prior v2 summary '+DATA.fixedReference.summary+' · SHA-256 '+DATA.fixedReference.sha256+'.';
+for(const [kind,manifest] of [['Supplied study source',DATA.sources],['Viewer build source',DATA.viewerSources]])for(const [path,hash] of Object.entries(manifest)){const item=el('li',kind+' · '+path,$('hashes'));el('code',hash,item);}
+caseChange();
+new ResizeObserver(chart).observe($('chart'));
+</script>
+</body></html>

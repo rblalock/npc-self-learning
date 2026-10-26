@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "verified": true,
+  "resultsSha256": "7852105a0bad60bbd073beeeee4c4d6420be16e7ff260457a1cc4d6baabcb464",
+  "calibrationFightsReplayed": 0,
+  "evaluationFightsReplayed": 788,
+  "totalPhysicalFightsReplayed": 788,
+  "reusedCalibrationFights": 1384,
+  "fixedReferenceSha256": "f01887e78f0fbf56247360b3b013709440f3b201cd96c3e2bbc854b599556ed8",
+  "uniqueAgentDecisionsReplayed": 376,
+  "sourceHashesChecked": true,
+  "frozenProtocolChecked": true,
+  "modelCallsMade": 0,
+  "scope": "Exact replay of recorded proposals, gate decisions, observations and physical/policy trajectories. Prior calibration is referenced, not rerun. Not independent replication or regenerated model outputs."
+}

@@ -1,0 +1,46 @@
+{
+  "archiveSha256": "a4f030cc58e0c13874738bafdbef22e3c19e76e9e842ea515b1c702a272c7d75",
+  "contentChecksums": 61,
+  "sourceFingerprints": 51,
+  "sourceCommit": "6fd0795",
+  "cleanExtractionReplay": {
+    "schema": 1,
+    "verified": true,
+    "resultsSha256": "3c3c764e984cd230994b8a90811bb6e162068c265d304c59fc31c3b37355c949",
+    "calibrationFightsReplayed": 0,
+    "preparationFightsReplayed": 48,
+    "evaluationFightsReplayed": 768,
+    "totalPhysicalFightsReplayed": 816,
+    "reusedCalibrationFights": 1384,
+    "fixedReferenceSha256": "f01887e78f0fbf56247360b3b013709440f3b201cd96c3e2bbc854b599556ed8",
+    "uniqueAgentDecisionsReplayed": 192,
+    "algorithmDecisionsReplayed": 96,
+    "sourceHashesChecked": true,
+    "frozenProtocolChecked": true,
+    "modelCallsMade": 0,
+    "scope": "Exact replay of preparation, deterministic algorithm choices, recorded agent decisions, observations and complete physical/Rust trajectories. Prior calibration is referenced, not rerun. Not independent replication or regenerated model outputs."
+  },
+  "independentArithmeticPassed": true,
+  "viewerByteIdentical": true,
+  "presentationRevision": 2,
+  "frozenOriginalViewerPreserved": true,
+  "presentationDataUnchanged": true,
+  "testsPassed": 110,
+  "runtime": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "browser": {
+    "recordings": 64,
+    "frames": 8161,
+    "desktop1200x900SelectableAndScrubbed": 64,
+    "mobile390x844SelectableAndScrubbed": 64,
+    "default": "agent:1 paused frame 0",
+    "playPausePassed": true,
+    "horizontalOverflow": false,
+    "observedErrorsOrWarnings": 0,
+    "fallback": "T3 snapshot timed out twice; Chrome used"
+  },
+  "modelCallsMadeByVerification": 0
+}

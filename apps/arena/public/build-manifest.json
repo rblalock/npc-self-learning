@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "build": "97411983c1262c1d251df0d3dd61777c4fd7f47e1b4574f0e2dca6aed74762b0",
+  "build": "e1d248059eb479d7beab954105b09b3b2f346b8144c77b7c4a8c67ca01fbe8ae",
   "sources": {
     "apps/arena/public/wasm/tactical_air.d.ts": "b6d06279f2fcbca496118482ab73bb22956e32f3b9ce1f0e1f70169172719db0",
     "apps/arena/public/wasm/tactical_air.js": "d56bd1b5597d7bc5eb8834bd029eb4cad5f4a7f0db4e9bea8ce6bc75aa32c56e",
-    "apps/arena/public/wasm/tactical_air_bg.wasm": "9efbc5ebe5c8eb8491275e8a139b645c20a3bb434cc2091087627744ac8bbe92",
+    "apps/arena/public/wasm/tactical_air_bg.wasm": "081d2200efdb0d9ce6981e3eba80a3ea905b694bdb14531d2b8a5fb72006d621",
     "apps/arena/public/wasm/tactical_air_bg.wasm.d.ts": "a848cc498ede2729495ca0706811095f02e32215fae5942f32839a5fa8bd7ece",
     "apps/arena/src/fonts.css": "7365d68426379016a9a2ec9137bf5036bdf6a366a507d7d3f7aded0deb62b43a",
     "apps/arena/src/main.ts": "4e8d2a3bfb22ce88a218c6a4c4aacf06b2c0463fde0f88827bd684ced63b9607",
@@ -14,7 +14,7 @@
     "apps/arena/src/playtest.ts": "74d3dbf511c7405bf72fd0099eef75b59b16b52d9ebcd541206734403b92862c",
     "apps/arena/src/policy.ts": "470e115c3e713076f5255c094019d7c41ba7af9cd1a699afa53eee030fee91fa",
     "apps/arena/src/renderer.ts": "6d9d62bfd0755ee3916db67dc5489db356b0ee5b85b6c7bc4f698b2c18b43ad9",
-    "apps/arena/src/sim.ts": "fc7c458301ff2592f80fb4830616fc1f73924b355fa3d5180c0e6f810afe1cdf",
+    "apps/arena/src/sim.ts": "47aaad8d46b74af4fc8974296e94d8535121c57a81fe9b32c3024986fd59d59e",
     "apps/arena/src/study.ts": "0a6678b91c543203fe134bf87cb094a4af760bcb495576c72b23fd8ae840d802",
     "apps/arena/src/style.css": "77036dc4e9f23c08895b40e631e0ce84652af5a99efdbea8e5565a83cafeca03",
     "apps/arena/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",

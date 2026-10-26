@@ -2,6 +2,8 @@
 
 This record separates implementation checks, scripted effectiveness measurements, and human experience. Passing a correctness test is not an enjoyment result.
 
+The latest [matched-experience v4 study](agentic-npc-matched-v4.md) is complete. No selector candidate passed its advancement gates: stop this seven-plan development line and publish the existing evidence, with no fresh validation warranted. Completed scored physical workload is now **260,696 executions across twenty-three records**. This is execution workload, not independent sample size.
+
 ## Completed experiments
 
 The [adaptation-v1 report](experiments/adaptation-v1.md) is complete and passed integrity checks: 8,568 actual encounters, 32 independent tactic-sampling seeds, one deterministic map, and three scripted movement changes. The [protocol](experiments/adaptation-v1.protocol.json) was specified before this run; the fixtures were already familiar. It is a local engineering experiment, not a public preregistration.
@@ -131,7 +133,7 @@ No human-player data has been collected for the [human study protocol](playtest.
 
 The emphasis on uncertainty rather than isolated point estimates is consistent with [Agarwal et al., *Deep Reinforcement Learning at the Edge of the Statistical Precipice*](https://arxiv.org/abs/2108.13264). This prototype is a small bandit in one arena; it does not reproduce that paper's broad multi-task benchmark or claim that bootstrap intervals remove its sampling limitations.
 
-See the [roadmap](roadmap.md) for validated learning opportunities, fresh confirmation and reusable releases.
+See the [roadmap](roadmap.md) for completed findings, the publication decision and separately scoped open questions.
 
 ## Conservative-intervention development
 
@@ -140,3 +142,56 @@ The [completed follow-up](conservative-intervention-v1.md) reuses all 48 examine
 Down-only reset, down-only score softening and separate-batch softening all have negative changing-history mean gains in every role. The separate-batch candidate passes the declared stability and stress gates, with 0.93, 0.56 and 0.71 interventions per hundred stable fights for vanguard, flanker and ranger. It fails the 1 HP benefit gate in all roles. Both overlapping-window candidates also fail the pre-run single-outlier stress check. **No candidate advances; no fresh validation is consumed.**
 
 All cached transitions reproduce. Verification repeats 192 physical table fights and 8,160 trajectory fights; these are not new scored evidence. A separate Python check matches means, pairs, rates, budget and eligibility, without independently recomputing bootstrap intervals. The [viewer](experiments/conservative-development-v1-view.html) displays 126 reconstructed fights, with post-results selection disclosed and all-seed data beside them. The [article](publication/article.md) and [research report](publication/research-report.md) incorporate the outcome.
+
+## Agent-assisted NPC development pilot
+
+The [between-round pilot](agentic-npc-pilot-v1.md) adds 340 scored physical fights on two familiar ranger cases: twenty shared warm-up fights and 320 comparison fights. This brings the scored physical workload to **254,684 across nineteen scored records**; cached development, verification and connection smoke tests remain excluded.
+
+After warm-up, a live model reviews its branch's completed observations and chooses one of seven bounded NPC plans. Ordinary Rust learning continues. Algorithm-only, statistical and random-plan branches share the same checkpoint and realized opponent history. Two agent repetitions per case/history measure model-run variation, not new independent cases.
+
+The agent's mean damage advantage over ordinary learning is +5.625 HP per fight for stable histories and +5.4375 for recurring histories. Against the declared statistical planner it is +3.375 and +5.0625 HP. All comparisons are descriptive. The agent loses to the random planner's average in one case/history, and no branch produces a player defeat or NPC survival. All 128 model calls succeed; CLI-reported cost is $2.9748312 and mean latency is 4.88 seconds.
+
+Every fight, observation, recorded decision and captured frame reproduces exactly without new model requests. The [viewer](experiments/agentic-npc-pilot-v1-view.html) and [frozen evidence kit](../publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz) preserve the run. A post-run concurrency fix latches the three-failure stop across branches; it did not affect this failure-free run and is disclosed separately from the frozen sources.
+
+**Continue development; do not claim a memory or adaptation advantage yet.** Some successful trajectories settle on a static plan. Compare repeated review with a development-selected fixed plan and a history/note ablation, then use longer histories before fresh validation. This experiment does not change the playable game's controller or the published earlier results.
+
+## Repeated NPC review and planner-history comparison
+
+The [completed v2 follow-up](agentic-npc-ablation-v2.md) adds **2,172 scored physical fights**: 1,384 calibration fights and 788 evaluation fights, including twenty shared warm-ups. This brings the completed scored workload to **256,856 across twenty scored records**. Two infrastructure attempts add 1,700 and 1,816 separately preserved executions, excluded from that total. Verification, cached development and connection smoke tests remain excluded.
+
+Across equally weighted cases and histories, full review averages **16.8125 HP** per post-warm-up fight, calibrated fixed **25.625**, held initial **17.00**, and latest-fight review **15.6875**. The three primary full-minus-control differences are **−8.8125**, **−0.1875**, and **+1.125 HP**, respectively. Continued review beats the held initial choice in only one of eight paired trajectories, ties twice and loses five times. Full review improves over ordinary learning on stable histories (+4 HP), but loses on changing histories (−1.125 HP).
+
+Full-history agents make 38 plan switches after initialization; latest-fight agents make 94. Access to accumulated history and notes therefore supports a narrow descriptive benefit over the latest-fight input in these runs, without demonstrating a notes-only benefit or superiority over a strong held plan. The calibrated fixed plan is `far` in both cases; it retains ordinary Rust tactic learning and receives additional calibration experience. It is not an equal-resource selector comparison.
+
+All **376 planner requests succeed**, with **$6.4860687** CLI-reported cost, 4.900-second mean latency and 8.754-second p95. Every physical fight, observation, recorded decision and captured frame replays exactly. The clean-extraction kit also regenerates the viewer byte for byte. No evaluation branch defeats the player or leaves the NPC alive.
+
+The completed run follows an initial sign-in failure and a second run stopped after sixteen successes and four timeouts. Both stopped journals remain latched and archived. Before the third attempt, only the accounting cap changed: $12.15 plus $0.648518 in prior known costs and unknown-cost allowances fits within $12.80. Across all v2 attempts, known reported cost is $6.7345867; adding four timeout allowances gives $7.1345867 in admission accounting. Actual charges for those timeouts remain unknown.
+
+Two familiar ranger worlds and two model repetitions remain development evidence. No p-values, generalization claim or decoding-randomness benefit follows. Next compare a minimum-evidence switching rule and establish adaptation opportunity across the expanded plan menu before advancing a candidate to unfamiliar cases.
+
+
+## Minimum-exposure gate and seven-plan diagnostic
+
+The [completed v3 comparison](agentic-npc-switching-v3.md) adds **788 scored physical fights**, including twenty warm-ups, and 376 successful model requests. Both active controllers receive full own-history and notes; a three-observed-fight gate changes only when a different recommendation may execute. Gated damage averages **16.5 HP**, versus **16.8125** immediate, **17** held-initial, and **25.625** prior calibrated fixed. The primary difference is **−0.3125 HP**. Applied switches decline from 29 to 20, with 34 proposals blocked. No evaluation player defeats or NPC survivals occur. Do not promote this rule.
+
+The separate [menu audit](agentic-menu-opportunity-v1.md) adds **2,236 scored diagnostic simulations**: 1,372 probes and 864 committed trajectory fights. Privileged greedy selection gains **3.875 HP** over the best held plan. The agent never receives those hidden scenarios or counterfactual results. Local probe maxima are not globally achievable bounds, and the two familiar worlds do not establish generalization.
+
+Together these bring completed scored physical workload to **259,880 across twenty-two scored records**. This is execution workload, not an independent sample count. Prior calibration/warm-ups reused by the audit, the interrupted v2 attempts, tests and verification replays remain excluded. All new scored outcomes reproduce exactly. V3 reported cost is **$9.9732408**, with no failures or unknown costs. These findings motivated the matched-experience comparison completed below.
+
+## Matched-experience NPC selection and stopping decision
+
+The [completed v4 comparison](agentic-npc-matched-v4.md) adds **816 physical executions**: **20 reproduced warm-ups, 28 survey fights and 768 evaluation fights**. The previous total of **259,880 across twenty-two scored records** therefore becomes **260,696 across twenty-three**. Reproduced warm-ups count as execution workload and add no independent evidence. The prior 1,384 calibration fights are referenced without rerunning or adding them again; interrupted v2 attempts, tests, cached transitions, verification and presentation reconstructions remain excluded from this completed scored total.
+
+Each world receives a public initial survey of all seven plans in forward and reverse catalog order. Both selectors receive identical preparation records, plan permissions and the same complete post-survey Rust checkpoint, then see their own subsequent histories. Attempts and average order position are balanced; hidden opponent conditions and evolving policy state during each sequential trial are not. Two survey attempts per plan remain noisy. The survey changes initialization, so historical evaluation scores are not direct controls.
+
+Across four equally weighted world/history cells, averaging model repetitions within each cell, continuous agent review averages **20.625 HP** of damage per evaluation fight, the active algorithm **20.5**, and both held-first controls **20.375**. Agent gains are **+0.125 HP** over the active algorithm and **+0.25 HP** over either held control. Its mean loss to the active algorithm in world 31042's recurring history is **−6.25 HP**. All five continuous-review gates fail. The held-agent candidate gains zero over held-algorithm and fails its gain and repetition checks; its cell harm check passes. Continued algorithmic selection gains only **+0.125 HP** over its held control and loses up to **2.5 HP** in individual cells, failing both checks.
+
+Ordinary Rust learning averages **15.375 HP**. The extra-experience `far` reference averages **25.125 HP** from the new initialization, with its **1,384 prior calibration fights** disclosed. Its historical **25.625 HP** is not the v4 reference result. Including the shared survey, agent/algorithm/held-control means are **17.605263 / 17.526316 / 17.447368 HP** across 38 post-warm-up fights. Full numeric details and all eight agent trajectories remain in the [summary](experiments/agentic-npc-matched-v4.summary.json); the [frozen protocol](experiments/agentic-npc-matched-v4.protocol.json) retains the predeclared gates. No evaluation player defeat or NPC survival occurs.
+
+All **192 logical requests succeed**, with zero retries, failures or unknown-cost records and **$6.9760712** in CLI-reported cost. The requested and reported model is `claude-sonnet-5-5` at medium effort. Mean request lifecycle latency is **5.257458 seconds**, p95 **8.294921 seconds**; the 96 algorithm selections average **0.012151 ms**, p95 **0.018958 ms**. Agent timing includes isolated CLI setup and cleanup, while algorithm timing measures selection only. Simulation waits for requests. The no-tools configuration and zero reported web-use counters are recorded, but provider identity, usage and cost telemetry are not independently authenticated. Every response reports `numTurns: 2`; 192 counts logical requests, not verified backend turns.
+
+All **816 physical outcomes**, **192 recorded agent decisions** and **96 algorithm decisions** replay exactly with zero model calls. The [verification](experiments/agentic-npc-matched-v4.verification.json) checks the protocol and **51 source hashes** frozen at **`6fd0795`**; the [independent arithmetic](experiments/agentic-npc-matched-v4.arithmetic.json) agrees with counts, costs, means and gates. The implementation test run passed **110 tests**. Replay checks recorded responses, not independently regenerated model behavior.
+
+The [complete results](experiments/agentic-npc-matched-v4.results.json.gz), [offline kit](../publication/inputs/releases/tactical-air-agentic-matched-v4.tar.gz) and [kit validation record](releases/agentic-npc-matched-v4.validation.json) preserve the evidence. The separately fingerprinted [r2 viewer](experiments/agentic-npc-matched-v4-view-2.html) improves mobile layout and disclosure after the run while retaining the frozen original viewer and sources; it changes no study input or outcome.
+
+**Stop this seven-plan development line and publish.** There is enough development evidence to report the prototype and unsuccessful interventions; no candidate warrants fresh validation. Do not add a prompt revision, parameter sweep or replacement run to pursue a favorable result. Two familiar worlds, reused schedules and model repetitions nested within them do not establish a general AI verdict, unfamiliar-world effectiveness or human enjoyment. The playable game's controller remains unchanged.

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "verified": true,
+  "resultsSha256": "3c3c764e984cd230994b8a90811bb6e162068c265d304c59fc31c3b37355c949",
+  "calibrationFightsReplayed": 0,
+  "preparationFightsReplayed": 48,
+  "evaluationFightsReplayed": 768,
+  "totalPhysicalFightsReplayed": 816,
+  "reusedCalibrationFights": 1384,
+  "fixedReferenceSha256": "f01887e78f0fbf56247360b3b013709440f3b201cd96c3e2bbc854b599556ed8",
+  "uniqueAgentDecisionsReplayed": 192,
+  "algorithmDecisionsReplayed": 96,
+  "sourceHashesChecked": true,
+  "frozenProtocolChecked": true,
+  "modelCallsMade": 0,
+  "scope": "Exact replay of preparation, deterministic algorithm choices, recorded agent decisions, observations and complete physical/Rust trajectories. Prior calibration is referenced, not rerun. Not independent replication or regenerated model outputs."
+}

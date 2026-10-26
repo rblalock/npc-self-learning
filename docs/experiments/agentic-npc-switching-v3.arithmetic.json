@@ -1,0 +1,121 @@
+{
+  "verified": true,
+  "method": "Independent Python arithmetic and gate-state accounting",
+  "evaluationFights": 788,
+  "uniqueRequests": 376,
+  "knownReportedCostUsd": 9.9732408,
+  "subsequentSwitches": {
+    "immediate": 29,
+    "gated": 20
+  },
+  "blockedProposals": 34,
+  "pairs": [
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "stable",
+      "means": {
+        "retained": 20,
+        "fixed": 31.5,
+        "initial": 23,
+        "immediate": 23,
+        "gated": 23
+      }
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "recurring",
+      "means": {
+        "retained": 13.5,
+        "fixed": 21,
+        "initial": 14,
+        "immediate": 14.25,
+        "gated": 15.75
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "stable",
+      "means": {
+        "retained": 7,
+        "fixed": 16.5,
+        "initial": 12.5,
+        "immediate": 12,
+        "gated": 11.75
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "recurring",
+      "means": {
+        "retained": 21,
+        "fixed": 33.5,
+        "initial": 18.5,
+        "immediate": 18,
+        "gated": 15.5
+      }
+    }
+  ],
+  "paired": [
+    {
+      "seed": 31001,
+      "history": "stable",
+      "replicate": 1,
+      "gatedVsImmediate": 0,
+      "gatedVsInitial": 0
+    },
+    {
+      "seed": 31001,
+      "history": "stable",
+      "replicate": 2,
+      "gatedVsImmediate": 0,
+      "gatedVsInitial": 0
+    },
+    {
+      "seed": 31001,
+      "history": "recurring",
+      "replicate": 1,
+      "gatedVsImmediate": 1.5,
+      "gatedVsInitial": 2
+    },
+    {
+      "seed": 31001,
+      "history": "recurring",
+      "replicate": 2,
+      "gatedVsImmediate": 1.5,
+      "gatedVsInitial": 1.5
+    },
+    {
+      "seed": 31042,
+      "history": "stable",
+      "replicate": 1,
+      "gatedVsImmediate": 0,
+      "gatedVsInitial": -0.5
+    },
+    {
+      "seed": 31042,
+      "history": "stable",
+      "replicate": 2,
+      "gatedVsImmediate": -0.5,
+      "gatedVsInitial": -1.0
+    },
+    {
+      "seed": 31042,
+      "history": "recurring",
+      "replicate": 1,
+      "gatedVsImmediate": -2.5,
+      "gatedVsInitial": -3.0
+    },
+    {
+      "seed": 31042,
+      "history": "recurring",
+      "replicate": 2,
+      "gatedVsImmediate": -2.5,
+      "gatedVsInitial": -3.0
+    }
+  ],
+  "modelCallsMade": 0
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "study": "agentic-npc-ablation-v2",
+  "completedAttempt": 3,
+  "date": "2026-10-26",
+  "archive": "publication/inputs/releases/tactical-air-agentic-ablation-v2.tar.gz",
+  "archiveSha256": "944cec04e64fe70d087ed496354f8aa24c53f6908ca3aef15e5f88b6326e432c",
+  "archiveFiles": 42,
+  "memberChecksumsPassed": 41,
+  "recordedSourceHashesPassed": 33,
+  "resultsSha256": "85f2d9a4f8f78864dc3ebeeadef83db71b05fb3cad96a69b5d7231b0e93e07a4",
+  "resultsHashEncoding": "SHA-256 of JSON.stringify(parsedResults), without trailing newline",
+  "replay": {
+    "cleanExtraction": true,
+    "scoredPhysicalFights": 2172,
+    "recordedAgentDecisions": 376,
+    "modelCallsMade": 0,
+    "scope": "Exact replay of recorded model decisions; not independent replication or regenerated model outputs."
+  },
+  "independentArithmetic": {
+    "allCaseAndHistoryMeansMatched": true,
+    "calibrationSelectionsMatched": true,
+    "costAndLatencyMatched": true
+  },
+  "viewerRegeneratedByteIdentically": true,
+  "tests": {
+    "v2SuiteBeforeFinancialAmendment": {
+      "passed": 75,
+      "failed": 0
+    },
+    "runnerAndTrialAfterFinancialAmendment": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "restartAccounting": {
+    "priorKnownReportedCostUsd": 0.248518,
+    "priorUnknownCostCalls": 4,
+    "priorUnknownCostAllowanceUsd": 0.4,
+    "currentRunCapUsd": 12.15,
+    "actualUnknownChargesRemainUnknown": true
+  },
+  "browser": {
+    "actualCompletedData": true,
+    "recordingsSelectableDesktop": 64,
+    "recordingsSelectableMobile": 64,
+    "frames": 7325,
+    "startEndScrubChecksPassed": 64,
+    "defaultPaused": true,
+    "playbackAndPausePassed": true,
+    "desktopWidth": 1200,
+    "mobileWidth": 390,
+    "horizontalOverflow": false,
+    "observedJavascriptErrors": 0,
+    "observedJavascriptWarnings": 0
+  },
+  "independentReview": {
+    "allPrimaryContrastsMatched": true,
+    "perCaseAndRepetitionMeansMatched": true,
+    "sharedInitializationAndObservationBoundariesMatched": true,
+    "requestCostBreakdownMatched": true,
+    "consequentialDiscrepancies": 0,
+    "scope": "Independent recorded-data consistency and arithmetic, separate from physical replay."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "verified": true,
+  "incomplete": true,
+  "resultsSha256": "6e1b8a37a8310c43fcf49e29d065cb9cdb5ab7603a542651acab8f2380f2bafa",
+  "calibrationFightsReplayed": 1384,
+  "evaluationFightsReplayed": 316,
+  "totalPhysicalFightsReplayed": 1700,
+  "failedInitializationRequests": 4,
+  "reportedCostUsd": 0,
+  "modelCallsMade": 0,
+  "scope": "Recorded infrastructure-failure attempt only; no completed agent comparison or effectiveness conclusion."
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "study": "agentic-npc-ablation-v2",
+  "date": "2026-10-26",
+  "status": "incomplete: provider authentication unavailable",
+  "archive": "publication/inputs/releases/tactical-air-agentic-ablation-v2-attempt-1.tar.gz",
+  "archiveSha256": "739ae5ac958465b8517eafcd183a33306286d5ef62310e47b2bad5a482152d84",
+  "archiveFiles": 39,
+  "memberChecksumsPassed": 38,
+  "sourceFingerprints": 33,
+  "resultsSha256": "6e1b8a37a8310c43fcf49e29d065cb9cdb5ab7603a542651acab8f2380f2bafa",
+  "resultsHashEncoding": "SHA-256 of JSON.stringify(parsedIncompleteResults), without trailing newline",
+  "cleanExtractionReplay": {
+    "passed": true,
+    "calibrationFights": 1384,
+    "recordedEvaluationFights": 316,
+    "totalPhysicalFights": 1700,
+    "modelCallsMade": 0,
+    "effectivenessComparisonComplete": false
+  },
+  "provider": {
+    "requestedModel": "claude-sonnet-5-5",
+    "failedInitializationRequests": 4,
+    "successfulRequests": 0,
+    "reportedCostUsd": 0,
+    "reportedInputTokens": 0,
+    "reportedOutputTokens": 0,
+    "authStatusLoggedIn": false,
+    "stopLatchPreserved": true
+  },
+  "tests": {
+    "agentRelatedSuiteBeforeVerificationTightening": 85,
+    "v2AfterFinalVerificationFix": 31,
+    "runnerAfterAuthPreflight": 3,
+    "signedOutPreflightCreatesNoExperiment": true
+  },
+  "viewerSyntheticFixtureChecks": {
+    "recordings": 64,
+    "allRecordingsSelectable": true,
+    "playback": true,
+    "default": "full:1, paused",
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "jsonAndGzip": true,
+    "overwriteRefused": true,
+    "metadataFiltered": true,
+    "scriptEscaping": true,
+    "shuffledBranches": true,
+    "actualStudyViewer": false
+  },
+  "postAttemptChange": "The current CLI runner checks authentication before creating an experiment. The archive preserves the actual earlier runner for historical replay.",
+  "scope": "Infrastructure-attempt evidence and implementation validation only. A new authenticated run is required for the declared comparison; preserve this attempt and disclose the restart."
+}

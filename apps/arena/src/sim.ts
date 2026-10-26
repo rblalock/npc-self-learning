@@ -3,6 +3,8 @@ export interface PolicyCell { role: string; context: string; action: string; sco
 export interface PolicyInspection { version: number; encounter: number; pending: number; queued: number; cells: PolicyCell[] }
 export type Style = 'orbit' | 'reverse' | 'cover' | 'weave' | 'feint';
 export type Role = 'vanguard' | 'flanker' | 'ranger';
+export type NpcTuning = { rangerDistance: number; rangerLeadScale: number };
+export const DEFAULT_NPC_TUNING: Readonly<NpcTuning> = Object.freeze({ rangerDistance: 275, rangerLeadScale: 1 });
 export type Point = { x: number; y: number };
 export type Input = { x: number; y: number; aim: Point; fire: boolean; dash: boolean };
 type Decision = { decision_id: number; action: string; probabilities: { action: string; probability: number }[]; baseline: boolean };
@@ -78,8 +80,31 @@ export class Arena {
   onFinish?: (outcome: Outcome) => void;
   private shotClock = 0;
   private beforeCells: PolicyCell[] = [];
+  #npcTuning: Readonly<NpcTuning> = DEFAULT_NPC_TUNING;
   constructor(public policy: Policy) {}
   inspect() { return this.policy.request<PolicyInspection>({ op: 'inspect' }); }
+  get npcTuning(): Readonly<NpcTuning> { return this.#npcTuning; }
+  /** Replace tuning between rounds; omitted fields use the authored defaults. */
+  setNpcTuning(tuning: Partial<NpcTuning>) {
+    if (this.active) throw new Error('NPC tuning requires an inactive encounter');
+    if (!tuning || typeof tuning !== 'object' || (Object.getPrototypeOf(tuning) !== Object.prototype && Object.getPrototypeOf(tuning) !== null)) {
+      throw new TypeError('NPC tuning must be a plain object');
+    }
+    const next = { ...DEFAULT_NPC_TUNING };
+    for (const key of Reflect.ownKeys(tuning)) {
+      if (key !== 'rangerDistance' && key !== 'rangerLeadScale') throw new TypeError(`Unknown NPC tuning field: ${String(key)}`);
+      const field = Object.getOwnPropertyDescriptor(tuning, key)!;
+      if (!('value' in field)) throw new TypeError('NPC tuning fields must be numeric values');
+      const value = field.value, [min, max] = key === 'rangerDistance' ? [180, 360] : [0, 1.5];
+      if (typeof value !== 'number' || !Number.isFinite(value) || value < min || value > max) {
+        throw new RangeError(`${key} must be a finite number in [${min}, ${max}]`);
+      }
+      next[key] = value;
+    }
+    const boundary = this.inspect();
+    if (boundary.pending !== 0 || boundary.queued !== 0) throw new Error('NPC tuning requires a clean policy boundary');
+    this.#npcTuning = Object.freeze(next);
+  }
   startEncounter(baseline = this.baseline) {
     if (this.active) this.discardEncounter();
     this.baseline = baseline; this.time = 0; this.shotClock = 0; this.outcome = null;
@@ -179,7 +204,7 @@ export class Arena {
         const side = e.tactic === 'flank_left' ? -1 : 1;
         if (visible) goal = { x: known.x - to.x * 95 - to.y * 140 * side, y: known.y - to.y * 95 + to.x * 140 * side };
       }
-      if (e.role === 'ranger' && visible) goal = { x: known.x - to.x * 275, y: known.y - to.y * 275 };
+      if (e.role === 'ranger' && visible) goal = { x: known.x - to.x * this.#npcTuning.rangerDistance, y: known.y - to.y * this.#npcTuning.rangerDistance };
       goal = { x: clamp(goal.x, 45, WIDTH - 45), y: clamp(goal.y, 45, HEIGHT - 45) };
       e.repath -= dt;
       if (e.repath <= 0) { e.path = route(e, goal); e.repath = .35; }
@@ -192,7 +217,7 @@ export class Arena {
       e.cooldown -= dt;
       if (e.windup > 0) {
         if (visible && e.windup > LOCK_WINDOW) {
-          const lead = e.tactic === 'lead' ? LOCK_WINDOW + range / 480 : 0;
+          const lead = e.tactic === 'lead' ? (LOCK_WINDOW + range / 480) * (e.role === 'ranger' ? this.#npcTuning.rangerLeadScale : 1) : 0;
           e.target = { x: clamp(known.x + known.vx * lead, 15, WIDTH - 15), y: clamp(known.y + known.vy * lead, 15, HEIGHT - 15) };
         }
         e.windup -= dt;
@@ -203,7 +228,7 @@ export class Arena {
         }
       } else if (e.cooldown <= 0 && visible && range < (e.role === 'vanguard' ? 260 : 650)) {
         e.windup = e.role === 'ranger' ? .72 : .48;
-        const lead = e.tactic === 'lead' ? LOCK_WINDOW + range / 480 : 0;
+        const lead = e.tactic === 'lead' ? (LOCK_WINDOW + range / 480) * (e.role === 'ranger' ? this.#npcTuning.rangerLeadScale : 1) : 0;
         e.target = { x: clamp(known.x + known.vx * lead, 15, WIDTH - 15), y: clamp(known.y + known.vy * lead, 15, HEIGHT - 15) };
       }
     }

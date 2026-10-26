@@ -1,0 +1,200 @@
+{
+  "verified": true,
+  "method": "Independent Python arithmetic and advancement gates",
+  "preparationFights": 48,
+  "evaluationFights": 768,
+  "totalPhysicalFights": 816,
+  "uniqueRequests": 192,
+  "knownReportedCostUsd": 6.976071200000001,
+  "pairs": [
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "stable",
+      "means": {
+        "retained": 21,
+        "fixed": 31.5,
+        "algorithm": 30,
+        "algorithm-initial": 31.5,
+        "agent": 31.5,
+        "agent-initial": 31.5
+      },
+      "cumulativeMeans": {
+        "retained": 19.263157894736842,
+        "fixed": 25.894736842105264,
+        "algorithm": 24.94736842105263,
+        "algorithm-initial": 25.894736842105264,
+        "agent": 25.894736842105264,
+        "agent-initial": 25.894736842105264
+      }
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "recurring",
+      "means": {
+        "retained": 13,
+        "fixed": 19,
+        "algorithm": 16.5,
+        "algorithm-initial": 19,
+        "agent": 19.5,
+        "agent-initial": 19
+      },
+      "cumulativeMeans": {
+        "retained": 14.210526315789474,
+        "fixed": 18.0,
+        "algorithm": 16.42105263157895,
+        "algorithm-initial": 18.0,
+        "agent": 18.31578947368421,
+        "agent-initial": 18.0
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "stable",
+      "means": {
+        "retained": 8,
+        "fixed": 19,
+        "algorithm": 10,
+        "algorithm-initial": 12.5,
+        "agent": 12.25,
+        "agent-initial": 12.5
+      },
+      "cumulativeMeans": {
+        "retained": 8.210526315789474,
+        "fixed": 15.157894736842104,
+        "algorithm": 9.473684210526315,
+        "algorithm-initial": 11.052631578947368,
+        "agent": 10.894736842105264,
+        "agent-initial": 11.052631578947368
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "recurring",
+      "means": {
+        "retained": 19.5,
+        "fixed": 31,
+        "algorithm": 25.5,
+        "algorithm-initial": 18.5,
+        "agent": 19.25,
+        "agent-initial": 18.5
+      },
+      "cumulativeMeans": {
+        "retained": 15.473684210526315,
+        "fixed": 22.736842105263158,
+        "algorithm": 19.263157894736842,
+        "algorithm-initial": 14.842105263157896,
+        "agent": 15.31578947368421,
+        "agent-initial": 14.842105263157896
+      }
+    }
+  ],
+  "paired": [
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "stable",
+      "replicate": 1,
+      "agentVsAlgorithm": 1.5,
+      "agentVsInitial": 0.0,
+      "agentVsAlgorithmInitial": 0.0,
+      "heldAgentVsHeldAlgorithm": 0.0
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "stable",
+      "replicate": 2,
+      "agentVsAlgorithm": 1.5,
+      "agentVsInitial": 0.0,
+      "agentVsAlgorithmInitial": 0.0,
+      "heldAgentVsHeldAlgorithm": 0.0
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "recurring",
+      "replicate": 1,
+      "agentVsAlgorithm": 3.0,
+      "agentVsInitial": 0.5,
+      "agentVsAlgorithmInitial": 0.5,
+      "heldAgentVsHeldAlgorithm": 0
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "recurring",
+      "replicate": 2,
+      "agentVsAlgorithm": 3.0,
+      "agentVsInitial": 0.5,
+      "agentVsAlgorithmInitial": 0.5,
+      "heldAgentVsHeldAlgorithm": 0
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "stable",
+      "replicate": 1,
+      "agentVsAlgorithm": 2,
+      "agentVsInitial": -0.5,
+      "agentVsAlgorithmInitial": -0.5,
+      "heldAgentVsHeldAlgorithm": 0.0
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "stable",
+      "replicate": 2,
+      "agentVsAlgorithm": 2.5,
+      "agentVsInitial": 0.0,
+      "agentVsAlgorithmInitial": 0.0,
+      "heldAgentVsHeldAlgorithm": 0.0
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "recurring",
+      "replicate": 1,
+      "agentVsAlgorithm": -7.0,
+      "agentVsInitial": 0.0,
+      "agentVsAlgorithmInitial": 0.0,
+      "heldAgentVsHeldAlgorithm": 0.0
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "recurring",
+      "replicate": 2,
+      "agentVsAlgorithm": -5.5,
+      "agentVsInitial": 1.5,
+      "agentVsAlgorithmInitial": 1.5,
+      "heldAgentVsHeldAlgorithm": 0.0
+    }
+  ],
+  "decision": {
+    "reviewChecks": {
+      "gainOverActiveAlgorithm": false,
+      "gainOverHeldAlgorithm": false,
+      "gainOverOwnInitial": false,
+      "positiveEachReplicate": false,
+      "cellHarm": false
+    },
+    "heldChecks": {
+      "gain": false,
+      "positiveEachReplicate": false,
+      "cellHarm": true
+    },
+    "algorithmChecks": {
+      "gain": false,
+      "cellHarm": false
+    },
+    "advanceContinuousReview": false,
+    "advanceHeldAgent": false,
+    "algorithmReviewEarned": false,
+    "agentDevelopmentStop": true
+  },
+  "modelCallsMade": 0
+}

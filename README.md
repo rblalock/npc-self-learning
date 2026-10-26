@@ -10,9 +10,17 @@ The game owns perception, movement, combat and rewards. The library owns bounded
 
 ## Latest research
 
+The [matched-experience v4 study](docs/agentic-npc-matched-v4.md) is complete: **816 physical executions, 192 successful logical requests and $6.9760712 in CLI-reported cost**. Continuous agent review averaged **20.625 HP**, the active algorithm **20.5**, and both held-first controls **20.375**. All continuous-review gates failed; the held-agent candidate and continued algorithmic selection also failed their gates. **Stop this seven-plan development line and publish; no fresh validation is warranted.** The [r2 viewer](docs/experiments/agentic-npc-matched-v4-view-2.html), [summary](docs/experiments/agentic-npc-matched-v4.summary.json) and [offline kit](publication/inputs/releases/tactical-air-agentic-matched-v4.tar.gz) preserve the outcome. Two familiar worlds, reused schedules and nested model repetitions support this development decision, not a general verdict about AI.
+
+The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review after ten warm-up fights. Across two familiar ranger cases, agent-controlled plans increased NPC damage by 5.63 HP per fight on stable histories and 5.44 HP on changing histories versus ordinary learning. All 340 fights replay exactly. This is development evidence: that pilot did not isolate the value of repeated review or access to history. Inspect the [recorded viewer](docs/experiments/agentic-npc-pilot-v1-view.html) or [frozen offline kit](publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz). This experimental host is separate from the playable game's controller.
+
+The [fixed-plan and planner-history follow-up](docs/agentic-npc-ablation-v2.md) is complete: 2,172 fights and 376 successful requests. Full-history review averaged 16.8125 HP per fight, versus 17.00 when holding the agent’s first choice, 15.6875 with latest-fight input, and 25.625 with a separately calibrated fixed plan. Repeated review added no average benefit over the initial selection. These are descriptive results on two familiar cases; the fixed benchmark used extra calibration experience. The [viewer](docs/experiments/agentic-npc-ablation-v2-view.html) and [offline kit](publication/inputs/releases/tactical-air-agentic-ablation-v2.tar.gz) preserve all results; both interrupted attempts remain separately available.
+
+The [three-fight switching study](docs/agentic-npc-switching-v3.md) completed 788 fights and 376 successful requests. Requiring three observed fights before a change reduced applied switches from 29 to 20 but lowered mean damage: 16.5 HP versus 16.8125 for immediate review and 17 for holding the first choice. The [viewer](docs/experiments/agentic-npc-switching-v3-view.html) shows recommendations, actual plans and blocked changes. A separate [seven-plan audit](docs/agentic-menu-opportunity-v1.md) found a privileged simulation controller could gain 3.875 HP over the best held plan; the live agent does not receive those probes.
+
 The [completed article](docs/publication/article.md) and [companion report](docs/publication/research-report.md) cover individual adaptation, team choice, public terrain memory and automatic forgetting.
 
-The latest [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.
+The earlier [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.
 
 Watch the [126 recorded fights and all-seed results](docs/experiments/conservative-development-v1-view.html), or use the [verified headless kit](target/releases/tactical-air-conservative-lab-v1.tar.gz). This adds zero new scored physical fights. Earlier [qualified-opportunity results](docs/opportunity-lab-v2.md) support solo adaptation and useful public context; the joint squad result remains inconclusive. See the [roadmap](docs/roadmap.md).
 
@@ -119,7 +127,9 @@ The [change-detection follow-up](docs/change-detection-lab-v1.md) tests automati
 
 ## Where this goes next
 
-Separate detecting a change from deciding that forgetting will improve performance. Calibrate against stable noisy histories before another reserved run, then test context transfer and team sample allocation under matched budgets. Human recognition, fairness and enjoyment have not been measured.
+The final matched-experience comparison is complete and no candidate passed its predeclared gates. Stop the current seven-plan agent development line and publish the prototype, methods, complete results and failed interventions. The existing development evidence is sufficient for that publication; no fresh validation, prompt revision, parameter sweep or replacement run is warranted by this result. The playable game's controller remains unchanged.
+
+Context transfer, team sample allocation and useful forgetting remain separate research questions, each requiring a new mechanism-level hypothesis and bounded protocol before further work. Human recognition, fairness and enjoyment have not been measured. None is a prerequisite for publishing the completed development record.
 
 The two-wave mission loop repeats the same battlefield and roster. Learning can make familiar habits more dangerous; mission numbers do not increase stats or guarantee a harder encounter. The effectiveness of scout-delivered learning has not been established by a controlled comparison.
 

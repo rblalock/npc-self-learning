@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "study": "agentic-npc-pilot-v1",
+  "date": "2026-10-25",
+  "archive": "publication/inputs/releases/tactical-air-agentic-pilot-v1.tar.gz",
+  "archiveSha256": "d575f13df9fe07c107b341ff86a5c1396fd8b7fbf8844f3a811f792ee9bc6021",
+  "archiveFiles": 32,
+  "memberChecksumsPassed": 31,
+  "recordedSourceHashesPassed": 26,
+  "resultsSha256": "7e31aa2ab51f1c9338aa93085069427dd91c8dc19344f89f3c5a52c0393d8f7e",
+  "resultsHashEncoding": "SHA-256 of JSON.stringify(parsedResults), without trailing newline",
+  "replay": {
+    "cleanExtraction": true,
+    "scoredPhysicalFights": 340,
+    "recordedAgentDecisions": 128,
+    "modelCallsMade": 0,
+    "scope": "Exact reconstruction with recorded decisions, including observations, policy state, physical outcomes and captured frames. Not independent replication or identical model regeneration.",
+    "finalPackaging": "Clean-extraction runtime verification used the identical frozen sources and results. Final packaging changed only viewer footer wrapping and its checksum; all final archive checksums and source/result identities were checked afterward."
+  },
+  "tests": {
+    "fullSuiteBeforeFailureStopFix": { "rustPassed": 21, "javascriptPassed": 140 },
+    "agenticSuiteAfterFailureStopFix": { "passed": 55, "failed": 0 },
+    "productionBuild": "passed",
+    "typescript": "passed",
+    "diffWhitespace": "passed"
+  },
+  "independentReview": {
+    "allSummaryArithmeticMatched": true,
+    "observationHashesMatched": 320,
+    "transcriptHashSetsMatched": 128,
+    "verifierModulesParsed": 20,
+    "extraRuntimeReplay": false,
+    "newConsequentialEvidenceOrPrivacyIssues": 0
+  },
+  "browser": {
+    "recordingCombinationsChecked": 40,
+    "desktopWidth": 1200,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "playbackCompleted": true,
+    "keyboardScrubStartAndEnd": true,
+    "autoplay": false
+  },
+  "postRunFix": {
+    "file": "scripts/evaluate-agentic-v1.mjs",
+    "frozenRunSha256": "576f2a5f482a0ef72d9b59a6a7396957aa394b519f83aa7ed7d2a06d8c458778",
+    "currentSha256": "7ed978c58ca316e0f94e67e3803921e66f7ac01dbb59d0cc00d89f484586b273",
+    "change": "Latch the three-failure stop across concurrent branches; an in-flight success cannot reopen admission.",
+    "regressionTestPassed": true,
+    "pilotFailures": 0,
+    "pilotAffected": false,
+    "historicalSourcesPreserved": true
+  }
+}

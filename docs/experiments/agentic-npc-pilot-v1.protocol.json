@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "agentic-npc-pilot-v1",
+  "status": "Development feasibility pilot on two previously examined ranger cases. Not fresh validation or a superiority test.",
+  "objective": "Test an enemy NPC improvement loop: ten ordinary-learning warm-up fights, then agent-directed behavior changes between fights while ordinary learning continues.",
+  "cases": [
+    {
+      "seed": 31001,
+      "index": 0
+    },
+    {
+      "seed": 31042,
+      "index": 2
+    }
+  ],
+  "warmupRounds": 10,
+  "postRounds": 16,
+  "histories": [
+    "stable",
+    "recurring"
+  ],
+  "agentReplicates": 2,
+  "controls": [
+    "retained",
+    "statistical",
+    "random"
+  ],
+  "schedule": "Each case has a shared 90% A warm-up. Stable remains 90% A. Recurring switches from 90% A to 90% B at a case-seeded round in 3..5, returning to 90% A at round 12. Bernoulli draws are keyed by case/history/round; all arms and agent replicates face the identical realized schedule. No resampling after inspection. Timing and labels are hidden from planners.",
+  "checkpoint": "Run warm-up once per case; fork identical Rust memory, decision counters and RNG into every arm. Initial NPC plan is baseline. First agent request occurs only after all ten warm-up rounds and before post-round 1; no unused request after round 16.",
+  "controlBoundary": "Retained keeps the baseline behavior while Rust learns. Statistical, random and agent planners have the same seven complete NPC plans. Forced aim/lead uses the Rust allowed-action mask; choose, RNG consumption, observed reward and commit still run normally. No score edits, stat buffs, generated code or extra simulator queries.",
+  "tuning": "NPC ranger engagement distance and lead-prediction scale only. Lead scale multiplies the whole existing LOCK_WINDOW + range / 480 prediction time. Health, damage, speed, cooldowns, line of sight and the opponent controller are fixed across arms. Opponent inputs can respond to different NPC behavior under the same controller and random schedule.",
+  "statisticalPlanner": "Sliding-window UCB: last 16 completed observed rounds, observed NPC damage capped at 100 and divided by 100, matching the primary agent objective, index mean + 0.35*sqrt(log(total recent observed rounds+1)/plan observations). Unseen plans have infinite index, ties use declared catalog order. Warm-up credits only baseline. This is one declared comparator, not an optimized or universally strong statistical method.",
+  "observations": "Allowlisted completed rounds, actual NPC plan/tactic, observed reward and damage, NPC health, duration, line-of-sight-limited telemetry, own policy cells, previous agent note, and available plans. Exclude scenario identity, controller family, hidden A/B state, schedule, seeds, RNG, counterfactuals and other arms. Each branch sees only its own history after the common warm-up.",
+  "agent": {
+    "provider": "claude-cli",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "timeoutMs": 90000,
+    "maxBudgetUsdPerCall": 0.1,
+    "maxCalls": 128,
+    "maxReportedCostUsd": 12.8,
+    "sampling": "Provider/CLI defaults; no exposed seed or temperature control. Each request uses a fresh isolated context plus explicit history and bounded memory.",
+    "memoryCharacters": 1500,
+    "retries": 0
+  },
+  "failurePolicy": "Invalid outputs, timeouts and provider errors retain the previous validated plan and memory, with the failure recorded. No repair call. Stop the run after three consecutive live provider failures. Requests are journaled before dispatch; on explicit resume an unresolved pending request becomes a recorded uncertain-outcome fallback without being resent. Failed calls and repeated runs remain in the evidence.",
+  "budget": "Two shared warm-ups (20 fights) plus 2 cases * 2 histories * (3 control arms + 2 agent replicates) * 16 fights = 340 scored physical fights and 128 planned agent calls. Verification replays add no independent observations. Request cap and CLI-reported cost cap are enforced; provider caps are not a guarantee of exact invoice cost.",
+  "analysis": "Report NPC damage per fight, paired differences versus retained/statistical/random, defeats of the player, NPC survival, per-round trajectories, plan changes, failures, latency, CLI-reported tokens and cost. Average agent replicates within each case/history before combining. No confidence interval or p-value with two familiar cases. Do not calculate regret or recovery against old two-tactic tables: the expanded menu invalidates that oracle.",
+  "claimLimits": "A gain may be better static parameter selection rather than adaptation or memory benefit. A memory ablation, a development-selected fixed-plan comparator, longer histories and fresh maps/opponents are required before stronger claims. Agent output variability is measured across repetitions; exact simulation replay uses recorded decisions and does not promise identical regenerated model output.",
+  "publication": "Freeze protocol and source hashes before model decisions. Preserve filtered requests, validated responses, failures, selected plans, physical records and policy snapshots. Do not publish authentication, local paths, raw CLI sessions or unfiltered stderr. Keep the shipped default configuration and previous research artifacts unchanged."
+}

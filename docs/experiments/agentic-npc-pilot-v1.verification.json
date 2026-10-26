@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "verified": true,
+  "resultsSha256": "7e31aa2ab51f1c9338aa93085069427dd91c8dc19344f89f3c5a52c0393d8f7e",
+  "scoredPhysicalFightsReplayed": 340,
+  "recordedAgentDecisionsReplayed": 128,
+  "sourceHashesChecked": true,
+  "modelCallsMade": 0,
+  "scope": "Reconstruction using recorded model decisions; not independent replication or model-output reproducibility."
+}

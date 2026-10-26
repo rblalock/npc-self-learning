@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "seed": 31001,
+      "index": 0
+    },
+    {
+      "seed": 31042,
+      "index": 2
+    }
+  ],
+  "warmupRounds": 10,
+  "postRounds": 24,
+  "histories": [
+    "stable",
+    "recurring"
+  ],
+  "agentReplicates": 2,
+  "changeStartMin": 6,
+  "changeStartWidth": 3,
+  "returnStartMin": 17,
+  "returnStartWidth": 3,
+  "maxConcurrency": 4,
+  "schema": 1,
+  "id": "agentic-npc-switching-v3",
+  "status": "Development comparison on the two familiar v2 worlds and exact v2 schedules; not fresh validation.",
+  "objective": "Test whether a three-observed-fight minimum exposure rule improves enemy NPC damage relative to unrestricted between-round agent review.",
+  "gate": {
+    "minimumObservedFights": 3,
+    "rule": "Initial choice is shared and unrestricted. Thereafter block a different plan until three legitimately observed evaluation fights have completed under the actual current plan since its last entry. Warmups do not count; missing observations do not count. Same-plan recommendations leave the count intact. A switch resets the count before the new fight. Blocked proposals are discarded, never queued. This tests minimum exposure, not statistical confirmation of a bad plan."
+  },
+  "schedule": "Reuse the exact v2 evaluation policy seeds, warmups, checkpoints and realized schedules. Both arms and repetitions share each case/history schedule. This is a controlled development rerun, not additional independent worlds.",
+  "arms": {
+    "retained": "Default plan with continued ordinary Rust learning.",
+    "fixed": "Previously calibrated far plan, selected in v2 before evaluation; no new calibration. Extra calibration experience remains an advantage of this diagnostic comparator.",
+    "initial": "Hold the paired shared initial complete plan. Initial failure holds baseline.",
+    "immediate": "Review all completed own-branch observations and previous bounded note before every fight; apply each valid recommendation.",
+    "gated": "Identical review frequency, fields and note access; apply a changed recommendation only when the minimum-observation gate permits it."
+  },
+  "initialization": "Ten shared warmups per case. One fresh initial request per case/history/repetition, empty note and baseline plan, shared across immediate/gated/held-initial. Identical first fights and Rust state required. Each request is charged once.",
+  "observationBoundary": "Full chronological warmups and completed own-branch fights, actual applied currentPlanId, bounded previous note, seven-plan menu and true clock. No gate counters or arm identity; no policy cells, seeds, hidden labels, schedule, coordinates, future outcomes, counterfactuals or other branches. Both arms receive identical proposal wording. Notes remain model claims; blocked proposals never rewrite actual action history. After divergence both arms get new requests on their own histories.",
+  "controls": "Reuse v1's exact seven ranger plans and physics. No new actions, memory edits, stat buffs, generated code or simulated probes. Every fixed and agent round uses normal Rust choose, legal masks, feedback and commit. A held auto-choice plan may still choose different aim/lead tactics. Opponent inputs may respond to different NPC behavior.",
+  "agent": {
+    "provider": "claude-cli",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "timeoutMs": 90000,
+    "maxBudgetUsdPerCall": 0.1,
+    "maxCalls": 376,
+    "maxReportedCostUsd": 12.8,
+    "maxConsecutiveFailures": 3,
+    "sampling": "Provider defaults; fresh isolated CLI process for each unique request. No exposed temperature or seed control.",
+    "memoryCharacters": 1500,
+    "retries": 0
+  },
+  "failurePolicy": "Reuse the audited v2 durable journal: max four concurrent, rotating round waves, no retries, unknown outcomes never resent, permanent stop after three consecutive failures. Failed calls retain the actual current plan and previous note; shared-initial failure holds baseline. Preserve incomplete data and do not shorten horizon/replicates. Prior v3 attempts must be accounted before any restart. Admission accounting and per-call caps are not guarantees against in-flight cost overruns. The live CLI registers one durable output directory for this study and takes an exclusive writer lock. A different output directory or protocol is rejected even after the writer exits. No replacement attempt is permitted under this frozen protocol; it requires an audited financial amendment accounting for prior calls, reported costs and unknown allowances. Same-directory resume retains the original journal and failure latch.",
+  "fixedReference": {
+    "summary": "docs/experiments/agentic-npc-ablation-v2.summary.json",
+    "plans": [
+      {
+        "seed": 31001,
+        "index": 0,
+        "planId": "far"
+      },
+      {
+        "seed": 31042,
+        "index": 2,
+        "planId": "far"
+      }
+    ],
+    "previousCalibrationFights": 1384
+  },
+  "budget": {
+    "evaluationFights": 788,
+    "uniqueModelRequests": 376,
+    "newCalibrationFights": 0,
+    "formula": "2 worlds * (10 warmups + 2 histories * 8 branches * 24 fights); requests 2 * 2 * 2 * (1 + 2 * 23)."
+  },
+  "analysis": "Primary: gated minus unrestricted mean NPC damage across all 24 fights. Secondary: each active arm minus paired held-initial; gaps to prior calibrated far and ordinary Rust; stable/recurring separately, all eight paired trajectories, actual switches, proposals and blocks excluding initialization, defeats, survival, costs, latency. Average repetitions within case/history then cases equally. No threshold tuning, best-run exclusion, p-values or confidence intervals.",
+  "claimLimits": "Two familiar worlds with reused schedules and nested stochastic model repetitions. Fewer switches alone is not benefit. A gain over unrestricted that only matches held-initial indicates prevented losses, not value from continuing adaptation. Full history and notes remain in both arms, Rust learning continues, and model weights are unchanged. Seven authored plans only. Far has prior extra calibration experience. A three-observation minimum is an execution rule, not a change detector or statistical evidence threshold. Exact replay uses recorded model outputs, not model regeneration.",
+  "publication": "Freeze protocol and sources before live calls; preserve v1/v2 untouched. Publish filtered decisions, proposed/applied plans, gate events, all physical results, offline verifier and viewer. Keep raw provider sessions and credentials private."
+}

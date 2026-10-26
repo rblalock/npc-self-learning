@@ -1,0 +1,88 @@
+{
+  "verified": true,
+  "scope": "Independent descriptive arithmetic only; no physical replay or model requests.",
+  "calibrationFights": 1384,
+  "evaluationFights": 788,
+  "uniqueCalls": 376,
+  "calibrationSelectionsMatched": true,
+  "allCaseAndHistoryMeansMatched": true,
+  "costAndLatencyMatched": true,
+  "pairs": [
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "stable",
+      "means": {
+        "retained": 20,
+        "fixed": 31.5,
+        "initial": 23,
+        "full": 23,
+        "recent": 22
+      },
+      "differences": {
+        "fullVsRetained": 3,
+        "fullVsFixed": -8.5,
+        "fullVsInitial": 0,
+        "fullVsRecent": 1,
+        "recentVsFixed": -9.5
+      }
+    },
+    {
+      "seed": 31001,
+      "index": 0,
+      "history": "recurring",
+      "means": {
+        "retained": 13.5,
+        "fixed": 21,
+        "initial": 14,
+        "full": 14.25,
+        "recent": 14.5
+      },
+      "differences": {
+        "fullVsRetained": 0.75,
+        "fullVsFixed": -6.75,
+        "fullVsInitial": 0.25,
+        "fullVsRecent": -0.25,
+        "recentVsFixed": -6.5
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "stable",
+      "means": {
+        "retained": 7,
+        "fixed": 16.5,
+        "initial": 12.5,
+        "full": 12,
+        "recent": 9.25
+      },
+      "differences": {
+        "fullVsRetained": 5,
+        "fullVsFixed": -4.5,
+        "fullVsInitial": -0.5,
+        "fullVsRecent": 2.75,
+        "recentVsFixed": -7.25
+      }
+    },
+    {
+      "seed": 31042,
+      "index": 2,
+      "history": "recurring",
+      "means": {
+        "retained": 21,
+        "fixed": 33.5,
+        "initial": 18.5,
+        "full": 18,
+        "recent": 17
+      },
+      "differences": {
+        "fullVsRetained": -3,
+        "fullVsFixed": -15.5,
+        "fullVsInitial": -0.5,
+        "fullVsRecent": 1,
+        "recentVsFixed": -16.5
+      }
+    }
+  ]
+}
