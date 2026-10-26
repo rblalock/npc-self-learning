@@ -84,7 +84,8 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
   assert.ok(out,'Explicit output directory required');const protocol=JSON.parse(await readFile(resolve(ROOT,PROTOCOL),'utf8'));
   // Authentication diagnostics can contain account and local-path details.
   // Check privately before creating an experiment; never print the envelope.
-  const auth=spawnSync('claude',['auth','status'],{encoding:'utf8',timeout:5000,stdio:['ignore','pipe','pipe']});
+  const auth=spawnSync('claude',['auth','status'],{encoding:'utf8',timeout:30000,stdio:['ignore','pipe','pipe']});
+  assert.notEqual(auth.error?.code,'ETIMEDOUT','Claude authentication check timed out before the study started. Check claude auth status in a terminal; no model requests were sent.');
   let signedIn=false;try{signedIn=auth.status===0&&JSON.parse(auth.stdout).loggedIn===true;}catch{}
   assert.ok(signedIn,'Claude CLI is signed out or its authentication check failed. Run claude auth login before starting a new study directory.');
   await run({out,resume,protocol,provider:createClaudeProvider({model:protocol.agent.model,effort:protocol.agent.effort,timeoutMs:protocol.agent.timeoutMs,maxBudgetUsd:protocol.agent.maxBudgetUsdPerCall})});
