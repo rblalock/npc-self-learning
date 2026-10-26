@@ -18,6 +18,13 @@ export function verifyProvider(call, p, fixture) {
   assert.ok(numeric(m.durationMs), 'Invalid provider duration');
   assert.ok(Array.isArray(m.models) && m.models.every(x => typeof x === 'string' && x.length), 'Invalid provider models');
   assert.equal(new Set(m.models).size, m.models.length, 'Duplicate provider model');
+  assert.ok(Array.isArray(p.agent.reportedModelAllowlist) && p.agent.reportedModelAllowlist.length > 0, 'Missing frozen reported-model allowlist');
+  assert.ok(m.models.every(model => p.agent.reportedModelAllowlist.includes(model)), 'Reported model identity differs from frozen allowlist');
+  if (response.status === 'ok') assert.ok(m.models.length > 0, 'Successful response has no reported model identity');
+  for (const field of ['web_search_requests', 'web_fetch_requests']) {
+    const count = m.usage?.server_tool_use?.[field];
+    if (count !== undefined) assert.equal(count, 0, 'Reported web-tool use violates the no-tools boundary');
+  }
   // The durable journal normalizes failures to legal decisions as well. A
   // malformed saved fallback is corruption, even though execution retains the
   // last applied plan independently of that provider payload.
@@ -52,6 +59,7 @@ export function verifyProvider(call, p, fixture) {
     assert.deepEqual(Object.keys(m.modelUsage).sort(), [...m.models].sort(), 'Provider models differ from model usage');
     for (const usage of Object.values(m.modelUsage)) {
       assert.ok(object(usage) && Object.values(usage).every(numeric), 'Invalid provider model usage values');
+      if (usage.webSearchRequests !== undefined) assert.equal(usage.webSearchRequests, 0, 'Reported web-tool use violates the no-tools boundary');
     }
   }
   if (m.provider === 'claude-cli' && response.status === 'ok') {

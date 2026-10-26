@@ -8,6 +8,7 @@ import { sha } from './agentic-v2/design.mjs';
 import { prepare, fixedBranch, algorithmBranch, startBranch, nextObservation, advance, summarize } from './agentic-v4/trial.mjs';
 import { createJournal } from './agentic-v2/journal.mjs';
 import { createClaudeProvider } from './agentic-v1/provider.mjs';
+import { verifyProvider } from './agentic-v4/provider-audit.mjs';
 import { claimLiveStudy } from './agentic-v3/live-guard.mjs';
 
 async function waves(items, concurrency, action) {
@@ -63,6 +64,7 @@ export async function run({out,resume=false,protocol,provider,log=console.log,li
       await waves(ordered,protocol.maxConcurrency,async({c,training,history,replicate,branches,branch})=>{
         const key={caseSeed:c.seed,caseIndex:c.index,history,replicate,arm:'agent',round};
         const call=await journal.decide(key,nextObservation(training,branch,protocol));calls.set(call.id,call);
+        verifyProvider(call,protocol,false);
         advance(protocol,training,branch,{call});
         if(round===1) {
           const held=fixedBranch(c,protocol,training,history,branch.rows[0].fight.planId,{arm:'agent-initial',replicate,originCallId:call.id});

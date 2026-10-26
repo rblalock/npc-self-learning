@@ -83,7 +83,10 @@
     "maxConsecutiveFailures": 3,
     "sampling": "Provider defaults; fresh isolated CLI process for each unique request. No exposed temperature or seed control.",
     "memoryCharacters": 1500,
-    "retries": 0
+    "retries": 0,
+    "reportedModelAllowlist": [
+      "claude-sonnet-5-5"
+    ]
   },
   "arms": {
     "retained": "Baseline plan, continued Rust learning, shared post-survey checkpoint. Context only.",
@@ -96,7 +99,7 @@
   "observationBoundary": "Same allowlisted observation schema and identical initial records, menu, baseline current plan and empty memory. Thereafter each selector sees its own completed history and any own bounded note. No policy cells, seeds, case/history/arm IDs, hidden labels, schedule, coordinates, counterfactuals, audit tables or other branches. True round clock and total preparation rounds are public. Algorithm ignores text notes and computes statistics solely from public records. The full input schema is available equally; selected histories naturally diverge.",
   "schedule": "Reuse exact v2 evaluation schedules after a new 14-fight survey. Recompute and exactly reproduce the 20 v2 warmup fights, then retain their state into the survey. Changed preparation means old evaluation scores cannot be reused as controls.",
   "controls": "Reuse v1's exact seven ranger plans and physics. No new actions, memory edits, stat buffs, generated code or simulated probes. Every fixed and agent round uses normal Rust choose, legal masks, feedback and commit. A held auto-choice plan may still choose different aim/lead tactics. Opponent inputs may respond to different NPC behavior.",
-  "failurePolicy": "Reuse the audited v2 durable journal: max four concurrent, rotating round waves, no retries, unknown outcomes never resent, permanent stop after three consecutive failures. Failed calls retain the actual current plan and previous note; shared-initial failure holds baseline. Preserve incomplete data and do not shorten horizon/replicates. Prior v4 attempts must be accounted before any restart. Admission accounting and per-call caps are not guarantees against in-flight cost overruns. The live CLI registers one durable output directory for this study and takes an exclusive writer lock. A different output directory or protocol is rejected even after the writer exits. No replacement attempt is permitted under this frozen protocol; it requires an audited financial amendment accounting for prior calls, reported costs and unknown allowances. Same-directory resume retains the original journal and failure latch.",
+  "failurePolicy": "Reuse the audited v2 durable journal: max four concurrent, rotating round waves, no retries, unknown outcomes never resent, permanent stop after three consecutive failures. Failed calls retain the actual current plan and previous note; shared-initial failure holds baseline. Preserve incomplete data and do not shorten horizon/replicates. Prior v4 attempts must be accounted before any restart. Admission accounting and per-call caps are not guarantees against in-flight cost overruns. The live CLI registers one durable output directory for this study and takes an exclusive writer lock. A different output directory or protocol is rejected even after the writer exits. No replacement attempt is permitted under this frozen protocol; it requires an audited financial amendment accounting for prior calls, reported costs and unknown allowances. Same-directory resume retains the original journal and failure latch. Before advancing a branch, reject any reported model identity outside the explicit allowlist or any positive reported web-tool usage. Preserve the charged record and stop incomplete; no replacement call is made.",
   "budget": {
     "preparationFights": 48,
     "warmupFights": 20,

@@ -13,6 +13,7 @@ import { prepare, fixedBranch, startBranch, advance, initialObservation, nextObs
 import { warmup } from './agentic-v2/trial.mjs';
 import { SPEC, fight } from './agentic-v1/trial.mjs';
 import { createPolicy } from './research/policy.mjs';
+import { verifyProvider } from './agentic-v4/provider-audit.mjs';
 
 const original = JSON.parse(await readFile(resolve(ROOT, PROTOCOL), 'utf8'));
 const previous = JSON.parse(await readFile(new URL('../docs/experiments/agentic-npc-ablation-v2.protocol.json', import.meta.url), 'utf8'));
@@ -270,6 +271,11 @@ test('runner and verifier replay independent decisions, all controls, own-histor
     ['submitted prompt', r => { r.calls[0].response.call.prompt += 'hidden evidence'; }, /prompt/],
     ['self-consistent system prompt', r => { const c = r.calls[0].response.call; c.systemPrompt += ' additional instruction'; c.systemPromptSha256 = sha(c.systemPrompt); }, /system prompt/],
     ['provider model', r => { r.calls[0].response.metadata.requestedModel = 'another-model'; }, /requestedModel/],
+    ['reported model identity', r => { const m=r.calls[0].response.metadata; m.models=['claude-opus-4-6']; m.modelUsage={'claude-opus-4-6':{costUSD:0}}; }, /Reported model identity/],
+    ['reported model missing', r => { const m=r.calls[0].response.metadata; m.models=[];m.modelUsage={}; }, /no reported model identity/],
+    ['reported web search', r => { r.calls[0].response.metadata.usage={server_tool_use:{web_search_requests:1}}; }, /web-tool use/],
+    ['reported web fetch', r => { r.calls[0].response.metadata.usage={server_tool_use:{web_fetch_requests:1}}; }, /web-tool use/],
+    ['reported per-model web search', r => { const m=r.calls[0].response.metadata;m.modelUsage[m.models[0]].webSearchRequests=1; }, /web-tool use/],
     ['provider attempts omitted', r => { delete r.calls[0].response.metadata.attempts; }, /attempts/],
     ['provider fallback omitted', r => { delete r.calls[0].response.metadata.fallbackApplied; }, /fallback/],
     ['provider usage leakage', r => { r.calls[0].response.metadata.usage = { secret: 'session' }; }, /usage/],
@@ -403,7 +409,7 @@ test('timeouts, provider exceptions and malformed output preserve applied plans,
   });
   for (const [field, value] of [['costUsd', 0], ['durationMs', 1], ['models', ['invented-model']], ['retries', 1], ['fallbackApplied', false]]) {
     const bad = structuredClone(results); bad.calls.find(c => c.key.round === 4).response.metadata[field] = value;
-    await assert.rejects(verify(bad, replayOptions), /Journal failure|provider|fallback|retries/i);
+    await assert.rejects(verify(bad, replayOptions), field === 'models' ? /Reported model identity/ : /Journal failure|provider|fallback|retries/i);
   }
 });
 
@@ -481,4 +487,31 @@ test('an already-admitted success after three failures cannot reopen the stopped
   const state = JSON.parse(await readFile(join(out, 'calls', 'state.json'), 'utf8'));
   assert.equal(state.consecutiveFailures, 0); assert.equal(state.stoppedReason, 'provider-failure-threshold');
   await assert.rejects(run({ out, resume: true, protocol: p, log: () => {}, provider: { decide() { assert.fail('Latched stop redispatched'); } } }), /consecutive provider failures/);
+});
+
+// These checks use the production provider boundary, not fixture relaxations.
+test('production provider boundary enforces reported model identity and zero reported web tools', async () => {
+  const obs={plans:structuredClone(PLANS),currentPlanId:'baseline',memory:'',history:[]};
+  const call={observation:obs,response:response(obs,original)};
+  assert.doesNotThrow(()=>verifyProvider(call,original,false));
+  for(const mutate of [
+    m=>{m.models=['claude-opus-4-6'];m.modelUsage={'claude-opus-4-6':{costUSD:0}};},
+    m=>{m.models=[];m.modelUsage={};},
+    m=>{m.usage={server_tool_use:{web_search_requests:1}};},
+    m=>{m.usage={server_tool_use:{web_fetch_requests:1}};},
+    m=>{m.modelUsage[m.models[0]].webSearchRequests=1;},
+  ]) {const bad=structuredClone(call);mutate(bad.response.metadata);assert.throws(()=>verifyProvider(bad,original,false),/model identity|web-tool use/);}
+  call.response.metadata.usage={server_tool_use:{web_search_requests:0,web_fetch_requests:0}};
+  call.response.metadata.modelUsage[original.agent.model].webSearchRequests=0;
+  assert.doesNotThrow(()=>verifyProvider(call,original,false));
+});
+
+test('runner stops before combat on a disallowed reported model while preserving charged evidence', async t => {
+  const out=await directory(t),p={...protocol,cases:[protocol.cases[0]],histories:['stable'],agentReplicates:1,maxConcurrency:1,postRounds:2};
+  await assert.rejects(run({out,protocol:p,log:()=>{},provider:{async decide(obs){
+    const value=response(obs,p);value.metadata.models=['claude-opus-4-6'];value.metadata.modelUsage={'claude-opus-4-6':{costUSD:.001}};return value;
+  }}}),/Reported model identity/);
+  const partial=JSON.parse(await readFile(join(out,'partial.json'),'utf8'));
+  assert.equal(partial.incomplete,true);assert.equal(partial.calls.length,1);
+  assert.equal(partial.calls[0].response.metadata.costUsd,.001);assert.equal(branch(partial).rows.length,0);
 });
