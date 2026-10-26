@@ -63,7 +63,10 @@
     "compile:agentic": "tsc apps/arena/src/sim.ts --outDir target/agentic-sim --target es2022 --module esnext --moduleResolution bundler --skipLibCheck",
     "test:agentic": "npm run compile:agentic && node --test scripts/agentic-*.test.mjs",
     "evaluate:agentic": "npm run compile:agentic && node scripts/evaluate-agentic-v1.mjs",
-    "verify:agentic": "npm run compile:agentic && node scripts/verify-agentic-v1.mjs"
+    "verify:agentic": "npm run compile:agentic && node scripts/verify-agentic-v1.mjs",
+    "test:agentic-v2": "npm run compile:agentic && node --test scripts/agentic-v2-*.test.mjs",
+    "evaluate:agentic-v2": "npm run compile:agentic && node scripts/evaluate-agentic-v2.mjs",
+    "verify:agentic-v2": "npm run compile:agentic && node scripts/verify-agentic-v2.mjs"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
