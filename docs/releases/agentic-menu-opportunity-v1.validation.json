@@ -1,5 +1,5 @@
 {
-  "archiveSha256": "8e9a0f922d1057b6e3a0fb5155a4fc93947f7c22421fe21901a9d194ce3b03f3",
+  "archiveSha256": "3833341e2e27033fbdea9b19f3315062547496755372ca2a697d68819be3ee68",
   "contentChecksums": 44,
   "sourceFingerprints": 38,
   "cleanExtractionReplay": {
@@ -18,5 +18,19 @@
     "scope": "Offline deterministic replay of this privileged development diagnostic; no agent predictions or global optimality claim."
   },
   "testsPassed": 9,
-  "newModelCalls": 0
+  "newModelCalls": 0,
+  "requiredReplayRuntime": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "systemTar": true
+  },
+  "packagingCorrection": {
+    "previousArchiveSha256": "8e9a0f922d1057b6e3a0fb5155a4fc93947f7c22421fe21901a9d194ce3b03f3",
+    "changedMembers": [
+      "README.txt",
+      "SHA256SUMS"
+    ],
+    "codeAndEvidenceUnchanged": true
+  }
 }

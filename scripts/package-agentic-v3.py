@@ -28,7 +28,7 @@ for name in ['scripts/replay-agentic-v3.mjs', 'scripts/agentic-v3/view.html', 's
 files['package.json'] = b'{"name":"npc-switching-v3-evidence","private":true,"type":"module","scripts":{"verify":"node scripts/verify-agentic-v3.mjs results.json"}}\n'
 files['README.txt'] = b'''Tactical Air: minimum-exposure NPC switching study, v3
 
-Node.js 24 and Python 3. No package install or model account required.
+Node.js 24, Python 3 and system tar. No package install or model account required.
 shasum -a 256 -c SHA256SUMS
 npm run verify
 python3 scripts/analyze-agentic-v3.py results.json summary.json

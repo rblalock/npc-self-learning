@@ -65,12 +65,17 @@ All 340 scored fights and 128 recorded decisions replay exactly. Mean NPC damage
 
 The [v2 comparison](agentic-npc-ablation-v2.md) completed 2,172 fights and 376 successful requests. Full-history review averaged 0.1875 HP less than holding its initial choice, 1.125 HP more than latest-fight review, and 8.8125 HP less than the calibrated fixed plan. The full-history agent switched less often, but continued review did not improve its mean over the first selection. All physical outcomes and decisions replay exactly; the 64-recording viewer, source kit and both interrupted attempts are preserved.
 
-## Next: test the switching rule and available opportunity
+## Completed: minimum exposure and expanded-menu opportunity
 
-1. Compare accumulated history with a simple minimum-evidence rule before changing plans. Keep the same observation and action permissions; retain the held-initial comparator and account for all exploration.
-2. Audit the full seven-plan menu for situations where changing plans can outperform a strong held plan. The earlier two-tactic admission check did not establish this opportunity for distance and prediction settings.
-3. Compare any improved selector with a strong non-LLM selector using matched observations and simulation access. The calibrated fixed benchmark is informative, but receives extra calibration experience.
-4. Lock the candidate and analysis before testing unfamiliar worlds. Two familiar development cases and repeated model calls are not fresh-world validation.
+The [three-fight gate](agentic-npc-switching-v3.md) completes 788 fights and 376 successful requests. Applied switches fall from 29 to 20, but mean damage falls by 0.3125 HP versus immediate review and trails held-initial by 0.5 HP. The rule is not promoted. Both reviewers retain full history and notes; this tests execution restraint, not a new memory ablation.
+
+The [seven-plan audit](agentic-menu-opportunity-v1.md) adds 2,236 diagnostic simulations. A privileged greedy trajectory averages 29.5 HP versus 25.625 for the strongest held plan. It uses hidden current scenarios and counterfactual probes; the live agents receive neither. The audit establishes available opportunity in these familiar cases, not agent-achieved adaptation or a global performance ceiling.
+
+## Next: compare plan selection at a matched budget
+
+1. Test an agent and a strong non-LLM selector using identical observable evidence, action permissions and simulation-query budgets. Count all exploration and retain held-initial and fixed controls.
+2. Separate discovering a useful plan from responding to a changed opponent. The current gate does not solve either problem across both worlds.
+3. Freeze any improved candidate and its analysis before unfamiliar-world validation. Repeated requests on these two familiar cases do not increase the independent sample size.
 
 ## Further work: context transfer and team sample allocation
 

@@ -14,6 +14,8 @@ The [agent-assisted NPC pilot](docs/agentic-npc-pilot-v1.md) adds model review a
 
 The [fixed-plan and planner-history follow-up](docs/agentic-npc-ablation-v2.md) is complete: 2,172 fights and 376 successful requests. Full-history review averaged 16.8125 HP per fight, versus 17.00 when holding the agent’s first choice, 15.6875 with latest-fight input, and 25.625 with a separately calibrated fixed plan. Repeated review added no average benefit over the initial selection. These are descriptive results on two familiar cases; the fixed benchmark used extra calibration experience. The [viewer](docs/experiments/agentic-npc-ablation-v2-view.html) and [offline kit](publication/inputs/releases/tactical-air-agentic-ablation-v2.tar.gz) preserve all results; both interrupted attempts remain separately available.
 
+The [three-fight switching study](docs/agentic-npc-switching-v3.md) completed 788 fights and 376 successful requests. Requiring three observed fights before a change reduced applied switches from 29 to 20 but lowered mean damage: 16.5 HP versus 16.8125 for immediate review and 17 for holding the first choice. The [viewer](docs/experiments/agentic-npc-switching-v3-view.html) shows recommendations, actual plans and blocked changes. A separate [seven-plan audit](docs/agentic-menu-opportunity-v1.md) found a privileged simulation controller could gain 3.875 HP over the best held plan; the live agent does not receive those probes.
+
 The [completed article](docs/publication/article.md) and [companion report](docs/publication/research-report.md) cover individual adaptation, team choice, public terrain memory and automatic forgetting.
 
 The earlier [conservative-intervention screen](docs/conservative-intervention-v1.md) used **259,584 cached transitions on 48 examined cases**. Separate evidence batches reduced unnecessary interventions, but all three candidates failed to improve changing-history damage in every role. No candidate earned fresh validation. The original learner remains in the game.
@@ -123,7 +125,7 @@ The [change-detection follow-up](docs/change-detection-lab-v1.md) tests automati
 
 ## Where this goes next
 
-Compare the agent's history-and-note input with a simple minimum-evidence rule for switching plans. Audit whether the full seven-plan menu offers situations where changing plans can outperform a strong held plan. Lock an improved candidate before testing unfamiliar worlds; the completed review comparison does not justify continuous agent calls yet.
+The three-fight switching rule did not improve mean damage. Next compare agent and non-LLM plan selection under matched observation and simulation budgets, with all exploration charged. The menu audit shows privileged switching opportunity, but the agent must first close its gap to a strong held plan. Lock an improved candidate before testing unfamiliar worlds.
 
 Separate detecting a change from deciding that forgetting will improve performance. Calibrate against stable noisy histories before another reserved run, then test context transfer and team sample allocation under matched budgets. Human recognition, fairness and enjoyment have not been measured.
 

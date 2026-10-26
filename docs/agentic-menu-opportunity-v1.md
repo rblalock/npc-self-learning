@@ -36,6 +36,8 @@ Nine tests pass. Every recorded transition reproduces exactly, including restore
 - [Summary](experiments/agentic-menu-opportunity-v1.summary.json) and [replay verification](experiments/agentic-menu-opportunity-v1.verification.json)
 - [Offline source and evidence kit](../publication/inputs/releases/tactical-air-agentic-menu-opportunity-v1.tar.gz) and [clean-extraction checks](releases/agentic-menu-opportunity-v1.validation.json)
 
+The frozen audit verifier currently requires **Node.js 24.22.0 on macOS arm64**, plus system `tar` for baseline extraction. Its equality checks include runtime metadata, so other platforms and Node patches are rejected before replay. This limitation belongs to this audit verifier, not the Rust game library.
+
 From the extracted kit:
 
 ```sh
@@ -43,7 +45,7 @@ shasum -a 256 -c SHA256SUMS
 node scripts/audit-agentic-menu-v1.mjs --verify results.json
 ```
 
-Archive SHA-256: `8e9a0f922d1057b6e3a0fb5155a4fc93947f7c22421fe21901a9d194ce3b03f3`.
+Archive SHA-256: `3833341e2e27033fbdea9b19f3315062547496755372ca2a697d68819be3ee68`.
 
 ## What this changes about the research question
 

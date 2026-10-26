@@ -27,7 +27,10 @@ for name in ['results.json', 'summary.json', 'verification.json']:
 files['package.json'] = b'{"name":"npc-menu-opportunity-evidence","private":true,"type":"module","scripts":{"verify":"node scripts/audit-agentic-menu-v1.mjs --verify results.json"}}\n'
 files['README.txt'] = b'''Tactical Air: seven-plan opportunity diagnostic
 
-Node.js 24; no packages or model account required.
+Exact frozen replay currently requires Node.js 24.22.0 on macOS arm64 and
+system tar. The verifier includes runtime metadata in its equality checks.
+Other platforms/Node patches are not accepted by this frozen verifier.
+No npm packages or model account required.
 shasum -a 256 -c SHA256SUMS
 npm run verify
 

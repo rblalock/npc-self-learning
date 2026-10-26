@@ -166,3 +166,12 @@ All **376 planner requests succeed**, with **$6.4860687** CLI-reported cost, 4.9
 The completed run follows an initial sign-in failure and a second run stopped after sixteen successes and four timeouts. Both stopped journals remain latched and archived. Before the third attempt, only the accounting cap changed: $12.15 plus $0.648518 in prior known costs and unknown-cost allowances fits within $12.80. Across all v2 attempts, known reported cost is $6.7345867; adding four timeout allowances gives $7.1345867 in admission accounting. Actual charges for those timeouts remain unknown.
 
 Two familiar ranger worlds and two model repetitions remain development evidence. No p-values, generalization claim or decoding-randomness benefit follows. Next compare a minimum-evidence switching rule and establish adaptation opportunity across the expanded plan menu before advancing a candidate to unfamiliar cases.
+
+
+## Minimum-exposure gate and seven-plan diagnostic
+
+The [completed v3 comparison](agentic-npc-switching-v3.md) adds **788 scored physical fights**, including twenty warm-ups, and 376 successful model requests. Both active controllers receive full own-history and notes; a three-observed-fight gate changes only when a different recommendation may execute. Gated damage averages **16.5 HP**, versus **16.8125** immediate, **17** held-initial, and **25.625** prior calibrated fixed. The primary difference is **−0.3125 HP**. Applied switches decline from 29 to 20, with 34 proposals blocked. No evaluation player defeats or NPC survivals occur. Do not promote this rule.
+
+The separate [menu audit](agentic-menu-opportunity-v1.md) adds **2,236 scored diagnostic simulations**: 1,372 probes and 864 committed trajectory fights. Privileged greedy selection gains **3.875 HP** over the best held plan. The agent never receives those hidden scenarios or counterfactual results. Local probe maxima are not globally achievable bounds, and the two familiar worlds do not establish generalization.
+
+Together these bring completed scored physical workload to **259,880 across twenty-two scored records**. This is execution workload, not an independent sample count. Prior calibration/warm-ups reused by the audit, the interrupted v2 attempts, tests and verification replays remain excluded. All new scored outcomes reproduce exactly. V3 reported cost is **$9.9732408**, with no failures or unknown costs; the next comparison should test plan selection against a strong non-LLM controller at matched experience and query budgets before fresh validation.

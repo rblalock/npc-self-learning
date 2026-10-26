@@ -1,0 +1,41 @@
+{
+  "archiveSha256": "bcd61a67681b0a999b792d16e4f2208a4a06ca5f452f173980b2ab581af8c642",
+  "contentChecksums": 51,
+  "sourceFingerprints": 41,
+  "cleanExtractionReplay": {
+    "schema": 1,
+    "verified": true,
+    "resultsSha256": "7852105a0bad60bbd073beeeee4c4d6420be16e7ff260457a1cc4d6baabcb464",
+    "calibrationFightsReplayed": 0,
+    "evaluationFightsReplayed": 788,
+    "totalPhysicalFightsReplayed": 788,
+    "reusedCalibrationFights": 1384,
+    "fixedReferenceSha256": "f01887e78f0fbf56247360b3b013709440f3b201cd96c3e2bbc854b599556ed8",
+    "uniqueAgentDecisionsReplayed": 376,
+    "sourceHashesChecked": true,
+    "frozenProtocolChecked": true,
+    "modelCallsMade": 0,
+    "scope": "Exact replay of recorded proposals, gate decisions, observations and physical/policy trajectories. Prior calibration is referenced, not rerun. Not independent replication or regenerated model outputs."
+  },
+  "independentArithmeticPassed": true,
+  "viewerByteIdentical": true,
+  "testsPassed": 77,
+  "inheritedJournalRunnerTestsPassed": 26,
+  "runtime": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "browser": {
+    "recordings": 64,
+    "frames": 7295,
+    "desktopSelectableAndScrubbed": 64,
+    "mobile390x844SelectableAndScrubbed": 64,
+    "default": "gated:1 paused frame 0",
+    "playPausePassed": true,
+    "horizontalOverflow": false,
+    "observedErrorsOrWarnings": 0,
+    "fallback": "T3 snapshot timed out twice; Chrome used"
+  },
+  "modelCallsMadeByVerification": 0
+}
